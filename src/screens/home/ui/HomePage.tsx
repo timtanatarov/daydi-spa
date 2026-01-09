@@ -1,3 +1,5 @@
+import { ContactsPage } from "@/screens/contacts";
+
 export function HomePage() {
   return (
     <main className="mx-auto w-full max-w-4xl flex-1 px-4 py-10">
@@ -6,7 +8,6 @@ export function HomePage() {
         Тут будет основной контент. Пока — простой текст-заглушка, чтобы проверить структуру FSD и
         импорты.
       </p>
-
       <section className="mt-8">
         <h2 className="text-xl font-semibold">Что дальше</h2>
         <ul className="mt-3 list-inside list-disc">
@@ -14,6 +15,9 @@ export function HomePage() {
           <li>Добавить реальные страницы и роуты в `app/`</li>
           <li>Подключить API-клиент в `shared/api`</li>
         </ul>
+      </section>
+      <section className="mt-8">
+        <ContactsPage />
       </section>
     </main>
   );

@@ -11,5 +11,16 @@
   "[javascript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "[javascriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "[typescript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
-  "[typescriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" }
+  "[typescriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+
+  // Подсказки Tailwind внутри строк (className="...")
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  // Подсказки Emmet для Tailwind
+  "tailwindCSS.emmetCompletions": true,
+  // Перенос строк
+  "editor.wordWrap": "on",
+  "editor.wordWrapColumn": 100,
+  "editor.wrappingIndent": "same"
 }
