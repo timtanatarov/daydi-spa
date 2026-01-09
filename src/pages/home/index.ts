@@ -1,1 +1,3 @@
-export { HomePage } from "./ui/HomePage";
+import { HomePage } from "@/screens/home";
+
+export default HomePage;
