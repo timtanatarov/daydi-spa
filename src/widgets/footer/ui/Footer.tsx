@@ -1,14 +1,10 @@
-import { Button } from "@/shared/ui/button";
+import { BurgerMenuButton } from "@/shared/ui/burger-button";
 
 export function Footer() {
   return (
-    <footer className="border-t">
-      <div className="mx-auto flex max-w-4xl items-center justify-between px-4 py-4 text-sm">
-        <div>© {new Date().getFullYear()} Daydi</div>
-        <div className="flex items-center gap-2">
-          <Button>Кнопка A</Button>
-          <Button>Кнопка B</Button>
-        </div>
+    <footer className="w-full border-t bg-black/85">
+      <div className="flex w-full items-center justify-end px-4 py-4">
+        <BurgerMenuButton />
       </div>
     </footer>
   );

@@ -11,6 +11,12 @@ const eslintConfig = defineConfig([
   ...nextVitals,
   ...nextTs,
   ...prettierConfigs,
+  {
+    files: ["src/screens/course-landing/ui/CourseLandingCanvas.tsx"],
+    rules: {
+      "@next/next/no-img-element": "off",
+    },
+  },
   // Override default ignores of eslint-config-next.
   globalIgnores([
     // Default ignores of eslint-config-next:
