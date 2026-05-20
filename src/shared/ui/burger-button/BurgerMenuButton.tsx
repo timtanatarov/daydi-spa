@@ -1,4 +1,4 @@
-/** Кнопка «бургер» для компактной шапки/подвала без текста */
+/** Круглая кнопка «бургер» — телесный фон, коричневые полоски */
 
 type Props = { className?: string };
 
@@ -9,7 +9,7 @@ export function BurgerMenuButton({ className }: Props) {
       type="button"
       className={
         [
-          "flex h-10 w-10 flex-col items-center justify-center gap-[5px] rounded-md border border-white/20 text-[#f6f5f1] hover:bg-white/10",
+          "flex h-11 w-11 flex-col items-center justify-center gap-[5px] rounded-full bg-[#e3dfda] text-[#49301c] shadow-[0_2px_8px_rgba(73,48,28,0.12)] transition-colors hover:bg-[#d9d4cf] active:scale-95",
           className,
         ]
           .filter(Boolean)

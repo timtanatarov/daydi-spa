@@ -5,13 +5,9 @@ type Props = {
   className?: string;
 };
 
-/** Обёртка мобильного макета 430px вместо scale-frame */
+/** Общая ширина мобильного лендинга — 480px (см. HomePage breakpoint 481px). */
+export const landingMaxWidthClass = "mx-auto w-full max-w-[480px]";
+
 export function LandingContainer({ children, className = "" }: Props) {
-  return (
-    <div
-      className={`mx-auto w-full max-w-[430px] overflow-x-clip bg-[#f6f5f1] shadow-sm md:rounded-sm ${className}`}
-    >
-      {children}
-    </div>
-  );
+  return <div className={`${landingMaxWidthClass} ${className}`.trim()}>{children}</div>;
 }

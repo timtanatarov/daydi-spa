@@ -1,6 +1,5 @@
-import { woodBenefitsContent } from "../lib/content";
 import {
-  imgMagicEraser2604222127391,
+  imgBgWoodSteps,
   imgScallopEdgeMidBottom,
   imgScallopEdgeMidTop,
 } from "../lib/landingAssets";
@@ -15,28 +14,32 @@ export function WoodBenefitsSection() {
 
       <div className="relative overflow-hidden px-4 py-12">
         <img
-          src={imgMagicEraser2604222127391}
+          src={imgBgWoodSteps}
           alt=""
           aria-hidden
           className="pointer-events-none absolute inset-0 size-full object-cover"
         />
         <div className="relative z-10">
           <div className="mx-auto mb-10 flex w-[200px] items-center justify-center rounded-[30px] bg-[#fbe8b5] px-3 py-2">
-            <p className="text-center font-serif text-[21px] leading-tight text-[#49301c]">
-              {woodBenefitsContent.badge}
+            <p className="text-center [font-family:var(--font-course-playfair)] text-[30px] leading-[36px] font-normal text-[#49301c]">
+              после обучения ты
             </p>
           </div>
 
-          <ul className="mx-auto grid max-w-[360px] grid-cols-2 gap-x-4 gap-y-8 text-center text-[10px] leading-snug text-[#e9e5e2]">
-            {woodBenefitsContent.items.map((item) => (
-              <li key={item.text}>{item.text}</li>
-            ))}
+          <ul className="mx-auto grid max-w-[360px] grid-cols-2 gap-x-4 gap-y-8 text-center text-[10px] font-light leading-snug text-[#e9e5e2]">
+            <li>начнешь экономить десятки тысяч рублей ежемесячно</li>
+            <li>перестанешь переплачивать в 2–3 раза за те же вещи</li>
+            <li>разберешься, как заказывать на Taobao и 1688 без ошибок и переплат</li>
+            <li>научишься выбирать вещи, которые выглядят дорого и служат долго</li>
+            <li>сможешь покупать оригинальные бренды дешевле</li>
+            <li>будешь пользоваться базой проверенных магазинов и посредников</li>
           </ul>
 
-          <div className="mx-auto mt-12 max-w-[220px] rounded-sm bg-[#f6f5f1]/95 px-4 py-3 text-center font-serif text-[15px] leading-snug text-[#49301c]">
-            {woodBenefitsContent.ticket.map((line) => (
-              <p key={line}>{line}</p>
-            ))}
+          <div
+            className="mx-auto mt-12 max-w-[220px] rounded-sm bg-[#f6f5f1]/95 px-4 py-3 text-center text-[15px] font-light leading-[16px] text-[#49301c]"
+          >
+            <p>и, скорее всего,</p>
+            <p>уже не захочешь покупать как раньше</p>
           </div>
         </div>
       </div>

@@ -1,39 +1,45 @@
-import { roadmapContent } from "../lib/content";
-import { imgLine3 } from "../lib/landingAssets";
+import { imgLineDecor } from "../lib/landingAssets";
 
 export function RoadmapSection() {
   return (
     <section className="px-4 py-12">
-      <p className="mb-2 text-center text-[10px] text-[#49301c]">{roadmapContent.eyebrow}</p>
-      <h2 className="mb-6 text-center font-serif text-[25px] text-[#49301c]">
-        {roadmapContent.title}
+      <p className="mb-2 text-center text-[10px] font-light leading-[16px] text-[#49301c]">
+        итак... что тебя ждет на этом курсе?
+      </p>
+      <h2 className="mb-6 text-center [font-family:var(--font-course-playfair)] text-[30px] leading-[36px] font-normal text-[#49301c]">
+        дорожная карта курса
       </h2>
-      <img src={imgLine3} alt="" className="mx-auto mb-8 h-px w-full max-w-[287px]" aria-hidden />
+      <img src={imgLineDecor} alt="" className="mx-auto mb-8 h-px w-full max-w-[287px]" aria-hidden />
 
       <div className="flex flex-col gap-6">
-        {roadmapContent.cards.map((card, index) => (
-          <article
-            key={index}
-            className={`mx-auto w-full max-w-[280px] rounded-sm p-4 ${
-              card.variant === "clip" ? "bg-[#dcd7d1]" : "bg-[#efeade]"
-            }`}
-          >
-            <h3 className="text-center font-serif text-[13px] leading-snug text-[#49301c]">
-              {Array.isArray(card.title) ? (
-                card.title.map((line) => (
-                  <span key={line} className="block">
-                    {line}
-                  </span>
-                ))
-              ) : (
-                card.title
-              )}
-            </h3>
-            <p className="mt-2 text-center text-[10px] leading-snug text-[#49301c]">
-              {card.subtitle}
-            </p>
-          </article>
-        ))}
+        <article className="mx-auto w-full max-w-[280px] rounded-sm bg-[#dcd7d1] p-4">
+          <h3 className="text-center [font-family:var(--font-course-playfair)] text-[30px] leading-[36px] font-normal text-[#49301c]">
+            <span className="block">знакомство</span>
+            <span className="block">с маркетплейсами</span>
+          </h3>
+          <p className="mt-2 text-center text-[10px] font-light leading-[16px] text-[#49301c]">
+            регистрация без риска блокировки
+          </p>
+        </article>
+
+        <article className="mx-auto w-full max-w-[280px] rounded-sm bg-[#efeade] p-4">
+          <h3 className="text-center [font-family:var(--font-course-playfair)] text-[30px] leading-[36px] font-normal text-[#49301c]">
+            поиск товаров
+          </h3>
+          <p className="mt-2 text-center text-[10px] font-light leading-[16px] text-[#49301c]">
+            как находить любые товары, бренды в разы дешевле, чем у нас? все про экспортные
+            товары
+          </p>
+        </article>
+
+        <article className="mx-auto w-full max-w-[280px] rounded-sm bg-[#dcd7d1] p-4">
+          <h3 className="text-center [font-family:var(--font-course-playfair)] text-[30px] leading-[36px] font-normal text-[#49301c]">
+            рейтинг продавцов
+          </h3>
+          <p className="mt-2 text-center text-[10px] font-light leading-[16px] text-[#49301c]">
+            как выбрать хороший товар?
+          </p>
+        </article>
       </div>
     </section>
   );

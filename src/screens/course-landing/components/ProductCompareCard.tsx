@@ -1,8 +1,12 @@
-import type { ProductCompareItem } from "../lib/content";
-import { imgImage60 } from "../lib/landingAssets";
+import { imgProductCompare } from "../lib/landingAssets";
 
 type Props = {
-  item: ProductCompareItem;
+  item: {
+    brand: string;
+    price: string;
+    oldPrice: string;
+    discount: string;
+  };
 };
 
 export function ProductCompareCard({ item }: Props) {
@@ -10,7 +14,7 @@ export function ProductCompareCard({ item }: Props) {
     <article className="flex w-[140px] shrink-0 flex-col">
       <div className="relative h-[131px] w-full overflow-hidden bg-[#dcd7d1]">
         <img
-          src={imgImage60}
+          src={imgProductCompare}
           alt=""
           className="size-full object-cover"
           loading="lazy"
@@ -24,7 +28,7 @@ export function ProductCompareCard({ item }: Props) {
         </p>
         <p className="text-sm font-bold">{item.price}</p>
       </div>
-      <p className="mt-1 text-center font-serif text-[10px] lowercase text-[#49301c]">
+      <p className="mt-1 text-center text-[10px] font-medium lowercase text-[#49301c]">
         {item.brand}
       </p>
     </article>

@@ -1,81 +1,79 @@
-import { heroContent } from "../lib/content";
+import Image from "next/image";
 import {
-  imgImg00301,
-  imgImg783021,
-  imgMagicEraser2604082116092,
-  imgMagicEraser2604082117071,
+  staticAboutIndiraTopEdge,
+  staticHeroPhoto,
+  staticHeroPaperCard,
+  staticHeroTapeBadge,
 } from "../lib/landingAssets";
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-[780px] overflow-hidden">
-      <div className="absolute inset-0">
-        <img
-          src={imgImg00301}
-          alt=""
-          className="size-full object-cover"
-          fetchPriority="high"
-          decoding="async"
-        />
-        <img
-          src={imgImg783021}
-          alt=""
-          className="absolute inset-0 size-full object-cover opacity-90"
-          decoding="async"
-        />
-        <div className="absolute inset-0 bg-black/40" aria-hidden />
+    <div className="relative isolate flex w-full min-h-[calc(100vw*763/430)] flex-col items-center">
+      <div className="pointer-events-none absolute inset-0 -z-10" aria-hidden>
+        <Image src={staticHeroPhoto} alt="" fill priority sizes="480px" className="object-cover" />
+        <div className="absolute inset-0 bg-black/40" />
       </div>
 
-      <div className="relative z-10 flex flex-col items-center px-6 pt-8 pb-28">
-        <div className="-rotate-2 relative mx-auto w-full max-w-[345px]">
-          <img
-            src={imgMagicEraser2604082117071}
-            alt=""
-            className="w-full rounded-sm shadow-md"
-            decoding="async"
-          />
-          <div className="absolute top-6 left-1/2 flex -translate-x-1/2 rotate-[-4deg] flex-col items-center">
-            <div className="relative mb-3 flex h-[61px] w-[108px] items-center justify-center">
-              <img
-                src={imgMagicEraser2604082116092}
-                alt=""
-                className="absolute inset-0 size-full object-contain"
-                decoding="async"
-              />
-              <span className="relative z-10 max-w-[92px] text-center text-[11px] font-medium text-[#49301c]">
-                {heroContent.badge}
-              </span>
-            </div>
-            <h1 className="[font-family:var(--font-course-playfair)] text-center text-[30px] leading-tight text-[#49301c]">
-              {heroContent.title[0]}
-              <br />
-              {heroContent.title[1]}
-            </h1>
-            <div className="mt-4 max-w-[226px] text-center text-[12px] font-light leading-snug text-[#49301c]">
-              {heroContent.description.map((line) => (
-                <p key={line}>{line}</p>
-              ))}
-            </div>
-            <div className="mt-4 flex gap-3">
-              {heroContent.tags.map((tag) => (
-                <span
-                  key={tag}
-                  className="rounded-full bg-[rgba(205,197,173,0.65)] px-2 py-0.5 text-[9px] font-medium text-[#49301c]"
-                >
-                  {tag}
+      <div className="relative z-10 flex w-full flex-col items-center px-4 pt-8 pb-6">
+        <div className="w-full max-w-[354px] rotate-[-3.53deg]">
+          <div className="grid *:col-start-1 *:row-start-1">
+            <Image
+              src={staticHeroPaperCard}
+              alt=""
+              sizes="(max-width: 480px) 92vw, 354px"
+              className="w-full"
+            />
+
+            <div className="flex flex-col items-center px-[12%] pt-[26%] pb-[10%]">
+              <div className="relative mt-16 flex h-[61px] w-[120px] rotate-[-0.69deg] items-center justify-center">
+                <Image
+                  src={staticHeroTapeBadge}
+                  alt=""
+                  fill
+                  sizes="120px"
+                  className="pointer-events-none object-bottom"
+                />
+                <span className="relative z-10 max-w-[92px] px-0.5 text-center text-[11px] font-medium leading-snug text-[#49301c]">
+                  курс по Китаю
                 </span>
-              ))}
+              </div>
+
+              <h1 className="-mt-3 m-0 w-full max-w-[16rem] text-center [font-family:var(--font-course-playfair)] text-[30px] leading-[30px] font-normal text-[#49301c]">
+                Как заказывать на Таобао и 1688
+              </h1>
+
+              <p className="m-0 mt-3 w-full max-w-56.5 text-center [font-family:var(--font-course-inter)] text-[12px] font-light not-italic leading-[13px] tracking-normal text-[#49301c]">
+                пошаговое обучение, как покупать одежду и декор для дома до 10 раз выгоднее, чем на
+                Вайлдберриз и Алиэкспресс
+              </p>
+
+              <div className="mt-12 flex items-center justify-center gap-6">
+                <div className="flex h-[17px] min-w-[44px] items-center justify-center rounded-[20px] bg-[rgba(205,197,173,0.65)] px-2">
+                  <span className="text-[9px] font-medium leading-none text-[#49301c]">taobao</span>
+                </div>
+                <div className="flex h-[17px] min-w-[44px] items-center justify-center rounded-[20px] bg-[rgba(205,197,173,0.65)] px-2">
+                  <span className="text-[9px] font-medium leading-none text-[#49301c]">1688</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
         <a
           href="#buy"
-          className="mt-8 flex h-[46px] w-[197px] items-center justify-center rounded-[25px] bg-[#f6f5f1] text-[19px] font-extrabold text-[#531608]"
+          className="-mt-5 mb-16 flex h-[46px] w-[197px] shrink-0 items-center justify-center rounded-[25px] bg-[#f6f5f1] text-[19px] leading-[30px] font-extrabold text-[#531608]"
         >
-          {heroContent.cta}
+          купить
         </a>
       </div>
-    </section>
+
+      <Image
+        src={staticAboutIndiraTopEdge}
+        alt=""
+        aria-hidden
+        sizes="480px"
+        className="relative z-10 mt-auto block w-full"
+      />
+    </div>
   );
 }

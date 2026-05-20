@@ -5,14 +5,15 @@ type Props = {
   className?: string;
 };
 
+const heading =
+  "text-center [font-family:var(--font-course-playfair)] text-[30px] leading-[36px] font-normal text-[#49301c]";
+
 export function ParenthesesTitle({ children, className = "" }: Props) {
   return (
     <div className={`flex items-center justify-center gap-2 px-4 ${className}`}>
-      <span className="font-serif text-[2.5rem] leading-none text-[#49301c]">(</span>
-      <div className="text-center font-serif text-[21px] leading-[1.2] text-[#49301c]">
-        {children}
-      </div>
-      <span className="font-serif text-[2.5rem] leading-none text-[#49301c]">)</span>
+      <span className={heading}>(</span>
+      <div className={heading}>{children}</div>
+      <span className={heading}>)</span>
     </div>
   );
 }

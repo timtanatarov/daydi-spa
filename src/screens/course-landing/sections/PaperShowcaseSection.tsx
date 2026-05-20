@@ -1,11 +1,23 @@
 import { ParenthesesTitle } from "../components/ParenthesesTitle";
 import { ProductCompareCard } from "../components/ProductCompareCard";
-import type { ProductComparePair } from "../lib/content";
-import { imgImg44101 } from "../lib/landingAssets";
+import { imgBgPaperQuote } from "../lib/landingAssets";
 
 export type PaperShowcaseSectionProps = {
   title: string | string[];
-  pairs: ProductComparePair[];
+  pairs: {
+    left: {
+      brand: string;
+      price: string;
+      oldPrice: string;
+      discount: string;
+    };
+    right: {
+      brand: string;
+      price: string;
+      oldPrice: string;
+      discount: string;
+    };
+  }[];
   footer?: string;
 };
 
@@ -29,7 +41,7 @@ export function PaperShowcaseSection({ title, pairs, footer }: PaperShowcaseSect
   return (
     <section className="relative overflow-hidden px-4 py-10">
       <img
-        src={imgImg44101}
+        src={imgBgPaperQuote}
         alt=""
         aria-hidden
         className="pointer-events-none absolute inset-0 size-full object-cover opacity-90"
@@ -49,7 +61,7 @@ export function PaperShowcaseSection({ title, pairs, footer }: PaperShowcaseSect
         </div>
 
         {footer ? (
-          <p className="mt-6 text-center text-[10px] text-[#49301c]">{footer}</p>
+          <p className="mt-6 text-center text-[10px] font-light leading-[16px] text-[#49301c]">{footer}</p>
         ) : null}
       </div>
     </section>

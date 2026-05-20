@@ -2,8 +2,8 @@ import { BurgerMenuButton } from "@/shared/ui/burger-button";
 
 export function Header() {
   return (
-    <header className="w-full border-b bg-black/85">
-      <div className="flex w-full items-center justify-end px-4 py-4">
+    <header className="pointer-events-none fixed top-4 right-4 z-50">
+      <div className="pointer-events-auto">
         <BurgerMenuButton />
       </div>
     </header>
