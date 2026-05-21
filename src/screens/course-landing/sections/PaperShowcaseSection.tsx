@@ -61,7 +61,9 @@ export function PaperShowcaseSection({ title, pairs, footer }: PaperShowcaseSect
         </div>
 
         {footer ? (
-          <p className="mt-6 text-center text-[10px] font-light leading-[16px] text-[#49301c]">{footer}</p>
+          <p className="mt-6 text-center text-[10px] font-light leading-[16px] text-[#49301c]">
+            {footer}
+          </p>
         ) : null}
       </div>
     </section>

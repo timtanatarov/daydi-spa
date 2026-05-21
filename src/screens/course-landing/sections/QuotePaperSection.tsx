@@ -14,7 +14,9 @@ export function QuotePaperSection() {
           <span className="block">разные цены за одну и ту же вещь.</span>
           <span className="block">логичный вопрос: зачем переплачивать?</span>
         </p>
-        <p className="mt-6 text-[10px] font-light leading-[16px] text-[#49301c]">с выгодой до 70%</p>
+        <p className="mt-6 text-[10px] font-light leading-[16px] text-[#49301c]">
+          с выгодой до 70%
+        </p>
       </div>
     </section>
   );

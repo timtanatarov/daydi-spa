@@ -17,10 +17,7 @@ export function WoodStepsSection() {
         </h2>
 
         <div className="-mx-4 flex gap-4 overflow-x-auto px-4 pb-4">
-          <TicketStepCard
-            step="1/"
-            text="сначала товар производится на китайской фабрике"
-          />
+          <TicketStepCard step="1/" text="сначала товар производится на китайской фабрике" />
           <TicketStepCard
             step="2//"
             text="потом этот товар выставляют на китайских маркетплейсах (таобао и 1688)"

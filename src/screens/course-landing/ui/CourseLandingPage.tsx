@@ -10,6 +10,7 @@ import { LandingContainer } from "./LandingContainer";
 
 const inter = Inter({
   subsets: ["latin", "cyrillic"],
+  weight: ["400", "500"],
   variable: "--font-course-inter",
   display: "swap",
 });

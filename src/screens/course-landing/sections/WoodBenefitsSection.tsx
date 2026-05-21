@@ -35,9 +35,7 @@ export function WoodBenefitsSection() {
             <li>будешь пользоваться базой проверенных магазинов и посредников</li>
           </ul>
 
-          <div
-            className="mx-auto mt-12 max-w-[220px] rounded-sm bg-[#f6f5f1]/95 px-4 py-3 text-center text-[15px] font-light leading-[16px] text-[#49301c]"
-          >
+          <div className="mx-auto mt-12 max-w-[220px] rounded-sm bg-[#f6f5f1]/95 px-4 py-3 text-center text-[15px] font-light leading-[16px] text-[#49301c]">
             <p>и, скорее всего,</p>
             <p>уже не захочешь покупать как раньше</p>
           </div>
