@@ -1,37 +1,58 @@
+import Image from "next/image";
+
 import { TicketStepCard } from "../components/TicketStepCard";
-import { imgBgWoodSteps } from "../lib/landingAssets";
+
+import {
+  staticAboutIndiraBottomEdge,
+  staticImgWoodBg as staticImgWoodBg,
+} from "../lib/landingAssets";
 
 export function WoodStepsSection() {
   return (
-    <section className="relative overflow-hidden px-4 py-12">
-      <img
-        src={imgBgWoodSteps}
+    <div className="overflow-hidden">
+      <Image
+        src={staticAboutIndiraBottomEdge}
         alt=""
         aria-hidden
-        className="pointer-events-none absolute inset-0 size-full object-cover"
+        sizes="480px"
+        className="absolute z-15 block w-full -mt-px"
       />
-      <div className="relative z-10">
-        <h2 className="mb-8 text-center [font-family:var(--font-course-playfair)] text-[30px] leading-[36px] font-normal text-[#49301c]">
-          <span className="block">смотри,</span>
-          <span className="block">как накручивают цены на наши хотелки</span>
-        </h2>
 
-        <div className="-mx-4 flex gap-4 overflow-x-auto px-4 pb-4">
-          <TicketStepCard step="1/" text="сначала товар производится на китайской фабрике" />
-          <TicketStepCard
-            step="2//"
-            text="потом этот товар выставляют на китайских маркетплейсах (таобао и 1688)"
-          />
-          <TicketStepCard
-            step="3//"
-            text="затем его выкупают российские селлеры и продают на наших маркетплейсах (вб, озон), в шоурумах и брендах"
-          />
+      <section className="relative overflow-hidden py-12">
+        <Image
+          src={staticImgWoodBg}
+          alt=""
+          aria-hidden
+          fill
+          priority
+          sizes="480px"
+          className="pointer-events-none object-cover "
+        />
+
+        <div className="relative z-10 mt-16 min-w-0">
+          <h2 className="mb-8 mx-auto w-[300px] px-3 text-center [font-family:var(--font-course-playfair)] text-[25px] leading-[18px] font-normal text-[#F6F5F1]">
+            <span className="block">смотри,</span>
+
+            <span className="block">как накручивают </span>
+
+            <span className="block">цены на наши хотелки</span>
+          </h2>
+
+          <div className="scrollbar-hide flex w-full min-w-0 gap-4 overflow-x-auto overscroll-x-contain pb-4">
+            <TicketStepCard step="1//" text="сначала товар производится на китайской фабрике" />
+
+            <TicketStepCard
+              step="2//"
+              text="потом этот товар выставляют на китайских маркетплейсах (таобао и 1688)"
+            />
+
+            <TicketStepCard
+              step="3//"
+              text="затем его выкупают российские селлеры и продают на наших маркетплейсах (вб, озон), в шоурумах и брендах"
+            />
+          </div>
         </div>
-
-        <p className="mt-6 text-center text-[10px] font-light leading-[16px] text-[#49301c]">
-          можно собирать целые образы по цене одной вещи
-        </p>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 }

@@ -3,14 +3,16 @@ import { AboutIndiraSection } from "../sections/AboutIndiraSection";
 import { HeroSection } from "../sections/HeroSection";
 import { PricingSection } from "../sections/PricingSection";
 import { QuotePaperSection } from "../sections/QuotePaperSection";
+import { PaperShowcaseSection } from "../sections/PaperShowcaseSection";
 import { RoadmapSection } from "../sections/RoadmapSection";
+import { paperShowcaseSections } from "../lib/paperShowcaseContent";
 import { WoodBenefitsSection } from "../sections/WoodBenefitsSection";
 import { WoodStepsSection } from "../sections/WoodStepsSection";
 import { LandingContainer } from "./LandingContainer";
 
 const inter = Inter({
   subsets: ["latin", "cyrillic"],
-  weight: ["400", "500"],
+  weight: ["300", "400", "500"],
   variable: "--font-course-inter",
   display: "swap",
 });
@@ -35,6 +37,11 @@ export function CourseLandingPage() {
         <HeroSection />
         <AboutIndiraSection />
         <WoodStepsSection />
+        {paperShowcaseSections.map((section, index) => (
+          <div key={index}>
+            <PaperShowcaseSection {...section} />
+          </div>
+        ))}
         <QuotePaperSection />
         <WoodBenefitsSection />
         <RoadmapSection />

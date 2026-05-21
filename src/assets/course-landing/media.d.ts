@@ -4,6 +4,12 @@ declare module "*.webp" {
   export default img;
 }
 
+declare module "*.png" {
+  import type { StaticImageData } from "next/image";
+  const img: StaticImageData;
+  export default img;
+}
+
 declare module "*.svg" {
   const src: string;
   export default src;

@@ -17,6 +17,9 @@ import aboutPhotoCoat from "@/assets/course-landing/about-photo-coat.webp";
 import aboutPhotoJacket from "@/assets/course-landing/about-photo-jacket.webp";
 import aboutPhotoBags from "@/assets/course-landing/about-photo-bags.webp";
 import aboutPaperclip from "@/assets/course-landing/about-paperclip.webp";
+import aboutMiniTape1 from "@/assets/course-landing/mini-tape-1.webp";
+import aboutMiniTape2 from "@/assets/course-landing/mini-tape-2.webp";
+import aboutIndiraBottomEdge from "@/assets/course-landing/about-indira-bottom-edge.webp";
 import aboutIndiraBg from "@/assets/course-landing/about-indira-bg.webp";
 
 // — Shared UI elements —
@@ -31,6 +34,11 @@ import paperTextureTile from "@/assets/course-landing/paper-texture-tile.webp";
 import scallopHero from "@/assets/course-landing/scallop-edge-hero.webp";
 import scallopMidTop from "@/assets/course-landing/scallop-edge-mid-top.webp";
 import scallopMidBottom from "@/assets/course-landing/scallop-edge-mid-bottom.webp";
+import ticketSteps from "@/assets/course-landing/ticket-steps.webp";
+import paperShowcaseDivider from "@/assets/course-landing/paper-showcase-divider.webp";
+import paperShowcaseDividerHalf from "@/assets/course-landing/paper-showcase-divider-half.webp";
+import paperShowcaseDividerAltHalf from "@/assets/course-landing/paper-showcase-divider-alt-half.webp";
+import quotePaperSectionBg from "@/assets/course-landing/quote-paper-section.webp";
 
 // — SVG decorations —
 import lineDecorSvg from "@/assets/course-landing/line-decor.svg";
@@ -49,12 +57,22 @@ export const staticHeroTapeBadge = heroTapeBadge;
 export const staticImgScallopHero = scallopHero;
 export const staticAboutIndiraTopEdge = aboutIndiraTopEdge;
 export const staticAboutIndiraBg = aboutIndiraBg;
+export const staticAboutIndiraBottomEdge = aboutIndiraBottomEdge;
 export const staticAboutTapeBanner = aboutTapeBanner;
 export const staticAboutPhotoCoat = aboutPhotoCoat;
 export const staticAboutPhotoJacket = aboutPhotoJacket;
 export const staticAboutPhotoBags = aboutPhotoBags;
 export const staticAboutPaperclip = aboutPaperclip;
+export const staticAboutMiniTape1 = aboutMiniTape1;
+export const staticAboutMiniTape2 = aboutMiniTape2;
 export const staticIconStar = iconStar;
+export const staticTicketSteps = ticketSteps;
+export const staticBgPaperQuote = paperQuoteBg;
+export const staticPaperShowcaseDivider = paperShowcaseDivider;
+export const staticPaperShowcaseDividerHalf = paperShowcaseDividerHalf;
+export const staticPaperShowcaseDividerAltHalf = paperShowcaseDividerAltHalf;
+export const staticQuotePaperSectionBg = quotePaperSectionBg;
+export const staticProductCompare = productCompare;
 
 // String URLs — for plain <img> elements
 export const imgAboutIndirabg = src(aboutIndiraBg);
@@ -62,7 +80,6 @@ export const imgBgPaperQuote = src(paperQuoteBg);
 export const imgBgWoodSteps = src(woodStepsBg);
 export const imgPricingCardTexture = src(pricingCardTexture);
 export const imgProductCompare = src(productCompare);
-
 export const imgPaperTexture = src(paperTexture);
 export const imgPaperTextureTile = src(paperTextureTile);
 export const imgScallopEdgeHero = src(scallopHero);
