@@ -24,6 +24,7 @@ export type PaperShowcaseSectionProps = {
     left: CompareItem;
     right: CompareItem;
   }[];
+  index: number;
 };
 
 function CarouselArrow({
@@ -54,17 +55,13 @@ function CarouselArrow({
         strokeLinecap="round"
         strokeLinejoin="round"
       >
-        {direction === "left" ? (
-          <path d="M15 6l-6 6 6 6" />
-        ) : (
-          <path d="M9 6l6 6-6 6" />
-        )}
+        {direction === "left" ? <path d="M15 6l-6 6 6 6" /> : <path d="M9 6l6 6-6 6" />}
       </svg>
     </button>
   );
 }
 
-export function PaperShowcaseSection({ title, subtitle, pairs }: PaperShowcaseSectionProps) {
+export function PaperShowcaseSection({ index, title, subtitle, pairs }: PaperShowcaseSectionProps) {
   const scrollRef = useRef<HTMLDivElement>(null);
   const [activeIndex, setActiveIndex] = useState(0);
 
@@ -102,17 +99,17 @@ export function PaperShowcaseSection({ title, subtitle, pairs }: PaperShowcaseSe
         />
         <div className="relative z-10 mt-16 text-center">
           <div className="mx-auto mb-6 flex items-center justify-center gap-1">
-            <span className="mr-4 text-center [font-family:var(--font-course-playfair)] text-[51px] leading-[20px] font-normal text-[#49301c]">
+            <span className="mr-4 text-center font-playfair text-[51px] leading-[20px] font-normal text-[#49301c]">
               (
             </span>
-            <h2 className="text-center [font-family:var(--font-course-playfair)] text-[21px] leading-[20px] font-normal text-[#49301c]">
+            <h2 className="text-center font-playfair text-[21px] leading-[20px] font-normal text-[#49301c]">
               {(Array.isArray(title) ? title : [title]).map((line) => (
                 <span key={line} className="block">
                   {line}
                 </span>
               ))}
             </h2>
-            <span className="ml-4 text-center [font-family:var(--font-course-playfair)] text-[51px] leading-[20px] font-normal text-[#49301c]">
+            <span className="ml-4 text-center font-playfair text-[51px] leading-[20px] font-normal text-[#49301c]">
               )
             </span>
           </div>
@@ -156,11 +153,15 @@ export function PaperShowcaseSection({ title, subtitle, pairs }: PaperShowcaseSe
           </div>
         </div>
       </div>
-      <Image
-        src={staticPaperShowcaseDividerAltHalf}
-        alt=""
-        className="absolute bottom-0 right-0 z-20 block h-auto w-full"
-      />
+      {index === 0 && (
+        <Image
+          src={staticPaperShowcaseDividerAltHalf}
+          alt=""
+          aria-hidden
+          sizes="480px"
+          className="absolute bottom-0 right-0 z-20 block h-auto w-full max-w-[480px]"
+        />
+      )}
     </section>
   );
 }

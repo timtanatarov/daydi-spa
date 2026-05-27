@@ -39,7 +39,7 @@ export function CourseLandingPage() {
         <WoodStepsSection />
         {paperShowcaseSections.map((section, index) => (
           <div key={index}>
-            <PaperShowcaseSection {...section} />
+            <PaperShowcaseSection {...section} index={index} />
           </div>
         ))}
         <QuotePaperSection />

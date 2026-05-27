@@ -15,7 +15,7 @@ export function WoodStepsSection() {
         alt=""
         aria-hidden
         sizes="480px"
-        className="absolute z-15 block w-full -mt-px"
+        className="absolute z-15 block w-full -mt-px max-w-[480px]"
       />
 
       <section className="relative overflow-hidden py-12">
@@ -30,7 +30,7 @@ export function WoodStepsSection() {
         />
 
         <div className="relative z-10 mt-16 min-w-0">
-          <h2 className="mb-8 mx-auto w-[300px] px-3 text-center [font-family:var(--font-course-playfair)] text-[25px] leading-[18px] font-normal text-[#F6F5F1]">
+          <h2 className="mb-8 mx-auto w-[300px] px-3 text-center font-playfair text-[25px] leading-[18px] font-normal text-[#F6F5F1]">
             <span className="block">смотри,</span>
 
             <span className="block">как накручивают </span>

@@ -3,7 +3,7 @@ import { imgLineShort, imgPricingCardTexture } from "../lib/landingAssets";
 export function PricingSection() {
   return (
     <section id="buy" className="px-4 py-12">
-      <h2 className="mb-8 text-center [font-family:var(--font-course-playfair)] text-[30px] leading-[36px] font-normal text-[#49301c]">
+      <h2 className="mb-8 text-center font-playfair text-[30px] leading-[36px] font-normal text-[#49301c]">
         выбери свой тариф
       </h2>
 
@@ -27,7 +27,7 @@ export function PricingSection() {
             <p className="mt-1 text-center text-[10px] font-light leading-[16px] text-[#49301c]">
               Для тех, кто хочет делегировать максимум процесса посреднику
             </p>
-            <h3 className="mt-6 text-center [font-family:var(--font-course-playfair)] text-[30px] leading-[36px] font-normal text-[#49301c]">
+            <h3 className="mt-6 text-center font-playfair text-[30px] leading-[36px] font-normal text-[#49301c]">
               «Базовый»
             </h3>
             <p className="mt-6 text-center text-2xl font-bold text-[#49301c]">3.490р</p>
@@ -64,7 +64,7 @@ export function PricingSection() {
             <p className="mt-1 text-center text-[10px] font-light leading-[16px] text-[#49301c]">
               Для тех, кто хочет максимально экономить и знать о китайском шопинге абсолютно всё
             </p>
-            <h3 className="mt-6 text-center [font-family:var(--font-course-playfair)] text-[30px] leading-[36px] font-normal text-[#49301c]">
+            <h3 className="mt-6 text-center font-playfair text-[30px] leading-[36px] font-normal text-[#49301c]">
               «Полный»
             </h3>
             <p className="mt-6 text-center text-2xl font-bold text-[#49301c]">4.990р</p>

@@ -29,7 +29,7 @@ export function AboutIndiraSection() {
           <div className="relative  w-full max-w-[310px]">
             <Image src={staticAboutTapeBanner} alt="" sizes="310px" className="h-auto w-full" />
 
-            <h2 className="absolute inset-0 flex flex-col items-center justify-center text-center [font-family:var(--font-course-playfair)] text-[30px] leading-[36px] font-normal text-[#49301c]">
+            <h2 className="absolute inset-0 flex flex-col items-center justify-center text-center font-playfair text-[30px] leading-[36px] font-normal text-[#49301c]">
               <span className="text-[#49301c] italic -ml-20">Привет,</span>
 
               <span className="text-[#49301c] italic -mr-20 -mt-2">я Индира</span>
@@ -104,7 +104,7 @@ export function AboutIndiraSection() {
 
             <div className="flex w-[205px] shrink-0 flex-col gap-4 ">
               <div className="relative bg-[#f9e7b5] mt-12 -ml-4 w-[200px]">
-                <p className="relative z-0 w-[180px] mx-4 my-1 [font-family:var(--font-course-inter)] text-left text-[9.5px] font-medium leading-[14px] tracking-normal text-[#49301c]">
+                <p className="relative z-0 w-[180px] mx-4 my-1 font-inter-course text-left text-[9.5px] font-medium leading-[14px] tracking-normal text-[#49301c]">
                   уже больше 4 лет я заказываю себе одежду, аксессуары и декор для дома с китайских
                   маркетплейсов таобао и 1688 🇨🇳
                 </p>

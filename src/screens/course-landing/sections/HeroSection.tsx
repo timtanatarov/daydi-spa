@@ -8,15 +8,15 @@ import {
 
 export function HeroSection() {
   return (
-    <div className="relative isolate flex w-full min-h-[calc(100vw*763/430)] flex-col items-center">
+    <div className="relative isolate flex w-full min-h-[calc(min(100vw,480px)*763/430)] flex-col items-center overflow-hidden">
       <div className="pointer-events-none absolute inset-0 -z-10" aria-hidden>
         <Image src={staticHeroPhoto} alt="" fill priority sizes="480px" className="object-cover" />
         <div className="absolute inset-0 bg-black/40" />
       </div>
 
       <div className="relative z-10 flex w-full flex-col items-center px-4 pt-8 pb-6">
-        <div className="w-full max-w-[354px] rotate-[-3.53deg]">
-          <div className="grid *:col-start-1 *:row-start-1">
+        <div className="w-full max-w-[354px] overflow-hidden rotate-[-3.53deg]">
+          <div className="grid w-full grid-cols-1 *:col-start-1 *:row-start-1">
             <Image
               src={staticHeroPaperCard}
               alt=""
@@ -38,11 +38,11 @@ export function HeroSection() {
                 </span>
               </div>
 
-              <h1 className="-mt-3 m-0 w-full max-w-[16rem] text-center [font-family:var(--font-course-playfair)] text-[30px] leading-[30px] font-normal text-[#49301c]">
+              <h1 className="-mt-3 m-0 w-full max-w-[16rem] text-center font-playfair text-[30px] leading-[30px] font-normal text-[#49301c]">
                 Как заказывать на Таобао и 1688
               </h1>
 
-              <p className="m-0 mt-3 w-full max-w-56.5 text-center [font-family:var(--font-course-inter)] text-[12px] font-light not-italic leading-[13px] tracking-normal text-[#49301c]">
+              <p className="m-0 mt-3 w-full max-w-56.5 text-center font-inter-course text-[12px] font-light not-italic leading-[13px] tracking-normal text-[#49301c]">
                 пошаговое обучение, как покупать одежду и декор для дома до 10 раз выгоднее, чем на
                 Вайлдберриз и Алиэкспресс
               </p>

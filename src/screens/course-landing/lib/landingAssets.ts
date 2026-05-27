@@ -33,7 +33,7 @@ import paperTexture from "@/assets/course-landing/paper-texture.webp";
 import paperTextureTile from "@/assets/course-landing/paper-texture-tile.webp";
 import scallopHero from "@/assets/course-landing/scallop-edge-hero.webp";
 import scallopMidTop from "@/assets/course-landing/scallop-edge-mid-top.webp";
-import scallopMidBottom from "@/assets/course-landing/scallop-edge-mid-bottom.webp";
+import scallopMidBottom from "@/assets/course-landing/benefits-ticket.png";
 import ticketSteps from "@/assets/course-landing/ticket-steps.webp";
 import paperShowcaseDivider from "@/assets/course-landing/paper-showcase-divider.webp";
 import paperShowcaseDividerHalf from "@/assets/course-landing/paper-showcase-divider-half.webp";
@@ -84,7 +84,7 @@ export const imgPaperTexture = src(paperTexture);
 export const imgPaperTextureTile = src(paperTextureTile);
 export const imgScallopEdgeHero = src(scallopHero);
 export const imgScallopEdgeMidTop = src(scallopMidTop);
-export const imgScallopEdgeMidBottom = src(scallopMidBottom);
+export const staticBenefitsTicket = scallopMidBottom;
 
 export const imgLineDecor = lineDecorSvg;
 export const imgLineShort = lineShortSvg;

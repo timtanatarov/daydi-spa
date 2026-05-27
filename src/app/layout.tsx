@@ -26,15 +26,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ru">
-      <body className={`${geistSans.variable} ${geistMono.variable} min-w-0 overflow-x-clip antialiased`}>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} min-w-0 overflow-x-clip antialiased`}
+      >
         <div className="flex min-h-screen min-w-0 flex-col overflow-x-clip">
-          <div className="min-[481px]:hidden">
-            <Header />
-          </div>
+          <Header />
           {children}
-          <div className="min-[481px]:hidden">
-            <Footer />
-          </div>
+          <Footer />
         </div>
       </body>
     </html>
