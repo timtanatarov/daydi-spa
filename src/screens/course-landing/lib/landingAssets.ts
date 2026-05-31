@@ -40,6 +40,13 @@ import paperShowcaseDividerHalf from "@/assets/course-landing/paper-showcase-div
 import paperShowcaseDividerAltHalf from "@/assets/course-landing/paper-showcase-divider-alt-half.webp";
 import quotePaperSectionBg from "@/assets/course-landing/quote-paper-section.webp";
 
+// — Roadmap cards —
+import roadmapCardClip from "@/assets/course-landing/roadmap-card-clip.webp";
+import roadmapCardSeal from "@/assets/course-landing/roadmap-card-seal.webp";
+
+// — Pricing section —
+import pricingPaperBg from "@/assets/course-landing/pricing-paper-bg.webp";
+
 // — SVG decorations —
 import lineDecorSvg from "@/assets/course-landing/line-decor.svg";
 import lineShortSvg from "@/assets/course-landing/line-short.svg";
@@ -73,6 +80,9 @@ export const staticPaperShowcaseDividerHalf = paperShowcaseDividerHalf;
 export const staticPaperShowcaseDividerAltHalf = paperShowcaseDividerAltHalf;
 export const staticQuotePaperSectionBg = quotePaperSectionBg;
 export const staticProductCompare = productCompare;
+export const staticRoadmapCardClip = roadmapCardClip;
+export const staticRoadmapCardSeal = roadmapCardSeal;
+export const staticPricingPaperBg = pricingPaperBg;
 
 // String URLs — for plain <img> elements
 export const imgAboutIndirabg = src(aboutIndiraBg);
