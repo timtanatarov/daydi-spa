@@ -12,8 +12,30 @@
   --font-mono: var(--font-geist-mono);
 }
 
+html,
+body {
+  overflow-x: clip;
+}
+
 body {
   background: #f6f5f1;
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+@utility font-playfair {
+  font-family: var(--font-course-playfair);
+}
+
+@utility font-inter-course {
+  font-family: var(--font-course-inter);
+}
+
+@utility scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
