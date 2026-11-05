@@ -1,0 +1,2893 @@
+{
+ "frame": {
+  "name": "единая верстка",
+  "figmaNodeId": "352:165",
+  "width": 390
+ },
+ "units": "px макета; координаты относительно верха блока",
+ "block": "08-pricing",
+ "y": 5126,
+ "height": 1974,
+ "texts": [
+  {
+   "fig": "382:284",
+   "id": 125,
+   "z": 106,
+   "name": "“Полный”",
+   "characters": "“Полный”",
+   "box": {
+    "x": 121,
+    "y": 1102,
+    "w": 149,
+    "h": 13
+   },
+   "rotate": 0,
+   "bounds": {
+    "x": 121,
+    "y": 1102,
+    "width": 149,
+    "height": 13
+   },
+   "font": {
+    "family": "Playfair Display",
+    "weight": 400,
+    "italic": false
+   },
+   "size": 21,
+   "leading": 13,
+   "align": "center",
+   "color": "#49301C",
+   "lines": [
+    {
+     "text": "“Полный”",
+     "x": 26.1,
+     "baselineY": 15.23,
+     "width": 96.8
+    }
+   ]
+  },
+  {
+   "fig": "401:511",
+   "id": 126,
+   "z": 107,
+   "name": "“Базовый”",
+   "characters": "“Базовый”",
+   "box": {
+    "x": 120,
+    "y": 350,
+    "w": 149,
+    "h": 13
+   },
+   "rotate": 0,
+   "bounds": {
+    "x": 120,
+    "y": 350,
+    "width": 149,
+    "height": 13
+   },
+   "font": {
+    "family": "Playfair Display",
+    "weight": 400,
+    "italic": false
+   },
+   "size": 21,
+   "leading": 13,
+   "align": "center",
+   "color": "#49301C",
+   "lines": [
+    {
+     "text": "“Базовый”",
+     "x": 23.35,
+     "baselineY": 15.23,
+     "width": 102.29
+    }
+   ]
+  },
+  {
+   "fig": "382:288",
+   "id": 129,
+   "z": 110,
+   "name": "Только Таобао + выкуп через посредника",
+   "characters": "Только Таобао + выкуп через посредника",
+   "box": {
+    "x": 89,
+    "y": 229,
+    "w": 213,
+    "h": 13
+   },
+   "rotate": 0,
+   "bounds": {
+    "x": 89,
+    "y": 229,
+    "width": 213,
+    "height": 13
+   },
+   "font": {
+    "family": "Inter",
+    "weight": 400,
+    "italic": false
+   },
+   "size": 10,
+   "leading": 13,
+   "align": "center",
+   "color": "#49301C",
+   "lines": [
+    {
+     "text": "Только Таобао + выкуп через посредника",
+     "x": 3.41,
+     "baselineY": 10.14,
+     "width": 206.18
+    }
+   ]
+  },
+  {
+   "fig": "402:559",
+   "id": 130,
+   "z": 111,
+   "name": "Для тех, кто хочет делегировать максимум процесса посреднику",
+   "characters": "Для тех, кто хочет делегировать максимум процесса посреднику",
+   "box": {
+    "x": 87,
+    "y": 251,
+    "w": 213,
+    "h": 26
+   },
+   "rotate": 0,
+   "bounds": {
+    "x": 87,
+    "y": 251,
+    "width": 213,
+    "height": 26
+   },
+   "font": {
+    "family": "Inter",
+    "weight": 400,
+    "italic": false
+   },
+   "size": 10,
+   "leading": 13,
+   "align": "center",
+   "color": "#49301C",
+   "lines": [
+    {
+     "text": "Для тех, кто хочет делегировать",
+     "x": 25.72,
+     "baselineY": 10.14,
+     "width": 161.55
+    },
+    {
+     "text": "максимум процесса посреднику",
+     "x": 26.06,
+     "baselineY": 23.14,
+     "width": 160.88
+    }
+   ]
+  },
+  {
+   "fig": "382:289",
+   "id": 131,
+   "z": 112,
+   "name": "Таобао +1688 + все способы обмена валюты и оплаты",
+   "characters": "Таобао +1688 + все способы обмена валюты и оплаты",
+   "box": {
+    "x": 108,
+    "y": 976,
+    "w": 175,
+    "h": 26
+   },
+   "rotate": 0,
+   "bounds": {
+    "x": 108,
+    "y": 976,
+    "width": 175,
+    "height": 26
+   },
+   "font": {
+    "family": "Inter",
+    "weight": 400,
+    "italic": false
+   },
+   "size": 10,
+   "leading": 13,
+   "align": "center",
+   "color": "#49301C",
+   "lines": [
+    {
+     "text": "Таобао +1688 + все способы",
+     "x": 16.62,
+     "baselineY": 10.14,
+     "width": 141.77
+    },
+    {
+     "text": "обмена валюты и оплаты",
+     "x": 25.25,
+     "baselineY": 23.14,
+     "width": 124.49
+    }
+   ]
+  },
+  {
+   "fig": "402:560",
+   "id": 132,
+   "z": 113,
+   "name": "Для тех, кто хочет максимально экономить и знать о китайском",
+   "characters": "Для тех, кто хочет максимально экономить и знать о китайском шопинге абсолютно всё",
+   "box": {
+    "x": 96,
+    "y": 1011,
+    "w": 198,
+    "h": 39
+   },
+   "rotate": 0,
+   "bounds": {
+    "x": 96,
+    "y": 1011,
+    "width": 198,
+    "height": 39
+   },
+   "font": {
+    "family": "Inter",
+    "weight": 400,
+    "italic": false
+   },
+   "size": 10,
+   "leading": 13,
+   "align": "center",
+   "color": "#49301C",
+   "lines": [
+    {
+     "text": "Для тех, кто хочет максимально",
+     "x": 19.18,
+     "baselineY": 10.14,
+     "width": 159.65
+    },
+    {
+     "text": "экономить и знать о китайском",
+     "x": 21.99,
+     "baselineY": 23.14,
+     "width": 154.02
+    },
+    {
+     "text": "шопинге абсолютно всё",
+     "x": 39.83,
+     "baselineY": 36.14,
+     "width": 118.35
+    }
+   ]
+  },
+  {
+   "fig": "400:422",
+   "id": 133,
+   "z": 114,
+   "name": "Всё, что входит в тариф \"Базовый\", а также:",
+   "characters": "Всё, что входит в тариф \"Базовый\", а также:",
+   "box": {
+    "x": 124,
+    "y": 1136,
+    "w": 143,
+    "h": 24
+   },
+   "rotate": 0,
+   "bounds": {
+    "x": 124,
+    "y": 1136,
+    "width": 143,
+    "height": 24
+   },
+   "font": {
+    "family": "Inter",
+    "weight": 600,
+    "italic": false
+   },
+   "size": 10,
+   "leading": 12,
+   "align": "center",
+   "color": "#1E1E1E",
+   "lines": [
+    {
+     "text": "Всё, что входит в тариф",
+     "x": 11.78,
+     "baselineY": 9.64,
+     "width": 119.43
+    },
+    {
+     "text": "\"Базовый\", а также:",
+     "x": 22.67,
+     "baselineY": 21.64,
+     "width": 97.66
+    }
+   ]
+  },
+  {
+   "fig": "401:505",
+   "id": 134,
+   "z": 115,
+   "name": "02",
+   "characters": "02",
+   "box": {
+    "x": 91,
+    "y": 946,
+    "w": 16,
+    "h": 15
+   },
+   "rotate": 0,
+   "bounds": {
+    "x": 91,
+    "y": 946,
+    "width": 16,
+    "height": 15
+   },
+   "font": {
+    "family": "Inter",
+    "weight": 600,
+    "italic": true
+   },
+   "size": 12,
+   "leading": 15,
+   "align": "center",
+   "color": "#1E1E1E",
+   "lines": [
+    {
+     "text": "02",
+     "x": 0.27,
+     "baselineY": 11.86,
+     "width": 15.46
+    }
+   ]
+  },
+  {
+   "fig": "401:514",
+   "id": 135,
+   "z": 116,
+   "name": "01",
+   "characters": "01",
+   "box": {
+    "x": 91,
+    "y": 194,
+    "w": 15,
+    "h": 15
+   },
+   "rotate": 0,
+   "bounds": {
+    "x": 91,
+    "y": 194,
+    "width": 15,
+    "height": 15
+   },
+   "font": {
+    "family": "Inter",
+    "weight": 600,
+    "italic": true
+   },
+   "size": 12,
+   "leading": 15,
+   "align": "center",
+   "color": "#1E1E1E",
+   "lines": [
+    {
+     "text": "01",
+     "x": 0.62,
+     "baselineY": 11.86,
+     "width": 13.77
+    }
+   ]
+  },
+  {
+   "fig": "401:446",
+   "id": 136,
+   "z": 117,
+   "name": "+ все этапы работы с 1688:",
+   "characters": "+ все этапы работы с 1688:",
+   "box": {
+    "x": 125,
+    "y": 1240,
+    "w": 143,
+    "h": 12
+   },
+   "rotate": 0,
+   "bounds": {
+    "x": 125,
+    "y": 1240,
+    "width": 143,
+    "height": 12
+   },
+   "font": {
+    "family": "Inter",
+    "weight": 600,
+    "italic": false
+   },
+   "size": 10,
+   "leading": 12,
+   "align": "center",
+   "color": "#1E1E1E",
+   "lines": [
+    {
+     "text": "+ все этапы работы с 1688:",
+     "x": 3.11,
+     "baselineY": 9.64,
+     "width": 136.79
+    }
+   ]
+  },
+  {
+   "fig": "401:447",
+   "id": 137,
+   "z": 118,
+   "name": "Бонусные материалы:",
+   "characters": "Бонусные материалы:",
+   "box": {
+    "x": 124,
+    "y": 1452,
+    "w": 143,
+    "h": 12
+   },
+   "rotate": 0,
+   "bounds": {
+    "x": 124,
+    "y": 1452,
+    "width": 143,
+    "height": 12
+   },
+   "font": {
+    "family": "Inter",
+    "weight": 600,
+    "italic": false
+   },
+   "size": 10,
+   "leading": 12,
+   "align": "center",
+   "color": "#1E1E1E",
+   "lines": [
+    {
+     "text": "Бонусные материалы:",
+     "x": 15.96,
+     "baselineY": 9.64,
+     "width": 111.08
+    }
+   ]
+  },
+  {
+   "fig": "401:516",
+   "id": 138,
+   "z": 119,
+   "name": "Бонусные материалы:",
+   "characters": "Бонусные материалы:",
+   "box": {
+    "x": 124,
+    "y": 544,
+    "w": 143,
+    "h": 12
+   },
+   "rotate": 0,
+   "bounds": {
+    "x": 124,
+    "y": 544,
+    "width": 143,
+    "height": 12
+   },
+   "font": {
+    "family": "Inter",
+    "weight": 600,
+    "italic": false
+   },
+   "size": 10,
+   "leading": 12,
+   "align": "center",
+   "color": "#1E1E1E",
+   "lines": [
+    {
+     "text": "Бонусные материалы:",
+     "x": 15.96,
+     "baselineY": 9.64,
+     "width": 111.08
+    }
+   ]
+  },
+  {
+   "fig": "401:449",
+   "id": 139,
+   "z": 120,
+   "name": "Доступ к курсу 4 месяца Обратная связь 2 месяца",
+   "characters": "Доступ к курсу 4 месяца\nОбратная связь 2 месяца",
+   "box": {
+    "x": 124,
+    "y": 1520,
+    "w": 143,
+    "h": 24
+   },
+   "rotate": 0,
+   "bounds": {
+    "x": 124,
+    "y": 1520,
+    "width": 143,
+    "height": 24
+   },
+   "font": {
+    "family": "Inter",
+    "weight": 600,
+    "italic": false
+   },
+   "size": 10,
+   "leading": 12,
+   "align": "center",
+   "color": "#1E1E1E",
+   "lines": [
+    {
+     "text": "Доступ к курсу 4 месяца",
+     "x": 8.72,
+     "baselineY": 9.64,
+     "width": 125.56
+    },
+    {
+     "text": "Обратная связь 2 месяца",
+     "x": 7.8,
+     "baselineY": 21.64,
+     "width": 127.39
+    }
+   ]
+  },
+  {
+   "fig": "401:517",
+   "id": 140,
+   "z": 121,
+   "name": "Доступ к курсу 3 месяца Обратная связь 1 месяц",
+   "characters": "Доступ к курсу 3 месяца\nОбратная связь 1 месяц",
+   "box": {
+    "x": 124,
+    "y": 684,
+    "w": 143,
+    "h": 24
+   },
+   "rotate": 0,
+   "bounds": {
+    "x": 124,
+    "y": 684,
+    "width": 143,
+    "height": 24
+   },
+   "font": {
+    "family": "Inter",
+    "weight": 600,
+    "italic": false
+   },
+   "size": 10,
+   "leading": 12,
+   "align": "center",
+   "color": "#1E1E1E",
+   "lines": [
+    {
+     "text": "Доступ к курсу 3 месяца",
+     "x": 8.79,
+     "baselineY": 9.64,
+     "width": 125.41
+    },
+    {
+     "text": "Обратная связь 1 месяц",
+     "x": 11.38,
+     "baselineY": 21.64,
+     "width": 120.24
+    }
+   ]
+  },
+  {
+   "fig": "401:444",
+   "id": 141,
+   "z": 122,
+   "name": "Самостоятельный выкуп с Таобао Оплата другом на Таобао Актив",
+   "characters": "Самостоятельный выкуп с Таобао\nОплата другом на Таобао\nАктивация скидок на Таобао\nТорг с продавцами на Таобао\nОтслеживание товара по Китаю",
+   "box": {
+    "x": 98,
+    "y": 1164,
+    "w": 195,
+    "h": 60
+   },
+   "rotate": 0,
+   "bounds": {
+    "x": 98,
+    "y": 1164,
+    "width": 195,
+    "height": 60
+   },
+   "font": {
+    "family": "Inter",
+    "weight": 300,
+    "italic": false
+   },
+   "size": 10,
+   "leading": 12,
+   "align": "center",
+   "color": "#1E1E1E",
+   "lines": [
+    {
+     "text": "Самостоятельный выкуп с Таобао",
+     "x": 21.81,
+     "baselineY": 9.64,
+     "width": 166.39,
+     "bullet": true
+    },
+    {
+     "text": "Оплата другом на Таобао",
+     "x": 42.97,
+     "baselineY": 21.64,
+     "width": 124.05,
+     "bullet": true
+    },
+    {
+     "text": "Активация скидок на Таобао",
+     "x": 35.18,
+     "baselineY": 33.64,
+     "width": 139.64,
+     "bullet": true
+    },
+    {
+     "text": "Торг с продавцами на Таобао",
+     "x": 32.76,
+     "baselineY": 45.64,
+     "width": 144.48,
+     "bullet": true
+    },
+    {
+     "text": "Отслеживание товара по Китаю",
+     "x": 26.71,
+     "baselineY": 57.64,
+     "width": 156.57,
+     "bullet": true
+    }
+   ],
+   "list": {
+    "indentEm": 1.5,
+    "bullet": "•",
+    "bulletBoxEm": 1.5,
+    "note": "маркер по центру отступа шириной 1.5em слева от текста строки; строка (отступ+текст) выравнивается целиком"
+   }
+  },
+  {
+   "fig": "401:448",
+   "id": 142,
+   "z": 123,
+   "name": "Все бонусные материалы с тарифа «Базовый» + список проверенн",
+   "characters": "Все бонусные материалы с тарифа «Базовый»\n+ список проверенных поставщиков с 1688",
+   "box": {
+    "x": 87,
+    "y": 1468,
+    "w": 217,
+    "h": 36
+   },
+   "rotate": 0,
+   "bounds": {
+    "x": 87,
+    "y": 1468,
+    "width": 217,
+    "height": 36
+   },
+   "font": {
+    "family": "Inter",
+    "weight": 300,
+    "italic": false
+   },
+   "size": 10,
+   "leading": 12,
+   "align": "center",
+   "color": "#1E1E1E",
+   "lines": [
+    {
+     "text": "Все бонусные материалы с тарифа",
+     "x": 23.14,
+     "baselineY": 9.64,
+     "width": 170.72
+    },
+    {
+     "text": "«Базовый»",
+     "x": 82.24,
+     "baselineY": 21.64,
+     "width": 52.52
+    },
+    {
+     "text": "+ список проверенных поставщиков с 1688",
+     "x": 2.5,
+     "baselineY": 33.64,
+     "width": 211.99
+    }
+   ]
+  },
+  {
+   "fig": "401:519",
+   "id": 143,
+   "z": 124,
+   "name": "Организация СП (совместных покупок) как способ заработка Рас",
+   "characters": "Организация СП (совместных покупок) как способ заработка\nРасчёт себестоимости товаров\nСписок проверенных посредников\nСписок проверенных магазинов, официальных магазинов брендов и экспортных продавцов\nСловарь фраз на китайском для общения с продавцом",
+   "box": {
+    "x": 87,
+    "y": 560,
+    "w": 216,
+    "h": 108
+   },
+   "rotate": 0,
+   "bounds": {
+    "x": 87,
+    "y": 560,
+    "width": 216,
+    "height": 108
+   },
+   "font": {
+    "family": "Inter",
+    "weight": 300,
+    "italic": false
+   },
+   "size": 10,
+   "leading": 12,
+   "align": "center",
+   "color": "#1E1E1E",
+   "lines": [
+    {
+     "text": "Организация СП (совместных покупок)",
+     "x": 19.82,
+     "baselineY": 9.64,
+     "width": 191.36,
+     "bullet": true
+    },
+    {
+     "text": "как способ заработка",
+     "x": 62.77,
+     "baselineY": 21.64,
+     "width": 105.46
+    },
+    {
+     "text": "Расчёт себестоимости товаров",
+     "x": 38.33,
+     "baselineY": 33.64,
+     "width": 154.34,
+     "bullet": true
+    },
+    {
+     "text": "Список проверенных посредников",
+     "x": 30.63,
+     "baselineY": 45.64,
+     "width": 169.74,
+     "bullet": true
+    },
+    {
+     "text": "Список проверенных магазинов,",
+     "x": 35.47,
+     "baselineY": 57.64,
+     "width": 160.07,
+     "bullet": true
+    },
+    {
+     "text": "официальных магазинов брендов",
+     "x": 33.68,
+     "baselineY": 69.64,
+     "width": 163.63
+    },
+    {
+     "text": "и экспортных продавцов",
+     "x": 55.09,
+     "baselineY": 81.64,
+     "width": 120.82
+    },
+    {
+     "text": "Словарь фраз на китайском",
+     "x": 47.62,
+     "baselineY": 93.64,
+     "width": 135.76,
+     "bullet": true
+    },
+    {
+     "text": "для общения с продавцом",
+     "x": 51.03,
+     "baselineY": 105.64,
+     "width": 128.94
+    }
+   ],
+   "list": {
+    "indentEm": 1.5,
+    "bullet": "•",
+    "bulletBoxEm": 1.5,
+    "note": "маркер по центру отступа шириной 1.5em слева от текста строки; строка (отступ+текст) выравнивается целиком"
+   }
+  },
+  {
+   "fig": "401:445",
+   "id": 144,
+   "z": 125,
+   "name": "Безопасная регистрация на 1688 Все варианты поиска товара Ка",
+   "characters": "Безопасная регистрация на 1688\nВсе варианты поиска товара\nКак находить производителей\nКак находить поставщиков, брендирующих товары\nРазбор рейтинга поставщика\nОбщение и торг с поставщиками\nСхема самовыкупа, плюсы и минусы\nВерификация и пополнение Алипей\nПополнение через биржу (самый выгодный курс юаня)\nСамостоятельный выкуп с 1688\nСкидки, купоны\nОтслеживание товара по Китаю\nСпоры/возвраты",
+   "box": {
+    "x": 98,
+    "y": 1256,
+    "w": 195,
+    "h": 180
+   },
+   "rotate": 0,
+   "bounds": {
+    "x": 98,
+    "y": 1256,
+    "width": 195,
+    "height": 180
+   },
+   "font": {
+    "family": "Inter",
+    "weight": 300,
+    "italic": false
+   },
+   "size": 10,
+   "leading": 12,
+   "align": "center",
+   "color": "#1E1E1E",
+   "lines": [
+    {
+     "text": "Безопасная регистрация на 1688",
+     "x": 24.03,
+     "baselineY": 9.64,
+     "width": 161.93,
+     "bullet": true
+    },
+    {
+     "text": "Все варианты поиска товара",
+     "x": 34.79,
+     "baselineY": 21.64,
+     "width": 140.42,
+     "bullet": true
+    },
+    {
+     "text": "Как находить производителей",
+     "x": 31.36,
+     "baselineY": 33.64,
+     "width": 147.29,
+     "bullet": true
+    },
+    {
+     "text": "Как находить поставщиков,",
+     "x": 38.02,
+     "baselineY": 45.64,
+     "width": 133.96,
+     "bullet": true
+    },
+    {
+     "text": "брендирующих товары",
+     "x": 48.75,
+     "baselineY": 57.64,
+     "width": 112.49
+    },
+    {
+     "text": "Разбор рейтинга поставщика",
+     "x": 33.71,
+     "baselineY": 69.64,
+     "width": 142.59,
+     "bullet": true
+    },
+    {
+     "text": "Общение и торг с поставщиками",
+     "x": 24.55,
+     "baselineY": 81.64,
+     "width": 160.91,
+     "bullet": true
+    },
+    {
+     "text": "Схема самовыкупа, плюсы и минусы",
+     "x": 15.04,
+     "baselineY": 93.64,
+     "width": 179.91,
+     "bullet": true
+    },
+    {
+     "text": "Верификация и пополнение Алипей",
+     "x": 17.91,
+     "baselineY": 105.64,
+     "width": 174.19,
+     "bullet": true
+    },
+    {
+     "text": "Пополнение через биржу (самый",
+     "x": 23.66,
+     "baselineY": 117.64,
+     "width": 162.68,
+     "bullet": true
+    },
+    {
+     "text": "выгодный курс юаня)",
+     "x": 52.75,
+     "baselineY": 129.64,
+     "width": 104.49
+    },
+    {
+     "text": "Самостоятельный выкуп с 1688",
+     "x": 27.59,
+     "baselineY": 141.64,
+     "width": 154.81,
+     "bullet": true
+    },
+    {
+     "text": "Скидки, купоны",
+     "x": 66.74,
+     "baselineY": 153.64,
+     "width": 76.51,
+     "bullet": true
+    },
+    {
+     "text": "Отслеживание товара по Китаю",
+     "x": 26.71,
+     "baselineY": 165.64,
+     "width": 156.57,
+     "bullet": true
+    },
+    {
+     "text": "Споры/возвраты",
+     "x": 64.32,
+     "baselineY": 177.64,
+     "width": 81.37,
+     "bullet": true
+    }
+   ],
+   "list": {
+    "indentEm": 1.5,
+    "bullet": "•",
+    "bulletBoxEm": 1.5,
+    "note": "маркер по центру отступа шириной 1.5em слева от текста строки; строка (отступ+текст) выравнивается целиком"
+   }
+  },
+  {
+   "fig": "401:520",
+   "id": 145,
+   "z": 126,
+   "name": "Безопасная регистрация на Таобао Все варианты поиска товара ",
+   "characters": "Безопасная регистрация на Таобао\nВсе варианты поиска товара\nКак находить оригинальные вещи брендов\nПоиск экспортных магазинов\nРазбор рейтинга продавцов\nОбщение с продавцом\nКак выбрать качественный товар\nКак не ошибиться с размером\nКак сэкономить на доставке по Китаю\nВиды доставки, тарифы и сроки\nСхема выкупа через посредника\nЗаполнение бланка заказа",
+   "box": {
+    "x": 83,
+    "y": 384,
+    "w": 225,
+    "h": 144
+   },
+   "rotate": 0,
+   "bounds": {
+    "x": 83,
+    "y": 384,
+    "width": 225,
+    "height": 144
+   },
+   "font": {
+    "family": "Inter",
+    "weight": 300,
+    "italic": false
+   },
+   "size": 10,
+   "leading": 12,
+   "align": "center",
+   "color": "#1E1E1E",
+   "lines": [
+    {
+     "text": "Безопасная регистрация на Таобао",
+     "x": 33.25,
+     "baselineY": 9.64,
+     "width": 173.51,
+     "bullet": true
+    },
+    {
+     "text": "Все варианты поиска товара",
+     "x": 49.79,
+     "baselineY": 21.64,
+     "width": 140.42,
+     "bullet": true
+    },
+    {
+     "text": "Как находить оригинальные вещи брендов",
+     "x": 15.23,
+     "baselineY": 33.64,
+     "width": 209.54,
+     "bullet": true
+    },
+    {
+     "text": "Поиск экспортных магазинов",
+     "x": 48.47,
+     "baselineY": 45.64,
+     "width": 143.06,
+     "bullet": true
+    },
+    {
+     "text": "Разбор рейтинга продавцов",
+     "x": 51.64,
+     "baselineY": 57.64,
+     "width": 136.72,
+     "bullet": true
+    },
+    {
+     "text": "Общение с продавцом",
+     "x": 64.75,
+     "baselineY": 69.64,
+     "width": 110.51,
+     "bullet": true
+    },
+    {
+     "text": "Как выбрать качественный товар",
+     "x": 38.41,
+     "baselineY": 81.64,
+     "width": 163.18,
+     "bullet": true
+    },
+    {
+     "text": "Как не ошибиться с размером",
+     "x": 46.27,
+     "baselineY": 93.64,
+     "width": 147.45,
+     "bullet": true
+    },
+    {
+     "text": "Как сэкономить на доставке по Китаю",
+     "x": 27.03,
+     "baselineY": 105.64,
+     "width": 185.95,
+     "bullet": true
+    },
+    {
+     "text": "Виды доставки, тарифы и сроки",
+     "x": 42.2,
+     "baselineY": 117.64,
+     "width": 155.6,
+     "bullet": true
+    },
+    {
+     "text": "Схема выкупа через посредника",
+     "x": 39.88,
+     "baselineY": 129.64,
+     "width": 160.24,
+     "bullet": true
+    },
+    {
+     "text": "Заполнение бланка заказа",
+     "x": 55.11,
+     "baselineY": 141.64,
+     "width": 129.79,
+     "bullet": true
+    }
+   ],
+   "list": {
+    "indentEm": 1.5,
+    "bullet": "•",
+    "bulletBoxEm": 1.5,
+    "note": "маркер по центру отступа шириной 1.5em слева от текста строки; строка (отступ+текст) выравнивается целиком"
+   }
+  },
+  {
+   "fig": "382:292",
+   "id": 147,
+   "z": 128,
+   "name": "6.500р",
+   "characters": "6.500р",
+   "box": {
+    "x": 131,
+    "y": 1581,
+    "w": 128,
+    "h": 13
+   },
+   "rotate": 0,
+   "bounds": {
+    "x": 131,
+    "y": 1581,
+    "width": 128,
+    "height": 13
+   },
+   "font": {
+    "family": "Inter",
+    "weight": 700,
+    "italic": false
+   },
+   "size": 19,
+   "leading": 13,
+   "align": "center",
+   "color": "#969696",
+   "lines": [
+    {
+     "text": "6.500р",
+     "x": 30.03,
+     "baselineY": 13.41,
+     "width": 67.95
+    }
+   ]
+  },
+  {
+   "fig": "401:521",
+   "id": 148,
+   "z": 129,
+   "name": "4.500р",
+   "characters": "4.500р",
+   "box": {
+    "x": 131,
+    "y": 745,
+    "w": 128,
+    "h": 13
+   },
+   "rotate": 0,
+   "bounds": {
+    "x": 131,
+    "y": 745,
+    "width": 128,
+    "height": 13
+   },
+   "font": {
+    "family": "Inter",
+    "weight": 700,
+    "italic": false
+   },
+   "size": 19,
+   "leading": 13,
+   "align": "center",
+   "color": "#969696",
+   "lines": [
+    {
+     "text": "4.500р",
+     "x": 29.7,
+     "baselineY": 13.41,
+     "width": 68.6
+    }
+   ]
+  },
+  {
+   "fig": "401:506",
+   "id": 149,
+   "z": 130,
+   "name": "4.990р",
+   "characters": "4.990р",
+   "box": {
+    "x": 132,
+    "y": 1560,
+    "w": 128,
+    "h": 13
+   },
+   "rotate": 0,
+   "bounds": {
+    "x": 132,
+    "y": 1560,
+    "width": 128,
+    "height": 13
+   },
+   "font": {
+    "family": "Inter",
+    "weight": 900,
+    "italic": false
+   },
+   "size": 19,
+   "leading": 13,
+   "align": "center",
+   "color": "#531608",
+   "lines": [
+    {
+     "text": "4.990р",
+     "x": 28.43,
+     "baselineY": 13.41,
+     "width": 71.14
+    }
+   ]
+  },
+  {
+   "fig": "401:522",
+   "id": 150,
+   "z": 131,
+   "name": "3.490р",
+   "characters": "3.490р",
+   "box": {
+    "x": 131,
+    "y": 724,
+    "w": 128,
+    "h": 13
+   },
+   "rotate": 0,
+   "bounds": {
+    "x": 131,
+    "y": 724,
+    "width": 128,
+    "height": 13
+   },
+   "font": {
+    "family": "Inter",
+    "weight": 900,
+    "italic": false
+   },
+   "size": 19,
+   "leading": 13,
+   "align": "center",
+   "color": "#531608",
+   "lines": [
+    {
+     "text": "3.490р",
+     "x": 28.54,
+     "baselineY": 13.41,
+     "width": 70.92
+    }
+   ]
+  },
+  {
+   "fig": "401:450",
+   "id": 151,
+   "z": 132,
+   "name": "купить",
+   "characters": "купить",
+   "box": {
+    "x": 131,
+    "y": 1616,
+    "w": 128,
+    "h": 13
+   },
+   "rotate": 0,
+   "bounds": {
+    "x": 131,
+    "y": 1616,
+    "width": 128,
+    "height": 13
+   },
+   "font": {
+    "family": "Inter",
+    "weight": 900,
+    "italic": false
+   },
+   "size": 19,
+   "leading": 13,
+   "align": "center",
+   "color": "#EFEADE",
+   "lines": [
+    {
+     "text": "купить",
+     "x": 29.44,
+     "baselineY": 13.41,
+     "width": 69.12
+    }
+   ]
+  },
+  {
+   "fig": "401:523",
+   "id": 152,
+   "z": 133,
+   "name": "купить",
+   "characters": "купить",
+   "box": {
+    "x": 131,
+    "y": 780,
+    "w": 128,
+    "h": 13
+   },
+   "rotate": 0,
+   "bounds": {
+    "x": 131,
+    "y": 780,
+    "width": 128,
+    "height": 13
+   },
+   "font": {
+    "family": "Inter",
+    "weight": 900,
+    "italic": false
+   },
+   "size": 19,
+   "leading": 13,
+   "align": "center",
+   "color": "#EFEADE",
+   "lines": [
+    {
+     "text": "купить",
+     "x": 29.44,
+     "baselineY": 13.41,
+     "width": 69.12
+    }
+   ],
+   "note": "В макете подложка этой кнопки (Rectangle 31, 401:510) случайно лежит ПОД изображением билета и не видна. На сайте кнопка нужна: рисуем её CSS так же, как у второго тарифа."
+  },
+  {
+   "fig": "382:297",
+   "id": 155,
+   "z": 136,
+   "name": "выбери свой тариф",
+   "characters": "выбери свой тариф",
+   "box": {
+    "x": 76,
+    "y": 88,
+    "w": 234,
+    "h": 17
+   },
+   "rotate": 0,
+   "bounds": {
+    "x": 76,
+    "y": 88,
+    "width": 234,
+    "height": 17
+   },
+   "font": {
+    "family": "Playfair Display",
+    "weight": 400,
+    "italic": false
+   },
+   "size": 21,
+   "leading": 17,
+   "align": "center",
+   "color": "#49301C",
+   "lines": [
+    {
+     "text": "выбери свой тариф",
+     "x": 19.05,
+     "baselineY": 17.23,
+     "width": 195.89
+    }
+   ]
+  }
+ ],
+ "layers": [
+  {
+   "fig": "402:562",
+   "id": 20,
+   "z": 1,
+   "name": "IMG_4423 3",
+   "type": "RECTANGLE",
+   "parent": null,
+   "bounds": {
+    "x": -3,
+    "y": 1268,
+    "width": 397,
+    "height": 706
+   },
+   "fill": "image"
+  },
+  {
+   "fig": "402:561",
+   "id": 21,
+   "z": 2,
+   "name": "IMG_4423 2",
+   "type": "RECTANGLE",
+   "parent": null,
+   "bounds": {
+    "x": -3,
+    "y": 651,
+    "width": 397,
+    "height": 663
+   },
+   "fill": "image"
+  },
+  {
+   "fig": "397:385",
+   "id": 22,
+   "z": 3,
+   "name": "IMG_4423 1",
+   "type": "RECTANGLE",
+   "parent": null,
+   "bounds": {
+    "x": -3,
+    "y": -52,
+    "width": 397,
+    "height": 706
+   },
+   "fill": "image"
+  },
+  {
+   "fig": "400:413",
+   "id": 24,
+   "z": 5,
+   "name": "Rectangle 27",
+   "type": "RECTANGLE",
+   "parent": null,
+   "bounds": {
+    "x": 49,
+    "y": 926,
+    "width": 293,
+    "height": 768
+   },
+   "fill": "#EFEADE"
+  },
+  {
+   "fig": "401:451",
+   "id": 25,
+   "z": 6,
+   "name": "Rectangle 29",
+   "type": "RECTANGLE",
+   "parent": null,
+   "bounds": {
+    "x": 132,
+    "y": 1607,
+    "width": 126,
+    "height": 35
+   },
+   "fill": "#531608",
+   "cornerRadius": 30
+  },
+  {
+   "fig": "401:510",
+   "id": 26,
+   "z": 7,
+   "name": "Rectangle 31",
+   "type": "RECTANGLE",
+   "parent": null,
+   "bounds": {
+    "x": 132,
+    "y": 771,
+    "width": 126,
+    "height": 35
+   },
+   "fill": "#531608",
+   "cornerRadius": 30
+  },
+  {
+   "fig": "529:2",
+   "id": 90,
+   "z": 71,
+   "name": "Group 34",
+   "type": "GROUP",
+   "parent": null,
+   "bounds": {
+    "x": 28,
+    "y": 172,
+    "width": 331,
+    "height": 686
+   },
+   "fill": null
+  },
+  {
+   "fig": "401:509",
+   "id": 91,
+   "z": 72,
+   "name": "Rectangle 30",
+   "type": "RECTANGLE",
+   "parent": 90,
+   "bounds": {
+    "x": 48,
+    "y": 174,
+    "width": 293,
+    "height": 684
+   },
+   "fill": "#EFEADE"
+  },
+  {
+   "fig": "531:3",
+   "id": 92,
+   "z": 73,
+   "name": "ticket 1",
+   "type": "RECTANGLE",
+   "parent": 90,
+   "bounds": {
+    "x": 28,
+    "y": 172,
+    "width": 331,
+    "height": 684
+   },
+   "fill": "image"
+  },
+  {
+   "fig": "400:420",
+   "id": 201,
+   "z": 182,
+   "name": "Rectangle 28",
+   "type": "RECTANGLE",
+   "parent": null,
+   "bounds": {
+    "x": 162,
+    "y": 1682,
+    "width": 67,
+    "height": 17
+   },
+   "fill": "#F6F5F1",
+   "cornerRadius": 5
+  },
+  {
+   "fig": "401:452",
+   "id": 202,
+   "z": 183,
+   "name": "Line 10",
+   "type": "LINE",
+   "parent": null,
+   "bounds": {
+    "x": 49,
+    "y": 954,
+    "width": 32,
+    "height": 0
+   },
+   "fill": null,
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "strokeWeight": 1
+  },
+  {
+   "fig": "401:525",
+   "id": 203,
+   "z": 184,
+   "name": "Line 44",
+   "type": "LINE",
+   "parent": null,
+   "bounds": {
+    "x": 48,
+    "y": 202,
+    "width": 32,
+    "height": 0
+   },
+   "fill": null,
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "strokeWeight": 1
+  },
+  {
+   "fig": "401:454",
+   "id": 204,
+   "z": 185,
+   "name": "Line 12",
+   "type": "LINE",
+   "parent": null,
+   "bounds": {
+    "x": 67,
+    "y": 1084,
+    "width": 5,
+    "height": 0
+   },
+   "fill": null,
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "strokeWeight": 1.7
+  },
+  {
+   "fig": "401:526",
+   "id": 205,
+   "z": 186,
+   "name": "Line 45",
+   "type": "LINE",
+   "parent": null,
+   "bounds": {
+    "x": 66,
+    "y": 332,
+    "width": 5,
+    "height": 0
+   },
+   "fill": null,
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "strokeWeight": 1.7
+  },
+  {
+   "fig": "401:473",
+   "id": 206,
+   "z": 187,
+   "name": "Line 28",
+   "type": "LINE",
+   "parent": null,
+   "bounds": {
+    "x": 211,
+    "y": 1084,
+    "width": 5,
+    "height": 0
+   },
+   "fill": null,
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "strokeWeight": 1.7
+  },
+  {
+   "fig": "401:527",
+   "id": 207,
+   "z": 188,
+   "name": "Line 46",
+   "type": "LINE",
+   "parent": null,
+   "bounds": {
+    "x": 210,
+    "y": 332,
+    "width": 5,
+    "height": 0
+   },
+   "fill": null,
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "strokeWeight": 1.7
+  },
+  {
+   "fig": "401:465",
+   "id": 208,
+   "z": 189,
+   "name": "Line 20",
+   "type": "LINE",
+   "parent": null,
+   "bounds": {
+    "x": 139,
+    "y": 1084,
+    "width": 5,
+    "height": 0
+   },
+   "fill": null,
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "strokeWeight": 1.7
+  },
+  {
+   "fig": "401:528",
+   "id": 209,
+   "z": 190,
+   "name": "Line 47",
+   "type": "LINE",
+   "parent": null,
+   "bounds": {
+    "x": 138,
+    "y": 332,
+    "width": 5,
+    "height": 0
+   },
+   "fill": null,
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "strokeWeight": 1.7
+  },
+  {
+   "fig": "401:474",
+   "id": 210,
+   "z": 191,
+   "name": "Line 29",
+   "type": "LINE",
+   "parent": null,
+   "bounds": {
+    "x": 283,
+    "y": 1084,
+    "width": 5,
+    "height": 0
+   },
+   "fill": null,
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "strokeWeight": 1.7
+  },
+  {
+   "fig": "401:529",
+   "id": 211,
+   "z": 192,
+   "name": "Line 48",
+   "type": "LINE",
+   "parent": null,
+   "bounds": {
+    "x": 282,
+    "y": 332,
+    "width": 5,
+    "height": 0
+   },
+   "fill": null,
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "strokeWeight": 1.7
+  },
+  {
+   "fig": "401:461",
+   "id": 212,
+   "z": 193,
+   "name": "Line 16",
+   "type": "LINE",
+   "parent": null,
+   "bounds": {
+    "x": 103,
+    "y": 1084,
+    "width": 5,
+    "height": 0
+   },
+   "fill": null,
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "strokeWeight": 1.7
+  },
+  {
+   "fig": "401:530",
+   "id": 213,
+   "z": 194,
+   "name": "Line 49",
+   "type": "LINE",
+   "parent": null,
+   "bounds": {
+    "x": 102,
+    "y": 332,
+    "width": 5,
+    "height": 0
+   },
+   "fill": null,
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "strokeWeight": 1.7
+  },
+  {
+   "fig": "401:475",
+   "id": 214,
+   "z": 195,
+   "name": "Line 30",
+   "type": "LINE",
+   "parent": null,
+   "bounds": {
+    "x": 247,
+    "y": 1084,
+    "width": 5,
+    "height": 0
+   },
+   "fill": null,
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "strokeWeight": 1.7
+  },
+  {
+   "fig": "401:531",
+   "id": 215,
+   "z": 196,
+   "name": "Line 50",
+   "type": "LINE",
+   "parent": null,
+   "bounds": {
+    "x": 246,
+    "y": 332,
+    "width": 5,
+    "height": 0
+   },
+   "fill": null,
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "strokeWeight": 1.7
+  },
+  {
+   "fig": "401:466",
+   "id": 216,
+   "z": 197,
+   "name": "Line 21",
+   "type": "LINE",
+   "parent": null,
+   "bounds": {
+    "x": 175,
+    "y": 1084,
+    "width": 5,
+    "height": 0
+   },
+   "fill": null,
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "strokeWeight": 1.7
+  },
+  {
+   "fig": "401:532",
+   "id": 217,
+   "z": 198,
+   "name": "Line 51",
+   "type": "LINE",
+   "parent": null,
+   "bounds": {
+    "x": 174,
+    "y": 332,
+    "width": 5,
+    "height": 0
+   },
+   "fill": null,
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "strokeWeight": 1.7
+  },
+  {
+   "fig": "401:476",
+   "id": 218,
+   "z": 199,
+   "name": "Line 31",
+   "type": "LINE",
+   "parent": null,
+   "bounds": {
+    "x": 319,
+    "y": 1084,
+    "width": 5,
+    "height": 0
+   },
+   "fill": null,
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "strokeWeight": 1.7
+  },
+  {
+   "fig": "401:459",
+   "id": 219,
+   "z": 200,
+   "name": "Line 14",
+   "type": "LINE",
+   "parent": null,
+   "bounds": {
+    "x": 85,
+    "y": 1084,
+    "width": 5,
+    "height": 0
+   },
+   "fill": null,
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "strokeWeight": 1.7
+  },
+  {
+   "fig": "401:534",
+   "id": 220,
+   "z": 201,
+   "name": "Line 53",
+   "type": "LINE",
+   "parent": null,
+   "bounds": {
+    "x": 84,
+    "y": 332,
+    "width": 5,
+    "height": 0
+   },
+   "fill": null,
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "strokeWeight": 1.7
+  },
+  {
+   "fig": "401:477",
+   "id": 221,
+   "z": 202,
+   "name": "Line 32",
+   "type": "LINE",
+   "parent": null,
+   "bounds": {
+    "x": 229,
+    "y": 1084,
+    "width": 5,
+    "height": 0
+   },
+   "fill": null,
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "strokeWeight": 1.7
+  },
+  {
+   "fig": "401:535",
+   "id": 222,
+   "z": 203,
+   "name": "Line 54",
+   "type": "LINE",
+   "parent": null,
+   "bounds": {
+    "x": 228,
+    "y": 332,
+    "width": 5,
+    "height": 0
+   },
+   "fill": null,
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "strokeWeight": 1.7
+  },
+  {
+   "fig": "401:467",
+   "id": 223,
+   "z": 204,
+   "name": "Line 22",
+   "type": "LINE",
+   "parent": null,
+   "bounds": {
+    "x": 157,
+    "y": 1084,
+    "width": 5,
+    "height": 0
+   },
+   "fill": null,
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "strokeWeight": 1.7
+  },
+  {
+   "fig": "401:536",
+   "id": 224,
+   "z": 205,
+   "name": "Line 55",
+   "type": "LINE",
+   "parent": null,
+   "bounds": {
+    "x": 156,
+    "y": 332,
+    "width": 5,
+    "height": 0
+   },
+   "fill": null,
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "strokeWeight": 1.7
+  },
+  {
+   "fig": "401:478",
+   "id": 225,
+   "z": 206,
+   "name": "Line 33",
+   "type": "LINE",
+   "parent": null,
+   "bounds": {
+    "x": 301,
+    "y": 1084,
+    "width": 5,
+    "height": 0
+   },
+   "fill": null,
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "strokeWeight": 1.7
+  },
+  {
+   "fig": "401:537",
+   "id": 226,
+   "z": 207,
+   "name": "Line 56",
+   "type": "LINE",
+   "parent": null,
+   "bounds": {
+    "x": 300,
+    "y": 332,
+    "width": 5,
+    "height": 0
+   },
+   "fill": null,
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "strokeWeight": 1.7
+  },
+  {
+   "fig": "401:462",
+   "id": 227,
+   "z": 208,
+   "name": "Line 17",
+   "type": "LINE",
+   "parent": null,
+   "bounds": {
+    "x": 121,
+    "y": 1084,
+    "width": 5,
+    "height": 0
+   },
+   "fill": null,
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "strokeWeight": 1.7
+  },
+  {
+   "fig": "401:538",
+   "id": 228,
+   "z": 209,
+   "name": "Line 57",
+   "type": "LINE",
+   "parent": null,
+   "bounds": {
+    "x": 120,
+    "y": 332,
+    "width": 5,
+    "height": 0
+   },
+   "fill": null,
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "strokeWeight": 1.7
+  },
+  {
+   "fig": "401:479",
+   "id": 229,
+   "z": 210,
+   "name": "Line 34",
+   "type": "LINE",
+   "parent": null,
+   "bounds": {
+    "x": 265,
+    "y": 1084,
+    "width": 5,
+    "height": 0
+   },
+   "fill": null,
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "strokeWeight": 1.7
+  },
+  {
+   "fig": "401:539",
+   "id": 230,
+   "z": 211,
+   "name": "Line 58",
+   "type": "LINE",
+   "parent": null,
+   "bounds": {
+    "x": 264,
+    "y": 332,
+    "width": 5,
+    "height": 0
+   },
+   "fill": null,
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "strokeWeight": 1.7
+  },
+  {
+   "fig": "401:468",
+   "id": 231,
+   "z": 212,
+   "name": "Line 23",
+   "type": "LINE",
+   "parent": null,
+   "bounds": {
+    "x": 193,
+    "y": 1084,
+    "width": 5,
+    "height": 0
+   },
+   "fill": null,
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "strokeWeight": 1.7
+  },
+  {
+   "fig": "401:540",
+   "id": 232,
+   "z": 213,
+   "name": "Line 59",
+   "type": "LINE",
+   "parent": null,
+   "bounds": {
+    "x": 192,
+    "y": 332,
+    "width": 5,
+    "height": 0
+   },
+   "fill": null,
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "strokeWeight": 1.7
+  },
+  {
+   "fig": "401:455",
+   "id": 233,
+   "z": 214,
+   "name": "Line 13",
+   "type": "LINE",
+   "parent": null,
+   "bounds": {
+    "x": 76,
+    "y": 1084,
+    "width": 5,
+    "height": 0
+   },
+   "fill": null,
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "strokeWeight": 1.7
+  },
+  {
+   "fig": "401:541",
+   "id": 234,
+   "z": 215,
+   "name": "Line 60",
+   "type": "LINE",
+   "parent": null,
+   "bounds": {
+    "x": 75,
+    "y": 332,
+    "width": 5,
+    "height": 0
+   },
+   "fill": null,
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "strokeWeight": 1.7
+  },
+  {
+   "fig": "401:481",
+   "id": 235,
+   "z": 216,
+   "name": "Line 36",
+   "type": "LINE",
+   "parent": null,
+   "bounds": {
+    "x": 220,
+    "y": 1084,
+    "width": 5,
+    "height": 0
+   },
+   "fill": null,
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "strokeWeight": 1.7
+  },
+  {
+   "fig": "401:542",
+   "id": 236,
+   "z": 217,
+   "name": "Line 61",
+   "type": "LINE",
+   "parent": null,
+   "bounds": {
+    "x": 219,
+    "y": 332,
+    "width": 5,
+    "height": 0
+   },
+   "fill": null,
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "strokeWeight": 1.7
+  },
+  {
+   "fig": "401:469",
+   "id": 237,
+   "z": 218,
+   "name": "Line 24",
+   "type": "LINE",
+   "parent": null,
+   "bounds": {
+    "x": 148,
+    "y": 1084,
+    "width": 5,
+    "height": 0
+   },
+   "fill": null,
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "strokeWeight": 1.7
+  },
+  {
+   "fig": "401:543",
+   "id": 238,
+   "z": 219,
+   "name": "Line 62",
+   "type": "LINE",
+   "parent": null,
+   "bounds": {
+    "x": 147,
+    "y": 332,
+    "width": 5,
+    "height": 0
+   },
+   "fill": null,
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "strokeWeight": 1.7
+  },
+  {
+   "fig": "401:482",
+   "id": 239,
+   "z": 220,
+   "name": "Line 37",
+   "type": "LINE",
+   "parent": null,
+   "bounds": {
+    "x": 292,
+    "y": 1084,
+    "width": 5,
+    "height": 0
+   },
+   "fill": null,
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "strokeWeight": 1.7
+  },
+  {
+   "fig": "401:544",
+   "id": 240,
+   "z": 221,
+   "name": "Line 63",
+   "type": "LINE",
+   "parent": null,
+   "bounds": {
+    "x": 291,
+    "y": 332,
+    "width": 5,
+    "height": 0
+   },
+   "fill": null,
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "strokeWeight": 1.7
+  },
+  {
+   "fig": "401:463",
+   "id": 241,
+   "z": 222,
+   "name": "Line 18",
+   "type": "LINE",
+   "parent": null,
+   "bounds": {
+    "x": 112,
+    "y": 1084,
+    "width": 5,
+    "height": 0
+   },
+   "fill": null,
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "strokeWeight": 1.7
+  },
+  {
+   "fig": "401:545",
+   "id": 242,
+   "z": 223,
+   "name": "Line 64",
+   "type": "LINE",
+   "parent": null,
+   "bounds": {
+    "x": 111,
+    "y": 332,
+    "width": 5,
+    "height": 0
+   },
+   "fill": null,
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "strokeWeight": 1.7
+  },
+  {
+   "fig": "401:483",
+   "id": 243,
+   "z": 224,
+   "name": "Line 38",
+   "type": "LINE",
+   "parent": null,
+   "bounds": {
+    "x": 256,
+    "y": 1084,
+    "width": 5,
+    "height": 0
+   },
+   "fill": null,
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "strokeWeight": 1.7
+  },
+  {
+   "fig": "401:546",
+   "id": 244,
+   "z": 225,
+   "name": "Line 65",
+   "type": "LINE",
+   "parent": null,
+   "bounds": {
+    "x": 255,
+    "y": 332,
+    "width": 5,
+    "height": 0
+   },
+   "fill": null,
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "strokeWeight": 1.7
+  },
+  {
+   "fig": "401:470",
+   "id": 245,
+   "z": 226,
+   "name": "Line 25",
+   "type": "LINE",
+   "parent": null,
+   "bounds": {
+    "x": 184,
+    "y": 1084,
+    "width": 5,
+    "height": 0
+   },
+   "fill": null,
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "strokeWeight": 1.7
+  },
+  {
+   "fig": "401:547",
+   "id": 246,
+   "z": 227,
+   "name": "Line 66",
+   "type": "LINE",
+   "parent": null,
+   "bounds": {
+    "x": 183,
+    "y": 332,
+    "width": 5,
+    "height": 0
+   },
+   "fill": null,
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "strokeWeight": 1.7
+  },
+  {
+   "fig": "401:460",
+   "id": 247,
+   "z": 228,
+   "name": "Line 15",
+   "type": "LINE",
+   "parent": null,
+   "bounds": {
+    "x": 94,
+    "y": 1084,
+    "width": 5,
+    "height": 0
+   },
+   "fill": null,
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "strokeWeight": 1.7
+  },
+  {
+   "fig": "401:548",
+   "id": 248,
+   "z": 229,
+   "name": "Line 67",
+   "type": "LINE",
+   "parent": null,
+   "bounds": {
+    "x": 93,
+    "y": 332,
+    "width": 5,
+    "height": 0
+   },
+   "fill": null,
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "strokeWeight": 1.7
+  },
+  {
+   "fig": "401:485",
+   "id": 249,
+   "z": 230,
+   "name": "Line 40",
+   "type": "LINE",
+   "parent": null,
+   "bounds": {
+    "x": 238,
+    "y": 1084,
+    "width": 5,
+    "height": 0
+   },
+   "fill": null,
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "strokeWeight": 1.7
+  },
+  {
+   "fig": "401:549",
+   "id": 250,
+   "z": 231,
+   "name": "Line 68",
+   "type": "LINE",
+   "parent": null,
+   "bounds": {
+    "x": 237,
+    "y": 332,
+    "width": 5,
+    "height": 0
+   },
+   "fill": null,
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "strokeWeight": 1.7
+  },
+  {
+   "fig": "401:471",
+   "id": 251,
+   "z": 232,
+   "name": "Line 26",
+   "type": "LINE",
+   "parent": null,
+   "bounds": {
+    "x": 166,
+    "y": 1084,
+    "width": 5,
+    "height": 0
+   },
+   "fill": null,
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "strokeWeight": 1.7
+  },
+  {
+   "fig": "401:550",
+   "id": 252,
+   "z": 233,
+   "name": "Line 69",
+   "type": "LINE",
+   "parent": null,
+   "bounds": {
+    "x": 165,
+    "y": 332,
+    "width": 5,
+    "height": 0
+   },
+   "fill": null,
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "strokeWeight": 1.7
+  },
+  {
+   "fig": "401:486",
+   "id": 253,
+   "z": 234,
+   "name": "Line 41",
+   "type": "LINE",
+   "parent": null,
+   "bounds": {
+    "x": 310,
+    "y": 1084,
+    "width": 5,
+    "height": 0
+   },
+   "fill": null,
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "strokeWeight": 1.7
+  },
+  {
+   "fig": "401:551",
+   "id": 254,
+   "z": 235,
+   "name": "Line 70",
+   "type": "LINE",
+   "parent": null,
+   "bounds": {
+    "x": 309,
+    "y": 332,
+    "width": 5,
+    "height": 0
+   },
+   "fill": null,
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "strokeWeight": 1.7
+  },
+  {
+   "fig": "401:464",
+   "id": 255,
+   "z": 236,
+   "name": "Line 19",
+   "type": "LINE",
+   "parent": null,
+   "bounds": {
+    "x": 130,
+    "y": 1084,
+    "width": 5,
+    "height": 0
+   },
+   "fill": null,
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "strokeWeight": 1.7
+  },
+  {
+   "fig": "401:552",
+   "id": 256,
+   "z": 237,
+   "name": "Line 71",
+   "type": "LINE",
+   "parent": null,
+   "bounds": {
+    "x": 129,
+    "y": 332,
+    "width": 5,
+    "height": 0
+   },
+   "fill": null,
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "strokeWeight": 1.7
+  },
+  {
+   "fig": "401:487",
+   "id": 257,
+   "z": 238,
+   "name": "Line 42",
+   "type": "LINE",
+   "parent": null,
+   "bounds": {
+    "x": 274,
+    "y": 1084,
+    "width": 5,
+    "height": 0
+   },
+   "fill": null,
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "strokeWeight": 1.7
+  },
+  {
+   "fig": "401:553",
+   "id": 258,
+   "z": 239,
+   "name": "Line 72",
+   "type": "LINE",
+   "parent": null,
+   "bounds": {
+    "x": 273,
+    "y": 332,
+    "width": 5,
+    "height": 0
+   },
+   "fill": null,
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "strokeWeight": 1.7
+  },
+  {
+   "fig": "401:472",
+   "id": 259,
+   "z": 240,
+   "name": "Line 27",
+   "type": "LINE",
+   "parent": null,
+   "bounds": {
+    "x": 202,
+    "y": 1084,
+    "width": 5,
+    "height": 0
+   },
+   "fill": null,
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "strokeWeight": 1.7
+  },
+  {
+   "fig": "401:554",
+   "id": 260,
+   "z": 241,
+   "name": "Line 73",
+   "type": "LINE",
+   "parent": null,
+   "bounds": {
+    "x": 201,
+    "y": 332,
+    "width": 5,
+    "height": 0
+   },
+   "fill": null,
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "strokeWeight": 1.7
+  },
+  {
+   "fig": "401:453",
+   "id": 261,
+   "z": 242,
+   "name": "Line 11",
+   "type": "LINE",
+   "parent": null,
+   "bounds": {
+    "x": 118,
+    "y": 954,
+    "width": 224,
+    "height": 0
+   },
+   "fill": null,
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "strokeWeight": 1
+  },
+  {
+   "fig": "401:555",
+   "id": 262,
+   "z": 243,
+   "name": "Line 74",
+   "type": "LINE",
+   "parent": null,
+   "bounds": {
+    "x": 117,
+    "y": 202,
+    "width": 224,
+    "height": 0
+   },
+   "fill": null,
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "strokeWeight": 1
+  },
+  {
+   "fig": "400:418",
+   "id": 263,
+   "z": 244,
+   "name": "Ellipse 14",
+   "type": "ELLIPSE",
+   "parent": null,
+   "bounds": {
+    "x": 322,
+    "y": 1063,
+    "width": 40,
+    "height": 40
+   },
+   "fill": "#F6F5F1"
+  },
+  {
+   "fig": "400:419",
+   "id": 264,
+   "z": 245,
+   "name": "Ellipse 15",
+   "type": "ELLIPSE",
+   "parent": null,
+   "bounds": {
+    "x": 29,
+    "y": 1064,
+    "width": 40,
+    "height": 40
+   },
+   "fill": "#F6F5F1"
+  },
+  {
+   "fig": "401:507",
+   "id": 265,
+   "z": 246,
+   "name": "Line 43",
+   "type": "LINE",
+   "parent": null,
+   "bounds": {
+    "x": 158,
+    "y": 1589,
+    "width": 73.68,
+    "height": 0
+   },
+   "fill": null,
+   "strokes": [
+    {
+     "color": "#969696",
+     "type": "solid"
+    }
+   ],
+   "strokeWeight": 3
+  },
+  {
+   "fig": "401:558",
+   "id": 266,
+   "z": 247,
+   "name": "Line 75",
+   "type": "LINE",
+   "parent": null,
+   "bounds": {
+    "x": 158,
+    "y": 753,
+    "width": 73.68,
+    "height": 0
+   },
+   "fill": null,
+   "strokes": [
+    {
+     "color": "#969696",
+     "type": "solid"
+    }
+   ],
+   "strokeWeight": 3
+  }
+ ],
+ "deviations": [
+  {
+   "rect": {
+    "x": 132,
+    "y": 771,
+    "width": 126,
+    "height": 35
+   },
+   "reason": "кнопка «купить» тарифа «Базовый»: в макете подложка спрятана под билетом, на сайте кнопка рисуется (CSS, #531608, скругление 30)"
+  }
+ ]
+}

@@ -1,0 +1,477 @@
+{
+ "frame": {
+  "name": "единая верстка",
+  "figmaNodeId": "352:165",
+  "width": 390
+ },
+ "units": "px макета; координаты относительно верха блока",
+ "block": "06-wood-benefits",
+ "y": 4063,
+ "height": 607,
+ "texts": [
+  {
+   "fig": "382:270",
+   "id": 116,
+   "z": 97,
+   "name": "разберешься, как заказывать на Taobao и 1688 без ошибок и пе",
+   "characters": "разберешься, как заказывать на Taobao и 1688 без ошибок и переплат",
+   "box": {
+    "x": 125,
+    "y": 319,
+    "w": 141,
+    "h": 39
+   },
+   "rotate": 0,
+   "bounds": {
+    "x": 125,
+    "y": 319,
+    "width": 141,
+    "height": 39
+   },
+   "font": {
+    "family": "Inter",
+    "weight": 400,
+    "italic": false
+   },
+   "size": 10,
+   "leading": 13,
+   "align": "center",
+   "color": "#E9E5E2",
+   "lines": [
+    {
+     "text": "разберешься, как",
+     "x": 26.9,
+     "baselineY": 10.14,
+     "width": 87.2
+    },
+    {
+     "text": "заказывать на Taobao и",
+     "x": 12.17,
+     "baselineY": 23.14,
+     "width": 116.67
+    },
+    {
+     "text": "1688 без ошибок и переплат",
+     "x": 0.38,
+     "baselineY": 36.14,
+     "width": 140.24
+    }
+   ]
+  },
+  {
+   "fig": "382:271",
+   "id": 117,
+   "z": 98,
+   "name": "перестанешь переплачивать в 2–3 раза за те же вещи",
+   "characters": "перестанешь переплачивать в 2–3 раза за те же вещи",
+   "box": {
+    "x": 139,
+    "y": 78,
+    "w": 112,
+    "h": 39
+   },
+   "rotate": 0,
+   "bounds": {
+    "x": 139,
+    "y": 78,
+    "width": 112,
+    "height": 39
+   },
+   "font": {
+    "family": "Inter",
+    "weight": 400,
+    "italic": false
+   },
+   "size": 10,
+   "leading": 13,
+   "align": "center",
+   "color": "#E9E5E2",
+   "lines": [
+    {
+     "text": "перестанешь",
+     "x": 23.47,
+     "baselineY": 10.14,
+     "width": 65.06
+    },
+    {
+     "text": "переплачивать в 2–3",
+     "x": 4.51,
+     "baselineY": 23.14,
+     "width": 102.98
+    },
+    {
+     "text": "раза за те же вещи",
+     "x": 8.53,
+     "baselineY": 36.14,
+     "width": 94.94
+    }
+   ]
+  },
+  {
+   "fig": "382:272",
+   "id": 118,
+   "z": 99,
+   "name": "научишься выбирать вещи, которые выглядят дорого и служат до",
+   "characters": "научишься выбирать вещи, которые выглядят дорого и служат долго",
+   "box": {
+    "x": 34,
+    "y": 263,
+    "w": 128,
+    "h": 39
+   },
+   "rotate": 0,
+   "bounds": {
+    "x": 34,
+    "y": 263,
+    "width": 128,
+    "height": 39
+   },
+   "font": {
+    "family": "Inter",
+    "weight": 400,
+    "italic": false
+   },
+   "size": 10,
+   "leading": 13,
+   "align": "center",
+   "color": "#E9E5E2",
+   "lines": [
+    {
+     "text": "научишься выбирать",
+     "x": 12.38,
+     "baselineY": 10.14,
+     "width": 103.24
+    },
+    {
+     "text": "вещи, которые выглядят",
+     "x": 3.41,
+     "baselineY": 23.14,
+     "width": 121.17
+    },
+    {
+     "text": "дорого и служат долго",
+     "x": 7.5,
+     "baselineY": 36.14,
+     "width": 113
+    }
+   ]
+  },
+  {
+   "fig": "382:273",
+   "id": 119,
+   "z": 100,
+   "name": "сможешь покупать оригинальные бренды дешевле ",
+   "characters": "сможешь покупать оригинальные бренды дешевле ",
+   "box": {
+    "x": 240,
+    "y": 265,
+    "w": 111,
+    "h": 39
+   },
+   "rotate": 0,
+   "bounds": {
+    "x": 240,
+    "y": 265,
+    "width": 111,
+    "height": 39
+   },
+   "font": {
+    "family": "Inter",
+    "weight": 400,
+    "italic": false
+   },
+   "size": 10,
+   "leading": 13,
+   "align": "center",
+   "color": "#E9E5E2",
+   "lines": [
+    {
+     "text": "сможешь покупать",
+     "x": 8.58,
+     "baselineY": 10.14,
+     "width": 93.84
+    },
+    {
+     "text": "оригинальные бренды",
+     "x": 0.1,
+     "baselineY": 23.14,
+     "width": 110.8
+    },
+    {
+     "text": "дешевле",
+     "x": 33.81,
+     "baselineY": 36.14,
+     "width": 43.38
+    }
+   ]
+  },
+  {
+   "fig": "382:274",
+   "id": 120,
+   "z": 101,
+   "name": "будешь пользоваться базой проверенных магазинов и посреднико",
+   "characters": "будешь пользоваться базой проверенных магазинов и посредников",
+   "box": {
+    "x": 229,
+    "y": 135,
+    "w": 130,
+    "h": 39
+   },
+   "rotate": 0,
+   "bounds": {
+    "x": 229,
+    "y": 135,
+    "width": 130,
+    "height": 39
+   },
+   "font": {
+    "family": "Inter",
+    "weight": 400,
+    "italic": false
+   },
+   "size": 10,
+   "leading": 13,
+   "align": "center",
+   "color": "#E9E5E2",
+   "lines": [
+    {
+     "text": "будешь пользоваться",
+     "x": 11.69,
+     "baselineY": 10.14,
+     "width": 106.61
+    },
+    {
+     "text": "базой проверенных",
+     "x": 16.5,
+     "baselineY": 23.14,
+     "width": 96.99
+    },
+    {
+     "text": "магазинов и посредников",
+     "x": 1.49,
+     "baselineY": 36.14,
+     "width": 127.02
+    }
+   ]
+  },
+  {
+   "fig": "382:275",
+   "id": 121,
+   "z": 102,
+   "name": "начнешь экономить десятки тысяч рублей ежемесячно",
+   "characters": "начнешь экономить десятки тысяч рублей ежемесячно",
+   "box": {
+    "x": 45,
+    "y": 135,
+    "w": 105,
+    "h": 39
+   },
+   "rotate": 0,
+   "bounds": {
+    "x": 45,
+    "y": 135,
+    "width": 105,
+    "height": 39
+   },
+   "font": {
+    "family": "Inter",
+    "weight": 400,
+    "italic": false
+   },
+   "size": 10,
+   "leading": 13,
+   "align": "center",
+   "color": "#E9E5E2",
+   "lines": [
+    {
+     "text": "начнешь экономить",
+     "x": 3.71,
+     "baselineY": 10.14,
+     "width": 97.58
+    },
+    {
+     "text": "десятки тысяч",
+     "x": 16.45,
+     "baselineY": 23.14,
+     "width": 72.11
+    },
+    {
+     "text": "рублей ежемесячно",
+     "x": 2.77,
+     "baselineY": 36.14,
+     "width": 99.45
+    }
+   ]
+  },
+  {
+   "fig": "382:278",
+   "id": 122,
+   "z": 103,
+   "name": "и, скорее всего, уже не захочешь покупать как раньше",
+   "characters": "и, скорее всего, уже не захочешь покупать как раньше\n",
+   "box": {
+    "x": 94,
+    "y": 440,
+    "w": 202,
+    "h": 51
+   },
+   "rotate": 0,
+   "bounds": {
+    "x": 94,
+    "y": 440,
+    "width": 202,
+    "height": 51
+   },
+   "font": {
+    "family": "Playfair Display",
+    "weight": 400,
+    "italic": false
+   },
+   "size": 15,
+   "leading": 17,
+   "align": "center",
+   "color": "#49301C",
+   "lines": [
+    {
+     "text": "и, скорее всего,",
+     "x": 45.64,
+     "baselineY": 14.73,
+     "width": 110.71
+    },
+    {
+     "text": "уже не захочешь покупать",
+     "x": 7,
+     "baselineY": 31.73,
+     "width": 188
+    },
+    {
+     "text": "как раньше",
+     "x": 60.1,
+     "baselineY": 48.73,
+     "width": 81.8
+    }
+   ]
+  },
+  {
+   "fig": "382:277",
+   "id": 185,
+   "z": 166,
+   "name": "после обучения ты",
+   "characters": "после обучения ты",
+   "box": {
+    "x": 115,
+    "y": 201,
+    "w": 161,
+    "h": 34
+   },
+   "rotate": 0,
+   "bounds": {
+    "x": 115,
+    "y": 201,
+    "width": 161,
+    "height": 34
+   },
+   "font": {
+    "family": "Playfair Display",
+    "weight": 400,
+    "italic": false
+   },
+   "size": 21,
+   "leading": 17,
+   "align": "center",
+   "color": "#49301C",
+   "lines": [
+    {
+     "text": "после обучения",
+     "x": 3.08,
+     "baselineY": 17.23,
+     "width": 154.83
+    },
+    {
+     "text": "ты",
+     "x": 66.73,
+     "baselineY": 34.23,
+     "width": 27.54
+    }
+   ]
+  }
+ ],
+ "layers": [
+  {
+   "fig": "389:324",
+   "id": 23,
+   "z": 4,
+   "name": "IMG_4377 2",
+   "type": "RECTANGLE",
+   "parent": null,
+   "bounds": {
+    "x": -1,
+    "y": -20,
+    "width": 392,
+    "height": 630
+   },
+   "fill": "image"
+  },
+  {
+   "fig": "511:2",
+   "id": 28,
+   "z": 9,
+   "name": "Group 33",
+   "type": "GROUP",
+   "parent": null,
+   "bounds": {
+    "x": -5,
+    "y": 415,
+    "width": 400,
+    "height": 119
+   },
+   "fill": null
+  },
+  {
+   "fig": "397:371",
+   "id": 29,
+   "z": 10,
+   "name": "MagicEraser_260423_163217 1",
+   "type": "RECTANGLE",
+   "parent": 28,
+   "bounds": {
+    "x": -5,
+    "y": 415,
+    "width": 400,
+    "height": 61
+   },
+   "fill": "image"
+  },
+  {
+   "fig": "399:410",
+   "id": 30,
+   "z": 11,
+   "name": "MagicEraser_260423_163217 2",
+   "type": "RECTANGLE",
+   "parent": 28,
+   "bounds": {
+    "x": -5,
+    "y": 476,
+    "width": 400,
+    "height": 58
+   },
+   "fill": "image"
+  },
+  {
+   "fig": "382:294",
+   "id": 31,
+   "z": 12,
+   "name": "Rectangle 12",
+   "type": "RECTANGLE",
+   "parent": null,
+   "bounds": {
+    "x": 95,
+    "y": 192,
+    "width": 200,
+    "height": 54
+   },
+   "fill": "#FBE8B5",
+   "cornerRadius": 30
+  }
+ ]
+}

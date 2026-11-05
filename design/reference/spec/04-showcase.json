@@ -1,0 +1,1445 @@
+{
+ "frame": {
+  "name": "единая верстка",
+  "figmaNodeId": "352:165",
+  "width": 390
+ },
+ "units": "px макета; координаты относительно верха блока",
+ "block": "04-showcase",
+ "y": 2478,
+ "height": 1342,
+ "texts": [
+  {
+   "fig": "382:202",
+   "id": 85,
+   "z": 66,
+   "name": "вот такие наценки на обычной одежде, обуви и аксессуарах",
+   "characters": "вот такие наценки на обычной одежде, обуви и аксессуарах\n",
+   "box": {
+    "x": 74,
+    "y": 101,
+    "w": 242,
+    "h": 51
+   },
+   "rotate": 0,
+   "bounds": {
+    "x": 74,
+    "y": 101,
+    "width": 242,
+    "height": 51
+   },
+   "font": {
+    "family": "Playfair Display",
+    "weight": 400,
+    "italic": false
+   },
+   "size": 21,
+   "leading": 17,
+   "align": "center",
+   "color": "#49301C",
+   "lines": [
+    {
+     "text": "вот такие наценки",
+     "x": 27.12,
+     "baselineY": 17.23,
+     "width": 187.77
+    },
+    {
+     "text": "на обычной одежде,",
+     "x": 21.58,
+     "baselineY": 34.23,
+     "width": 198.84
+    },
+    {
+     "text": "обуви и аксессуарах",
+     "x": 21.32,
+     "baselineY": 51.23,
+     "width": 199.36
+    }
+   ],
+   "mockupSize": 25,
+   "sizeSource": "заголовки ×1.2 → 21"
+  },
+  {
+   "fig": "397:373",
+   "id": 86,
+   "z": 67,
+   "name": "(",
+   "characters": "(",
+   "box": {
+    "x": 40,
+    "y": 116.5,
+    "w": 51,
+    "h": 17
+   },
+   "rotate": 0,
+   "bounds": {
+    "x": 40,
+    "y": 116.5,
+    "width": 51,
+    "height": 17
+   },
+   "font": {
+    "family": "Playfair Display",
+    "weight": 400,
+    "italic": false
+   },
+   "size": 53,
+   "leading": 17,
+   "align": "center",
+   "color": "#49301C",
+   "lines": [
+    {
+     "text": "(",
+     "x": 17.71,
+     "baselineY": 30.52,
+     "width": 15.58
+    }
+   ]
+  },
+  {
+   "fig": "397:374",
+   "id": 87,
+   "z": 68,
+   "name": "(",
+   "characters": "(",
+   "box": {
+    "x": 350,
+    "y": 116.5,
+    "w": 51,
+    "h": 17
+   },
+   "rotate": 0,
+   "bounds": {
+    "x": 299,
+    "y": 116.5,
+    "width": 51,
+    "height": 17
+   },
+   "font": {
+    "family": "Playfair Display",
+    "weight": 400,
+    "italic": false
+   },
+   "size": 53,
+   "leading": 17,
+   "align": "center",
+   "color": "#49301C",
+   "lines": [
+    {
+     "text": "(",
+     "x": 17.71,
+     "baselineY": 30.52,
+     "width": 15.58
+    }
+   ],
+   "matrix": [
+    -1,
+    0,
+    0,
+    1
+   ],
+   "note": "слой отражён: transform: matrix(a,b,c,d,0,0), origin 0 0"
+  },
+  {
+   "fig": "397:378",
+   "id": 88,
+   "z": 69,
+   "name": "(",
+   "characters": "(",
+   "box": {
+    "x": 350,
+    "y": 1080.5,
+    "w": 51,
+    "h": 17
+   },
+   "rotate": 0,
+   "bounds": {
+    "x": 299,
+    "y": 1080.5,
+    "width": 51,
+    "height": 17
+   },
+   "font": {
+    "family": "Playfair Display",
+    "weight": 400,
+    "italic": false
+   },
+   "size": 53,
+   "leading": 17,
+   "align": "center",
+   "color": "#49301C",
+   "lines": [
+    {
+     "text": "(",
+     "x": 17.71,
+     "baselineY": 30.52,
+     "width": 15.58
+    }
+   ],
+   "matrix": [
+    -1,
+    0,
+    0,
+    1
+   ],
+   "note": "слой отражён: transform: matrix(a,b,c,d,0,0), origin 0 0"
+  },
+  {
+   "fig": "397:379",
+   "id": 89,
+   "z": 70,
+   "name": "(",
+   "characters": "(",
+   "box": {
+    "x": 40,
+    "y": 1080.5,
+    "w": 51,
+    "h": 17
+   },
+   "rotate": 0,
+   "bounds": {
+    "x": 40,
+    "y": 1080.5,
+    "width": 51,
+    "height": 17
+   },
+   "font": {
+    "family": "Playfair Display",
+    "weight": 400,
+    "italic": false
+   },
+   "size": 53,
+   "leading": 17,
+   "align": "center",
+   "color": "#49301C",
+   "lines": [
+    {
+     "text": "(",
+     "x": 17.71,
+     "baselineY": 30.52,
+     "width": 15.58
+    }
+   ]
+  },
+  {
+   "fig": "397:375",
+   "id": 93,
+   "z": 74,
+   "name": "(",
+   "characters": "(",
+   "box": {
+    "x": 327,
+    "y": 621.5,
+    "w": 51,
+    "h": 17
+   },
+   "rotate": 0,
+   "bounds": {
+    "x": 276,
+    "y": 621.5,
+    "width": 51,
+    "height": 17
+   },
+   "font": {
+    "family": "Playfair Display",
+    "weight": 400,
+    "italic": false
+   },
+   "size": 35,
+   "leading": 17,
+   "align": "center",
+   "color": "#49301C",
+   "lines": [
+    {
+     "text": "(",
+     "x": 20.36,
+     "baselineY": 23.04,
+     "width": 10.29
+    }
+   ],
+   "matrix": [
+    -1,
+    0,
+    0,
+    1
+   ],
+   "note": "слой отражён: transform: matrix(a,b,c,d,0,0), origin 0 0"
+  },
+  {
+   "fig": "397:376",
+   "id": 94,
+   "z": 75,
+   "name": "(",
+   "characters": "(",
+   "box": {
+    "x": 64,
+    "y": 621.5,
+    "w": 51,
+    "h": 17
+   },
+   "rotate": 0,
+   "bounds": {
+    "x": 64,
+    "y": 621.5,
+    "width": 51,
+    "height": 17
+   },
+   "font": {
+    "family": "Playfair Display",
+    "weight": 400,
+    "italic": false
+   },
+   "size": 35,
+   "leading": 17,
+   "align": "center",
+   "color": "#49301C",
+   "lines": [
+    {
+     "text": "(",
+     "x": 20.36,
+     "baselineY": 23.04,
+     "width": 10.29
+    }
+   ]
+  },
+  {
+   "fig": "382:203",
+   "id": 95,
+   "z": 76,
+   "name": "а такая разница в товарах для дома",
+   "characters": "а такая разница\nв товарах для дома",
+   "box": {
+    "x": 92,
+    "y": 614,
+    "w": 207,
+    "h": 34
+   },
+   "rotate": 0,
+   "bounds": {
+    "x": 92,
+    "y": 614,
+    "width": 207,
+    "height": 34
+   },
+   "font": {
+    "family": "Playfair Display",
+    "weight": 400,
+    "italic": false
+   },
+   "size": 21,
+   "leading": 17,
+   "align": "center",
+   "color": "#49301C",
+   "lines": [
+    {
+     "text": "а такая разница",
+     "x": 24.21,
+     "baselineY": 17.23,
+     "width": 158.59
+    },
+    {
+     "text": "в товарах для дома",
+     "x": 9.62,
+     "baselineY": 34.23,
+     "width": 187.77
+    }
+   ]
+  },
+  {
+   "fig": "382:211",
+   "id": 102,
+   "z": 83,
+   "name": "можно обустроить квартиру как из pinterest, но в 3-5 раз деш",
+   "characters": "можно обустроить квартиру как из pinterest, но в 3-5 раз дешевле, чем у нас!",
+   "box": {
+    "x": 82,
+    "y": 660,
+    "w": 226,
+    "h": 20
+   },
+   "rotate": 0,
+   "bounds": {
+    "x": 82,
+    "y": 660,
+    "width": 226,
+    "height": 20
+   },
+   "font": {
+    "family": "Inter",
+    "weight": 400,
+    "italic": false
+   },
+   "size": 10,
+   "leading": 10,
+   "align": "center",
+   "color": "#49301C",
+   "lines": [
+    {
+     "text": "можно обустроить квартиру как из pinterest,",
+     "x": 2.5,
+     "baselineY": 8.64,
+     "width": 221.01
+    },
+    {
+     "text": "но в 3-5 раз дешевле, чем у нас!",
+     "x": 32.28,
+     "baselineY": 18.64,
+     "width": 161.45
+    }
+   ]
+  },
+  {
+   "fig": "382:212",
+   "id": 103,
+   "z": 84,
+   "name": "zara",
+   "characters": "zara",
+   "box": {
+    "x": 20,
+    "y": 397,
+    "w": 190,
+    "h": 15
+   },
+   "rotate": 0,
+   "bounds": {
+    "x": 20,
+    "y": 397,
+    "width": 190,
+    "height": 15
+   },
+   "font": {
+    "family": "Inter",
+    "weight": 400,
+    "italic": false
+   },
+   "size": 10,
+   "leading": 15,
+   "align": "center",
+   "color": "#49301C",
+   "lines": [
+    {
+     "text": "zara",
+     "x": 84.8,
+     "baselineY": 11.14,
+     "width": 20.4
+    }
+   ],
+   "mockupSize": 17,
+   "sizeSource": "ранний фрейм / соседние карточки"
+  },
+  {
+   "fig": "397:354",
+   "id": 104,
+   "z": 85,
+   "name": "zara",
+   "characters": "zara",
+   "box": {
+    "x": 33,
+    "y": 859,
+    "w": 175,
+    "h": 15
+   },
+   "rotate": 0,
+   "bounds": {
+    "x": 33,
+    "y": 859,
+    "width": 175,
+    "height": 15
+   },
+   "font": {
+    "family": "Inter",
+    "weight": 400,
+    "italic": false
+   },
+   "size": 10,
+   "leading": 15,
+   "align": "center",
+   "color": "#49301C",
+   "lines": [
+    {
+     "text": "zara",
+     "x": 77.3,
+     "baselineY": 11.14,
+     "width": 20.4
+    }
+   ]
+  },
+  {
+   "fig": "397:362",
+   "id": 105,
+   "z": 86,
+   "name": "zara",
+   "characters": "zara",
+   "box": {
+    "x": 34,
+    "y": 1316,
+    "w": 175,
+    "h": 15
+   },
+   "rotate": 0,
+   "bounds": {
+    "x": 34,
+    "y": 1316,
+    "width": 175,
+    "height": 15
+   },
+   "font": {
+    "family": "Inter",
+    "weight": 400,
+    "italic": false
+   },
+   "size": 10,
+   "leading": 15,
+   "align": "center",
+   "color": "#49301C",
+   "lines": [
+    {
+     "text": "zara",
+     "x": 77.3,
+     "baselineY": 11.14,
+     "width": 20.4
+    }
+   ]
+  },
+  {
+   "fig": "382:213",
+   "id": 106,
+   "z": 87,
+   "name": "таобао",
+   "characters": "таобао",
+   "box": {
+    "x": 181,
+    "y": 397,
+    "w": 190,
+    "h": 15
+   },
+   "rotate": 0,
+   "bounds": {
+    "x": 181,
+    "y": 397,
+    "width": 190,
+    "height": 15
+   },
+   "font": {
+    "family": "Inter",
+    "weight": 400,
+    "italic": false
+   },
+   "size": 10,
+   "leading": 15,
+   "align": "center",
+   "color": "#49301C",
+   "lines": [
+    {
+     "text": "таобао",
+     "x": 77.92,
+     "baselineY": 11.14,
+     "width": 34.16
+    }
+   ],
+   "mockupSize": 17,
+   "sizeSource": "ранний фрейм / соседние карточки"
+  },
+  {
+   "fig": "397:355",
+   "id": 107,
+   "z": 88,
+   "name": "таобао",
+   "characters": "таобао",
+   "box": {
+    "x": 180,
+    "y": 859,
+    "w": 175,
+    "h": 15
+   },
+   "rotate": 0,
+   "bounds": {
+    "x": 180,
+    "y": 859,
+    "width": 175,
+    "height": 15
+   },
+   "font": {
+    "family": "Inter",
+    "weight": 400,
+    "italic": false
+   },
+   "size": 10,
+   "leading": 15,
+   "align": "center",
+   "color": "#49301C",
+   "lines": [
+    {
+     "text": "таобао",
+     "x": 70.42,
+     "baselineY": 11.14,
+     "width": 34.16
+    }
+   ]
+  },
+  {
+   "fig": "397:363",
+   "id": 108,
+   "z": 89,
+   "name": "таобао",
+   "characters": "таобао",
+   "box": {
+    "x": 181,
+    "y": 1316,
+    "w": 175,
+    "h": 15
+   },
+   "rotate": 0,
+   "bounds": {
+    "x": 181,
+    "y": 1316,
+    "width": 175,
+    "height": 15
+   },
+   "font": {
+    "family": "Inter",
+    "weight": 400,
+    "italic": false
+   },
+   "size": 10,
+   "leading": 15,
+   "align": "center",
+   "color": "#49301C",
+   "lines": [
+    {
+     "text": "таобао",
+     "x": 70.42,
+     "baselineY": 11.14,
+     "width": 34.16
+    }
+   ]
+  },
+  {
+   "fig": "382:259",
+   "id": 111,
+   "z": 92,
+   "name": "никита ефремов",
+   "characters": "никита ефремов",
+   "box": {
+    "x": 22,
+    "y": 1251,
+    "w": 175,
+    "h": 15
+   },
+   "rotate": 0,
+   "bounds": {
+    "x": 22,
+    "y": 1251,
+    "width": 175,
+    "height": 15
+   },
+   "font": {
+    "family": "Inter",
+    "weight": 400,
+    "italic": false
+   },
+   "size": 10,
+   "leading": 15,
+   "align": "center",
+   "color": "#49301C",
+   "lines": [
+    {
+     "text": "никита ефремов",
+     "x": 47.59,
+     "baselineY": 11.14,
+     "width": 79.82
+    }
+   ],
+   "ghost": true,
+   "ghostReason": "слой перекрыт сверху слоем «image 64» (397:364) и в макете не виден — служебный слой: не выводить как видимый текст"
+  },
+  {
+   "fig": "382:261",
+   "id": 112,
+   "z": 93,
+   "name": "таобао",
+   "characters": "таобао",
+   "box": {
+    "x": 193,
+    "y": 1251,
+    "w": 175,
+    "h": 15
+   },
+   "rotate": 0,
+   "bounds": {
+    "x": 193,
+    "y": 1251,
+    "width": 175,
+    "height": 15
+   },
+   "font": {
+    "family": "Inter",
+    "weight": 400,
+    "italic": false
+   },
+   "size": 10,
+   "leading": 15,
+   "align": "center",
+   "color": "#49301C",
+   "lines": [
+    {
+     "text": "таобао",
+     "x": 70.42,
+     "baselineY": 11.14,
+     "width": 34.16
+    }
+   ],
+   "ghost": true,
+   "ghostReason": "слой перекрыт сверху слоем «image 65» (397:365) и в макете не виден — служебный слой: не выводить как видимый текст"
+  },
+  {
+   "fig": "382:265",
+   "id": 113,
+   "z": 94,
+   "name": "еще можно заказывать бренды, по которым мы соскучились",
+   "characters": "еще можно заказывать бренды, по которым мы соскучились",
+   "box": {
+    "x": 78,
+    "y": 1066,
+    "w": 234,
+    "h": 51
+   },
+   "rotate": 0,
+   "bounds": {
+    "x": 78,
+    "y": 1066,
+    "width": 234,
+    "height": 51
+   },
+   "font": {
+    "family": "Playfair Display",
+    "weight": 400,
+    "italic": false
+   },
+   "size": 21,
+   "leading": 17,
+   "align": "center",
+   "color": "#49301C",
+   "lines": [
+    {
+     "text": "еще можно заказывать",
+     "x": 1.97,
+     "baselineY": 17.23,
+     "width": 230.06
+    },
+    {
+     "text": "бренды, по которым",
+     "x": 14.99,
+     "baselineY": 34.23,
+     "width": 204.01
+    },
+    {
+     "text": "мы соскучились",
+     "x": 36.13,
+     "baselineY": 51.23,
+     "width": 161.75
+    }
+   ]
+  },
+  {
+   "fig": "382:267",
+   "id": 115,
+   "z": 96,
+   "name": "с выгодой до 70%",
+   "characters": "с выгодой до 70%",
+   "box": {
+    "x": 82,
+    "y": 1127,
+    "w": 226,
+    "h": 10
+   },
+   "rotate": 0,
+   "bounds": {
+    "x": 82,
+    "y": 1127,
+    "width": 226,
+    "height": 10
+   },
+   "font": {
+    "family": "Inter",
+    "weight": 400,
+    "italic": false
+   },
+   "size": 10,
+   "leading": 10,
+   "align": "center",
+   "color": "#49301C",
+   "lines": [
+    {
+     "text": "с выгодой до 70%",
+     "x": 69.14,
+     "baselineY": 8.64,
+     "width": 87.72
+    }
+   ]
+  }
+ ],
+ "layers": [
+  {
+   "fig": "397:349",
+   "id": 34,
+   "z": 15,
+   "name": "IMG_4410 3",
+   "type": "RECTANGLE",
+   "parent": null,
+   "bounds": {
+    "x": 0,
+    "y": -13,
+    "width": 391,
+    "height": 696
+   },
+   "fill": "image"
+  },
+  {
+   "fig": "397:350",
+   "id": 35,
+   "z": 16,
+   "name": "IMG_4410 4",
+   "type": "RECTANGLE",
+   "parent": null,
+   "bounds": {
+    "x": 169,
+    "y": -12,
+    "width": 222,
+    "height": 696
+   },
+   "fill": "image"
+  },
+  {
+   "fig": "397:406",
+   "id": 36,
+   "z": 17,
+   "name": "IMG_4410 5",
+   "type": "RECTANGLE",
+   "parent": null,
+   "bounds": {
+    "x": 0,
+    "y": 523,
+    "width": 391,
+    "height": 544
+   },
+   "fill": "image"
+  },
+  {
+   "fig": "397:407",
+   "id": 37,
+   "z": 18,
+   "name": "IMG_4410 6",
+   "type": "RECTANGLE",
+   "parent": null,
+   "bounds": {
+    "x": -11,
+    "y": 327,
+    "width": 222,
+    "height": 544
+   },
+   "fill": "image"
+  },
+  {
+   "fig": "382:199",
+   "id": 41,
+   "z": 22,
+   "name": "Rectangle 8",
+   "type": "RECTANGLE",
+   "parent": null,
+   "bounds": {
+    "x": 29,
+    "y": 207,
+    "width": 333,
+    "height": 220
+   },
+   "fill": "#CAC1B5",
+   "cornerRadius": 2
+  },
+  {
+   "fig": "397:351",
+   "id": 42,
+   "z": 23,
+   "name": "Rectangle 21",
+   "type": "RECTANGLE",
+   "parent": null,
+   "bounds": {
+    "x": 41,
+    "y": 704,
+    "width": 308,
+    "height": 180
+   },
+   "fill": "#CAC1B5",
+   "cornerRadius": 2
+  },
+  {
+   "fig": "397:359",
+   "id": 43,
+   "z": 24,
+   "name": "Rectangle 24",
+   "type": "RECTANGLE",
+   "parent": null,
+   "bounds": {
+    "x": 42,
+    "y": 1161,
+    "width": 308,
+    "height": 180
+   },
+   "fill": "#CAC1B5",
+   "cornerRadius": 2
+  },
+  {
+   "fig": "382:215",
+   "id": 45,
+   "z": 26,
+   "name": "Rectangle 9",
+   "type": "RECTANGLE",
+   "parent": null,
+   "bounds": {
+    "x": 36,
+    "y": 221,
+    "width": 157,
+    "height": 172
+   },
+   "fill": "#DCD7D1"
+  },
+  {
+   "fig": "662:15",
+   "id": 46,
+   "z": 27,
+   "name": "Rectangle 33",
+   "type": "RECTANGLE",
+   "parent": null,
+   "bounds": {
+    "x": 198,
+    "y": 221,
+    "width": 157,
+    "height": 172
+   },
+   "fill": "#DCD7D1"
+  },
+  {
+   "fig": "397:352",
+   "id": 47,
+   "z": 28,
+   "name": "Rectangle 22",
+   "type": "RECTANGLE",
+   "parent": null,
+   "bounds": {
+    "x": 57,
+    "y": 723,
+    "width": 131,
+    "height": 131
+   },
+   "fill": "#DCD7D1"
+  },
+  {
+   "fig": "397:360",
+   "id": 48,
+   "z": 29,
+   "name": "Rectangle 25",
+   "type": "RECTANGLE",
+   "parent": null,
+   "bounds": {
+    "x": 58,
+    "y": 1180,
+    "width": 131,
+    "height": 131
+   },
+   "fill": "#DCD7D1"
+  },
+  {
+   "fig": "397:353",
+   "id": 49,
+   "z": 30,
+   "name": "Rectangle 23",
+   "type": "RECTANGLE",
+   "parent": null,
+   "bounds": {
+    "x": 203,
+    "y": 723,
+    "width": 131,
+    "height": 131
+   },
+   "fill": "#DCD7D1"
+  },
+  {
+   "fig": "397:361",
+   "id": 50,
+   "z": 31,
+   "name": "Rectangle 26",
+   "type": "RECTANGLE",
+   "parent": null,
+   "bounds": {
+    "x": 204,
+    "y": 1180,
+    "width": 131,
+    "height": 131
+   },
+   "fill": "#DCD7D1"
+  },
+  {
+   "fig": "391:326",
+   "id": 165,
+   "z": 146,
+   "name": "image 60",
+   "type": "RECTANGLE",
+   "parent": null,
+   "bounds": {
+    "x": 45,
+    "y": 221,
+    "width": 139,
+    "height": 172
+   },
+   "fill": "image"
+  },
+  {
+   "fig": "662:16",
+   "id": 166,
+   "z": 147,
+   "name": "image 66",
+   "type": "RECTANGLE",
+   "parent": null,
+   "bounds": {
+    "x": 207,
+    "y": 221,
+    "width": 139,
+    "height": 172
+   },
+   "fill": "image"
+  },
+  {
+   "fig": "397:356",
+   "id": 167,
+   "z": 148,
+   "name": "image 62",
+   "type": "RECTANGLE",
+   "parent": null,
+   "bounds": {
+    "x": 68,
+    "y": 723,
+    "width": 106,
+    "height": 131
+   },
+   "fill": "image"
+  },
+  {
+   "fig": "397:364",
+   "id": 168,
+   "z": 149,
+   "name": "image 64",
+   "type": "RECTANGLE",
+   "parent": null,
+   "bounds": {
+    "x": 69,
+    "y": 1180,
+    "width": 106,
+    "height": 131
+   },
+   "fill": "image"
+  },
+  {
+   "fig": "397:357",
+   "id": 169,
+   "z": 150,
+   "name": "image 63",
+   "type": "RECTANGLE",
+   "parent": null,
+   "bounds": {
+    "x": 214,
+    "y": 723,
+    "width": 106,
+    "height": 131
+   },
+   "fill": "image"
+  },
+  {
+   "fig": "397:365",
+   "id": 170,
+   "z": 151,
+   "name": "image 65",
+   "type": "RECTANGLE",
+   "parent": null,
+   "bounds": {
+    "x": 215,
+    "y": 1180,
+    "width": 106,
+    "height": 131
+   },
+   "fill": "image"
+  },
+  {
+   "fig": "397:366",
+   "id": 172,
+   "z": 153,
+   "name": "Line 6",
+   "type": "LINE",
+   "parent": null,
+   "bounds": {
+    "x": 358,
+    "y": 782,
+    "width": 10,
+    "height": 12
+   },
+   "fill": null,
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "strokeWeight": 0.7
+  },
+  {
+   "fig": "397:368",
+   "id": 173,
+   "z": 154,
+   "name": "Line 8",
+   "type": "LINE",
+   "parent": null,
+   "bounds": {
+    "x": 358,
+    "y": 1239,
+    "width": 10,
+    "height": 12
+   },
+   "fill": null,
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "strokeWeight": 0.7
+  },
+  {
+   "fig": "662:17",
+   "id": 177,
+   "z": 158,
+   "name": "Group 38",
+   "type": "GROUP",
+   "parent": null,
+   "bounds": {
+    "x": 366,
+    "y": 305,
+    "width": 11.8,
+    "height": 23.24
+   },
+   "fill": null
+  },
+  {
+   "fig": "662:18",
+   "id": 178,
+   "z": 159,
+   "name": "Line 4",
+   "type": "LINE",
+   "parent": 177,
+   "bounds": {
+    "x": 366,
+    "y": 305,
+    "width": 10.28,
+    "height": 12.26
+   },
+   "fill": null,
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "strokeWeight": 2
+  },
+  {
+   "fig": "662:19",
+   "id": 179,
+   "z": 160,
+   "name": "Line 5",
+   "type": "LINE",
+   "parent": 177,
+   "bounds": {
+    "x": 367.52,
+    "y": 315.98,
+    "width": 10.28,
+    "height": 12.25
+   },
+   "fill": null,
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "strokeWeight": 2
+  },
+  {
+   "fig": "397:367",
+   "id": 183,
+   "z": 164,
+   "name": "Line 7",
+   "type": "LINE",
+   "parent": null,
+   "bounds": {
+    "x": 358,
+    "y": 794,
+    "width": 10.58,
+    "height": 12
+   },
+   "fill": null,
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "strokeWeight": 0.7
+  },
+  {
+   "fig": "397:369",
+   "id": 184,
+   "z": 165,
+   "name": "Line 9",
+   "type": "LINE",
+   "parent": null,
+   "bounds": {
+    "x": 358,
+    "y": 1251,
+    "width": 10.58,
+    "height": 12
+   },
+   "fill": null,
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "strokeWeight": 0.7
+  },
+  {
+   "fig": "397:382",
+   "id": 186,
+   "z": 167,
+   "name": "MagicEraser_260423_165846 1",
+   "type": "RECTANGLE",
+   "parent": null,
+   "bounds": {
+    "x": 23,
+    "y": 484,
+    "width": 88,
+    "height": 87
+   },
+   "fill": "image"
+  },
+  {
+   "fig": "397:386",
+   "id": 187,
+   "z": 168,
+   "name": "MagicEraser_260423_165846 2",
+   "type": "RECTANGLE",
+   "parent": null,
+   "bounds": {
+    "x": 98.78,
+    "y": 483.78,
+    "width": 88.44,
+    "height": 87.44
+   },
+   "fill": "image"
+  },
+  {
+   "fig": "397:387",
+   "id": 188,
+   "z": 169,
+   "name": "MagicEraser_260423_165846 3",
+   "type": "RECTANGLE",
+   "parent": null,
+   "bounds": {
+    "x": 174,
+    "y": 484,
+    "width": 88.44,
+    "height": 87.44
+   },
+   "fill": "image"
+  },
+  {
+   "fig": "397:388",
+   "id": 189,
+   "z": 170,
+   "name": "MagicEraser_260423_165846 4",
+   "type": "RECTANGLE",
+   "parent": null,
+   "bounds": {
+    "x": 250,
+    "y": 484,
+    "width": 88.44,
+    "height": 87.44
+   },
+   "fill": "image"
+  },
+  {
+   "fig": "397:389",
+   "id": 190,
+   "z": 171,
+   "name": "MagicEraser_260423_165846 5",
+   "type": "RECTANGLE",
+   "parent": null,
+   "bounds": {
+    "x": 326,
+    "y": 484,
+    "width": 88.44,
+    "height": 87.44
+   },
+   "fill": "image"
+  },
+  {
+   "fig": "397:390",
+   "id": 191,
+   "z": 172,
+   "name": "MagicEraser_260423_165846 6",
+   "type": "RECTANGLE",
+   "parent": null,
+   "bounds": {
+    "x": 414,
+    "y": 423,
+    "width": 88.44,
+    "height": 87.44
+   },
+   "fill": "image"
+  },
+  {
+   "fig": "397:391",
+   "id": 192,
+   "z": 173,
+   "name": "MagicEraser_260423_165846 7",
+   "type": "RECTANGLE",
+   "parent": null,
+   "bounds": {
+    "x": -50.82,
+    "y": 484.18,
+    "width": 88.08,
+    "height": 87.08
+   },
+   "fill": "image"
+  },
+  {
+   "fig": "397:404",
+   "id": 193,
+   "z": 174,
+   "name": "MagicEraser_260423_165846 13",
+   "type": "RECTANGLE",
+   "parent": null,
+   "bounds": {
+    "x": 376.83,
+    "y": 837.22,
+    "width": 88.44,
+    "height": 87.44
+   },
+   "fill": "image"
+  },
+  {
+   "fig": "489:5",
+   "id": 194,
+   "z": 175,
+   "name": "Group 31",
+   "type": "GROUP",
+   "parent": null,
+   "bounds": {
+    "x": -58,
+    "y": 941,
+    "width": 465.06,
+    "height": 87.66
+   },
+   "fill": null
+  },
+  {
+   "fig": "397:403",
+   "id": 195,
+   "z": 176,
+   "name": "MagicEraser_260423_165846 12",
+   "type": "RECTANGLE",
+   "parent": 194,
+   "bounds": {
+    "x": 318.62,
+    "y": 941.22,
+    "width": 88.44,
+    "height": 87.44
+   },
+   "fill": "image"
+  },
+  {
+   "fig": "397:405",
+   "id": 196,
+   "z": 177,
+   "name": "MagicEraser_260423_165846 14",
+   "type": "RECTANGLE",
+   "parent": 194,
+   "bounds": {
+    "x": -58,
+    "y": 941.4,
+    "width": 88.08,
+    "height": 87.08
+   },
+   "fill": "image"
+  },
+  {
+   "fig": "397:399",
+   "id": 197,
+   "z": 178,
+   "name": "MagicEraser_260423_165846 8",
+   "type": "RECTANGLE",
+   "parent": 194,
+   "bounds": {
+    "x": 15.82,
+    "y": 941.22,
+    "width": 88,
+    "height": 87
+   },
+   "fill": "image"
+  },
+  {
+   "fig": "397:400",
+   "id": 198,
+   "z": 179,
+   "name": "MagicEraser_260423_165846 9",
+   "type": "RECTANGLE",
+   "parent": 194,
+   "bounds": {
+    "x": 91.4,
+    "y": 941,
+    "width": 88.44,
+    "height": 87.44
+   },
+   "fill": "image"
+  },
+  {
+   "fig": "397:401",
+   "id": 199,
+   "z": 180,
+   "name": "MagicEraser_260423_165846 10",
+   "type": "RECTANGLE",
+   "parent": 194,
+   "bounds": {
+    "x": 166.62,
+    "y": 941.22,
+    "width": 88.44,
+    "height": 87.44
+   },
+   "fill": "image"
+  },
+  {
+   "fig": "397:402",
+   "id": 200,
+   "z": 181,
+   "name": "MagicEraser_260423_165846 11",
+   "type": "RECTANGLE",
+   "parent": 194,
+   "bounds": {
+    "x": 242.62,
+    "y": 941.22,
+    "width": 88.44,
+    "height": 87.44
+   },
+   "fill": "image"
+  }
+ ]
+}

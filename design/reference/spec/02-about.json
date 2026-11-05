@@ -1,0 +1,607 @@
+{
+ "frame": {
+  "name": "единая верстка",
+  "figmaNodeId": "352:165",
+  "width": 390
+ },
+ "units": "px макета; координаты относительно верха блока",
+ "block": "02-about",
+ "y": 780,
+ "height": 1221,
+ "texts": [
+  {
+   "fig": "352:183",
+   "id": 71,
+   "z": 52,
+   "name": "Привет,",
+   "characters": "Привет,",
+   "box": {
+    "x": 92,
+    "y": 86,
+    "w": 139,
+    "h": 30
+   },
+   "rotate": 0,
+   "bounds": {
+    "x": 92,
+    "y": 86,
+    "width": 139,
+    "height": 30
+   },
+   "font": {
+    "family": "Playfair Display",
+    "weight": 400,
+    "italic": true
+   },
+   "size": 30,
+   "leading": 30,
+   "align": "center",
+   "color": "#49301C",
+   "lines": [
+    {
+     "text": "Привет,",
+     "x": 12.08,
+     "baselineY": 27.46,
+     "width": 114.84
+    }
+   ],
+   "mockupSize": 36,
+   "sizeSource": "сайт"
+  },
+  {
+   "fig": "352:184",
+   "id": 72,
+   "z": 53,
+   "name": "я Индира",
+   "characters": "я Индира",
+   "box": {
+    "x": 145,
+    "y": 116,
+    "w": 154,
+    "h": 30
+   },
+   "rotate": 0,
+   "bounds": {
+    "x": 145,
+    "y": 116,
+    "width": 154,
+    "height": 30
+   },
+   "font": {
+    "family": "Playfair Display",
+    "weight": 400,
+    "italic": true
+   },
+   "size": 30,
+   "leading": 30,
+   "align": "center",
+   "color": "#49301C",
+   "lines": [
+    {
+     "text": "я Индира",
+     "x": 12.9,
+     "baselineY": 27.46,
+     "width": 128.2
+    }
+   ],
+   "mockupSize": 36,
+   "sizeSource": "сайт"
+  },
+  {
+   "fig": "352:186",
+   "id": 74,
+   "z": 55,
+   "name": "уже больше 4 лет я заказываю себе одежду, аксессуары и декор",
+   "characters": "уже больше 4 лет я заказываю себе одежду, аксессуары\nи декор для дома с китайских маркетплейсов таобао и 1688 🇨🇳",
+   "box": {
+    "x": 52,
+    "y": 219,
+    "w": 287,
+    "h": 56
+   },
+   "rotate": 0,
+   "bounds": {
+    "x": 52,
+    "y": 219,
+    "width": 287,
+    "height": 56
+   },
+   "font": {
+    "family": "Inter",
+    "weight": 500,
+    "italic": false
+   },
+   "size": 9.5,
+   "leading": 14,
+   "align": "center",
+   "color": "#49301C",
+   "lines": [
+    {
+     "text": "уже больше 4 лет я заказываю",
+     "x": 70.2,
+     "baselineY": 10.45,
+     "width": 146.61
+    },
+    {
+     "text": "себе одежду, аксессуары",
+     "x": 82.34,
+     "baselineY": 24.45,
+     "width": 122.32
+    },
+    {
+     "text": "и декор для дома с китайских",
+     "x": 72.64,
+     "baselineY": 38.45,
+     "width": 141.71
+    },
+    {
+     "text": "маркетплейсов таобао и 1688 🇨🇳",
+     "x": 66.64,
+     "baselineY": 52.45,
+     "width": 153.73
+    }
+   ],
+   "mockupSize": 17,
+   "sizeSource": "сайт"
+  },
+  {
+   "fig": "382:205",
+   "id": 96,
+   "z": 77,
+   "name": "1/",
+   "characters": "1/",
+   "box": {
+    "x": -63,
+    "y": 1190,
+    "w": 192,
+    "h": 15
+   },
+   "rotate": 0,
+   "bounds": {
+    "x": -63,
+    "y": 1190,
+    "width": 192,
+    "height": 15
+   },
+   "font": {
+    "family": "Inter",
+    "weight": 600,
+    "italic": false
+   },
+   "size": 13,
+   "leading": 15,
+   "align": "left",
+   "color": "#49301C",
+   "lines": [
+    {
+     "text": "1/",
+     "x": 0,
+     "baselineY": 12.23,
+     "width": 11.17
+    }
+   ],
+   "ghost": true,
+   "ghostReason": "слой большей частью за пределами фрейма — служебный слой макета (содержимое других состояний/остаток черновика): не выводить как видимый текст"
+  },
+  {
+   "fig": "352:187",
+   "id": 157,
+   "z": 138,
+   "name": "экономлю 20-40 тысяч рублей ежемесячно благодаря Китаю",
+   "characters": "экономлю 20-40 тысяч рублей ежемесячно благодаря Китаю",
+   "box": {
+    "x": 132.59,
+    "y": 613.36,
+    "w": 196.8,
+    "h": 45
+   },
+   "rotate": 2.5,
+   "bounds": {
+    "x": 130.62,
+    "y": 613.36,
+    "width": 198.57,
+    "height": 53.54
+   },
+   "font": {
+    "family": "Inter",
+    "weight": 400,
+    "italic": false
+   },
+   "size": 10,
+   "leading": 15,
+   "align": "left",
+   "color": "#49301C",
+   "lines": [
+    {
+     "text": "экономлю 20-40 тысяч",
+     "x": 0,
+     "baselineY": 11.14,
+     "width": 114.81
+    },
+    {
+     "text": "рублей ежемесячно",
+     "x": 0,
+     "baselineY": 26.14,
+     "width": 99.45
+    },
+    {
+     "text": "благодаря Китаю",
+     "x": 0,
+     "baselineY": 41.14,
+     "width": 84.92
+    }
+   ],
+   "mockupSize": 17,
+   "sizeSource": "сайт"
+  },
+  {
+   "fig": "352:188",
+   "id": 158,
+   "z": 139,
+   "name": "собираю стильный гардероб как у инфлюенсеров, но до 10 раз д",
+   "characters": "собираю стильный гардероб как у инфлюенсеров,\nно до 10 раз дешевле",
+   "box": {
+    "x": 72.01,
+    "y": 692.7,
+    "w": 243.41,
+    "h": 45
+   },
+   "rotate": -2.5,
+   "bounds": {
+    "x": 72.01,
+    "y": 682.08,
+    "width": 245.14,
+    "height": 55.57
+   },
+   "font": {
+    "family": "Inter",
+    "weight": 400,
+    "italic": false
+   },
+   "size": 10,
+   "leading": 15,
+   "align": "left",
+   "color": "#49301C",
+   "lines": [
+    {
+     "text": "собираю стильный гардероб",
+     "x": 0,
+     "baselineY": 11.14,
+     "width": 142.45
+    },
+    {
+     "text": "как у инфлюенсеров,",
+     "x": 0,
+     "baselineY": 26.14,
+     "width": 103.71
+    },
+    {
+     "text": "но до 10 раз дешевле",
+     "x": 0,
+     "baselineY": 41.14,
+     "width": 106.19
+    }
+   ],
+   "mockupSize": 17,
+   "sizeSource": "сайт"
+  },
+  {
+   "fig": "352:189",
+   "id": 159,
+   "z": 140,
+   "name": "делюсь честными обзорами и распаковками в блоге",
+   "characters": "делюсь честными обзорами\nи распаковками в блоге\n",
+   "box": {
+    "x": 130.98,
+    "y": 762.72,
+    "w": 239.62,
+    "h": 30
+   },
+   "rotate": 2.5,
+   "bounds": {
+    "x": 129.67,
+    "y": 762.72,
+    "width": 240.7,
+    "height": 40.42
+   },
+   "font": {
+    "family": "Inter",
+    "weight": 400,
+    "italic": false
+   },
+   "size": 10,
+   "leading": 15,
+   "align": "left",
+   "color": "#49301C",
+   "lines": [
+    {
+     "text": "делюсь честными обзорами",
+     "x": 0,
+     "baselineY": 11.14,
+     "width": 139.96
+    },
+    {
+     "text": "и распаковками в блоге",
+     "x": 0,
+     "baselineY": 26.14,
+     "width": 117.88
+    }
+   ],
+   "mockupSize": 17,
+   "sizeSource": "сайт"
+  },
+  {
+   "fig": "352:190",
+   "id": 160,
+   "z": 141,
+   "name": "обучаю других выгодному шопингу на Таобао и 1688",
+   "characters": "обучаю других выгодному шопингу на Таобао и 1688",
+   "box": {
+    "x": 75.89,
+    "y": 821.38,
+    "w": 222.47,
+    "h": 30
+   },
+   "rotate": -2.5,
+   "bounds": {
+    "x": 75.89,
+    "y": 811.68,
+    "width": 223.57,
+    "height": 39.68
+   },
+   "font": {
+    "family": "Inter",
+    "weight": 400,
+    "italic": false
+   },
+   "size": 10,
+   "leading": 15,
+   "align": "left",
+   "color": "#49301C",
+   "lines": [
+    {
+     "text": "обучаю других выгодному",
+     "x": 0,
+     "baselineY": 11.14,
+     "width": 130.34
+    },
+    {
+     "text": "шопингу на Таобао и 1688",
+     "x": 0,
+     "baselineY": 26.14,
+     "width": 128.55
+    }
+   ],
+   "mockupSize": 17,
+   "sizeSource": "сайт"
+  }
+ ],
+ "layers": [
+  {
+   "fig": "352:182",
+   "id": 55,
+   "z": 36,
+   "name": "MagicEraser_260407_235442 1",
+   "type": "RECTANGLE",
+   "parent": null,
+   "bounds": {
+    "x": -31,
+    "y": -140,
+    "width": 453,
+    "height": 830
+   },
+   "fill": "image"
+  },
+  {
+   "fig": "395:329",
+   "id": 56,
+   "z": 37,
+   "name": "MagicEraser_260407_235442 3",
+   "type": "RECTANGLE",
+   "parent": null,
+   "bounds": {
+    "x": -30,
+    "y": 577,
+    "width": 453,
+    "height": 532
+   },
+   "fill": "image"
+  },
+  {
+   "fig": "662:4",
+   "id": 57,
+   "z": 38,
+   "name": "MagicEraser_260407_235442 4",
+   "type": "RECTANGLE",
+   "parent": null,
+   "bounds": {
+    "x": -31,
+    "y": 714,
+    "width": 453,
+    "height": 532
+   },
+   "fill": "image"
+  },
+  {
+   "fig": "382:197",
+   "id": 70,
+   "z": 51,
+   "name": "MagicEraser_260408_211609 3",
+   "type": "RECTANGLE",
+   "parent": null,
+   "bounds": {
+    "x": 9,
+    "y": 13,
+    "width": 373,
+    "height": 210
+   },
+   "fill": "image"
+  },
+  {
+   "fig": "352:185",
+   "id": 73,
+   "z": 54,
+   "name": "Rectangle 7",
+   "type": "RECTANGLE",
+   "parent": null,
+   "bounds": {
+    "x": 39,
+    "y": 197,
+    "width": 312,
+    "height": 102
+   },
+   "fill": "#FBE8B5",
+   "cornerRadius": 2
+  },
+  {
+   "fig": "352:191",
+   "id": 75,
+   "z": 56,
+   "name": "IMG_2441 1",
+   "type": "RECTANGLE",
+   "parent": null,
+   "bounds": {
+    "x": 101,
+    "y": 337.48,
+    "width": 188.04,
+    "height": 234.98
+   },
+   "fill": "image"
+  },
+  {
+   "fig": "352:192",
+   "id": 76,
+   "z": 57,
+   "name": "IMG_3009 1",
+   "type": "RECTANGLE",
+   "parent": null,
+   "bounds": {
+    "x": 28.05,
+    "y": 884.04,
+    "width": 168.36,
+    "height": 210.23
+   },
+   "fill": "image"
+  },
+  {
+   "fig": "352:193",
+   "id": 77,
+   "z": 58,
+   "name": "MagicEraser_260408_211633 1",
+   "type": "RECTANGLE",
+   "parent": null,
+   "bounds": {
+    "x": 299,
+    "y": 177,
+    "width": 60,
+    "height": 60
+   },
+   "fill": "image"
+  },
+  {
+   "fig": "352:194",
+   "id": 78,
+   "z": 59,
+   "name": "MagicEraser_260408_211609 1",
+   "type": "RECTANGLE",
+   "parent": null,
+   "bounds": {
+    "x": 242,
+    "y": 317,
+    "width": 75.74,
+    "height": 66.76
+   },
+   "fill": "image"
+  },
+  {
+   "fig": "352:195",
+   "id": 79,
+   "z": 60,
+   "name": "MagicEraser_260408_211520 1",
+   "type": "RECTANGLE",
+   "parent": null,
+   "bounds": {
+    "x": 37,
+    "y": 486,
+    "width": 151.51,
+    "height": 151.51
+   },
+   "fill": "image"
+  },
+  {
+   "fig": "382:196",
+   "id": 80,
+   "z": 61,
+   "name": "IMG_7642 1",
+   "type": "RECTANGLE",
+   "parent": null,
+   "bounds": {
+    "x": 193,
+    "y": 884,
+    "width": 170.47,
+    "height": 209.97
+   },
+   "fill": "image"
+  },
+  {
+   "fig": "388:304",
+   "id": 161,
+   "z": 142,
+   "name": "star 1",
+   "type": "RECTANGLE",
+   "parent": null,
+   "bounds": {
+    "x": 93.23,
+    "y": 618.74,
+    "width": 37.54,
+    "height": 37.54
+   },
+   "fill": "image"
+  },
+  {
+   "fig": "388:306",
+   "id": 162,
+   "z": 143,
+   "name": "star 2",
+   "type": "RECTANGLE",
+   "parent": null,
+   "bounds": {
+    "x": 35.01,
+    "y": 699.01,
+    "width": 37.54,
+    "height": 37.54
+   },
+   "fill": "image"
+  },
+  {
+   "fig": "388:307",
+   "id": 163,
+   "z": 144,
+   "name": "star 3",
+   "type": "RECTANGLE",
+   "parent": null,
+   "bounds": {
+    "x": 91.25,
+    "y": 759.25,
+    "width": 37.54,
+    "height": 37.54
+   },
+   "fill": "image"
+  },
+  {
+   "fig": "388:308",
+   "id": 164,
+   "z": 145,
+   "name": "star 4",
+   "type": "RECTANGLE",
+   "parent": null,
+   "bounds": {
+    "x": 38.79,
+    "y": 818.79,
+    "width": 37.54,
+    "height": 37.54
+   },
+   "fill": "image"
+  }
+ ]
+}

@@ -1,0 +1,420 @@
+{
+ "frame": {
+  "name": "единая верстка",
+  "figmaNodeId": "352:165",
+  "width": 390
+ },
+ "units": "px макета; координаты относительно верха блока",
+ "block": "07-roadmap",
+ "y": 4670,
+ "height": 456,
+ "texts": [
+  {
+   "fig": "382:281",
+   "id": 123,
+   "z": 104,
+   "name": "знакомство с маркетплейсами",
+   "characters": "знакомство\nс маркетплейсами",
+   "box": {
+    "x": 25,
+    "y": 246,
+    "w": 149,
+    "h": 26
+   },
+   "rotate": 0,
+   "bounds": {
+    "x": 25,
+    "y": 246,
+    "width": 149,
+    "height": 26
+   },
+   "font": {
+    "family": "Playfair Display",
+    "weight": 400,
+    "italic": false
+   },
+   "size": 13,
+   "leading": 13,
+   "align": "center",
+   "color": "#49301C",
+   "lines": [
+    {
+     "text": "знакомство",
+     "x": 38.58,
+     "baselineY": 11.9,
+     "width": 71.83
+    },
+    {
+     "text": "с маркетплейсами",
+     "x": 17.5,
+     "baselineY": 24.9,
+     "width": 113.99
+    }
+   ]
+  },
+  {
+   "fig": "382:283",
+   "id": 124,
+   "z": 105,
+   "name": "поиск товаров",
+   "characters": "поиск товаров",
+   "box": {
+    "x": 202,
+    "y": 259,
+    "w": 149,
+    "h": 13
+   },
+   "rotate": 0,
+   "bounds": {
+    "x": 202,
+    "y": 259,
+    "width": 149,
+    "height": 13
+   },
+   "font": {
+    "family": "Playfair Display",
+    "weight": 400,
+    "italic": false
+   },
+   "size": 13,
+   "leading": 13,
+   "align": "center",
+   "color": "#49301C",
+   "lines": [
+    {
+     "text": "поиск товаров",
+     "x": 29.56,
+     "baselineY": 11.9,
+     "width": 89.87
+    }
+   ]
+  },
+  {
+   "fig": "382:285",
+   "id": 127,
+   "z": 108,
+   "name": "рейтинг продавцов",
+   "characters": "рейтинг продавцов",
+   "box": {
+    "x": 390,
+    "y": 157,
+    "w": 149,
+    "h": 13
+   },
+   "rotate": 0,
+   "bounds": {
+    "x": 390,
+    "y": 157,
+    "width": 149,
+    "height": 13
+   },
+   "font": {
+    "family": "Playfair Display",
+    "weight": 400,
+    "italic": false
+   },
+   "size": 13,
+   "leading": 13,
+   "align": "center",
+   "color": "#49301C",
+   "lines": [
+    {
+     "text": "рейтинг продавцов",
+     "x": 14.86,
+     "baselineY": 11.9,
+     "width": 119.29
+    }
+   ],
+   "ghost": true,
+   "ghostReason": "слой большей частью за пределами фрейма — служебный слой макета (содержимое других состояний/остаток черновика): не выводить как видимый текст"
+  },
+  {
+   "fig": "382:286",
+   "id": 128,
+   "z": 109,
+   "name": "регистрация без риска блокировки",
+   "characters": "регистрация без риска блокировки",
+   "box": {
+    "x": 42,
+    "y": 277,
+    "w": 115,
+    "h": 26
+   },
+   "rotate": 0,
+   "bounds": {
+    "x": 42,
+    "y": 277,
+    "width": 115,
+    "height": 26
+   },
+   "font": {
+    "family": "Inter",
+    "weight": 400,
+    "italic": false
+   },
+   "size": 10,
+   "leading": 13,
+   "align": "center",
+   "color": "#49301C",
+   "lines": [
+    {
+     "text": "регистрация без риска",
+     "x": 0.56,
+     "baselineY": 10.14,
+     "width": 113.88
+    },
+    {
+     "text": "блокировки",
+     "x": 28.44,
+     "baselineY": 23.14,
+     "width": 58.12
+    }
+   ]
+  },
+  {
+   "fig": "382:291",
+   "id": 146,
+   "z": 127,
+   "name": "как находить любые товары, бренды в разы дешевле, чем у нас?",
+   "characters": "как находить любые товары, бренды в разы дешевле, чем у нас? все про экспортные товары",
+   "box": {
+    "x": 204,
+    "y": 277,
+    "w": 145,
+    "h": 52
+   },
+   "rotate": 0,
+   "bounds": {
+    "x": 204,
+    "y": 277,
+    "width": 145,
+    "height": 52
+   },
+   "font": {
+    "family": "Inter",
+    "weight": 400,
+    "italic": false
+   },
+   "size": 10,
+   "leading": 13,
+   "align": "center",
+   "color": "#49301C",
+   "lines": [
+    {
+     "text": "как находить любые товары,",
+     "x": 1.51,
+     "baselineY": 10.14,
+     "width": 141.98
+    },
+    {
+     "text": "бренды в разы дешевле, чем",
+     "x": 0.67,
+     "baselineY": 23.14,
+     "width": 143.65
+    },
+    {
+     "text": "у нас? все про экспортные",
+     "x": 6.53,
+     "baselineY": 36.14,
+     "width": 131.93
+    },
+    {
+     "text": "товары",
+     "x": 54.57,
+     "baselineY": 49.14,
+     "width": 35.87
+    }
+   ]
+  },
+  {
+   "fig": "382:293",
+   "id": 153,
+   "z": 134,
+   "name": "как выбрать хороший товар?",
+   "characters": "как выбрать хороший товар?",
+   "box": {
+    "x": 397,
+    "y": 176,
+    "w": 136,
+    "h": 26
+   },
+   "rotate": 0,
+   "bounds": {
+    "x": 397,
+    "y": 176,
+    "width": 136,
+    "height": 26
+   },
+   "font": {
+    "family": "Inter",
+    "weight": 400,
+    "italic": false
+   },
+   "size": 10,
+   "leading": 13,
+   "align": "center",
+   "color": "#49301C",
+   "lines": [
+    {
+     "text": "как выбрать хороший",
+     "x": 14.75,
+     "baselineY": 10.14,
+     "width": 106.49
+    },
+    {
+     "text": "товар?",
+     "x": 51.28,
+     "baselineY": 23.14,
+     "width": 33.44
+    }
+   ],
+   "ghost": true,
+   "ghostReason": "слой большей частью за пределами фрейма — служебный слой макета (содержимое других состояний/остаток черновика): не выводить как видимый текст"
+  },
+  {
+   "fig": "382:296",
+   "id": 154,
+   "z": 135,
+   "name": "дорожная карта курса",
+   "characters": "дорожная карта курса",
+   "box": {
+    "x": 60,
+    "y": 122,
+    "w": 271,
+    "h": 17
+   },
+   "rotate": 0,
+   "bounds": {
+    "x": 60,
+    "y": 122,
+    "width": 271,
+    "height": 17
+   },
+   "font": {
+    "family": "Playfair Display",
+    "weight": 400,
+    "italic": false
+   },
+   "size": 21,
+   "leading": 17,
+   "align": "center",
+   "color": "#49301C",
+   "lines": [
+    {
+     "text": "дорожная карта курса",
+     "x": 25.29,
+     "baselineY": 17.23,
+     "width": 220.42
+    }
+   ],
+   "mockupSize": 25,
+   "sizeSource": "заголовки ×1.2 → 21"
+  },
+  {
+   "fig": "382:298",
+   "id": 156,
+   "z": 137,
+   "name": "итак... что тебя ждет на этом курсе?",
+   "characters": "итак... что тебя ждет на этом курсе?",
+   "box": {
+    "x": 82,
+    "y": 107,
+    "w": 226,
+    "h": 10
+   },
+   "rotate": 0,
+   "bounds": {
+    "x": 82,
+    "y": 107,
+    "width": 226,
+    "height": 10
+   },
+   "font": {
+    "family": "Inter",
+    "weight": 400,
+    "italic": false
+   },
+   "size": 10,
+   "leading": 10,
+   "align": "center",
+   "color": "#49301C",
+   "lines": [
+    {
+     "text": "итак... что тебя ждет на этом курсе?",
+     "x": 23.28,
+     "baselineY": 8.64,
+     "width": 179.44
+    }
+   ]
+  }
+ ],
+ "layers": [
+  {
+   "fig": "397:384",
+   "id": 27,
+   "z": 8,
+   "name": "IMG_4424 1",
+   "type": "RECTANGLE",
+   "parent": null,
+   "bounds": {
+    "x": 0,
+    "y": 0,
+    "width": 391,
+    "height": 456
+   },
+   "fill": "image"
+  },
+  {
+   "fig": "396:335",
+   "id": 39,
+   "z": 20,
+   "name": "MagicEraser_260423_150112 1",
+   "type": "RECTANGLE",
+   "parent": null,
+   "bounds": {
+    "x": 174,
+    "y": 178,
+    "width": 196,
+    "height": 206
+   },
+   "fill": "image"
+  },
+  {
+   "fig": "396:338",
+   "id": 40,
+   "z": 21,
+   "name": "MagicEraser_260423_145931 1",
+   "type": "RECTANGLE",
+   "parent": null,
+   "bounds": {
+    "x": 25,
+    "y": 143,
+    "width": 211,
+    "height": 273
+   },
+   "fill": "image"
+  },
+  {
+   "fig": "396:339",
+   "id": 171,
+   "z": 152,
+   "name": "Line 3",
+   "type": "LINE",
+   "parent": null,
+   "bounds": {
+    "x": 51,
+    "y": 150.51,
+    "width": 287,
+    "height": 0
+   },
+   "fill": null,
+   "strokes": [
+    {
+     "color": "#000000",
+     "type": "solid"
+    }
+   ],
+   "strokeWeight": 0.4
+  }
+ ]
+}

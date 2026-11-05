@@ -1,37 +1,32 @@
-import { TicketStepCard } from "../components/TicketStepCard";
-import { imgBgWoodSteps } from "../lib/landingAssets";
+import { woodStepsArt } from "../lib/blockArt";
+import { Block, T, u } from "../ui/canvas";
+import { WoodStepsSlider } from "./wood-steps/WoodStepsSlider";
 
+/** Доска с билетом-слайдером: три шага, как накручивают цены. */
 export function WoodStepsSection() {
   return (
-    <section className="relative overflow-hidden px-4 py-12">
-      <img
-        src={imgBgWoodSteps}
-        alt=""
-        aria-hidden
-        className="pointer-events-none absolute inset-0 size-full object-cover"
-      />
-      <div className="relative z-10">
-        <h2 className="mb-8 text-center [font-family:var(--font-course-playfair)] text-[30px] leading-[36px] font-normal text-[#49301c]">
-          <span className="block">смотри,</span>
-          <span className="block">как накручивают цены на наши хотелки</span>
-        </h2>
-
-        <div className="-mx-4 flex gap-4 overflow-x-auto px-4 pb-4">
-          <TicketStepCard step="1/" text="сначала товар производится на китайской фабрике" />
-          <TicketStepCard
-            step="2//"
-            text="потом этот товар выставляют на китайских маркетплейсах (таобао и 1688)"
-          />
-          <TicketStepCard
-            step="3//"
-            text="затем его выкупают российские селлеры и продают на наших маркетплейсах (вб, озон), в шоурумах и брендах"
-          />
-        </div>
-
-        <p className="mt-6 text-center text-[10px] font-light leading-[16px] text-[#49301c]">
-          можно собирать целые образы по цене одной вещи
-        </p>
-      </div>
-    </section>
+    <Block name="03-wood-steps" height={477} art={woodStepsArt} background="#492B1B">
+      <T
+        as="h2"
+        fig="382:201"
+        x={60}
+        y={109}
+        w={271}
+        h={51}
+        size={21}
+        leading={17}
+        font="playfair"
+        align="center"
+        color="#F6F5F1"
+        style={{ textShadow: `0 0 ${u(10)} rgba(0, 0, 0, 0.5)` }}
+      >
+        смотри,
+        <br />
+        как накручивают
+        <br />
+        цены на наши хотелки
+      </T>
+      <WoodStepsSlider />
+    </Block>
   );
 }

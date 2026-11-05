@@ -39,3 +39,15 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# исходники дизайна (Figma / FigCraft): полный файл слишком большой для git,
+# в репозитории держим только лёгкий файл с макетом сайта
+/design/*.fig
+/design/*.figcraft
+!/design/daydi-site.figcraft
+
+# временные снимки сверки с макетом
+/design/.check/
+
+# полный экспорт фрейма из Figma: в репозитории лежат его срезы по блокам (design/reference/figma/)
+/design/reference/figma@2x.png

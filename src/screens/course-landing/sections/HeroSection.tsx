@@ -1,79 +1,135 @@
-import Image from "next/image";
-import {
-  staticAboutIndiraTopEdge,
-  staticHeroPhoto,
-  staticHeroPaperCard,
-  staticHeroTapeBadge,
-} from "../lib/landingAssets";
+import { heroArt } from "../lib/blockArt";
+import { Block, T, boxStyle, u } from "../ui/canvas";
 
+/** Подложка кнопки «купить» — слой «Rectangle 16» (352:169). */
+const BUY = { x: 90, y: 619, w: 210, h: 53 };
+
+/** Первый экран: лист с названием курса и кнопка «купить». */
 export function HeroSection() {
   return (
-    <div className="relative isolate flex w-full min-h-[calc(100vw*763/430)] flex-col items-center">
-      <div className="pointer-events-none absolute inset-0 -z-10" aria-hidden>
-        <Image src={staticHeroPhoto} alt="" fill priority sizes="480px" className="object-cover" />
-        <div className="absolute inset-0 bg-black/40" />
-      </div>
+    <Block name="01-hero" height={780} art={heroArt} priority>
+      {/* В макете строка начинается с неразрывного пробела: он участвует в центрировании */}
+      <T
+        fig="352:178"
+        x={79}
+        y={206.31}
+        w={219}
+        h={30}
+        rotate={-3.49}
+        size={11}
+        leading={30}
+        weight={500}
+        align="center"
+        color="#49301C"
+      >
+        {"\u00a0курс по Китаю"}
+      </T>
 
-      <div className="relative z-10 flex w-full flex-col items-center px-4 pt-8 pb-6">
-        <div className="w-full max-w-[354px] rotate-[-3.53deg]">
-          <div className="grid *:col-start-1 *:row-start-1">
-            <Image
-              src={staticHeroPaperCard}
-              alt=""
-              sizes="(max-width: 480px) 92vw, 354px"
-              className="w-full"
-            />
+      <T
+        as="h1"
+        fig="352:171"
+        x={54}
+        y={254.98}
+        w={278.71}
+        h={56}
+        rotate={-3.49}
+        size={30}
+        leading={28}
+        font="playfair"
+        align="center"
+        color="#49301C"
+      >
+        Как заказывать <br />
+        на Таобао и 1688
+      </T>
 
-            <div className="flex flex-col items-center px-[12%] pt-[26%] pb-[10%]">
-              <div className="relative mt-16 flex h-[61px] w-[120px] rotate-[-0.69deg] items-center justify-center">
-                <Image
-                  src={staticHeroTapeBadge}
-                  alt=""
-                  fill
-                  sizes="120px"
-                  className="pointer-events-none object-bottom"
-                />
-                <span className="relative z-10 max-w-[92px] px-0.5 text-center text-[11px] font-medium leading-snug text-[#49301c]">
-                  курс по Китаю
-                </span>
-              </div>
+      <T
+        fig="352:174"
+        x={49}
+        y={331.14}
+        w={297.7}
+        h={60}
+        rotate={-3.49}
+        size={12}
+        leading={15}
+        weight={300}
+        align="center"
+        color="#49301C"
+        tracking={-0.01}
+      >
+        пошаговое обучение, как покупать <br />
+        одежду и декор для дома до 10 раз <br />
+        выгоднее, чем на Вайлдберриз <br />и Алиэкспресс
+      </T>
 
-              <h1 className="-mt-3 m-0 w-full max-w-[16rem] text-center [font-family:var(--font-course-playfair)] text-[30px] leading-[30px] font-normal text-[#49301c]">
-                Как заказывать на Таобао и 1688
-              </h1>
-
-              <p className="m-0 mt-3 w-full max-w-56.5 text-center [font-family:var(--font-course-inter)] text-[12px] font-light not-italic leading-[13px] tracking-normal text-[#49301c]">
-                пошаговое обучение, как покупать одежду и декор для дома до 10 раз выгоднее, чем на
-                Вайлдберриз и Алиэкспресс
-              </p>
-
-              <div className="mt-12 flex items-center justify-center gap-6">
-                <div className="flex h-[17px] min-w-[44px] items-center justify-center rounded-[20px] bg-[rgba(205,197,173,0.65)] px-2">
-                  <span className="text-[9px] font-medium leading-none text-[#49301c]">taobao</span>
-                </div>
-                <div className="flex h-[17px] min-w-[44px] items-center justify-center rounded-[20px] bg-[rgba(205,197,173,0.65)] px-2">
-                  <span className="text-[9px] font-medium leading-none text-[#49301c]">1688</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <a
-          href="#buy"
-          className="-mt-5 mb-16 flex h-[46px] w-[197px] shrink-0 items-center justify-center rounded-[25px] bg-[#f6f5f1] text-[19px] leading-[30px] font-extrabold text-[#531608]"
-        >
-          купить
-        </a>
-      </div>
-
-      <Image
-        src={staticAboutIndiraTopEdge}
-        alt=""
+      {/* Подписи на плашках повторяют заголовок — для скринридеров скрыты */}
+      <T
+        as="span"
         aria-hidden
-        sizes="480px"
-        className="relative z-10 mt-auto block w-full"
-      />
-    </div>
+        fig="352:179"
+        x={55}
+        y={454.33}
+        w={219}
+        h={30}
+        rotate={-3.49}
+        size={9}
+        leading={30}
+        weight={500}
+        align="center"
+        color="#49301C"
+      >
+        taobao
+      </T>
+      <T
+        as="span"
+        aria-hidden
+        fig="352:180"
+        x={135}
+        y={449.33}
+        w={219}
+        h={30}
+        rotate={-3.49}
+        size={9}
+        leading={30}
+        weight={500}
+        align="center"
+        color="#49301C"
+      >
+        1688
+      </T>
+
+      {/* Якорь на блок тарифов; фон и скругление повторяют запечённую подложку */}
+      <a
+        href="#buy"
+        className="outline-none focus-visible:outline-solid"
+        style={{
+          ...boxStyle(BUY),
+          background: "#F6F5F1",
+          borderRadius: u(25),
+          outlineWidth: u(2),
+          outlineOffset: u(3),
+          outlineColor: "#F6F5F1",
+        }}
+      >
+        <T
+          as="span"
+          fig="352:172"
+          origin={BUY}
+          x={85}
+          y={631}
+          w={219}
+          h={30}
+          size={19}
+          leading={30}
+          weight={800}
+          align="center"
+          color="#531608"
+        >
+          {/* Распорка до базовой линии макета (21.91): без неё браузер округляет метрики шрифта и ставит текст на 1px выше */}
+          <span className="inline-block" style={{ height: u(21.91) }} />
+          купить
+        </T>
+      </a>
+    </Block>
   );
 }

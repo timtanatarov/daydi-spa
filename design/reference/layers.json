@@ -1,0 +1,10282 @@
+{
+ "source": "design/daydi-site.figcraft",
+ "frame": {
+  "name": "единая верстка",
+  "figcraftId": 19,
+  "figmaNodeId": "352:165",
+  "width": 390.0,
+  "height": 8000.0
+ },
+ "note": "Слои фрейма в порядке обхода (снизу вверх по z). bounds — габариты в координатах фрейма с учётом поворота; x/y/width/height/rotation — как в инспекторе (для детей групп x/y считаются от фрейма). text.figmaLines — раскладка строк, как её посчитала Figma (x и baselineY от левого верхнего угла текстового блока).",
+ "layers": [
+  {
+   "id": 19,
+   "figmaId": "352:165",
+   "parent": null,
+   "depth": 0,
+   "name": "единая верстка",
+   "type": "FRAME",
+   "block": null,
+   "bounds": {
+    "x": 0.0,
+    "y": 0.0,
+    "width": 390.0,
+    "height": 8000.0
+   },
+   "x": 29.5,
+   "y": -3700.0,
+   "width": 390.0,
+   "height": 8000.0,
+   "rotation": 0,
+   "clip": 1,
+   "fills": [
+    {
+     "color": "#F6F5F1",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 20,
+   "figmaId": "402:562",
+   "parent": 19,
+   "depth": 1,
+   "name": "IMG_4423 3",
+   "type": "RECTANGLE",
+   "block": "08-pricing",
+   "bounds": {
+    "x": -3.0,
+    "y": 6394.0,
+    "width": 397.0,
+    "height": 706.0
+   },
+   "x": -3.0,
+   "y": 6394.0,
+   "width": 397.0,
+   "height": 706.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "blend": "normal",
+     "crop": null,
+     "filters": {
+      "contrast": 0.0,
+      "exposure": -0.09000000357627869,
+      "highlights": 0.0,
+      "saturation": 0.0,
+      "shadows": 0.0,
+      "temperature": -0.07000000029802322,
+      "tint": 0.0
+     },
+     "image": "996d09712dab9ae955b432f72d9778e772e077b2c3992e3d1f852e372a2db60b",
+     "opacity": 1.0,
+     "rotation": 0,
+     "scale": 0.5,
+     "scale_mode": "fill",
+     "type": "image",
+     "visible": true
+    }
+   ]
+  },
+  {
+   "id": 21,
+   "figmaId": "402:561",
+   "parent": 19,
+   "depth": 1,
+   "name": "IMG_4423 2",
+   "type": "RECTANGLE",
+   "block": "08-pricing",
+   "bounds": {
+    "x": -3.0,
+    "y": 5777.0,
+    "width": 397.0,
+    "height": 663.0
+   },
+   "x": -3.0,
+   "y": 6440.0,
+   "width": 397.0,
+   "height": 663.0,
+   "rotation": 0,
+   "flipped": true,
+   "fills": [
+    {
+     "blend": "normal",
+     "crop": [
+      0.9996852278709412,
+      0.0,
+      0.0,
+      0.9390934705734253,
+      0.00015738117508590221,
+      0.06090651452541351
+     ],
+     "filters": {
+      "contrast": 0.0,
+      "exposure": -0.09000000357627869,
+      "highlights": 0.0,
+      "saturation": 0.0,
+      "shadows": 0.0,
+      "temperature": -0.07000000029802322,
+      "tint": 0.0
+     },
+     "image": "996d09712dab9ae955b432f72d9778e772e077b2c3992e3d1f852e372a2db60b",
+     "opacity": 1.0,
+     "rotation": 0,
+     "scale": 0.5,
+     "scale_mode": "crop",
+     "type": "image",
+     "visible": true
+    }
+   ]
+  },
+  {
+   "id": 22,
+   "figmaId": "397:385",
+   "parent": 19,
+   "depth": 1,
+   "name": "IMG_4423 1",
+   "type": "RECTANGLE",
+   "block": "08-pricing",
+   "bounds": {
+    "x": -3.0,
+    "y": 5074.0,
+    "width": 397.0,
+    "height": 706.0
+   },
+   "x": -3.0,
+   "y": 5074.0,
+   "width": 397.0,
+   "height": 706.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "blend": "normal",
+     "crop": null,
+     "filters": {
+      "contrast": 0.0,
+      "exposure": -0.09000000357627869,
+      "highlights": 0.0,
+      "saturation": 0.0,
+      "shadows": 0.0,
+      "temperature": -0.07000000029802322,
+      "tint": 0.0
+     },
+     "image": "996d09712dab9ae955b432f72d9778e772e077b2c3992e3d1f852e372a2db60b",
+     "opacity": 1.0,
+     "rotation": 0,
+     "scale": 0.5,
+     "scale_mode": "fill",
+     "type": "image",
+     "visible": true
+    }
+   ]
+  },
+  {
+   "id": 23,
+   "figmaId": "389:324",
+   "parent": 19,
+   "depth": 1,
+   "name": "IMG_4377 2",
+   "type": "RECTANGLE",
+   "block": "06-wood-benefits",
+   "bounds": {
+    "x": -1.0,
+    "y": 4043.0,
+    "width": 392.0,
+    "height": 630.0
+   },
+   "x": -1.0,
+   "y": 4043.0,
+   "width": 392.0,
+   "height": 630.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "blend": "normal",
+     "crop": [
+      0.9988009333610535,
+      0.0,
+      0.0,
+      0.9064748287200928,
+      0.0005995203973725438,
+      0.0
+     ],
+     "filters": {
+      "contrast": -0.07999999821186066,
+      "exposure": 0.0,
+      "highlights": 0.0,
+      "saturation": 0.0,
+      "shadows": -0.15000000596046448,
+      "temperature": 0.0,
+      "tint": 0.0
+     },
+     "image": "613593802a9b57a5175450a040e10224c84935e5b6b7dd58bf021258c9fdebbb",
+     "opacity": 1.0,
+     "rotation": 0,
+     "scale": 0.5,
+     "scale_mode": "crop",
+     "type": "image",
+     "visible": true
+    }
+   ]
+  },
+  {
+   "id": 24,
+   "figmaId": "400:413",
+   "parent": 19,
+   "depth": 1,
+   "name": "Rectangle 27",
+   "type": "RECTANGLE",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 49.0,
+    "y": 6052.0,
+    "width": 293.0,
+    "height": 768.0
+   },
+   "x": 49.0,
+   "y": 6052.0,
+   "width": 293.0,
+   "height": 768.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "color": "#EFEADE",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 25,
+   "figmaId": "401:451",
+   "parent": 19,
+   "depth": 1,
+   "name": "Rectangle 29",
+   "type": "RECTANGLE",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 132.0,
+    "y": 6733.0,
+    "width": 126.0,
+    "height": 35.0
+   },
+   "x": 132.0,
+   "y": 6733.0,
+   "width": 126.0,
+   "height": 35.0,
+   "rotation": 0,
+   "cornerRadius": 30.0,
+   "fills": [
+    {
+     "color": "#531608",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 26,
+   "figmaId": "401:510",
+   "parent": 19,
+   "depth": 1,
+   "name": "Rectangle 31",
+   "type": "RECTANGLE",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 132.0,
+    "y": 5897.0,
+    "width": 126.0,
+    "height": 35.0
+   },
+   "x": 132.0,
+   "y": 5897.0,
+   "width": 126.0,
+   "height": 35.0,
+   "rotation": 0,
+   "cornerRadius": 30.0,
+   "fills": [
+    {
+     "color": "#531608",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 27,
+   "figmaId": "397:384",
+   "parent": 19,
+   "depth": 1,
+   "name": "IMG_4424 1",
+   "type": "RECTANGLE",
+   "block": "07-roadmap",
+   "bounds": {
+    "x": 0.0,
+    "y": 4670.0,
+    "width": 391.0,
+    "height": 456.0
+   },
+   "x": 0.0,
+   "y": 4670.0,
+   "width": 391.0,
+   "height": 456.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "blend": "normal",
+     "crop": [
+      1.0,
+      0.0,
+      0.0,
+      0.7774935960769653,
+      -4.048481497248546e-23,
+      0.0004262574657332152
+     ],
+     "filters": {
+      "contrast": 0.0,
+      "exposure": 0.0,
+      "highlights": 0.0,
+      "saturation": 0.0,
+      "shadows": 0.0,
+      "temperature": 0.05000000074505806,
+      "tint": 0.0
+     },
+     "image": "9931d811f19016bdd63123fc08680657752cb2c91dac427f58072c32fbd18497",
+     "opacity": 1.0,
+     "rotation": 0,
+     "scale": 0.5,
+     "scale_mode": "crop",
+     "type": "image",
+     "visible": true
+    }
+   ]
+  },
+  {
+   "id": 28,
+   "figmaId": "511:2",
+   "parent": 19,
+   "depth": 1,
+   "name": "Group 33",
+   "type": "GROUP",
+   "block": "06-wood-benefits",
+   "bounds": {
+    "x": -5.0,
+    "y": 4478.0,
+    "width": 400.0,
+    "height": 119.0
+   },
+   "x": -5.0,
+   "y": 4478.0,
+   "width": 400.0,
+   "height": 119.0,
+   "rotation": 0
+  },
+  {
+   "id": 29,
+   "figmaId": "397:371",
+   "parent": 28,
+   "depth": 2,
+   "name": "MagicEraser_260423_163217 1",
+   "type": "RECTANGLE",
+   "block": "06-wood-benefits",
+   "bounds": {
+    "x": -5.0,
+    "y": 4478.0,
+    "width": 400.0,
+    "height": 61.0
+   },
+   "x": -5.0,
+   "y": 4478.0,
+   "width": 400.0,
+   "height": 61.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "blend": "normal",
+     "crop": [
+      1.0,
+      0.0,
+      0.0,
+      0.1525000035762787,
+      0.0,
+      0.29250001907348633
+     ],
+     "filters": {
+      "contrast": 0.0,
+      "exposure": 0.0,
+      "highlights": 0.0,
+      "saturation": 0.0,
+      "shadows": 0.0,
+      "temperature": 0.0,
+      "tint": 0.0
+     },
+     "image": "05a1455943c115bc88242f42b1d412336961ac462909cabf05429af76876d348",
+     "opacity": 1.0,
+     "rotation": 0,
+     "scale": 0.5,
+     "scale_mode": "crop",
+     "type": "image",
+     "visible": true
+    }
+   ]
+  },
+  {
+   "id": 30,
+   "figmaId": "399:410",
+   "parent": 28,
+   "depth": 2,
+   "name": "MagicEraser_260423_163217 2",
+   "type": "RECTANGLE",
+   "block": "06-wood-benefits",
+   "bounds": {
+    "x": -5.0,
+    "y": 4539.0,
+    "width": 400.0,
+    "height": 58.0
+   },
+   "x": -5.0,
+   "y": 4539.0,
+   "width": 400.0,
+   "height": 58.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "blend": "normal",
+     "crop": [
+      1.0,
+      0.0,
+      0.0,
+      0.14499999582767487,
+      0.0,
+      0.5400000214576721
+     ],
+     "filters": {
+      "contrast": 0.0,
+      "exposure": 0.0,
+      "highlights": 0.0,
+      "saturation": 0.0,
+      "shadows": 0.0,
+      "temperature": 0.0,
+      "tint": 0.0
+     },
+     "image": "05a1455943c115bc88242f42b1d412336961ac462909cabf05429af76876d348",
+     "opacity": 1.0,
+     "rotation": 0,
+     "scale": 0.5,
+     "scale_mode": "crop",
+     "type": "image",
+     "visible": true
+    }
+   ]
+  },
+  {
+   "id": 31,
+   "figmaId": "382:294",
+   "parent": 19,
+   "depth": 1,
+   "name": "Rectangle 12",
+   "type": "RECTANGLE",
+   "block": "06-wood-benefits",
+   "bounds": {
+    "x": 95.0,
+    "y": 4255.0,
+    "width": 200.0,
+    "height": 54.0
+   },
+   "x": 95.0,
+   "y": 4255.0,
+   "width": 200.0,
+   "height": 54.0,
+   "rotation": 0,
+   "cornerRadius": 30.0,
+   "fills": [
+    {
+     "color": "#FBE8B5",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 32,
+   "figmaId": "396:337",
+   "parent": 19,
+   "depth": 1,
+   "name": "IMG_4410 1",
+   "type": "RECTANGLE",
+   "block": "03-wood-steps",
+   "bounds": {
+    "x": 0.0,
+    "y": 1879.0,
+    "width": 391.0,
+    "height": 696.0
+   },
+   "x": 0.0,
+   "y": 1879.0,
+   "width": 391.0,
+   "height": 696.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "blend": "normal",
+     "crop": null,
+     "filters": {
+      "contrast": 0.0,
+      "exposure": 0.0,
+      "highlights": 0.0,
+      "saturation": 0.0,
+      "shadows": 0.0,
+      "temperature": 0.0,
+      "tint": 0.0
+     },
+     "image": "b37323b53d4784d83b17d8137fedb5fe1d9e386a2ca09e46e99759f94c5fd7db",
+     "opacity": 1.0,
+     "rotation": 0,
+     "scale": 0.5,
+     "scale_mode": "fill",
+     "type": "image",
+     "visible": true
+    }
+   ]
+  },
+  {
+   "id": 33,
+   "figmaId": "397:341",
+   "parent": 19,
+   "depth": 1,
+   "name": "IMG_4410 2",
+   "type": "RECTANGLE",
+   "block": "03-wood-steps",
+   "bounds": {
+    "x": -3.0,
+    "y": 1872.0,
+    "width": 222.0,
+    "height": 696.0
+   },
+   "x": 219.0,
+   "y": 2568.0,
+   "width": 222.0,
+   "height": 696.0,
+   "rotation": 180.0,
+   "fills": [
+    {
+     "blend": "normal",
+     "crop": [
+      0.5670498013496399,
+      0.0,
+      0.0,
+      1.0,
+      0.43231162428855896,
+      0.0
+     ],
+     "filters": {
+      "contrast": 0.0,
+      "exposure": 0.0,
+      "highlights": 0.0,
+      "saturation": 0.0,
+      "shadows": 0.0,
+      "temperature": 0.0,
+      "tint": 0.0
+     },
+     "image": "b37323b53d4784d83b17d8137fedb5fe1d9e386a2ca09e46e99759f94c5fd7db",
+     "opacity": 1.0,
+     "rotation": 0,
+     "scale": 0.5,
+     "scale_mode": "crop",
+     "type": "image",
+     "visible": true
+    }
+   ]
+  },
+  {
+   "id": 34,
+   "figmaId": "397:349",
+   "parent": 19,
+   "depth": 1,
+   "name": "IMG_4410 3",
+   "type": "RECTANGLE",
+   "block": "04-showcase",
+   "bounds": {
+    "x": 0.0,
+    "y": 2465.0,
+    "width": 391.0,
+    "height": 696.0
+   },
+   "x": 391.0,
+   "y": 2465.0,
+   "width": 391.0,
+   "height": 696.0,
+   "rotation": 180.0,
+   "flipped": true,
+   "fills": [
+    {
+     "blend": "normal",
+     "crop": null,
+     "filters": {
+      "contrast": 0.0,
+      "exposure": 0.0,
+      "highlights": 0.0,
+      "saturation": 0.0,
+      "shadows": 0.0,
+      "temperature": 0.0,
+      "tint": 0.0
+     },
+     "image": "b37323b53d4784d83b17d8137fedb5fe1d9e386a2ca09e46e99759f94c5fd7db",
+     "opacity": 1.0,
+     "rotation": 0,
+     "scale": 0.5,
+     "scale_mode": "fill",
+     "type": "image",
+     "visible": true
+    }
+   ]
+  },
+  {
+   "id": 35,
+   "figmaId": "397:350",
+   "parent": 19,
+   "depth": 1,
+   "name": "IMG_4410 4",
+   "type": "RECTANGLE",
+   "block": "04-showcase",
+   "bounds": {
+    "x": 169.0,
+    "y": 2466.0,
+    "width": 222.0,
+    "height": 696.0
+   },
+   "x": 169.0,
+   "y": 3162.0,
+   "width": 222.0,
+   "height": 696.0,
+   "rotation": 0,
+   "flipped": true,
+   "fills": [
+    {
+     "blend": "normal",
+     "crop": [
+      0.5670498013496399,
+      0.0,
+      0.0,
+      1.0,
+      0.43231162428855896,
+      0.0
+     ],
+     "filters": {
+      "contrast": 0.0,
+      "exposure": 0.0,
+      "highlights": 0.0,
+      "saturation": 0.0,
+      "shadows": 0.0,
+      "temperature": 0.0,
+      "tint": 0.0
+     },
+     "image": "b37323b53d4784d83b17d8137fedb5fe1d9e386a2ca09e46e99759f94c5fd7db",
+     "opacity": 1.0,
+     "rotation": 0,
+     "scale": 0.5,
+     "scale_mode": "crop",
+     "type": "image",
+     "visible": true
+    }
+   ]
+  },
+  {
+   "id": 36,
+   "figmaId": "397:406",
+   "parent": 19,
+   "depth": 1,
+   "name": "IMG_4410 5",
+   "type": "RECTANGLE",
+   "block": "04-showcase",
+   "bounds": {
+    "x": 0.0,
+    "y": 3001.0,
+    "width": 391.0,
+    "height": 544.0
+   },
+   "x": 0.0,
+   "y": 3001.0,
+   "width": 391.0,
+   "height": 544.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "blend": "normal",
+     "crop": [
+      0.9987228512763977,
+      0.0,
+      0.0,
+      0.7816091775894165,
+      0.0006385695887729526,
+      0.0
+     ],
+     "filters": {
+      "contrast": 0.0,
+      "exposure": 0.0,
+      "highlights": 0.0,
+      "saturation": 0.0,
+      "shadows": 0.0,
+      "temperature": 0.0,
+      "tint": 0.0
+     },
+     "image": "b37323b53d4784d83b17d8137fedb5fe1d9e386a2ca09e46e99759f94c5fd7db",
+     "opacity": 1.0,
+     "rotation": 0,
+     "scale": 0.5,
+     "scale_mode": "crop",
+     "type": "image",
+     "visible": true
+    }
+   ]
+  },
+  {
+   "id": 37,
+   "figmaId": "397:407",
+   "parent": 19,
+   "depth": 1,
+   "name": "IMG_4410 6",
+   "type": "RECTANGLE",
+   "block": "04-showcase",
+   "bounds": {
+    "x": -11.0,
+    "y": 2805.0,
+    "width": 222.0,
+    "height": 544.0
+   },
+   "x": 211.0,
+   "y": 3349.0,
+   "width": 222.0,
+   "height": 544.0,
+   "rotation": 180.0,
+   "fills": [
+    {
+     "blend": "normal",
+     "crop": [
+      0.5670498013496399,
+      0.0,
+      0.0,
+      0.7816091775894165,
+      0.43231162428855896,
+      0.2183908075094223
+     ],
+     "filters": {
+      "contrast": 0.0,
+      "exposure": 0.0,
+      "highlights": 0.0,
+      "saturation": 0.0,
+      "shadows": 0.0,
+      "temperature": 0.0,
+      "tint": 0.0
+     },
+     "image": "b37323b53d4784d83b17d8137fedb5fe1d9e386a2ca09e46e99759f94c5fd7db",
+     "opacity": 1.0,
+     "rotation": 0,
+     "scale": 0.5,
+     "scale_mode": "crop",
+     "type": "image",
+     "visible": true
+    }
+   ]
+  },
+  {
+   "id": 38,
+   "figmaId": "396:333",
+   "parent": 19,
+   "depth": 1,
+   "name": "MagicEraser_260423_150215 1",
+   "type": "RECTANGLE",
+   "block": "05-quote",
+   "bounds": {
+    "x": -90.0,
+    "y": 3793.0,
+    "width": 562.0,
+    "height": 270.0
+   },
+   "x": 472.0,
+   "y": 4063.0,
+   "width": 562.0,
+   "height": 270.0,
+   "rotation": 180.0,
+   "fills": [
+    {
+     "blend": "normal",
+     "crop": [
+      1.0,
+      8.002238918928965e-32,
+      5.122973652070047e-32,
+      0.4801444411277771,
+      -7.771561172376096e-16,
+      0.5198556184768677
+     ],
+     "filters": {
+      "contrast": 0.0,
+      "exposure": 0.0,
+      "highlights": 0.0,
+      "saturation": 0.0,
+      "shadows": 0.0,
+      "temperature": -0.10999999940395355,
+      "tint": 0.0
+     },
+     "image": "44d6ec1770b20997c08c443e039c70d1a6a1de0f0f337a2ecd85261daaa596fb",
+     "opacity": 1.0,
+     "rotation": 0,
+     "scale": 0.5,
+     "scale_mode": "crop",
+     "type": "image",
+     "visible": true
+    }
+   ]
+  },
+  {
+   "id": 39,
+   "figmaId": "396:335",
+   "parent": 19,
+   "depth": 1,
+   "name": "MagicEraser_260423_150112 1",
+   "type": "RECTANGLE",
+   "block": "07-roadmap",
+   "bounds": {
+    "x": 174.0,
+    "y": 4848.0,
+    "width": 196.0,
+    "height": 206.0
+   },
+   "x": 174.0,
+   "y": 4848.0,
+   "width": 196.0,
+   "height": 206.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "blend": "normal",
+     "crop": [
+      0.9514563083648682,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0
+     ],
+     "filters": {
+      "contrast": 0.0,
+      "exposure": 0.0,
+      "highlights": 0.0,
+      "saturation": 0.0,
+      "shadows": 0.0,
+      "temperature": 0.0,
+      "tint": 0.0
+     },
+     "image": "cde02469cdb00c37151019181be6b2e552b2d48877f632a22a3daa677b23ffc1",
+     "opacity": 1.0,
+     "rotation": 0,
+     "scale": 0.5,
+     "scale_mode": "crop",
+     "type": "image",
+     "visible": true
+    }
+   ]
+  },
+  {
+   "id": 40,
+   "figmaId": "396:338",
+   "parent": 19,
+   "depth": 1,
+   "name": "MagicEraser_260423_145931 1",
+   "type": "RECTANGLE",
+   "block": "07-roadmap",
+   "bounds": {
+    "x": 25.0,
+    "y": 4813.0,
+    "width": 211.0,
+    "height": 273.0
+   },
+   "x": 25.0,
+   "y": 4813.0,
+   "width": 211.0,
+   "height": 273.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "blend": "normal",
+     "crop": [
+      0.7728937864303589,
+      0.0,
+      0.0,
+      1.0,
+      0.2271062284708023,
+      0.0
+     ],
+     "filters": {
+      "contrast": 0.0,
+      "exposure": 0.0,
+      "highlights": 0.0,
+      "saturation": 0.0,
+      "shadows": 0.0,
+      "temperature": 0.10999999940395355,
+      "tint": 0.0
+     },
+     "image": "8f8b06fb9c95cfe63df7e013cbc3030953ac17f8a25678b420a1dadf205c10da",
+     "opacity": 1.0,
+     "rotation": 0,
+     "scale": 0.5,
+     "scale_mode": "crop",
+     "type": "image",
+     "visible": true
+    }
+   ]
+  },
+  {
+   "id": 41,
+   "figmaId": "382:199",
+   "parent": 19,
+   "depth": 1,
+   "name": "Rectangle 8",
+   "type": "RECTANGLE",
+   "block": "04-showcase",
+   "bounds": {
+    "x": 29.0,
+    "y": 2685.0,
+    "width": 333.0,
+    "height": 220.0
+   },
+   "x": 29.0,
+   "y": 2685.0,
+   "width": 333.0,
+   "height": 220.0,
+   "rotation": 0,
+   "cornerRadius": 2.0,
+   "fills": [
+    {
+     "color": "#CAC1B5",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 42,
+   "figmaId": "397:351",
+   "parent": 19,
+   "depth": 1,
+   "name": "Rectangle 21",
+   "type": "RECTANGLE",
+   "block": "04-showcase",
+   "bounds": {
+    "x": 41.0,
+    "y": 3182.0,
+    "width": 308.0,
+    "height": 180.0
+   },
+   "x": 41.0,
+   "y": 3182.0,
+   "width": 308.0,
+   "height": 180.0,
+   "rotation": 0,
+   "cornerRadius": 2.0,
+   "fills": [
+    {
+     "color": "#CAC1B5",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 43,
+   "figmaId": "397:359",
+   "parent": 19,
+   "depth": 1,
+   "name": "Rectangle 24",
+   "type": "RECTANGLE",
+   "block": "04-showcase",
+   "bounds": {
+    "x": 42.0,
+    "y": 3639.0,
+    "width": 308.0,
+    "height": 180.0
+   },
+   "x": 42.0,
+   "y": 3639.0,
+   "width": 308.0,
+   "height": 180.0,
+   "rotation": 0,
+   "cornerRadius": 2.0,
+   "fills": [
+    {
+     "color": "#CAC1B5",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 44,
+   "figmaId": "389:318",
+   "parent": 19,
+   "depth": 1,
+   "name": "IMG_4377 1",
+   "type": "RECTANGLE",
+   "block": "03-wood-steps",
+   "bounds": {
+    "x": -1.0,
+    "y": 2001.0,
+    "width": 392.0,
+    "height": 477.0
+   },
+   "x": -1.0,
+   "y": 2001.0,
+   "width": 392.0,
+   "height": 477.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "blend": "normal",
+     "crop": [
+      0.9988009333610535,
+      0.0,
+      0.0,
+      0.6863309741020203,
+      0.0005995203973725438,
+      1.9984014443252818e-15
+     ],
+     "filters": {
+      "contrast": -0.07999999821186066,
+      "exposure": 0.0,
+      "highlights": 0.0,
+      "saturation": 0.0,
+      "shadows": -0.15000000596046448,
+      "temperature": 0.0,
+      "tint": 0.0
+     },
+     "image": "613593802a9b57a5175450a040e10224c84935e5b6b7dd58bf021258c9fdebbb",
+     "opacity": 1.0,
+     "rotation": 0,
+     "scale": 0.5,
+     "scale_mode": "crop",
+     "type": "image",
+     "visible": true
+    }
+   ]
+  },
+  {
+   "id": 45,
+   "figmaId": "382:215",
+   "parent": 19,
+   "depth": 1,
+   "name": "Rectangle 9",
+   "type": "RECTANGLE",
+   "block": "04-showcase",
+   "bounds": {
+    "x": 36.0,
+    "y": 2699.0,
+    "width": 157.0,
+    "height": 172.0
+   },
+   "x": 36.0,
+   "y": 2699.0,
+   "width": 157.0,
+   "height": 172.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "color": "#DCD7D1",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 46,
+   "figmaId": "662:15",
+   "parent": 19,
+   "depth": 1,
+   "name": "Rectangle 33",
+   "type": "RECTANGLE",
+   "block": "04-showcase",
+   "bounds": {
+    "x": 198.0,
+    "y": 2699.0,
+    "width": 157.0,
+    "height": 172.0
+   },
+   "x": 198.0,
+   "y": 2699.0,
+   "width": 157.0,
+   "height": 172.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "color": "#DCD7D1",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 47,
+   "figmaId": "397:352",
+   "parent": 19,
+   "depth": 1,
+   "name": "Rectangle 22",
+   "type": "RECTANGLE",
+   "block": "04-showcase",
+   "bounds": {
+    "x": 57.0,
+    "y": 3201.0,
+    "width": 131.0,
+    "height": 131.0
+   },
+   "x": 57.0,
+   "y": 3201.0,
+   "width": 131.0,
+   "height": 131.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "color": "#DCD7D1",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 48,
+   "figmaId": "397:360",
+   "parent": 19,
+   "depth": 1,
+   "name": "Rectangle 25",
+   "type": "RECTANGLE",
+   "block": "04-showcase",
+   "bounds": {
+    "x": 58.0,
+    "y": 3658.0,
+    "width": 131.0,
+    "height": 131.0
+   },
+   "x": 58.0,
+   "y": 3658.0,
+   "width": 131.0,
+   "height": 131.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "color": "#DCD7D1",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 49,
+   "figmaId": "397:353",
+   "parent": 19,
+   "depth": 1,
+   "name": "Rectangle 23",
+   "type": "RECTANGLE",
+   "block": "04-showcase",
+   "bounds": {
+    "x": 203.0,
+    "y": 3201.0,
+    "width": 131.0,
+    "height": 131.0
+   },
+   "x": 203.0,
+   "y": 3201.0,
+   "width": 131.0,
+   "height": 131.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "color": "#DCD7D1",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 50,
+   "figmaId": "397:361",
+   "parent": 19,
+   "depth": 1,
+   "name": "Rectangle 26",
+   "type": "RECTANGLE",
+   "block": "04-showcase",
+   "bounds": {
+    "x": 204.0,
+    "y": 3658.0,
+    "width": 131.0,
+    "height": 131.0
+   },
+   "x": 204.0,
+   "y": 3658.0,
+   "width": 131.0,
+   "height": 131.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "color": "#DCD7D1",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 51,
+   "figmaId": "352:166",
+   "parent": 19,
+   "depth": 1,
+   "name": "IMG_0030 1",
+   "type": "RECTANGLE",
+   "block": "01-hero",
+   "bounds": {
+    "x": -33.0,
+    "y": 0.0,
+    "width": 585.0,
+    "height": 780.0
+   },
+   "x": -33.0,
+   "y": 0.0,
+   "width": 585.0,
+   "height": 780.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "blend": "normal",
+     "crop": null,
+     "filters": {
+      "contrast": 0.0,
+      "exposure": 0.0,
+      "highlights": 0.0,
+      "saturation": 0.0,
+      "shadows": 0.0,
+      "temperature": 0.0,
+      "tint": 0.0
+     },
+     "image": "0cd60bca1ac6ed753c78feec47aa7b37f26d42d761cbabff68aa283130e965ed",
+     "opacity": 1.0,
+     "rotation": 0,
+     "scale": 0.5,
+     "scale_mode": "fill",
+     "type": "image",
+     "visible": true
+    }
+   ]
+  },
+  {
+   "id": 52,
+   "figmaId": "352:167",
+   "parent": 19,
+   "depth": 1,
+   "name": "IMG_7830 2 1",
+   "type": "RECTANGLE",
+   "block": "01-hero",
+   "bounds": {
+    "x": 0.0,
+    "y": -2.0,
+    "width": 430.0,
+    "height": 763.0
+   },
+   "x": 0.0,
+   "y": -2.0,
+   "width": 430.0,
+   "height": 763.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "blend": "normal",
+     "crop": [
+      1.0,
+      0.0,
+      0.0,
+      0.8181589841842651,
+      1.835141452734426e-26,
+      0.0894923135638237
+     ],
+     "filters": {
+      "contrast": 0.0,
+      "exposure": 0.0,
+      "highlights": 0.0,
+      "saturation": 0.0,
+      "shadows": 0.0,
+      "temperature": 0.0,
+      "tint": 0.0
+     },
+     "image": "0001f57018e720580c0f92640f01bb8c35f98642e9b36caa1bea63099917357f",
+     "opacity": 1.0,
+     "rotation": 0,
+     "scale": 0.5,
+     "scale_mode": "crop",
+     "type": "image",
+     "visible": true
+    }
+   ]
+  },
+  {
+   "id": 53,
+   "figmaId": "352:168",
+   "parent": 19,
+   "depth": 1,
+   "name": "Rectangle 6",
+   "type": "RECTANGLE",
+   "block": "01-hero",
+   "bounds": {
+    "x": 0.0,
+    "y": 0.0,
+    "width": 390.0,
+    "height": 780.0
+   },
+   "x": 0.0,
+   "y": 0.0,
+   "width": 390.0,
+   "height": 780.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "color": "#000000",
+     "opacity": 0.4000000059604645,
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 54,
+   "figmaId": "352:169",
+   "parent": 19,
+   "depth": 1,
+   "name": "Rectangle 16",
+   "type": "RECTANGLE",
+   "block": "01-hero",
+   "bounds": {
+    "x": 90.0,
+    "y": 619.0,
+    "width": 210.0,
+    "height": 53.0
+   },
+   "x": 90.0,
+   "y": 619.0,
+   "width": 210.0,
+   "height": 53.0,
+   "rotation": 0,
+   "cornerRadius": 25.0,
+   "fills": [
+    {
+     "color": "#F6F5F1",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 55,
+   "figmaId": "352:182",
+   "parent": 19,
+   "depth": 1,
+   "name": "MagicEraser_260407_235442 1",
+   "type": "RECTANGLE",
+   "block": "02-about",
+   "bounds": {
+    "x": -31.0,
+    "y": 640.0,
+    "width": 453.0,
+    "height": 830.0
+   },
+   "x": -31.0,
+   "y": 640.0,
+   "width": 453.0,
+   "height": 830.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "blend": "normal",
+     "crop": null,
+     "filters": {
+      "contrast": 0.0,
+      "exposure": 0.0,
+      "highlights": 0.0,
+      "saturation": 0.0,
+      "shadows": 0.0,
+      "temperature": 0.10000000149011612,
+      "tint": 0.0
+     },
+     "image": "7e69da6d10c79d6bfccb11e73ce1b68b3c6c859f7d7d2bffc1ef06ed6d7be415",
+     "opacity": 1.0,
+     "rotation": 0,
+     "scale": 0.5,
+     "scale_mode": "fill",
+     "type": "image",
+     "visible": true
+    }
+   ]
+  },
+  {
+   "id": 56,
+   "figmaId": "395:329",
+   "parent": 19,
+   "depth": 1,
+   "name": "MagicEraser_260407_235442 3",
+   "type": "RECTANGLE",
+   "block": "02-about",
+   "bounds": {
+    "x": -30.0,
+    "y": 1357.0,
+    "width": 453.0,
+    "height": 532.0
+   },
+   "x": -30.0,
+   "y": 1357.0,
+   "width": 453.0,
+   "height": 532.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "blend": "normal",
+     "crop": [
+      0.9986670017242432,
+      0.0,
+      0.0,
+      0.6409638524055481,
+      0.000666495761834085,
+      0.2530120611190796
+     ],
+     "filters": {
+      "contrast": 0.0,
+      "exposure": 0.0,
+      "highlights": 0.0,
+      "saturation": 0.0,
+      "shadows": 0.0,
+      "temperature": 0.10000000149011612,
+      "tint": 0.0
+     },
+     "image": "7e69da6d10c79d6bfccb11e73ce1b68b3c6c859f7d7d2bffc1ef06ed6d7be415",
+     "opacity": 1.0,
+     "rotation": 0,
+     "scale": 0.5,
+     "scale_mode": "crop",
+     "type": "image",
+     "visible": true
+    }
+   ]
+  },
+  {
+   "id": 57,
+   "figmaId": "662:4",
+   "parent": 19,
+   "depth": 1,
+   "name": "MagicEraser_260407_235442 4",
+   "type": "RECTANGLE",
+   "block": "02-about",
+   "bounds": {
+    "x": -31.0,
+    "y": 1494.0,
+    "width": 453.0,
+    "height": 532.0
+   },
+   "x": -31.0,
+   "y": 1494.0,
+   "width": 453.0,
+   "height": 532.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "blend": "normal",
+     "crop": [
+      0.9986670017242432,
+      0.0,
+      0.0,
+      0.6409638524055481,
+      0.000666495761834085,
+      0.2530120611190796
+     ],
+     "filters": {
+      "contrast": 0.0,
+      "exposure": 0.0,
+      "highlights": 0.0,
+      "saturation": 0.0,
+      "shadows": 0.0,
+      "temperature": 0.10000000149011612,
+      "tint": 0.0
+     },
+     "image": "7e69da6d10c79d6bfccb11e73ce1b68b3c6c859f7d7d2bffc1ef06ed6d7be415",
+     "opacity": 1.0,
+     "rotation": 0,
+     "scale": 0.5,
+     "scale_mode": "crop",
+     "type": "image",
+     "visible": true
+    }
+   ]
+  },
+  {
+   "id": 58,
+   "figmaId": "352:170",
+   "parent": 19,
+   "depth": 1,
+   "name": "MagicEraser_260408_211707 1",
+   "type": "RECTANGLE",
+   "block": "01-hero",
+   "bounds": {
+    "x": -30.77,
+    "y": -9.88,
+    "width": 451.94,
+    "height": 749.73
+   },
+   "x": -30.77,
+   "y": 14.99,
+   "width": 408.49,
+   "height": 726.21,
+   "rotation": 3.49,
+   "fills": [
+    {
+     "blend": "normal",
+     "crop": null,
+     "filters": {
+      "contrast": 0.0,
+      "exposure": 0.0,
+      "highlights": 0.0,
+      "saturation": 0.0,
+      "shadows": 0.0,
+      "temperature": 0.0,
+      "tint": 0.0
+     },
+     "image": "5d74774584a560c0c23138e6badd88d47419d6fb77827cb132a9ed50facbd43d",
+     "opacity": 1.0,
+     "rotation": 0,
+     "scale": 0.5,
+     "scale_mode": "fill",
+     "type": "image",
+     "visible": true
+    }
+   ]
+  },
+  {
+   "id": 59,
+   "figmaId": "352:171",
+   "parent": 19,
+   "depth": 1,
+   "name": "Как заказывать на Таобао и 1688",
+   "type": "TEXT",
+   "block": "01-hero",
+   "bounds": {
+    "x": 54.0,
+    "y": 238.0,
+    "width": 282.4,
+    "height": 85.85
+   },
+   "x": 54.0,
+   "y": 254.98,
+   "width": 278.71,
+   "height": 69.0,
+   "rotation": 3.49,
+   "fills": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": "Как заказывать на Таобао и 1688",
+    "fontFamily": "Playfair Display",
+    "fontStyle": "Regular",
+    "fontSize": 36.0,
+    "lineHeight": "28",
+    "letterSpacing": "0%",
+    "textAlign": "center",
+    "figmaLines": [
+     {
+      "x": 6.59,
+      "baselineY": 28.96,
+      "width": 265.54,
+      "lineY": 0.0,
+      "lineHeight": 47.99,
+      "from": 0,
+      "to": 15
+     },
+     {
+      "x": 1.33,
+      "baselineY": 56.96,
+      "width": 276.05,
+      "lineY": 28,
+      "lineHeight": 47.99,
+      "from": 15,
+      "to": 31
+     }
+    ]
+   }
+  },
+  {
+   "id": 60,
+   "figmaId": "352:172",
+   "parent": 19,
+   "depth": 1,
+   "name": "купить",
+   "type": "TEXT",
+   "block": "01-hero",
+   "bounds": {
+    "x": 85.0,
+    "y": 631.0,
+    "width": 219.0,
+    "height": 29.0
+   },
+   "x": 85.0,
+   "y": 631.0,
+   "width": 219.0,
+   "height": 29.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "color": "#531608",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": "купить",
+    "fontFamily": "Inter",
+    "fontStyle": "Extra Bold",
+    "fontSize": 24.0,
+    "lineHeight": "30",
+    "letterSpacing": "0%",
+    "textAlign": "center",
+    "figmaLines": [
+     {
+      "x": 66.62,
+      "baselineY": 23.73,
+      "width": 85.76,
+      "lineY": -0.0,
+      "lineHeight": 30,
+      "from": 0,
+      "to": 6
+     }
+    ]
+   }
+  },
+  {
+   "id": 61,
+   "figmaId": "352:173",
+   "parent": 19,
+   "depth": 1,
+   "name": "MagicEraser_260407_235442 2",
+   "type": "RECTANGLE",
+   "block": "01-hero",
+   "bounds": {
+    "x": -31.0,
+    "y": 722.0,
+    "width": 453.0,
+    "height": 60.0
+   },
+   "x": -31.0,
+   "y": 722.0,
+   "width": 453.0,
+   "height": 60.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "blend": "normal",
+     "crop": [
+      0.9986670017242432,
+      0.0,
+      0.0,
+      0.07228915393352509,
+      0.000666495761834085,
+      0.11686746776103973
+     ],
+     "filters": {
+      "contrast": 0.0,
+      "exposure": 0.0,
+      "highlights": 0.0,
+      "saturation": 0.0,
+      "shadows": 0.0,
+      "temperature": 0.10000000149011612,
+      "tint": 0.0
+     },
+     "image": "7e69da6d10c79d6bfccb11e73ce1b68b3c6c859f7d7d2bffc1ef06ed6d7be415",
+     "opacity": 1.0,
+     "rotation": 0,
+     "scale": 0.5,
+     "scale_mode": "crop",
+     "type": "image",
+     "visible": true
+    }
+   ]
+  },
+  {
+   "id": 62,
+   "figmaId": "352:174",
+   "parent": 19,
+   "depth": 1,
+   "name": "пошаговое обучение, как покупать одежду и декор для дома до 10 раз выгоднее, чем на Вайлдберриз и Алиэкспресс",
+   "type": "TEXT",
+   "block": "01-hero",
+   "bounds": {
+    "x": 49.0,
+    "y": 313.0,
+    "width": 301.42,
+    "height": 88.01
+   },
+   "x": 49.0,
+   "y": 331.14,
+   "width": 297.7,
+   "height": 70.0,
+   "rotation": 3.49,
+   "fills": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": "пошаговое обучение, как покупать\nодежду и декор для дома до 10 раз выгоднее, чем на Вайлдберриз\nи Алиэкспресс",
+    "fontFamily": "Inter",
+    "fontStyle": "Light",
+    "fontSize": 17.0,
+    "lineHeight": "15",
+    "letterSpacing": "-1%",
+    "textAlign": "center",
+    "figmaLines": [
+     {
+      "x": 7.02,
+      "baselineY": 13.68,
+      "width": 283.66,
+      "lineY": -0.0,
+      "lineHeight": 20.57,
+      "from": 0,
+      "to": 33
+     },
+     {
+      "x": 4.43,
+      "baselineY": 28.68,
+      "width": 293.62,
+      "lineY": 15,
+      "lineHeight": 20.57,
+      "from": 33,
+      "to": 67
+     },
+     {
+      "x": 21.56,
+      "baselineY": 43.68,
+      "width": 254.59,
+      "lineY": 30.0,
+      "lineHeight": 20.57,
+      "from": 67,
+      "to": 96
+     },
+     {
+      "x": 88.89,
+      "baselineY": 58.68,
+      "width": 119.92,
+      "lineY": 45.0,
+      "lineHeight": 20.57,
+      "from": 96,
+      "to": 109
+     }
+    ]
+   }
+  },
+  {
+   "id": 63,
+   "figmaId": "352:175",
+   "parent": 19,
+   "depth": 1,
+   "name": "MagicEraser_260408_211609 2",
+   "type": "RECTANGLE",
+   "block": "01-hero",
+   "bounds": {
+    "x": 125.18,
+    "y": 170.0,
+    "width": 143.58,
+    "height": 86.55
+   },
+   "x": 125.18,
+   "y": 178.47,
+   "width": 139.07,
+   "height": 78.23,
+   "rotation": 3.49,
+   "fills": [
+    {
+     "blend": "normal",
+     "crop": [
+      1.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0
+     ],
+     "filters": {
+      "contrast": -0.05999999865889549,
+      "exposure": -0.10999999940395355,
+      "highlights": -0.05999999865889549,
+      "saturation": 0.0,
+      "shadows": 0.0,
+      "temperature": 0.27000001072883606,
+      "tint": 0.0
+     },
+     "image": "4e19b698d12c3a4b10d5ead5162971dafc9599e4fbd2f2cde9a033e0b45efb46",
+     "opacity": 1.0,
+     "rotation": 0,
+     "scale": 0.5,
+     "scale_mode": "crop",
+     "type": "image",
+     "visible": true
+    }
+   ]
+  },
+  {
+   "id": 64,
+   "figmaId": "352:176",
+   "parent": 19,
+   "depth": 1,
+   "name": "Rectangle 17",
+   "type": "RECTANGLE",
+   "block": "01-hero",
+   "bounds": {
+    "x": 133.07,
+    "y": 448.21,
+    "width": 64.03,
+    "height": 27.81
+   },
+   "x": 133.07,
+   "y": 452.04,
+   "width": 63.0,
+   "height": 24.0,
+   "rotation": 3.49,
+   "cornerRadius": 20.0,
+   "fills": [
+    {
+     "color": "#CDC5AD",
+     "opacity": 0.6499999761581421,
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 65,
+   "figmaId": "662:2",
+   "parent": 19,
+   "depth": 1,
+   "name": "Rectangle 32",
+   "type": "RECTANGLE",
+   "block": "01-hero",
+   "bounds": {
+    "x": 212.75,
+    "y": 442.71,
+    "width": 64.03,
+    "height": 27.81
+   },
+   "x": 212.75,
+   "y": 446.54,
+   "width": 63.0,
+   "height": 24.0,
+   "rotation": 3.49,
+   "cornerRadius": 20.0,
+   "fills": [
+    {
+     "color": "#CDC5AD",
+     "opacity": 0.6499999761581421,
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 66,
+   "figmaId": "352:178",
+   "parent": 19,
+   "depth": 1,
+   "name": " курс по Китаю",
+   "type": "TEXT",
+   "block": "01-hero",
+   "bounds": {
+    "x": 79.0,
+    "y": 192.97,
+    "width": 220.36,
+    "height": 42.29
+   },
+   "x": 79.0,
+   "y": 206.31,
+   "width": 219.0,
+   "height": 29.0,
+   "rotation": 3.49,
+   "fills": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": " курс по Китаю",
+    "fontFamily": "Inter",
+    "fontStyle": "Medium",
+    "fontSize": 15.0,
+    "lineHeight": "30",
+    "letterSpacing": "0%",
+    "textAlign": "center",
+    "figmaLines": [
+     {
+      "x": 53.8,
+      "baselineY": 20.45,
+      "width": 111.4,
+      "lineY": 0.0,
+      "lineHeight": 30,
+      "from": 0,
+      "to": 14
+     }
+    ]
+   }
+  },
+  {
+   "id": 67,
+   "figmaId": "352:179",
+   "parent": 19,
+   "depth": 1,
+   "name": "taobao",
+   "type": "TEXT",
+   "block": "01-hero",
+   "bounds": {
+    "x": 55.0,
+    "y": 441.0,
+    "width": 220.36,
+    "height": 42.28
+   },
+   "x": 55.0,
+   "y": 454.33,
+   "width": 219.0,
+   "height": 29.0,
+   "rotation": 3.49,
+   "fills": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": "taobao",
+    "fontFamily": "Inter",
+    "fontStyle": "Medium",
+    "fontSize": 15.0,
+    "lineHeight": "30",
+    "letterSpacing": "0%",
+    "textAlign": "center",
+    "figmaLines": [
+     {
+      "x": 84.44,
+      "baselineY": 20.45,
+      "width": 50.13,
+      "lineY": 0.0,
+      "lineHeight": 30,
+      "from": 0,
+      "to": 6
+     }
+    ]
+   }
+  },
+  {
+   "id": 68,
+   "figmaId": "352:180",
+   "parent": 19,
+   "depth": 1,
+   "name": "1688",
+   "type": "TEXT",
+   "block": "01-hero",
+   "bounds": {
+    "x": 135.0,
+    "y": 436.0,
+    "width": 220.48,
+    "height": 44.27
+   },
+   "x": 135.0,
+   "y": 449.33,
+   "width": 219.0,
+   "height": 31.0,
+   "rotation": 3.49,
+   "fills": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": "1688",
+    "fontFamily": "Inter",
+    "fontStyle": "Medium",
+    "fontSize": 15.0,
+    "lineHeight": "30",
+    "letterSpacing": "0%",
+    "textAlign": "center",
+    "figmaLines": [
+     {
+      "x": 91.71,
+      "baselineY": 20.45,
+      "width": 35.58,
+      "lineY": 0.0,
+      "lineHeight": 30,
+      "from": 0,
+      "to": 4
+     }
+    ]
+   }
+  },
+  {
+   "id": 69,
+   "figmaId": "352:181",
+   "parent": 19,
+   "depth": 1,
+   "name": "Line 2",
+   "type": "LINE",
+   "block": "01-hero",
+   "bounds": {
+    "x": 7.98,
+    "y": 107.86,
+    "width": 342.36,
+    "height": 20.88
+   },
+   "x": 7.98,
+   "y": 128.74,
+   "width": 343.0,
+   "height": 0.0,
+   "rotation": 3.49,
+   "strokeWeight": 1.5,
+   "strokeAlign": "center",
+   "strokes": [
+    {
+     "color": "#000000",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 70,
+   "figmaId": "382:197",
+   "parent": 19,
+   "depth": 1,
+   "name": "MagicEraser_260408_211609 3",
+   "type": "RECTANGLE",
+   "block": "02-about",
+   "bounds": {
+    "x": 9.0,
+    "y": 793.0,
+    "width": 373.0,
+    "height": 210.0
+   },
+   "x": 9.0,
+   "y": 793.0,
+   "width": 373.0,
+   "height": 210.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "blend": "normal",
+     "crop": null,
+     "filters": {
+      "contrast": 0.0,
+      "exposure": 0.0,
+      "highlights": 0.0,
+      "saturation": 0.0,
+      "shadows": 0.0,
+      "temperature": 0.09000000357627869,
+      "tint": 0.0
+     },
+     "image": "4e19b698d12c3a4b10d5ead5162971dafc9599e4fbd2f2cde9a033e0b45efb46",
+     "opacity": 1.0,
+     "rotation": 0,
+     "scale": 0.5,
+     "scale_mode": "fill",
+     "type": "image",
+     "visible": true
+    }
+   ]
+  },
+  {
+   "id": 71,
+   "figmaId": "352:183",
+   "parent": 19,
+   "depth": 1,
+   "name": "Привет,",
+   "type": "TEXT",
+   "block": "02-about",
+   "bounds": {
+    "x": 92.0,
+    "y": 866.0,
+    "width": 139.0,
+    "height": 69.0
+   },
+   "x": 92.0,
+   "y": 866.0,
+   "width": 139.0,
+   "height": 69.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": "Привет,",
+    "fontFamily": "Playfair Display",
+    "fontStyle": "Italic",
+    "fontSize": 36.0,
+    "lineHeight": "30",
+    "letterSpacing": "0%",
+    "textAlign": "center",
+    "figmaLines": [
+     {
+      "x": 0.59,
+      "baselineY": 29.96,
+      "width": 137.81,
+      "lineY": 0.0,
+      "lineHeight": 47.99,
+      "from": 0,
+      "to": 7
+     }
+    ]
+   }
+  },
+  {
+   "id": 72,
+   "figmaId": "352:184",
+   "parent": 19,
+   "depth": 1,
+   "name": "я Индира",
+   "type": "TEXT",
+   "block": "02-about",
+   "bounds": {
+    "x": 145.0,
+    "y": 896.0,
+    "width": 154.0,
+    "height": 69.0
+   },
+   "x": 145.0,
+   "y": 896.0,
+   "width": 154.0,
+   "height": 69.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": "я Индира",
+    "fontFamily": "Playfair Display",
+    "fontStyle": "Italic",
+    "fontSize": 36.0,
+    "lineHeight": "30",
+    "letterSpacing": "0%",
+    "textAlign": "center",
+    "figmaLines": [
+     {
+      "x": 0.08,
+      "baselineY": 29.96,
+      "width": 153.84,
+      "lineY": 0.0,
+      "lineHeight": 47.99,
+      "from": 0,
+      "to": 8
+     }
+    ]
+   }
+  },
+  {
+   "id": 73,
+   "figmaId": "352:185",
+   "parent": 19,
+   "depth": 1,
+   "name": "Rectangle 7",
+   "type": "RECTANGLE",
+   "block": "02-about",
+   "bounds": {
+    "x": 39.0,
+    "y": 977.0,
+    "width": 312.0,
+    "height": 102.0
+   },
+   "x": 39.0,
+   "y": 977.0,
+   "width": 312.0,
+   "height": 102.0,
+   "rotation": 0,
+   "cornerRadius": 2.0,
+   "fills": [
+    {
+     "color": "#FBE8B5",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 74,
+   "figmaId": "352:186",
+   "parent": 19,
+   "depth": 1,
+   "name": "уже больше 4 лет я заказываю себе одежду, аксессуары и декор для дома с китайских маркетплейсов таобао и 1688 🇨🇳",
+   "type": "TEXT",
+   "block": "02-about",
+   "bounds": {
+    "x": 52.0,
+    "y": 999.0,
+    "width": 287.0,
+    "height": 62.0
+   },
+   "x": 52.0,
+   "y": 999.0,
+   "width": 287.0,
+   "height": 62.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": "уже больше 4 лет я заказываю себе одежду, аксессуары\nи декор для дома с китайских маркетплейсов таобао и 1688 🇨🇳",
+    "fontFamily": "Inter",
+    "fontStyle": "Medium",
+    "fontSize": 17.0,
+    "lineHeight": "14",
+    "letterSpacing": "0%",
+    "textAlign": "center",
+    "figmaLines": [
+     {
+      "x": 12.32,
+      "baselineY": 13.18,
+      "width": 266.85,
+      "lineY": -0.0,
+      "lineHeight": 20.57,
+      "from": 0,
+      "to": 29
+     },
+     {
+      "x": 34.05,
+      "baselineY": 27.18,
+      "width": 218.89,
+      "lineY": 14,
+      "lineHeight": 20.57,
+      "from": 29,
+      "to": 53
+     },
+     {
+      "x": 16.71,
+      "baselineY": 41.18,
+      "width": 258.09,
+      "lineY": 28.0,
+      "lineHeight": 20.57,
+      "from": 53,
+      "to": 82
+     },
+     {
+      "x": 5.96,
+      "baselineY": 55.18,
+      "width": 275.09,
+      "lineY": 42.0,
+      "lineHeight": 20.57,
+      "from": 82,
+      "to": 112
+     }
+    ]
+   }
+  },
+  {
+   "id": 75,
+   "figmaId": "352:191",
+   "parent": 19,
+   "depth": 1,
+   "name": "IMG_2441 1",
+   "type": "RECTANGLE",
+   "block": "02-about",
+   "bounds": {
+    "x": 101.0,
+    "y": 1117.48,
+    "width": 188.04,
+    "height": 234.98
+   },
+   "x": 101.0,
+   "y": 1117.48,
+   "width": 188.04,
+   "height": 234.98,
+   "rotation": 0,
+   "fills": [
+    {
+     "blend": "normal",
+     "crop": [
+      1.0,
+      0.0,
+      0.0,
+      0.7030091881752014,
+      0.0,
+      0.14086349308490753
+     ],
+     "filters": {
+      "contrast": 0.0,
+      "exposure": 0.0,
+      "highlights": 0.0,
+      "saturation": 0.0,
+      "shadows": 0.0,
+      "temperature": 0.0,
+      "tint": 0.0
+     },
+     "image": "097aeef126880a396fabd6d382c2b5d0f5bc949abf52d39f30bb644a8a0e3842",
+     "opacity": 1.0,
+     "rotation": 0,
+     "scale": 0.5,
+     "scale_mode": "crop",
+     "type": "image",
+     "visible": true
+    }
+   ]
+  },
+  {
+   "id": 76,
+   "figmaId": "352:192",
+   "parent": 19,
+   "depth": 1,
+   "name": "IMG_3009 1",
+   "type": "RECTANGLE",
+   "block": "02-about",
+   "bounds": {
+    "x": 28.05,
+    "y": 1664.04,
+    "width": 168.36,
+    "height": 210.23
+   },
+   "x": 28.05,
+   "y": 1669.67,
+   "width": 161.31,
+   "height": 204.72,
+   "rotation": 2.0,
+   "fills": [
+    {
+     "blend": "normal",
+     "crop": [
+      0.8455058932304382,
+      6.348224742562303e-17,
+      -1.8422830283416084e-16,
+      0.49280595779418945,
+      0.15449421107769012,
+      0.16523605585098267
+     ],
+     "filters": {
+      "contrast": 0.0,
+      "exposure": 0.0,
+      "highlights": 0.0,
+      "saturation": 0.0,
+      "shadows": 0.0,
+      "temperature": 0.0,
+      "tint": 0.0
+     },
+     "image": "cd9d8f864819550a636091837c31cf884b582db6b4440920491be06a0a373c9a",
+     "opacity": 1.0,
+     "rotation": 0,
+     "scale": 0.5,
+     "scale_mode": "crop",
+     "type": "image",
+     "visible": true
+    }
+   ]
+  },
+  {
+   "id": 77,
+   "figmaId": "352:193",
+   "parent": 19,
+   "depth": 1,
+   "name": "MagicEraser_260408_211633 1",
+   "type": "RECTANGLE",
+   "block": "02-about",
+   "bounds": {
+    "x": 299.0,
+    "y": 957.0,
+    "width": 60.0,
+    "height": 60.0
+   },
+   "x": 299.0,
+   "y": 957.0,
+   "width": 60.0,
+   "height": 60.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "blend": "normal",
+     "crop": null,
+     "filters": {
+      "contrast": 0.0,
+      "exposure": 0.0,
+      "highlights": 0.0,
+      "saturation": 0.0,
+      "shadows": 0.0,
+      "temperature": 0.0,
+      "tint": 0.0
+     },
+     "image": "a4db7e11b1198963be70e6f85818c628de225bd5b40a09cc97399c7828012d4b",
+     "opacity": 1.0,
+     "rotation": 0,
+     "scale": 0.5,
+     "scale_mode": "fill",
+     "type": "image",
+     "visible": true
+    }
+   ]
+  },
+  {
+   "id": 78,
+   "figmaId": "352:194",
+   "parent": 19,
+   "depth": 1,
+   "name": "MagicEraser_260408_211609 1",
+   "type": "RECTANGLE",
+   "block": "02-about",
+   "bounds": {
+    "x": 242.0,
+    "y": 1097.0,
+    "width": 75.74,
+    "height": 66.76
+   },
+   "x": 261.88,
+   "y": 1097.0,
+   "width": 66.1,
+   "height": 37.18,
+   "rotation": -32.32,
+   "fills": [
+    {
+     "blend": "normal",
+     "crop": [
+      1.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0
+     ],
+     "filters": {
+      "contrast": -0.05999999865889549,
+      "exposure": -0.10999999940395355,
+      "highlights": -0.05999999865889549,
+      "saturation": 0.0,
+      "shadows": 0.0,
+      "temperature": 0.27000001072883606,
+      "tint": 0.0
+     },
+     "image": "4e19b698d12c3a4b10d5ead5162971dafc9599e4fbd2f2cde9a033e0b45efb46",
+     "opacity": 1.0,
+     "rotation": 0,
+     "scale": 0.5,
+     "scale_mode": "crop",
+     "type": "image",
+     "visible": true
+    }
+   ]
+  },
+  {
+   "id": 79,
+   "figmaId": "352:195",
+   "parent": 19,
+   "depth": 1,
+   "name": "MagicEraser_260408_211520 1",
+   "type": "RECTANGLE",
+   "block": "02-about",
+   "bounds": {
+    "x": 37.0,
+    "y": 1266.0,
+    "width": 151.51,
+    "height": 151.51
+   },
+   "x": 98.07,
+   "y": 1266.0,
+   "width": 109.13,
+   "height": 109.13,
+   "rotation": -34.03,
+   "fills": [
+    {
+     "blend": "normal",
+     "crop": null,
+     "filters": {
+      "contrast": 0.17000000178813934,
+      "exposure": 0.11999999731779099,
+      "highlights": -0.8299999833106995,
+      "saturation": 0.10999999940395355,
+      "shadows": 0.0,
+      "temperature": 0.1899999976158142,
+      "tint": 0.0
+     },
+     "image": "3cb93269b17ff1f222e332ac8cb944223043bc6f34789396b357b0c3582d8a87",
+     "opacity": 1.0,
+     "rotation": 0,
+     "scale": 0.5,
+     "scale_mode": "fill",
+     "type": "image",
+     "visible": true
+    }
+   ]
+  },
+  {
+   "id": 80,
+   "figmaId": "382:196",
+   "parent": 19,
+   "depth": 1,
+   "name": "IMG_7642 1",
+   "type": "RECTANGLE",
+   "block": "02-about",
+   "bounds": {
+    "x": 193.0,
+    "y": 1664.0,
+    "width": 170.47,
+    "height": 209.97
+   },
+   "x": 200.13,
+   "y": 1664.0,
+   "width": 163.44,
+   "height": 204.39,
+   "rotation": -2.0,
+   "fills": [
+    {
+     "blend": "normal",
+     "crop": [
+      1.0,
+      1.314155735797286e-17,
+      0.0,
+      0.7035236954689026,
+      -1.0302869668521453e-13,
+      0.09533873200416565
+     ],
+     "filters": {
+      "contrast": 0.0,
+      "exposure": 0.0,
+      "highlights": 0.0,
+      "saturation": 0.0,
+      "shadows": 0.0,
+      "temperature": 0.0,
+      "tint": 0.0
+     },
+     "image": "911b6b6e5a171b03a20c3a5ddc6fe66510f1b23e05087bed473c1f1f2cedd196",
+     "opacity": 1.0,
+     "rotation": 0,
+     "scale": 0.5,
+     "scale_mode": "crop",
+     "type": "image",
+     "visible": true
+    }
+   ]
+  },
+  {
+   "id": 81,
+   "figmaId": "662:14",
+   "parent": 19,
+   "depth": 1,
+   "name": "Group 37",
+   "type": "GROUP",
+   "block": "03-wood-steps",
+   "bounds": {
+    "x": -34.05,
+    "y": 2067.94,
+    "width": 457.03,
+    "height": 474.09
+   },
+   "x": -34.05,
+   "y": 2067.94,
+   "width": 457.03,
+   "height": 474.09,
+   "rotation": 0
+  },
+  {
+   "id": 82,
+   "figmaId": "389:314",
+   "parent": 81,
+   "depth": 2,
+   "name": "MagicEraser_260422_212739 1",
+   "type": "RECTANGLE",
+   "block": "03-wood-steps",
+   "bounds": {
+    "x": -34.05,
+    "y": 2067.94,
+    "width": 457.03,
+    "height": 457.03
+   },
+   "x": 9.01,
+   "y": 2067.94,
+   "width": 416.2,
+   "height": 416.2,
+   "rotation": -5.94,
+   "fills": [
+    {
+     "blend": "normal",
+     "crop": null,
+     "filters": {
+      "contrast": 0.0,
+      "exposure": 0.0,
+      "highlights": 0.0,
+      "saturation": 0.0,
+      "shadows": 0.0,
+      "temperature": 0.0,
+      "tint": 0.0
+     },
+     "image": "d12fa44a349801d9870f157989b3dcbb387861b7b83406a2dd8eef99516350b1",
+     "opacity": 1.0,
+     "rotation": 0,
+     "scale": 0.5,
+     "scale_mode": "fill",
+     "type": "image",
+     "visible": true
+    }
+   ]
+  },
+  {
+   "id": 83,
+   "figmaId": "662:13",
+   "parent": 81,
+   "depth": 2,
+   "name": "MagicEraser_260422_212739 2",
+   "type": "RECTANGLE",
+   "block": "03-wood-steps",
+   "bounds": {
+    "x": -33.99,
+    "y": 2266.54,
+    "width": 438.15,
+    "height": 275.49
+   },
+   "x": -9.82,
+   "y": 2266.54,
+   "width": 416.2,
+   "height": 233.69,
+   "rotation": -5.94,
+   "fills": [
+    {
+     "blend": "normal",
+     "crop": [
+      1.0,
+      0.0,
+      0.0,
+      0.5614699721336365,
+      -1.0880185641326534e-14,
+      0.4385300278663635
+     ],
+     "filters": {
+      "contrast": 0.0,
+      "exposure": 0.0,
+      "highlights": 0.0,
+      "saturation": 0.0,
+      "shadows": 0.0,
+      "temperature": 0.0,
+      "tint": 0.0
+     },
+     "image": "d12fa44a349801d9870f157989b3dcbb387861b7b83406a2dd8eef99516350b1",
+     "opacity": 1.0,
+     "rotation": 0,
+     "scale": 0.5,
+     "scale_mode": "crop",
+     "type": "image",
+     "visible": true
+    }
+   ]
+  },
+  {
+   "id": 84,
+   "figmaId": "382:201",
+   "parent": 19,
+   "depth": 1,
+   "name": "смотри, как накручивают цены на наши хотелки",
+   "type": "TEXT",
+   "block": "03-wood-steps",
+   "bounds": {
+    "x": 60.0,
+    "y": 2110.0,
+    "width": 271.0,
+    "height": 56.0
+   },
+   "x": 60.0,
+   "y": 2110.0,
+   "width": 271.0,
+   "height": 56.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "color": "#F6F5F1",
+     "type": "solid"
+    }
+   ],
+   "effects": [
+    {
+     "blend": "normal",
+     "color": {
+      "a": 0.5,
+      "b": 0.0,
+      "g": 0.0,
+      "r": 0.0
+     },
+     "offset": [
+      0.0,
+      0.0
+     ],
+     "radius": 10.0,
+     "showBehind": false,
+     "spread": 0.0,
+     "type": "dropShadow",
+     "visible": true
+    }
+   ],
+   "text": {
+    "characters": "смотри,\nкак накручивают цены на наши хотелки\n",
+    "fontFamily": "Playfair Display",
+    "fontStyle": "Regular",
+    "fontSize": 25.0,
+    "lineHeight": "17",
+    "letterSpacing": "0%",
+    "textAlign": "center",
+    "figmaLines": [
+     {
+      "x": 88.43,
+      "baselineY": 18.89,
+      "width": 94.14,
+      "lineY": 0.0,
+      "lineHeight": 33.33,
+      "from": 0,
+      "to": 8
+     },
+     {
+      "x": 32.74,
+      "baselineY": 35.89,
+      "width": 211.74,
+      "lineY": 17,
+      "lineHeight": 33.33,
+      "from": 8,
+      "to": 24
+     },
+     {
+      "x": 0.86,
+      "baselineY": 52.89,
+      "width": 269.29,
+      "lineY": 34,
+      "lineHeight": 33.33,
+      "from": 24,
+      "to": 45
+     }
+    ]
+   }
+  },
+  {
+   "id": 85,
+   "figmaId": "382:202",
+   "parent": 19,
+   "depth": 1,
+   "name": "вот такие наценки на обычной одежде, обуви и аксессуарах",
+   "type": "TEXT",
+   "block": "04-showcase",
+   "bounds": {
+    "x": 74.0,
+    "y": 2579.0,
+    "width": 242.0,
+    "height": 58.0
+   },
+   "x": 74.0,
+   "y": 2579.0,
+   "width": 242.0,
+   "height": 58.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": "вот такие наценки на обычной одежде, обуви и аксессуарах\n",
+    "fontFamily": "Playfair Display",
+    "fontStyle": "Regular",
+    "fontSize": 25.0,
+    "lineHeight": "17",
+    "letterSpacing": "0%",
+    "textAlign": "center",
+    "figmaLines": [
+     {
+      "x": 9.23,
+      "baselineY": 18.89,
+      "width": 229.76,
+      "lineY": 0.0,
+      "lineHeight": 33.33,
+      "from": 0,
+      "to": 18
+     },
+     {
+      "x": 2.64,
+      "baselineY": 35.89,
+      "width": 242.94,
+      "lineY": 17,
+      "lineHeight": 33.33,
+      "from": 18,
+      "to": 37
+     },
+     {
+      "x": 2.34,
+      "baselineY": 52.89,
+      "width": 237.33,
+      "lineY": 34,
+      "lineHeight": 33.33,
+      "from": 37,
+      "to": 57
+     }
+    ]
+   }
+  },
+  {
+   "id": 86,
+   "figmaId": "397:373",
+   "parent": 19,
+   "depth": 1,
+   "name": "(",
+   "type": "TEXT",
+   "block": "04-showcase",
+   "bounds": {
+    "x": 40.0,
+    "y": 2564.0,
+    "width": 51.0,
+    "height": 78.0
+   },
+   "x": 40.0,
+   "y": 2564.0,
+   "width": 51.0,
+   "height": 78.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": "(",
+    "fontFamily": "Playfair Display",
+    "fontStyle": "Regular",
+    "fontSize": 53.0,
+    "lineHeight": "17",
+    "letterSpacing": "0%",
+    "textAlign": "center",
+    "figmaLines": [
+     {
+      "x": 17.71,
+      "baselineY": 61.02,
+      "width": 15.58,
+      "lineY": 30.5,
+      "lineHeight": 70.65,
+      "from": 0,
+      "to": 1
+     }
+    ]
+   }
+  },
+  {
+   "id": 87,
+   "figmaId": "397:374",
+   "parent": 19,
+   "depth": 1,
+   "name": "(",
+   "type": "TEXT",
+   "block": "04-showcase",
+   "bounds": {
+    "x": 299.0,
+    "y": 2564.0,
+    "width": 51.0,
+    "height": 78.0
+   },
+   "x": 350.0,
+   "y": 2564.0,
+   "width": 51.0,
+   "height": 78.0,
+   "rotation": 180.0,
+   "flipped": true,
+   "fills": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": "(",
+    "fontFamily": "Playfair Display",
+    "fontStyle": "Regular",
+    "fontSize": 53.0,
+    "lineHeight": "17",
+    "letterSpacing": "0%",
+    "textAlign": "center",
+    "figmaLines": [
+     {
+      "x": 17.71,
+      "baselineY": 61.02,
+      "width": 15.58,
+      "lineY": 30.5,
+      "lineHeight": 70.65,
+      "from": 0,
+      "to": 1
+     }
+    ]
+   }
+  },
+  {
+   "id": 88,
+   "figmaId": "397:378",
+   "parent": 19,
+   "depth": 1,
+   "name": "(",
+   "type": "TEXT",
+   "block": "04-showcase",
+   "bounds": {
+    "x": 299.0,
+    "y": 3528.0,
+    "width": 51.0,
+    "height": 78.0
+   },
+   "x": 350.0,
+   "y": 3528.0,
+   "width": 51.0,
+   "height": 78.0,
+   "rotation": 180.0,
+   "flipped": true,
+   "fills": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": "(",
+    "fontFamily": "Playfair Display",
+    "fontStyle": "Regular",
+    "fontSize": 53.0,
+    "lineHeight": "17",
+    "letterSpacing": "0%",
+    "textAlign": "center",
+    "figmaLines": [
+     {
+      "x": 17.71,
+      "baselineY": 61.02,
+      "width": 15.58,
+      "lineY": 30.5,
+      "lineHeight": 70.65,
+      "from": 0,
+      "to": 1
+     }
+    ]
+   }
+  },
+  {
+   "id": 89,
+   "figmaId": "397:379",
+   "parent": 19,
+   "depth": 1,
+   "name": "(",
+   "type": "TEXT",
+   "block": "04-showcase",
+   "bounds": {
+    "x": 40.0,
+    "y": 3528.0,
+    "width": 51.0,
+    "height": 78.0
+   },
+   "x": 40.0,
+   "y": 3528.0,
+   "width": 51.0,
+   "height": 78.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": "(",
+    "fontFamily": "Playfair Display",
+    "fontStyle": "Regular",
+    "fontSize": 53.0,
+    "lineHeight": "17",
+    "letterSpacing": "0%",
+    "textAlign": "center",
+    "figmaLines": [
+     {
+      "x": 17.71,
+      "baselineY": 61.02,
+      "width": 15.58,
+      "lineY": 30.5,
+      "lineHeight": 70.65,
+      "from": 0,
+      "to": 1
+     }
+    ]
+   }
+  },
+  {
+   "id": 90,
+   "figmaId": "529:2",
+   "parent": 19,
+   "depth": 1,
+   "name": "Group 34",
+   "type": "GROUP",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 28.0,
+    "y": 5298.0,
+    "width": 331.0,
+    "height": 686.0
+   },
+   "x": 28.0,
+   "y": 5298.0,
+   "width": 331.0,
+   "height": 686.0,
+   "rotation": 0
+  },
+  {
+   "id": 91,
+   "figmaId": "401:509",
+   "parent": 90,
+   "depth": 2,
+   "name": "Rectangle 30",
+   "type": "RECTANGLE",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 48.0,
+    "y": 5300.0,
+    "width": 293.0,
+    "height": 684.0
+   },
+   "x": 48.0,
+   "y": 5300.0,
+   "width": 293.0,
+   "height": 684.0,
+   "rotation": 0,
+   "visible": 0,
+   "fills": [
+    {
+     "color": "#EFEADE",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 92,
+   "figmaId": "531:3",
+   "parent": 90,
+   "depth": 2,
+   "name": "ticket 1",
+   "type": "RECTANGLE",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 28.0,
+    "y": 5298.0,
+    "width": 331.0,
+    "height": 684.0
+   },
+   "x": 28.0,
+   "y": 5298.0,
+   "width": 331.0,
+   "height": 684.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "blend": "normal",
+     "crop": null,
+     "filters": {
+      "contrast": 0.0,
+      "exposure": 0.0,
+      "highlights": 0.0,
+      "saturation": 0.0,
+      "shadows": 0.0,
+      "temperature": 0.0,
+      "tint": 0.0
+     },
+     "image": "6b30083c848cccd2726f5dfa78b3d522e0d519bee40479f4259c75bd5096a065",
+     "opacity": 1.0,
+     "rotation": 0,
+     "scale": 0.5,
+     "scale_mode": "fill",
+     "type": "image",
+     "visible": true
+    }
+   ]
+  },
+  {
+   "id": 93,
+   "figmaId": "397:375",
+   "parent": 19,
+   "depth": 1,
+   "name": "(",
+   "type": "TEXT",
+   "block": "04-showcase",
+   "bounds": {
+    "x": 276.0,
+    "y": 3069.0,
+    "width": 51.0,
+    "height": 78.0
+   },
+   "x": 327.0,
+   "y": 3069.0,
+   "width": 51.0,
+   "height": 78.0,
+   "rotation": 180.0,
+   "flipped": true,
+   "fills": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": "(",
+    "fontFamily": "Playfair Display",
+    "fontStyle": "Regular",
+    "fontSize": 35.0,
+    "lineHeight": "17",
+    "letterSpacing": "0%",
+    "textAlign": "center",
+    "figmaLines": [
+     {
+      "x": 20.36,
+      "baselineY": 53.54,
+      "width": 10.29,
+      "lineY": 30.5,
+      "lineHeight": 46.65,
+      "from": 0,
+      "to": 1
+     }
+    ]
+   }
+  },
+  {
+   "id": 94,
+   "figmaId": "397:376",
+   "parent": 19,
+   "depth": 1,
+   "name": "(",
+   "type": "TEXT",
+   "block": "04-showcase",
+   "bounds": {
+    "x": 64.0,
+    "y": 3069.0,
+    "width": 51.0,
+    "height": 78.0
+   },
+   "x": 64.0,
+   "y": 3069.0,
+   "width": 51.0,
+   "height": 78.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": "(",
+    "fontFamily": "Playfair Display",
+    "fontStyle": "Regular",
+    "fontSize": 35.0,
+    "lineHeight": "17",
+    "letterSpacing": "0%",
+    "textAlign": "center",
+    "figmaLines": [
+     {
+      "x": 20.36,
+      "baselineY": 53.54,
+      "width": 10.29,
+      "lineY": 30.5,
+      "lineHeight": 46.65,
+      "from": 0,
+      "to": 1
+     }
+    ]
+   }
+  },
+  {
+   "id": 95,
+   "figmaId": "382:203",
+   "parent": 19,
+   "depth": 1,
+   "name": "а такая разница в товарах для дома",
+   "type": "TEXT",
+   "block": "04-showcase",
+   "bounds": {
+    "x": 92.0,
+    "y": 3092.0,
+    "width": 207.0,
+    "height": 42.0
+   },
+   "x": 92.0,
+   "y": 3092.0,
+   "width": 207.0,
+   "height": 42.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": "а такая разница\nв товарах для дома",
+    "fontFamily": "Playfair Display",
+    "fontStyle": "Regular",
+    "fontSize": 21.0,
+    "lineHeight": "17",
+    "letterSpacing": "0%",
+    "textAlign": "center",
+    "figmaLines": [
+     {
+      "x": 24.21,
+      "baselineY": 17.23,
+      "width": 158.59,
+      "lineY": 0.0,
+      "lineHeight": 27.99,
+      "from": 0,
+      "to": 16
+     },
+     {
+      "x": 9.62,
+      "baselineY": 34.23,
+      "width": 187.77,
+      "lineY": 17.0,
+      "lineHeight": 27.99,
+      "from": 16,
+      "to": 34
+     }
+    ]
+   }
+  },
+  {
+   "id": 96,
+   "figmaId": "382:205",
+   "parent": 19,
+   "depth": 1,
+   "name": "1/",
+   "type": "TEXT",
+   "block": "02-about",
+   "bounds": {
+    "x": -63.0,
+    "y": 1970.0,
+    "width": 192.0,
+    "height": 59.0
+   },
+   "x": -63.0,
+   "y": 1970.0,
+   "width": 192.0,
+   "height": 59.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": "1/",
+    "fontFamily": "Inter",
+    "fontStyle": "Semi Bold",
+    "fontSize": 13.0,
+    "lineHeight": "15",
+    "letterSpacing": "0%",
+    "textAlign": "left",
+    "figmaLines": [
+     {
+      "x": 0,
+      "baselineY": 12.23,
+      "width": 11.17,
+      "lineY": 0.0,
+      "lineHeight": 15.73,
+      "from": 0,
+      "to": 2
+     }
+    ]
+   }
+  },
+  {
+   "id": 97,
+   "figmaId": "382:206",
+   "parent": 19,
+   "depth": 1,
+   "name": "2//",
+   "type": "TEXT",
+   "block": "03-wood-steps",
+   "bounds": {
+    "x": 101.0,
+    "y": 2050.0,
+    "width": 20.0,
+    "height": 15.0
+   },
+   "x": 101.0,
+   "y": 2050.0,
+   "width": 20.0,
+   "height": 15.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": "2//",
+    "fontFamily": "Inter",
+    "fontStyle": "Semi Bold",
+    "fontSize": 13.0,
+    "lineHeight": "15",
+    "letterSpacing": "0%",
+    "textAlign": "left",
+    "figmaLines": [
+     {
+      "x": 0,
+      "baselineY": 12.23,
+      "width": 17.93,
+      "lineY": 0.0,
+      "lineHeight": 15.73,
+      "from": 0,
+      "to": 3
+     }
+    ]
+   }
+  },
+  {
+   "id": 98,
+   "figmaId": "382:207",
+   "parent": 19,
+   "depth": 1,
+   "name": "3//",
+   "type": "TEXT",
+   "block": "03-wood-steps",
+   "bounds": {
+    "x": 328.0,
+    "y": 2029.0,
+    "width": 192.0,
+    "height": 59.0
+   },
+   "x": 328.0,
+   "y": 2029.0,
+   "width": 192.0,
+   "height": 59.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": "3//",
+    "fontFamily": "Inter",
+    "fontStyle": "Semi Bold",
+    "fontSize": 13.0,
+    "lineHeight": "15",
+    "letterSpacing": "0%",
+    "textAlign": "left",
+    "figmaLines": [
+     {
+      "x": 0,
+      "baselineY": 12.23,
+      "width": 18.32,
+      "lineY": 0.0,
+      "lineHeight": 15.73,
+      "from": 0,
+      "to": 3
+     }
+    ]
+   }
+  },
+  {
+   "id": 99,
+   "figmaId": "382:208",
+   "parent": 19,
+   "depth": 1,
+   "name": "сначала товар производится на китайской фабрике",
+   "type": "TEXT",
+   "block": "03-wood-steps",
+   "bounds": {
+    "x": 111.0,
+    "y": 2177.0,
+    "width": 235.0,
+    "height": 29.0
+   },
+   "x": 111.0,
+   "y": 2177.0,
+   "width": 235.0,
+   "height": 29.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": "сначала товар производится на китайской фабрике",
+    "fontFamily": "Inter",
+    "fontStyle": "Regular",
+    "fontSize": 17.0,
+    "lineHeight": "20",
+    "letterSpacing": "-2%",
+    "textAlign": "left",
+    "figmaLines": [
+     {
+      "x": 0,
+      "baselineY": 16.18,
+      "width": 237.94,
+      "lineY": -0.0,
+      "lineHeight": 20.57,
+      "from": 0,
+      "to": 27
+     },
+     {
+      "x": 0,
+      "baselineY": 36.18,
+      "width": 178.3,
+      "lineY": 20.0,
+      "lineHeight": 20.57,
+      "from": 27,
+      "to": 47
+     }
+    ]
+   }
+  },
+  {
+   "id": 100,
+   "figmaId": "382:209",
+   "parent": 19,
+   "depth": 1,
+   "name": "потом товар выставляют на китайских маркетплейсах (таобао и 1688)",
+   "type": "TEXT",
+   "block": "03-wood-steps",
+   "bounds": {
+    "x": 105.0,
+    "y": 2169.0,
+    "width": 245.0,
+    "height": 44.0
+   },
+   "x": 105.0,
+   "y": 2169.0,
+   "width": 245.0,
+   "height": 44.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": "потом товар выставляют\nна китайских маркетплейсах (таобао и 1688)",
+    "fontFamily": "Inter",
+    "fontStyle": "Regular",
+    "fontSize": 17.0,
+    "lineHeight": "20",
+    "letterSpacing": "-2%",
+    "textAlign": "left",
+    "figmaLines": [
+     {
+      "x": 0,
+      "baselineY": 16.18,
+      "width": 202.6,
+      "lineY": -0.0,
+      "lineHeight": 20.57,
+      "from": 0,
+      "to": 23
+     },
+     {
+      "x": 0,
+      "baselineY": 36.18,
+      "width": 238.09,
+      "lineY": 20.0,
+      "lineHeight": 20.57,
+      "from": 23,
+      "to": 50
+     },
+     {
+      "x": 0,
+      "baselineY": 56.18,
+      "width": 124.8,
+      "lineY": 40.0,
+      "lineHeight": 20.57,
+      "from": 50,
+      "to": 65
+     }
+    ]
+   }
+  },
+  {
+   "id": 101,
+   "figmaId": "382:210",
+   "parent": 19,
+   "depth": 1,
+   "name": "можно собирать целые образы по цене одной вещи",
+   "type": "TEXT",
+   "block": "03-wood-steps",
+   "bounds": {
+    "x": 108.0,
+    "y": 2399.0,
+    "width": 166.0,
+    "height": 44.0
+   },
+   "x": 108.0,
+   "y": 2399.0,
+   "width": 166.0,
+   "height": 44.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": "можно собирать целые образы по цене одной вещи",
+    "fontFamily": "Inter",
+    "fontStyle": "Regular",
+    "fontSize": 10.0,
+    "lineHeight": "10",
+    "letterSpacing": "0%",
+    "textAlign": "center",
+    "figmaLines": [
+     {
+      "x": 5.65,
+      "baselineY": 8.64,
+      "width": 157.51,
+      "lineY": 0.0,
+      "lineHeight": 12.1,
+      "from": 0,
+      "to": 28
+     },
+     {
+      "x": 33,
+      "baselineY": 18.64,
+      "width": 100,
+      "lineY": 10,
+      "lineHeight": 12.1,
+      "from": 28,
+      "to": 46
+     }
+    ]
+   }
+  },
+  {
+   "id": 102,
+   "figmaId": "382:211",
+   "parent": 19,
+   "depth": 1,
+   "name": "можно обустроить квартиру как из pinterest, но в 3-5 раз дешевле, чем у нас!",
+   "type": "TEXT",
+   "block": "04-showcase",
+   "bounds": {
+    "x": 82.0,
+    "y": 3138.0,
+    "width": 226.0,
+    "height": 21.0
+   },
+   "x": 82.0,
+   "y": 3138.0,
+   "width": 226.0,
+   "height": 21.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": "можно обустроить квартиру как из pinterest, но в 3-5 раз дешевле, чем у нас!",
+    "fontFamily": "Inter",
+    "fontStyle": "Regular",
+    "fontSize": 10.0,
+    "lineHeight": "10",
+    "letterSpacing": "0%",
+    "textAlign": "center",
+    "figmaLines": [
+     {
+      "x": 2.5,
+      "baselineY": 8.64,
+      "width": 223.82,
+      "lineY": 0.0,
+      "lineHeight": 12.1,
+      "from": 0,
+      "to": 44
+     },
+     {
+      "x": 32.28,
+      "baselineY": 18.64,
+      "width": 161.45,
+      "lineY": 10,
+      "lineHeight": 12.1,
+      "from": 44,
+      "to": 76
+     }
+    ]
+   }
+  },
+  {
+   "id": 103,
+   "figmaId": "382:212",
+   "parent": 19,
+   "depth": 1,
+   "name": "zara",
+   "type": "TEXT",
+   "block": "04-showcase",
+   "bounds": {
+    "x": 20.0,
+    "y": 2875.0,
+    "width": 190.0,
+    "height": 15.0
+   },
+   "x": 20.0,
+   "y": 2875.0,
+   "width": 190.0,
+   "height": 15.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": "zara",
+    "fontFamily": "Inter",
+    "fontStyle": "Regular",
+    "fontSize": 17.0,
+    "lineHeight": "15",
+    "letterSpacing": "0%",
+    "textAlign": "center",
+    "figmaLines": [
+     {
+      "x": 77.66,
+      "baselineY": 13.68,
+      "width": 34.68,
+      "lineY": -0.0,
+      "lineHeight": 20.57,
+      "from": 0,
+      "to": 4
+     }
+    ]
+   }
+  },
+  {
+   "id": 104,
+   "figmaId": "397:354",
+   "parent": 19,
+   "depth": 1,
+   "name": "zara",
+   "type": "TEXT",
+   "block": "04-showcase",
+   "bounds": {
+    "x": 33.0,
+    "y": 3337.0,
+    "width": 175.0,
+    "height": 14.0
+   },
+   "x": 33.0,
+   "y": 3337.0,
+   "width": 175.0,
+   "height": 14.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": "zara",
+    "fontFamily": "Inter",
+    "fontStyle": "Regular",
+    "fontSize": 10.0,
+    "lineHeight": "15",
+    "letterSpacing": "0%",
+    "textAlign": "center",
+    "figmaLines": [
+     {
+      "x": 77.3,
+      "baselineY": 11.14,
+      "width": 20.4,
+      "lineY": 0.0,
+      "lineHeight": 15,
+      "from": 0,
+      "to": 4
+     }
+    ]
+   }
+  },
+  {
+   "id": 105,
+   "figmaId": "397:362",
+   "parent": 19,
+   "depth": 1,
+   "name": "zara",
+   "type": "TEXT",
+   "block": "04-showcase",
+   "bounds": {
+    "x": 34.0,
+    "y": 3794.0,
+    "width": 175.0,
+    "height": 14.0
+   },
+   "x": 34.0,
+   "y": 3794.0,
+   "width": 175.0,
+   "height": 14.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": "zara",
+    "fontFamily": "Inter",
+    "fontStyle": "Regular",
+    "fontSize": 10.0,
+    "lineHeight": "15",
+    "letterSpacing": "0%",
+    "textAlign": "center",
+    "figmaLines": [
+     {
+      "x": 77.3,
+      "baselineY": 11.14,
+      "width": 20.4,
+      "lineY": 0.0,
+      "lineHeight": 15,
+      "from": 0,
+      "to": 4
+     }
+    ]
+   }
+  },
+  {
+   "id": 106,
+   "figmaId": "382:213",
+   "parent": 19,
+   "depth": 1,
+   "name": "таобао",
+   "type": "TEXT",
+   "block": "04-showcase",
+   "bounds": {
+    "x": 181.0,
+    "y": 2875.0,
+    "width": 190.0,
+    "height": 15.0
+   },
+   "x": 181.0,
+   "y": 2875.0,
+   "width": 190.0,
+   "height": 15.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": "таобао",
+    "fontFamily": "Inter",
+    "fontStyle": "Regular",
+    "fontSize": 17.0,
+    "lineHeight": "15",
+    "letterSpacing": "0%",
+    "textAlign": "center",
+    "figmaLines": [
+     {
+      "x": 65.96,
+      "baselineY": 13.68,
+      "width": 58.07,
+      "lineY": -0.0,
+      "lineHeight": 20.57,
+      "from": 0,
+      "to": 6
+     }
+    ]
+   }
+  },
+  {
+   "id": 107,
+   "figmaId": "397:355",
+   "parent": 19,
+   "depth": 1,
+   "name": "таобао",
+   "type": "TEXT",
+   "block": "04-showcase",
+   "bounds": {
+    "x": 180.0,
+    "y": 3337.0,
+    "width": 175.0,
+    "height": 14.0
+   },
+   "x": 180.0,
+   "y": 3337.0,
+   "width": 175.0,
+   "height": 14.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": "таобао",
+    "fontFamily": "Inter",
+    "fontStyle": "Regular",
+    "fontSize": 10.0,
+    "lineHeight": "15",
+    "letterSpacing": "0%",
+    "textAlign": "center",
+    "figmaLines": [
+     {
+      "x": 70.42,
+      "baselineY": 11.14,
+      "width": 34.16,
+      "lineY": 0.0,
+      "lineHeight": 15,
+      "from": 0,
+      "to": 6
+     }
+    ]
+   }
+  },
+  {
+   "id": 108,
+   "figmaId": "397:363",
+   "parent": 19,
+   "depth": 1,
+   "name": "таобао",
+   "type": "TEXT",
+   "block": "04-showcase",
+   "bounds": {
+    "x": 181.0,
+    "y": 3794.0,
+    "width": 175.0,
+    "height": 14.0
+   },
+   "x": 181.0,
+   "y": 3794.0,
+   "width": 175.0,
+   "height": 14.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": "таобао",
+    "fontFamily": "Inter",
+    "fontStyle": "Regular",
+    "fontSize": 10.0,
+    "lineHeight": "15",
+    "letterSpacing": "0%",
+    "textAlign": "center",
+    "figmaLines": [
+     {
+      "x": 70.42,
+      "baselineY": 11.14,
+      "width": 34.16,
+      "lineY": 0.0,
+      "lineHeight": 15,
+      "from": 0,
+      "to": 6
+     }
+    ]
+   }
+  },
+  {
+   "id": 109,
+   "figmaId": "382:214",
+   "parent": 19,
+   "depth": 1,
+   "name": "затем его выкупают российские селлеры и продают на наших маркетплейсах (вб, озон), в шоурумах и брендах",
+   "type": "TEXT",
+   "block": "03-wood-steps",
+   "bounds": {
+    "x": 124.0,
+    "y": 2252.0,
+    "width": 210.0,
+    "height": 100.0
+   },
+   "x": 124.0,
+   "y": 2252.0,
+   "width": 210.0,
+   "height": 100.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": "затем его выкупают российские селлеры\nи продают на наших маркетплейсах (вб, озон),\nв шоурумах и брендах\n",
+    "fontFamily": "Inter",
+    "fontStyle": "Regular",
+    "fontSize": 17.0,
+    "lineHeight": "20",
+    "letterSpacing": "-2%",
+    "textAlign": "left",
+    "figmaLines": [
+     {
+      "x": 0,
+      "baselineY": 16.18,
+      "width": 166.65,
+      "lineY": -0.0,
+      "lineHeight": 20.57,
+      "from": 0,
+      "to": 19
+     },
+     {
+      "x": 0,
+      "baselineY": 36.18,
+      "width": 169.9,
+      "lineY": 20.0,
+      "lineHeight": 20.57,
+      "from": 19,
+      "to": 38
+     },
+     {
+      "x": 0,
+      "baselineY": 56.18,
+      "width": 168.1,
+      "lineY": 40.0,
+      "lineHeight": 20.57,
+      "from": 38,
+      "to": 57
+     },
+     {
+      "x": 0,
+      "baselineY": 76.18,
+      "width": 209.7,
+      "lineY": 60.0,
+      "lineHeight": 20.57,
+      "from": 57,
+      "to": 83
+     },
+     {
+      "x": 0,
+      "baselineY": 96.18,
+      "width": 181.27,
+      "lineY": 80,
+      "lineHeight": 20.57,
+      "from": 83,
+      "to": 104
+     }
+    ]
+   }
+  },
+  {
+   "id": 110,
+   "figmaId": "665:20",
+   "parent": 19,
+   "depth": 1,
+   "name": "3",
+   "type": "TEXT",
+   "block": "03-wood-steps",
+   "bounds": {
+    "x": 58.0,
+    "y": 2283.0,
+    "width": 26.0,
+    "height": 38.0
+   },
+   "x": 58.0,
+   "y": 2283.0,
+   "width": 26.0,
+   "height": 38.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": "3",
+    "fontFamily": "Playfair",
+    "fontStyle": "Regular",
+    "fontSize": 64.0,
+    "lineHeight": "20",
+    "letterSpacing": "-2%",
+    "textAlign": "left",
+    "figmaLines": [
+     {
+      "x": 0,
+      "baselineY": 28.27,
+      "width": 28.12,
+      "lineY": -0.0,
+      "lineHeight": 76.8,
+      "from": 0,
+      "to": 1
+     }
+    ]
+   }
+  },
+  {
+   "id": 111,
+   "figmaId": "382:259",
+   "parent": 19,
+   "depth": 1,
+   "name": "никита ефремов",
+   "type": "TEXT",
+   "block": "04-showcase",
+   "bounds": {
+    "x": 22.0,
+    "y": 3729.0,
+    "width": 175.0,
+    "height": 14.0
+   },
+   "x": 22.0,
+   "y": 3729.0,
+   "width": 175.0,
+   "height": 14.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": "никита ефремов",
+    "fontFamily": "Inter",
+    "fontStyle": "Regular",
+    "fontSize": 10.0,
+    "lineHeight": "15",
+    "letterSpacing": "0%",
+    "textAlign": "center",
+    "figmaLines": [
+     {
+      "x": 47.59,
+      "baselineY": 11.14,
+      "width": 79.82,
+      "lineY": 0.0,
+      "lineHeight": 15,
+      "from": 0,
+      "to": 14
+     }
+    ]
+   }
+  },
+  {
+   "id": 112,
+   "figmaId": "382:261",
+   "parent": 19,
+   "depth": 1,
+   "name": "таобао",
+   "type": "TEXT",
+   "block": "04-showcase",
+   "bounds": {
+    "x": 193.0,
+    "y": 3729.0,
+    "width": 175.0,
+    "height": 14.0
+   },
+   "x": 193.0,
+   "y": 3729.0,
+   "width": 175.0,
+   "height": 14.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": "таобао",
+    "fontFamily": "Inter",
+    "fontStyle": "Regular",
+    "fontSize": 10.0,
+    "lineHeight": "15",
+    "letterSpacing": "0%",
+    "textAlign": "center",
+    "figmaLines": [
+     {
+      "x": 70.42,
+      "baselineY": 11.14,
+      "width": 34.16,
+      "lineY": 0.0,
+      "lineHeight": 15,
+      "from": 0,
+      "to": 6
+     }
+    ]
+   }
+  },
+  {
+   "id": 113,
+   "figmaId": "382:265",
+   "parent": 19,
+   "depth": 1,
+   "name": "еще можно заказывать бренды, по которым мы соскучились",
+   "type": "TEXT",
+   "block": "04-showcase",
+   "bounds": {
+    "x": 78.0,
+    "y": 3544.0,
+    "width": 234.0,
+    "height": 57.0
+   },
+   "x": 78.0,
+   "y": 3544.0,
+   "width": 234.0,
+   "height": 57.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": "еще можно заказывать бренды, по которым мы соскучились",
+    "fontFamily": "Playfair Display",
+    "fontStyle": "Regular",
+    "fontSize": 21.0,
+    "lineHeight": "17",
+    "letterSpacing": "0%",
+    "textAlign": "center",
+    "figmaLines": [
+     {
+      "x": 1.97,
+      "baselineY": 17.23,
+      "width": 235.29,
+      "lineY": 0.0,
+      "lineHeight": 27.99,
+      "from": 0,
+      "to": 21
+     },
+     {
+      "x": 14.99,
+      "baselineY": 34.23,
+      "width": 209.24,
+      "lineY": 17.0,
+      "lineHeight": 27.99,
+      "from": 21,
+      "to": 40
+     },
+     {
+      "x": 36.13,
+      "baselineY": 51.23,
+      "width": 161.75,
+      "lineY": 34.0,
+      "lineHeight": 27.99,
+      "from": 40,
+      "to": 54
+     }
+    ]
+   }
+  },
+  {
+   "id": 114,
+   "figmaId": "382:266",
+   "parent": 19,
+   "depth": 1,
+   "name": "разные цены за одну и ту же вещь. логичный вопрос: зачем переплачивать?",
+   "type": "TEXT",
+   "block": "05-quote",
+   "bounds": {
+    "x": 52.0,
+    "y": 3925.0,
+    "width": 287.0,
+    "height": 89.0
+   },
+   "x": 52.0,
+   "y": 3925.0,
+   "width": 287.0,
+   "height": 89.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": "разные цены за одну и ту же вещь. логичный вопрос: зачем переплачивать?\n",
+    "fontFamily": "Playfair Display",
+    "fontStyle": "Italic",
+    "fontSize": 17.0,
+    "lineHeight": "30",
+    "letterSpacing": "2%",
+    "textAlign": "center",
+    "figmaLines": [
+     {
+      "x": 2.39,
+      "baselineY": 22.06,
+      "width": 282.22,
+      "lineY": -0.0,
+      "lineHeight": 30,
+      "from": 0,
+      "to": 34
+     },
+     {
+      "x": 47.88,
+      "baselineY": 52.06,
+      "width": 195.54,
+      "lineY": 30,
+      "lineHeight": 30,
+      "from": 34,
+      "to": 57
+     },
+     {
+      "x": 78.01,
+      "baselineY": 82.06,
+      "width": 130.97,
+      "lineY": 60,
+      "lineHeight": 30,
+      "from": 57,
+      "to": 72
+     }
+    ]
+   }
+  },
+  {
+   "id": 115,
+   "figmaId": "382:267",
+   "parent": 19,
+   "depth": 1,
+   "name": "с выгодой до 70%",
+   "type": "TEXT",
+   "block": "04-showcase",
+   "bounds": {
+    "x": 82.0,
+    "y": 3605.0,
+    "width": 226.0,
+    "height": 11.0
+   },
+   "x": 82.0,
+   "y": 3605.0,
+   "width": 226.0,
+   "height": 11.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": "с выгодой до 70%",
+    "fontFamily": "Inter",
+    "fontStyle": "Regular",
+    "fontSize": 10.0,
+    "lineHeight": "10",
+    "letterSpacing": "0%",
+    "textAlign": "center",
+    "figmaLines": [
+     {
+      "x": 69.14,
+      "baselineY": 8.64,
+      "width": 87.72,
+      "lineY": 0.0,
+      "lineHeight": 12.1,
+      "from": 0,
+      "to": 16
+     }
+    ]
+   }
+  },
+  {
+   "id": 116,
+   "figmaId": "382:270",
+   "parent": 19,
+   "depth": 1,
+   "name": "разберешься, как заказывать на Taobao и 1688 без ошибок и переплат",
+   "type": "TEXT",
+   "block": "06-wood-benefits",
+   "bounds": {
+    "x": 125.0,
+    "y": 4382.0,
+    "width": 141.0,
+    "height": 38.0
+   },
+   "x": 125.0,
+   "y": 4382.0,
+   "width": 141.0,
+   "height": 38.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "color": "#E9E5E2",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": "разберешься, как заказывать на Taobao и 1688 без ошибок и переплат",
+    "fontFamily": "Inter",
+    "fontStyle": "Regular",
+    "fontSize": 10.0,
+    "lineHeight": "13",
+    "letterSpacing": "0%",
+    "textAlign": "center",
+    "figmaLines": [
+     {
+      "x": 26.9,
+      "baselineY": 10.14,
+      "width": 90.01,
+      "lineY": 0.0,
+      "lineHeight": 13,
+      "from": 0,
+      "to": 17
+     },
+     {
+      "x": 12.17,
+      "baselineY": 23.14,
+      "width": 119.48,
+      "lineY": 13,
+      "lineHeight": 13,
+      "from": 17,
+      "to": 40
+     },
+     {
+      "x": 0.38,
+      "baselineY": 36.14,
+      "width": 140.24,
+      "lineY": 26,
+      "lineHeight": 13,
+      "from": 40,
+      "to": 66
+     }
+    ]
+   }
+  },
+  {
+   "id": 117,
+   "figmaId": "382:271",
+   "parent": 19,
+   "depth": 1,
+   "name": "перестанешь переплачивать в 2–3 раза за те же вещи",
+   "type": "TEXT",
+   "block": "06-wood-benefits",
+   "bounds": {
+    "x": 139.0,
+    "y": 4141.0,
+    "width": 112.0,
+    "height": 42.0
+   },
+   "x": 139.0,
+   "y": 4141.0,
+   "width": 112.0,
+   "height": 42.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "color": "#E9E5E2",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": "перестанешь переплачивать в 2–3 раза за те же вещи",
+    "fontFamily": "Inter",
+    "fontStyle": "Regular",
+    "fontSize": 10.0,
+    "lineHeight": "13",
+    "letterSpacing": "0%",
+    "textAlign": "center",
+    "figmaLines": [
+     {
+      "x": 23.47,
+      "baselineY": 10.14,
+      "width": 67.87,
+      "lineY": 0.0,
+      "lineHeight": 13,
+      "from": 0,
+      "to": 12
+     },
+     {
+      "x": 4.51,
+      "baselineY": 23.14,
+      "width": 105.79,
+      "lineY": 13,
+      "lineHeight": 13,
+      "from": 12,
+      "to": 32
+     },
+     {
+      "x": 8.53,
+      "baselineY": 36.14,
+      "width": 94.94,
+      "lineY": 26,
+      "lineHeight": 13,
+      "from": 32,
+      "to": 50
+     }
+    ]
+   }
+  },
+  {
+   "id": 118,
+   "figmaId": "382:272",
+   "parent": 19,
+   "depth": 1,
+   "name": "научишься выбирать вещи, которые выглядят дорого и служат долго",
+   "type": "TEXT",
+   "block": "06-wood-benefits",
+   "bounds": {
+    "x": 34.0,
+    "y": 4326.0,
+    "width": 128.0,
+    "height": 41.0
+   },
+   "x": 34.0,
+   "y": 4326.0,
+   "width": 128.0,
+   "height": 41.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "color": "#E9E5E2",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": "научишься выбирать вещи, которые выглядят дорого и служат долго",
+    "fontFamily": "Inter",
+    "fontStyle": "Regular",
+    "fontSize": 10.0,
+    "lineHeight": "13",
+    "letterSpacing": "0%",
+    "textAlign": "center",
+    "figmaLines": [
+     {
+      "x": 12.38,
+      "baselineY": 10.14,
+      "width": 106.05,
+      "lineY": 0.0,
+      "lineHeight": 13,
+      "from": 0,
+      "to": 19
+     },
+     {
+      "x": 3.41,
+      "baselineY": 23.14,
+      "width": 123.98,
+      "lineY": 13,
+      "lineHeight": 13,
+      "from": 19,
+      "to": 42
+     },
+     {
+      "x": 7.5,
+      "baselineY": 36.14,
+      "width": 113.0,
+      "lineY": 26,
+      "lineHeight": 13,
+      "from": 42,
+      "to": 63
+     }
+    ]
+   }
+  },
+  {
+   "id": 119,
+   "figmaId": "382:273",
+   "parent": 19,
+   "depth": 1,
+   "name": "сможешь покупать оригинальные бренды дешевле ",
+   "type": "TEXT",
+   "block": "06-wood-benefits",
+   "bounds": {
+    "x": 240.0,
+    "y": 4328.0,
+    "width": 111.0,
+    "height": 38.0
+   },
+   "x": 240.0,
+   "y": 4328.0,
+   "width": 111.0,
+   "height": 38.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "color": "#E9E5E2",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": "сможешь покупать оригинальные бренды дешевле ",
+    "fontFamily": "Inter",
+    "fontStyle": "Regular",
+    "fontSize": 10.0,
+    "lineHeight": "13",
+    "letterSpacing": "0%",
+    "textAlign": "center",
+    "figmaLines": [
+     {
+      "x": 8.58,
+      "baselineY": 10.14,
+      "width": 96.65,
+      "lineY": 0.0,
+      "lineHeight": 13,
+      "from": 0,
+      "to": 17
+     },
+     {
+      "x": 0.1,
+      "baselineY": 23.14,
+      "width": 113.61,
+      "lineY": 13,
+      "lineHeight": 13,
+      "from": 17,
+      "to": 37
+     },
+     {
+      "x": 33.81,
+      "baselineY": 36.14,
+      "width": 43.38,
+      "lineY": 26,
+      "lineHeight": 13,
+      "from": 37,
+      "to": 45
+     }
+    ]
+   }
+  },
+  {
+   "id": 120,
+   "figmaId": "382:274",
+   "parent": 19,
+   "depth": 1,
+   "name": "будешь пользоваться базой проверенных магазинов и посредников",
+   "type": "TEXT",
+   "block": "06-wood-benefits",
+   "bounds": {
+    "x": 229.0,
+    "y": 4198.0,
+    "width": 130.0,
+    "height": 38.0
+   },
+   "x": 229.0,
+   "y": 4198.0,
+   "width": 130.0,
+   "height": 38.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "color": "#E9E5E2",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": "будешь пользоваться базой проверенных магазинов и посредников",
+    "fontFamily": "Inter",
+    "fontStyle": "Regular",
+    "fontSize": 10.0,
+    "lineHeight": "13",
+    "letterSpacing": "0%",
+    "textAlign": "center",
+    "figmaLines": [
+     {
+      "x": 11.69,
+      "baselineY": 10.14,
+      "width": 109.42,
+      "lineY": 0.0,
+      "lineHeight": 13,
+      "from": 0,
+      "to": 20
+     },
+     {
+      "x": 16.5,
+      "baselineY": 23.14,
+      "width": 99.8,
+      "lineY": 13,
+      "lineHeight": 13,
+      "from": 20,
+      "to": 38
+     },
+     {
+      "x": 1.49,
+      "baselineY": 36.14,
+      "width": 127.02,
+      "lineY": 26,
+      "lineHeight": 13,
+      "from": 38,
+      "to": 61
+     }
+    ]
+   }
+  },
+  {
+   "id": 121,
+   "figmaId": "382:275",
+   "parent": 19,
+   "depth": 1,
+   "name": "начнешь экономить десятки тысяч рублей ежемесячно",
+   "type": "TEXT",
+   "block": "06-wood-benefits",
+   "bounds": {
+    "x": 45.0,
+    "y": 4198.0,
+    "width": 105.0,
+    "height": 38.0
+   },
+   "x": 45.0,
+   "y": 4198.0,
+   "width": 105.0,
+   "height": 38.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "color": "#E9E5E2",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": "начнешь экономить десятки тысяч рублей ежемесячно",
+    "fontFamily": "Inter",
+    "fontStyle": "Regular",
+    "fontSize": 10.0,
+    "lineHeight": "13",
+    "letterSpacing": "0%",
+    "textAlign": "center",
+    "figmaLines": [
+     {
+      "x": 3.71,
+      "baselineY": 10.14,
+      "width": 100.39,
+      "lineY": 0.0,
+      "lineHeight": 13,
+      "from": 0,
+      "to": 18
+     },
+     {
+      "x": 16.45,
+      "baselineY": 23.14,
+      "width": 74.92,
+      "lineY": 13,
+      "lineHeight": 13,
+      "from": 18,
+      "to": 32
+     },
+     {
+      "x": 2.77,
+      "baselineY": 36.14,
+      "width": 99.45,
+      "lineY": 26,
+      "lineHeight": 13,
+      "from": 32,
+      "to": 49
+     }
+    ]
+   }
+  },
+  {
+   "id": 122,
+   "figmaId": "382:278",
+   "parent": 19,
+   "depth": 1,
+   "name": "и, скорее всего, уже не захочешь покупать как раньше",
+   "type": "TEXT",
+   "block": "06-wood-benefits",
+   "bounds": {
+    "x": 94.0,
+    "y": 4503.0,
+    "width": 202.0,
+    "height": 60.0
+   },
+   "x": 94.0,
+   "y": 4503.0,
+   "width": 202.0,
+   "height": 60.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": "и, скорее всего, уже не захочешь покупать как раньше\n",
+    "fontFamily": "Playfair Display",
+    "fontStyle": "Regular",
+    "fontSize": 15.0,
+    "lineHeight": "17",
+    "letterSpacing": "0%",
+    "textAlign": "center",
+    "figmaLines": [
+     {
+      "x": 45.64,
+      "baselineY": 14.73,
+      "width": 110.71,
+      "lineY": 0.0,
+      "lineHeight": 20.0,
+      "from": 0,
+      "to": 17
+     },
+     {
+      "x": 7.0,
+      "baselineY": 31.73,
+      "width": 191.73,
+      "lineY": 17,
+      "lineHeight": 20.0,
+      "from": 17,
+      "to": 42
+     },
+     {
+      "x": 60.1,
+      "baselineY": 48.73,
+      "width": 81.8,
+      "lineY": 34,
+      "lineHeight": 20.0,
+      "from": 42,
+      "to": 53
+     }
+    ]
+   }
+  },
+  {
+   "id": 123,
+   "figmaId": "382:281",
+   "parent": 19,
+   "depth": 1,
+   "name": "знакомство с маркетплейсами",
+   "type": "TEXT",
+   "block": "07-roadmap",
+   "bounds": {
+    "x": 25.0,
+    "y": 4916.0,
+    "width": 149.0,
+    "height": 28.0
+   },
+   "x": 25.0,
+   "y": 4916.0,
+   "width": 149.0,
+   "height": 28.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": "знакомство\nс маркетплейсами",
+    "fontFamily": "Playfair Display",
+    "fontStyle": "Regular",
+    "fontSize": 13.0,
+    "lineHeight": "13",
+    "letterSpacing": "0%",
+    "textAlign": "center",
+    "figmaLines": [
+     {
+      "x": 38.58,
+      "baselineY": 11.9,
+      "width": 71.83,
+      "lineY": -0.0,
+      "lineHeight": 17.33,
+      "from": 0,
+      "to": 11
+     },
+     {
+      "x": 17.5,
+      "baselineY": 24.9,
+      "width": 113.99,
+      "lineY": 13.0,
+      "lineHeight": 17.33,
+      "from": 11,
+      "to": 27
+     }
+    ]
+   }
+  },
+  {
+   "id": 124,
+   "figmaId": "382:283",
+   "parent": 19,
+   "depth": 1,
+   "name": "поиск товаров",
+   "type": "TEXT",
+   "block": "07-roadmap",
+   "bounds": {
+    "x": 202.0,
+    "y": 4929.0,
+    "width": 149.0,
+    "height": 14.0
+   },
+   "x": 202.0,
+   "y": 4929.0,
+   "width": 149.0,
+   "height": 14.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": "поиск товаров",
+    "fontFamily": "Playfair Display",
+    "fontStyle": "Regular",
+    "fontSize": 13.0,
+    "lineHeight": "13",
+    "letterSpacing": "0%",
+    "textAlign": "center",
+    "figmaLines": [
+     {
+      "x": 29.56,
+      "baselineY": 11.9,
+      "width": 89.87,
+      "lineY": -0.0,
+      "lineHeight": 17.33,
+      "from": 0,
+      "to": 13
+     }
+    ]
+   }
+  },
+  {
+   "id": 125,
+   "figmaId": "382:284",
+   "parent": 19,
+   "depth": 1,
+   "name": "“Полный”",
+   "type": "TEXT",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 121.0,
+    "y": 6228.0,
+    "width": 149.0,
+    "height": 17.0
+   },
+   "x": 121.0,
+   "y": 6228.0,
+   "width": 149.0,
+   "height": 17.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": "“Полный”",
+    "fontFamily": "Playfair Display",
+    "fontStyle": "Regular",
+    "fontSize": 21.0,
+    "lineHeight": "13",
+    "letterSpacing": "0%",
+    "textAlign": "center",
+    "figmaLines": [
+     {
+      "x": 26.1,
+      "baselineY": 15.23,
+      "width": 96.8,
+      "lineY": 0.0,
+      "lineHeight": 27.99,
+      "from": 0,
+      "to": 8
+     }
+    ]
+   }
+  },
+  {
+   "id": 126,
+   "figmaId": "401:511",
+   "parent": 19,
+   "depth": 1,
+   "name": "“Базовый”",
+   "type": "TEXT",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 120.0,
+    "y": 5476.0,
+    "width": 149.0,
+    "height": 17.0
+   },
+   "x": 120.0,
+   "y": 5476.0,
+   "width": 149.0,
+   "height": 17.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": "“Базовый”",
+    "fontFamily": "Playfair Display",
+    "fontStyle": "Regular",
+    "fontSize": 21.0,
+    "lineHeight": "13",
+    "letterSpacing": "0%",
+    "textAlign": "center",
+    "figmaLines": [
+     {
+      "x": 23.35,
+      "baselineY": 15.23,
+      "width": 102.29,
+      "lineY": 0.0,
+      "lineHeight": 27.99,
+      "from": 0,
+      "to": 9
+     }
+    ]
+   }
+  },
+  {
+   "id": 127,
+   "figmaId": "382:285",
+   "parent": 19,
+   "depth": 1,
+   "name": "рейтинг продавцов",
+   "type": "TEXT",
+   "block": "07-roadmap",
+   "bounds": {
+    "x": 390.0,
+    "y": 4827.0,
+    "width": 149.0,
+    "height": 29.0
+   },
+   "x": 390.0,
+   "y": 4827.0,
+   "width": 149.0,
+   "height": 29.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": "рейтинг продавцов",
+    "fontFamily": "Playfair Display",
+    "fontStyle": "Regular",
+    "fontSize": 13.0,
+    "lineHeight": "13",
+    "letterSpacing": "0%",
+    "textAlign": "center",
+    "figmaLines": [
+     {
+      "x": 14.86,
+      "baselineY": 11.9,
+      "width": 119.29,
+      "lineY": -0.0,
+      "lineHeight": 17.33,
+      "from": 0,
+      "to": 17
+     }
+    ]
+   }
+  },
+  {
+   "id": 128,
+   "figmaId": "382:286",
+   "parent": 19,
+   "depth": 1,
+   "name": "регистрация без риска блокировки",
+   "type": "TEXT",
+   "block": "07-roadmap",
+   "bounds": {
+    "x": 42.0,
+    "y": 4947.0,
+    "width": 115.0,
+    "height": 26.0
+   },
+   "x": 42.0,
+   "y": 4947.0,
+   "width": 115.0,
+   "height": 26.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": "регистрация без риска блокировки",
+    "fontFamily": "Inter",
+    "fontStyle": "Regular",
+    "fontSize": 10.0,
+    "lineHeight": "13",
+    "letterSpacing": "0%",
+    "textAlign": "center",
+    "figmaLines": [
+     {
+      "x": 0.56,
+      "baselineY": 10.14,
+      "width": 116.69,
+      "lineY": 0.0,
+      "lineHeight": 13,
+      "from": 0,
+      "to": 22
+     },
+     {
+      "x": 28.44,
+      "baselineY": 23.14,
+      "width": 58.12,
+      "lineY": 13,
+      "lineHeight": 13,
+      "from": 22,
+      "to": 32
+     }
+    ]
+   }
+  },
+  {
+   "id": 129,
+   "figmaId": "382:288",
+   "parent": 19,
+   "depth": 1,
+   "name": "Только Таобао + выкуп через посредника",
+   "type": "TEXT",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 89.0,
+    "y": 5355.0,
+    "width": 213.0,
+    "height": 12.0
+   },
+   "x": 89.0,
+   "y": 5355.0,
+   "width": 213.0,
+   "height": 12.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": "Только Таобао + выкуп через посредника",
+    "fontFamily": "Inter",
+    "fontStyle": "Regular",
+    "fontSize": 10.0,
+    "lineHeight": "13",
+    "letterSpacing": "0%",
+    "textAlign": "center",
+    "figmaLines": [
+     {
+      "x": 3.41,
+      "baselineY": 10.14,
+      "width": 206.18,
+      "lineY": 0.0,
+      "lineHeight": 13,
+      "from": 0,
+      "to": 38
+     }
+    ]
+   }
+  },
+  {
+   "id": 130,
+   "figmaId": "402:559",
+   "parent": 19,
+   "depth": 1,
+   "name": "Для тех, кто хочет делегировать максимум процесса посреднику",
+   "type": "TEXT",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 87.0,
+    "y": 5377.0,
+    "width": 213.0,
+    "height": 38.0
+   },
+   "x": 87.0,
+   "y": 5377.0,
+   "width": 213.0,
+   "height": 38.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": "Для тех, кто хочет делегировать максимум процесса посреднику",
+    "fontFamily": "Inter",
+    "fontStyle": "Regular",
+    "fontSize": 10.0,
+    "lineHeight": "13",
+    "letterSpacing": "0%",
+    "textAlign": "center",
+    "figmaLines": [
+     {
+      "x": 25.72,
+      "baselineY": 10.14,
+      "width": 164.37,
+      "lineY": 0.0,
+      "lineHeight": 13,
+      "from": 0,
+      "to": 32
+     },
+     {
+      "x": 26.06,
+      "baselineY": 23.14,
+      "width": 160.88,
+      "lineY": 13,
+      "lineHeight": 13,
+      "from": 32,
+      "to": 60
+     }
+    ]
+   }
+  },
+  {
+   "id": 131,
+   "figmaId": "382:289",
+   "parent": 19,
+   "depth": 1,
+   "name": "Таобао +1688 + все способы обмена валюты и оплаты",
+   "type": "TEXT",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 108.0,
+    "y": 6102.0,
+    "width": 175.0,
+    "height": 25.0
+   },
+   "x": 108.0,
+   "y": 6102.0,
+   "width": 175.0,
+   "height": 25.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": "Таобао +1688 + все способы обмена валюты и оплаты",
+    "fontFamily": "Inter",
+    "fontStyle": "Regular",
+    "fontSize": 10.0,
+    "lineHeight": "13",
+    "letterSpacing": "0%",
+    "textAlign": "center",
+    "figmaLines": [
+     {
+      "x": 16.62,
+      "baselineY": 10.14,
+      "width": 144.58,
+      "lineY": 0.0,
+      "lineHeight": 13,
+      "from": 0,
+      "to": 27
+     },
+     {
+      "x": 25.25,
+      "baselineY": 23.14,
+      "width": 124.49,
+      "lineY": 13,
+      "lineHeight": 13,
+      "from": 27,
+      "to": 49
+     }
+    ]
+   }
+  },
+  {
+   "id": 132,
+   "figmaId": "402:560",
+   "parent": 19,
+   "depth": 1,
+   "name": "Для тех, кто хочет максимально экономить и знать о китайском шопинге абсолютно всё",
+   "type": "TEXT",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 96.0,
+    "y": 6137.0,
+    "width": 198.0,
+    "height": 38.0
+   },
+   "x": 96.0,
+   "y": 6137.0,
+   "width": 198.0,
+   "height": 38.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": "Для тех, кто хочет максимально экономить и знать о китайском шопинге абсолютно всё",
+    "fontFamily": "Inter",
+    "fontStyle": "Regular",
+    "fontSize": 10.0,
+    "lineHeight": "13",
+    "letterSpacing": "0%",
+    "textAlign": "center",
+    "figmaLines": [
+     {
+      "x": 19.18,
+      "baselineY": 10.14,
+      "width": 162.46,
+      "lineY": 0.0,
+      "lineHeight": 13,
+      "from": 0,
+      "to": 31
+     },
+     {
+      "x": 21.99,
+      "baselineY": 23.14,
+      "width": 156.84,
+      "lineY": 13,
+      "lineHeight": 13,
+      "from": 31,
+      "to": 61
+     },
+     {
+      "x": 39.83,
+      "baselineY": 36.14,
+      "width": 118.35,
+      "lineY": 26,
+      "lineHeight": 13,
+      "from": 61,
+      "to": 82
+     }
+    ]
+   }
+  },
+  {
+   "id": 133,
+   "figmaId": "400:422",
+   "parent": 19,
+   "depth": 1,
+   "name": "Всё, что входит в тариф \"Базовый\", а также:",
+   "type": "TEXT",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 124.0,
+    "y": 6262.0,
+    "width": 143.0,
+    "height": 23.0
+   },
+   "x": 124.0,
+   "y": 6262.0,
+   "width": 143.0,
+   "height": 23.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "color": "#1E1E1E",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": "Всё, что входит в тариф \"Базовый\", а также:",
+    "fontFamily": "Inter",
+    "fontStyle": "Semi Bold",
+    "fontSize": 10.0,
+    "lineHeight": "Auto",
+    "letterSpacing": "0%",
+    "textAlign": "center",
+    "figmaLines": [
+     {
+      "x": 11.78,
+      "baselineY": 9.64,
+      "width": 121.91,
+      "lineY": 0.0,
+      "lineHeight": 12.1,
+      "from": 0,
+      "to": 24
+     },
+     {
+      "x": 22.67,
+      "baselineY": 21.64,
+      "width": 97.66,
+      "lineY": 12,
+      "lineHeight": 12.1,
+      "from": 24,
+      "to": 43
+     }
+    ]
+   }
+  },
+  {
+   "id": 134,
+   "figmaId": "401:505",
+   "parent": 19,
+   "depth": 1,
+   "name": "02",
+   "type": "TEXT",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 91.0,
+    "y": 6072.0,
+    "width": 16.0,
+    "height": 15.0
+   },
+   "x": 91.0,
+   "y": 6072.0,
+   "width": 16.0,
+   "height": 15.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "color": "#1E1E1E",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": "02",
+    "fontFamily": "Inter",
+    "fontStyle": "Semi Bold Italic",
+    "fontSize": 12.0,
+    "lineHeight": "Auto",
+    "letterSpacing": "0%",
+    "textAlign": "center",
+    "figmaLines": [
+     {
+      "x": 0.27,
+      "baselineY": 11.86,
+      "width": 15.46,
+      "lineY": -0.0,
+      "lineHeight": 15,
+      "from": 0,
+      "to": 2
+     }
+    ]
+   }
+  },
+  {
+   "id": 135,
+   "figmaId": "401:514",
+   "parent": 19,
+   "depth": 1,
+   "name": "01",
+   "type": "TEXT",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 91.0,
+    "y": 5320.0,
+    "width": 15.0,
+    "height": 15.0
+   },
+   "x": 91.0,
+   "y": 5320.0,
+   "width": 15.0,
+   "height": 15.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "color": "#1E1E1E",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": "01",
+    "fontFamily": "Inter",
+    "fontStyle": "Semi Bold Italic",
+    "fontSize": 12.0,
+    "lineHeight": "Auto",
+    "letterSpacing": "0%",
+    "textAlign": "center",
+    "figmaLines": [
+     {
+      "x": 0.62,
+      "baselineY": 11.86,
+      "width": 13.77,
+      "lineY": -0.0,
+      "lineHeight": 15,
+      "from": 0,
+      "to": 2
+     }
+    ]
+   }
+  },
+  {
+   "id": 136,
+   "figmaId": "401:446",
+   "parent": 19,
+   "depth": 1,
+   "name": "+ все этапы работы с 1688:",
+   "type": "TEXT",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 125.0,
+    "y": 6366.0,
+    "width": 143.0,
+    "height": 11.0
+   },
+   "x": 125.0,
+   "y": 6366.0,
+   "width": 143.0,
+   "height": 11.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "color": "#1E1E1E",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": "+ все этапы работы с 1688:",
+    "fontFamily": "Inter",
+    "fontStyle": "Semi Bold",
+    "fontSize": 10.0,
+    "lineHeight": "Auto",
+    "letterSpacing": "0%",
+    "textAlign": "center",
+    "figmaLines": [
+     {
+      "x": 3.11,
+      "baselineY": 9.64,
+      "width": 136.79,
+      "lineY": 0.0,
+      "lineHeight": 12.1,
+      "from": 0,
+      "to": 26
+     }
+    ]
+   }
+  },
+  {
+   "id": 137,
+   "figmaId": "401:447",
+   "parent": 19,
+   "depth": 1,
+   "name": "Бонусные материалы:",
+   "type": "TEXT",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 124.0,
+    "y": 6578.0,
+    "width": 143.0,
+    "height": 11.0
+   },
+   "x": 124.0,
+   "y": 6578.0,
+   "width": 143.0,
+   "height": 11.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "color": "#1E1E1E",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": "Бонусные материалы:",
+    "fontFamily": "Inter",
+    "fontStyle": "Semi Bold",
+    "fontSize": 10.0,
+    "lineHeight": "Auto",
+    "letterSpacing": "0%",
+    "textAlign": "center",
+    "figmaLines": [
+     {
+      "x": 15.96,
+      "baselineY": 9.64,
+      "width": 111.08,
+      "lineY": 0.0,
+      "lineHeight": 12.1,
+      "from": 0,
+      "to": 19
+     }
+    ]
+   }
+  },
+  {
+   "id": 138,
+   "figmaId": "401:516",
+   "parent": 19,
+   "depth": 1,
+   "name": "Бонусные материалы:",
+   "type": "TEXT",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 124.0,
+    "y": 5670.0,
+    "width": 143.0,
+    "height": 11.0
+   },
+   "x": 124.0,
+   "y": 5670.0,
+   "width": 143.0,
+   "height": 11.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "color": "#1E1E1E",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": "Бонусные материалы:",
+    "fontFamily": "Inter",
+    "fontStyle": "Semi Bold",
+    "fontSize": 10.0,
+    "lineHeight": "Auto",
+    "letterSpacing": "0%",
+    "textAlign": "center",
+    "figmaLines": [
+     {
+      "x": 15.96,
+      "baselineY": 9.64,
+      "width": 111.08,
+      "lineY": 0.0,
+      "lineHeight": 12.1,
+      "from": 0,
+      "to": 19
+     }
+    ]
+   }
+  },
+  {
+   "id": 139,
+   "figmaId": "401:449",
+   "parent": 19,
+   "depth": 1,
+   "name": "Доступ к курсу 4 месяца Обратная связь 2 месяца",
+   "type": "TEXT",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 124.0,
+    "y": 6646.0,
+    "width": 143.0,
+    "height": 23.0
+   },
+   "x": 124.0,
+   "y": 6646.0,
+   "width": 143.0,
+   "height": 23.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "color": "#1E1E1E",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": "Доступ к курсу 4 месяца\nОбратная связь 2 месяца",
+    "fontFamily": "Inter",
+    "fontStyle": "Semi Bold",
+    "fontSize": 10.0,
+    "lineHeight": "Auto",
+    "letterSpacing": "0%",
+    "textAlign": "center",
+    "figmaLines": [
+     {
+      "x": 8.72,
+      "baselineY": 9.64,
+      "width": 125.56,
+      "lineY": 0.0,
+      "lineHeight": 12.1,
+      "from": 0,
+      "to": 24
+     },
+     {
+      "x": 7.8,
+      "baselineY": 21.64,
+      "width": 127.39,
+      "lineY": 12,
+      "lineHeight": 12.1,
+      "from": 24,
+      "to": 47
+     }
+    ]
+   }
+  },
+  {
+   "id": 140,
+   "figmaId": "401:517",
+   "parent": 19,
+   "depth": 1,
+   "name": "Доступ к курсу 3 месяца Обратная связь 1 месяц",
+   "type": "TEXT",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 124.0,
+    "y": 5810.0,
+    "width": 143.0,
+    "height": 23.0
+   },
+   "x": 124.0,
+   "y": 5810.0,
+   "width": 143.0,
+   "height": 23.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "color": "#1E1E1E",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": "Доступ к курсу 3 месяца\nОбратная связь 1 месяц",
+    "fontFamily": "Inter",
+    "fontStyle": "Semi Bold",
+    "fontSize": 10.0,
+    "lineHeight": "Auto",
+    "letterSpacing": "0%",
+    "textAlign": "center",
+    "figmaLines": [
+     {
+      "x": 8.79,
+      "baselineY": 9.64,
+      "width": 125.41,
+      "lineY": 0.0,
+      "lineHeight": 12.1,
+      "from": 0,
+      "to": 24
+     },
+     {
+      "x": 11.38,
+      "baselineY": 21.64,
+      "width": 120.24,
+      "lineY": 12,
+      "lineHeight": 12.1,
+      "from": 24,
+      "to": 46
+     }
+    ]
+   }
+  },
+  {
+   "id": 141,
+   "figmaId": "401:444",
+   "parent": 19,
+   "depth": 1,
+   "name": "Самостоятельный выкуп с Таобао Оплата другом на Таобао Активация скидок на Таобао Торг с продавцами на Таобао Отслеживание товара по Китаю",
+   "type": "TEXT",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 98.0,
+    "y": 6290.0,
+    "width": 195.0,
+    "height": 59.0
+   },
+   "x": 98.0,
+   "y": 6290.0,
+   "width": 195.0,
+   "height": 59.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "color": "#1E1E1E",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": "Самостоятельный выкуп с Таобао\nОплата другом на Таобао\nАктивация скидок на Таобао\nТорг с продавцами на Таобао\nОтслеживание товара по Китаю",
+    "fontFamily": "Inter",
+    "fontStyle": "Light",
+    "fontSize": 10.0,
+    "lineHeight": "Auto",
+    "letterSpacing": "0%",
+    "textAlign": "center",
+    "figmaLines": [
+     {
+      "x": 21.81,
+      "baselineY": 9.64,
+      "width": 166.39,
+      "lineY": 0.0,
+      "lineHeight": 12.1,
+      "from": 0,
+      "to": 31
+     },
+     {
+      "x": 42.97,
+      "baselineY": 21.64,
+      "width": 124.05,
+      "lineY": 12,
+      "lineHeight": 12.1,
+      "from": 31,
+      "to": 55
+     },
+     {
+      "x": 35.18,
+      "baselineY": 33.64,
+      "width": 139.64,
+      "lineY": 24,
+      "lineHeight": 12.1,
+      "from": 55,
+      "to": 82
+     },
+     {
+      "x": 32.76,
+      "baselineY": 45.64,
+      "width": 144.48,
+      "lineY": 36,
+      "lineHeight": 12.1,
+      "from": 82,
+      "to": 110
+     },
+     {
+      "x": 26.71,
+      "baselineY": 57.64,
+      "width": 156.57,
+      "lineY": 48,
+      "lineHeight": 12.1,
+      "from": 110,
+      "to": 138
+     }
+    ]
+   }
+  },
+  {
+   "id": 142,
+   "figmaId": "401:448",
+   "parent": 19,
+   "depth": 1,
+   "name": "Все бонусные материалы с тарифа «Базовый» + список проверенных поставщиков с 1688",
+   "type": "TEXT",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 87.0,
+    "y": 6594.0,
+    "width": 217.0,
+    "height": 35.0
+   },
+   "x": 87.0,
+   "y": 6594.0,
+   "width": 217.0,
+   "height": 35.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "color": "#1E1E1E",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": "Все бонусные материалы с тарифа «Базовый»\n+ список проверенных поставщиков с 1688",
+    "fontFamily": "Inter",
+    "fontStyle": "Light",
+    "fontSize": 10.0,
+    "lineHeight": "Auto",
+    "letterSpacing": "0%",
+    "textAlign": "center",
+    "figmaLines": [
+     {
+      "x": 23.14,
+      "baselineY": 9.64,
+      "width": 173.54,
+      "lineY": 0.0,
+      "lineHeight": 12.1,
+      "from": 0,
+      "to": 32
+     },
+     {
+      "x": 82.24,
+      "baselineY": 21.64,
+      "width": 52.52,
+      "lineY": 12,
+      "lineHeight": 12.1,
+      "from": 32,
+      "to": 42
+     },
+     {
+      "x": 2.5,
+      "baselineY": 33.64,
+      "width": 211.99,
+      "lineY": 24,
+      "lineHeight": 12.1,
+      "from": 42,
+      "to": 81
+     }
+    ]
+   }
+  },
+  {
+   "id": 143,
+   "figmaId": "401:519",
+   "parent": 19,
+   "depth": 1,
+   "name": "Организация СП (совместных покупок) как способ заработка Расчёт себестоимости товаров Список проверенных посредников Список проверенных магазинов, официальных магазинов брендов и экспортных продавцов ",
+   "type": "TEXT",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 87.0,
+    "y": 5686.0,
+    "width": 216.0,
+    "height": 107.0
+   },
+   "x": 87.0,
+   "y": 5686.0,
+   "width": 216.0,
+   "height": 107.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "color": "#1E1E1E",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": "Организация СП (совместных покупок) как способ заработка\nРасчёт себестоимости товаров\nСписок проверенных посредников\nСписок проверенных магазинов, официальных магазинов брендов и экспортных продавцов\nСловарь фраз на китайском для общения с продавцом",
+    "fontFamily": "Inter",
+    "fontStyle": "Light",
+    "fontSize": 10.0,
+    "lineHeight": "Auto",
+    "letterSpacing": "0%",
+    "textAlign": "center",
+    "figmaLines": [
+     {
+      "x": 19.82,
+      "baselineY": 9.64,
+      "width": 194.17,
+      "lineY": 0.0,
+      "lineHeight": 12.1,
+      "from": 0,
+      "to": 36
+     },
+     {
+      "x": 62.77,
+      "baselineY": 21.64,
+      "width": 105.46,
+      "lineY": 12,
+      "lineHeight": 12.1,
+      "from": 36,
+      "to": 57
+     },
+     {
+      "x": 38.33,
+      "baselineY": 33.64,
+      "width": 154.34,
+      "lineY": 24,
+      "lineHeight": 12.1,
+      "from": 57,
+      "to": 86
+     },
+     {
+      "x": 30.63,
+      "baselineY": 45.64,
+      "width": 169.74,
+      "lineY": 36,
+      "lineHeight": 12.1,
+      "from": 86,
+      "to": 117
+     },
+     {
+      "x": 35.47,
+      "baselineY": 57.64,
+      "width": 162.88,
+      "lineY": 48,
+      "lineHeight": 12.1,
+      "from": 117,
+      "to": 147
+     },
+     {
+      "x": 33.68,
+      "baselineY": 69.64,
+      "width": 163.63,
+      "lineY": 60.0,
+      "lineHeight": 12.1,
+      "from": 147,
+      "to": 177
+     },
+     {
+      "x": 55.09,
+      "baselineY": 81.64,
+      "width": 120.82,
+      "lineY": 72.0,
+      "lineHeight": 12.1,
+      "from": 177,
+      "to": 200
+     },
+     {
+      "x": 47.62,
+      "baselineY": 93.64,
+      "width": 135.76,
+      "lineY": 84.0,
+      "lineHeight": 12.1,
+      "from": 200,
+      "to": 226
+     },
+     {
+      "x": 51.03,
+      "baselineY": 105.64,
+      "width": 128.94,
+      "lineY": 96.0,
+      "lineHeight": 12.1,
+      "from": 226,
+      "to": 249
+     }
+    ]
+   }
+  },
+  {
+   "id": 144,
+   "figmaId": "401:445",
+   "parent": 19,
+   "depth": 1,
+   "name": "Безопасная регистрация на 1688 Все варианты поиска товара Как находить производителей Как находить поставщиков, брендирующих товары Разбор рейтинга поставщика Общение и торг с поставщиками Схема самов",
+   "type": "TEXT",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 98.0,
+    "y": 6382.0,
+    "width": 195.0,
+    "height": 179.0
+   },
+   "x": 98.0,
+   "y": 6382.0,
+   "width": 195.0,
+   "height": 179.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "color": "#1E1E1E",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": "Безопасная регистрация на 1688\nВсе варианты поиска товара\nКак находить производителей\nКак находить поставщиков, брендирующих товары\nРазбор рейтинга поставщика\nОбщение и торг с поставщиками\nСхема самовыкупа, плюсы и минусы\nВерификация и пополнение Алипей\nПополнение через биржу (самый выгодный курс юаня)\nСамостоятельный выкуп с 1688\nСкидки, купоны\nОтслеживание товара по Китаю\nСпоры/возвраты",
+    "fontFamily": "Inter",
+    "fontStyle": "Light",
+    "fontSize": 10.0,
+    "lineHeight": "Auto",
+    "letterSpacing": "0%",
+    "textAlign": "center",
+    "figmaLines": [
+     {
+      "x": 24.03,
+      "baselineY": 9.64,
+      "width": 161.93,
+      "lineY": 0.0,
+      "lineHeight": 12.1,
+      "from": 0,
+      "to": 31
+     },
+     {
+      "x": 34.79,
+      "baselineY": 21.64,
+      "width": 140.42,
+      "lineY": 12,
+      "lineHeight": 12.1,
+      "from": 31,
+      "to": 58
+     },
+     {
+      "x": 31.36,
+      "baselineY": 33.64,
+      "width": 147.29,
+      "lineY": 24,
+      "lineHeight": 12.1,
+      "from": 58,
+      "to": 86
+     },
+     {
+      "x": 38.02,
+      "baselineY": 45.64,
+      "width": 136.77,
+      "lineY": 36,
+      "lineHeight": 12.1,
+      "from": 86,
+      "to": 112
+     },
+     {
+      "x": 48.75,
+      "baselineY": 57.64,
+      "width": 112.49,
+      "lineY": 48,
+      "lineHeight": 12.1,
+      "from": 112,
+      "to": 132
+     },
+     {
+      "x": 33.71,
+      "baselineY": 69.64,
+      "width": 142.59,
+      "lineY": 60.0,
+      "lineHeight": 12.1,
+      "from": 132,
+      "to": 159
+     },
+     {
+      "x": 24.55,
+      "baselineY": 81.64,
+      "width": 160.91,
+      "lineY": 72.0,
+      "lineHeight": 12.1,
+      "from": 159,
+      "to": 189
+     },
+     {
+      "x": 15.04,
+      "baselineY": 93.64,
+      "width": 179.91,
+      "lineY": 84.0,
+      "lineHeight": 12.1,
+      "from": 189,
+      "to": 222
+     },
+     {
+      "x": 17.91,
+      "baselineY": 105.64,
+      "width": 174.19,
+      "lineY": 96.0,
+      "lineHeight": 12.1,
+      "from": 222,
+      "to": 254
+     },
+     {
+      "x": 23.66,
+      "baselineY": 117.64,
+      "width": 165.49,
+      "lineY": 108.0,
+      "lineHeight": 12.1,
+      "from": 254,
+      "to": 284
+     },
+     {
+      "x": 52.75,
+      "baselineY": 129.64,
+      "width": 104.49,
+      "lineY": 120.0,
+      "lineHeight": 12.1,
+      "from": 284,
+      "to": 304
+     },
+     {
+      "x": 27.59,
+      "baselineY": 141.64,
+      "width": 154.81,
+      "lineY": 132,
+      "lineHeight": 12.1,
+      "from": 304,
+      "to": 333
+     },
+     {
+      "x": 66.74,
+      "baselineY": 153.64,
+      "width": 76.51,
+      "lineY": 144,
+      "lineHeight": 12.1,
+      "from": 333,
+      "to": 348
+     },
+     {
+      "x": 26.71,
+      "baselineY": 165.64,
+      "width": 156.57,
+      "lineY": 156,
+      "lineHeight": 12.1,
+      "from": 348,
+      "to": 377
+     },
+     {
+      "x": 64.32,
+      "baselineY": 177.64,
+      "width": 81.37,
+      "lineY": 168,
+      "lineHeight": 12.1,
+      "from": 377,
+      "to": 391
+     }
+    ]
+   }
+  },
+  {
+   "id": 145,
+   "figmaId": "401:520",
+   "parent": 19,
+   "depth": 1,
+   "name": "Безопасная регистрация на Таобао Все варианты поиска товара Как находить оригинальные вещи брендов Поиск экспортных магазинов Разбор рейтинга продавцов Общение с продавцом Как выбрать качественный тов",
+   "type": "TEXT",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 83.0,
+    "y": 5510.0,
+    "width": 225.0,
+    "height": 143.0
+   },
+   "x": 83.0,
+   "y": 5510.0,
+   "width": 225.0,
+   "height": 143.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "color": "#1E1E1E",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": "Безопасная регистрация на Таобао\nВсе варианты поиска товара\nКак находить оригинальные вещи брендов\nПоиск экспортных магазинов\nРазбор рейтинга продавцов\nОбщение с продавцом\nКак выбрать качественный товар\nКак не ошибиться с размером\nКак сэкономить на доставке по Китаю\nВиды доставки, тарифы и сроки\nСхема выкупа через посредника\nЗаполнение бланка заказа",
+    "fontFamily": "Inter",
+    "fontStyle": "Light",
+    "fontSize": 10.0,
+    "lineHeight": "Auto",
+    "letterSpacing": "0%",
+    "textAlign": "center",
+    "figmaLines": [
+     {
+      "x": 33.25,
+      "baselineY": 9.64,
+      "width": 173.51,
+      "lineY": 0.0,
+      "lineHeight": 12.1,
+      "from": 0,
+      "to": 33
+     },
+     {
+      "x": 49.79,
+      "baselineY": 21.64,
+      "width": 140.42,
+      "lineY": 12,
+      "lineHeight": 12.1,
+      "from": 33,
+      "to": 60
+     },
+     {
+      "x": 15.23,
+      "baselineY": 33.64,
+      "width": 209.54,
+      "lineY": 24,
+      "lineHeight": 12.1,
+      "from": 60,
+      "to": 99
+     },
+     {
+      "x": 48.47,
+      "baselineY": 45.64,
+      "width": 143.06,
+      "lineY": 36,
+      "lineHeight": 12.1,
+      "from": 99,
+      "to": 126
+     },
+     {
+      "x": 51.64,
+      "baselineY": 57.64,
+      "width": 136.72,
+      "lineY": 48,
+      "lineHeight": 12.1,
+      "from": 126,
+      "to": 152
+     },
+     {
+      "x": 64.75,
+      "baselineY": 69.64,
+      "width": 110.51,
+      "lineY": 60.0,
+      "lineHeight": 12.1,
+      "from": 152,
+      "to": 172
+     },
+     {
+      "x": 38.41,
+      "baselineY": 81.64,
+      "width": 163.18,
+      "lineY": 72.0,
+      "lineHeight": 12.1,
+      "from": 172,
+      "to": 203
+     },
+     {
+      "x": 46.27,
+      "baselineY": 93.64,
+      "width": 147.45,
+      "lineY": 84.0,
+      "lineHeight": 12.1,
+      "from": 203,
+      "to": 231
+     },
+     {
+      "x": 27.03,
+      "baselineY": 105.64,
+      "width": 185.95,
+      "lineY": 96.0,
+      "lineHeight": 12.1,
+      "from": 231,
+      "to": 267
+     },
+     {
+      "x": 42.2,
+      "baselineY": 117.64,
+      "width": 155.6,
+      "lineY": 108.0,
+      "lineHeight": 12.1,
+      "from": 267,
+      "to": 297
+     },
+     {
+      "x": 39.88,
+      "baselineY": 129.64,
+      "width": 160.24,
+      "lineY": 120.0,
+      "lineHeight": 12.1,
+      "from": 297,
+      "to": 327
+     },
+     {
+      "x": 55.11,
+      "baselineY": 141.64,
+      "width": 129.79,
+      "lineY": 132,
+      "lineHeight": 12.1,
+      "from": 327,
+      "to": 351
+     }
+    ]
+   }
+  },
+  {
+   "id": 146,
+   "figmaId": "382:291",
+   "parent": 19,
+   "depth": 1,
+   "name": "как находить любые товары, бренды в разы дешевле, чем у нас? все про экспортные товары",
+   "type": "TEXT",
+   "block": "07-roadmap",
+   "bounds": {
+    "x": 204.0,
+    "y": 4947.0,
+    "width": 145.0,
+    "height": 51.0
+   },
+   "x": 204.0,
+   "y": 4947.0,
+   "width": 145.0,
+   "height": 51.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": "как находить любые товары, бренды в разы дешевле, чем у нас? все про экспортные товары",
+    "fontFamily": "Inter",
+    "fontStyle": "Regular",
+    "fontSize": 10.0,
+    "lineHeight": "13",
+    "letterSpacing": "0%",
+    "textAlign": "center",
+    "figmaLines": [
+     {
+      "x": 1.51,
+      "baselineY": 10.14,
+      "width": 144.79,
+      "lineY": 0.0,
+      "lineHeight": 13,
+      "from": 0,
+      "to": 27
+     },
+     {
+      "x": 0.67,
+      "baselineY": 23.14,
+      "width": 146.46,
+      "lineY": 13,
+      "lineHeight": 13,
+      "from": 27,
+      "to": 54
+     },
+     {
+      "x": 6.53,
+      "baselineY": 36.14,
+      "width": 134.75,
+      "lineY": 26,
+      "lineHeight": 13,
+      "from": 54,
+      "to": 80
+     },
+     {
+      "x": 54.57,
+      "baselineY": 49.14,
+      "width": 35.87,
+      "lineY": 39,
+      "lineHeight": 13,
+      "from": 80,
+      "to": 86
+     }
+    ]
+   }
+  },
+  {
+   "id": 147,
+   "figmaId": "382:292",
+   "parent": 19,
+   "depth": 1,
+   "name": "6.500р",
+   "type": "TEXT",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 131.0,
+    "y": 6707.0,
+    "width": 128.0,
+    "height": 16.0
+   },
+   "x": 131.0,
+   "y": 6707.0,
+   "width": 128.0,
+   "height": 16.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "color": "#969696",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": "6.500р",
+    "fontFamily": "Inter",
+    "fontStyle": "Bold",
+    "fontSize": 19.0,
+    "lineHeight": "13",
+    "letterSpacing": "0%",
+    "textAlign": "center",
+    "figmaLines": [
+     {
+      "x": 30.03,
+      "baselineY": 13.41,
+      "width": 67.95,
+      "lineY": 0.0,
+      "lineHeight": 22.99,
+      "from": 0,
+      "to": 6
+     }
+    ]
+   }
+  },
+  {
+   "id": 148,
+   "figmaId": "401:521",
+   "parent": 19,
+   "depth": 1,
+   "name": "4.500р",
+   "type": "TEXT",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 131.0,
+    "y": 5871.0,
+    "width": 128.0,
+    "height": 16.0
+   },
+   "x": 131.0,
+   "y": 5871.0,
+   "width": 128.0,
+   "height": 16.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "color": "#969696",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": "4.500р",
+    "fontFamily": "Inter",
+    "fontStyle": "Bold",
+    "fontSize": 19.0,
+    "lineHeight": "13",
+    "letterSpacing": "0%",
+    "textAlign": "center",
+    "figmaLines": [
+     {
+      "x": 29.7,
+      "baselineY": 13.41,
+      "width": 68.6,
+      "lineY": 0.0,
+      "lineHeight": 22.99,
+      "from": 0,
+      "to": 6
+     }
+    ]
+   }
+  },
+  {
+   "id": 149,
+   "figmaId": "401:506",
+   "parent": 19,
+   "depth": 1,
+   "name": "4.990р",
+   "type": "TEXT",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 132.0,
+    "y": 6686.0,
+    "width": 128.0,
+    "height": 16.0
+   },
+   "x": 132.0,
+   "y": 6686.0,
+   "width": 128.0,
+   "height": 16.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "color": "#531608",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": "4.990р",
+    "fontFamily": "Inter",
+    "fontStyle": "Black",
+    "fontSize": 19.0,
+    "lineHeight": "13",
+    "letterSpacing": "0%",
+    "textAlign": "center",
+    "figmaLines": [
+     {
+      "x": 28.43,
+      "baselineY": 13.41,
+      "width": 71.14,
+      "lineY": 0.0,
+      "lineHeight": 22.99,
+      "from": 0,
+      "to": 6
+     }
+    ]
+   }
+  },
+  {
+   "id": 150,
+   "figmaId": "401:522",
+   "parent": 19,
+   "depth": 1,
+   "name": "3.490р",
+   "type": "TEXT",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 131.0,
+    "y": 5850.0,
+    "width": 128.0,
+    "height": 16.0
+   },
+   "x": 131.0,
+   "y": 5850.0,
+   "width": 128.0,
+   "height": 16.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "color": "#531608",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": "3.490р",
+    "fontFamily": "Inter",
+    "fontStyle": "Black",
+    "fontSize": 19.0,
+    "lineHeight": "13",
+    "letterSpacing": "0%",
+    "textAlign": "center",
+    "figmaLines": [
+     {
+      "x": 28.54,
+      "baselineY": 13.41,
+      "width": 70.92,
+      "lineY": 0.0,
+      "lineHeight": 22.99,
+      "from": 0,
+      "to": 6
+     }
+    ]
+   }
+  },
+  {
+   "id": 151,
+   "figmaId": "401:450",
+   "parent": 19,
+   "depth": 1,
+   "name": "купить",
+   "type": "TEXT",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 131.0,
+    "y": 6742.0,
+    "width": 128.0,
+    "height": 17.0
+   },
+   "x": 131.0,
+   "y": 6742.0,
+   "width": 128.0,
+   "height": 17.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "color": "#EFEADE",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": "купить",
+    "fontFamily": "Inter",
+    "fontStyle": "Black",
+    "fontSize": 19.0,
+    "lineHeight": "13",
+    "letterSpacing": "0%",
+    "textAlign": "center",
+    "figmaLines": [
+     {
+      "x": 29.44,
+      "baselineY": 13.41,
+      "width": 69.12,
+      "lineY": 0.0,
+      "lineHeight": 22.99,
+      "from": 0,
+      "to": 6
+     }
+    ]
+   }
+  },
+  {
+   "id": 152,
+   "figmaId": "401:523",
+   "parent": 19,
+   "depth": 1,
+   "name": "купить",
+   "type": "TEXT",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 131.0,
+    "y": 5906.0,
+    "width": 128.0,
+    "height": 17.0
+   },
+   "x": 131.0,
+   "y": 5906.0,
+   "width": 128.0,
+   "height": 17.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "color": "#EFEADE",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": "купить",
+    "fontFamily": "Inter",
+    "fontStyle": "Black",
+    "fontSize": 19.0,
+    "lineHeight": "13",
+    "letterSpacing": "0%",
+    "textAlign": "center",
+    "figmaLines": [
+     {
+      "x": 29.44,
+      "baselineY": 13.41,
+      "width": 69.12,
+      "lineY": 0.0,
+      "lineHeight": 22.99,
+      "from": 0,
+      "to": 6
+     }
+    ]
+   }
+  },
+  {
+   "id": 153,
+   "figmaId": "382:293",
+   "parent": 19,
+   "depth": 1,
+   "name": "как выбрать хороший товар?",
+   "type": "TEXT",
+   "block": "07-roadmap",
+   "bounds": {
+    "x": 397.0,
+    "y": 4846.0,
+    "width": 136.0,
+    "height": 61.0
+   },
+   "x": 397.0,
+   "y": 4846.0,
+   "width": 136.0,
+   "height": 61.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": "как выбрать хороший товар?",
+    "fontFamily": "Inter",
+    "fontStyle": "Regular",
+    "fontSize": 10.0,
+    "lineHeight": "13",
+    "letterSpacing": "0%",
+    "textAlign": "center",
+    "figmaLines": [
+     {
+      "x": 14.75,
+      "baselineY": 10.14,
+      "width": 109.31,
+      "lineY": 0.0,
+      "lineHeight": 13,
+      "from": 0,
+      "to": 20
+     },
+     {
+      "x": 51.28,
+      "baselineY": 23.14,
+      "width": 33.44,
+      "lineY": 13,
+      "lineHeight": 13,
+      "from": 20,
+      "to": 26
+     }
+    ]
+   }
+  },
+  {
+   "id": 154,
+   "figmaId": "382:296",
+   "parent": 19,
+   "depth": 1,
+   "name": "дорожная карта курса",
+   "type": "TEXT",
+   "block": "07-roadmap",
+   "bounds": {
+    "x": 60.0,
+    "y": 4792.0,
+    "width": 271.0,
+    "height": 23.0
+   },
+   "x": 60.0,
+   "y": 4792.0,
+   "width": 271.0,
+   "height": 23.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": "дорожная карта курса",
+    "fontFamily": "Playfair Display",
+    "fontStyle": "Regular",
+    "fontSize": 25.0,
+    "lineHeight": "17",
+    "letterSpacing": "0%",
+    "textAlign": "center",
+    "figmaLines": [
+     {
+      "x": 4.3,
+      "baselineY": 18.89,
+      "width": 262.4,
+      "lineY": 0.0,
+      "lineHeight": 33.33,
+      "from": 0,
+      "to": 20
+     }
+    ]
+   }
+  },
+  {
+   "id": 155,
+   "figmaId": "382:297",
+   "parent": 19,
+   "depth": 1,
+   "name": "выбери свой тариф",
+   "type": "TEXT",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 76.0,
+    "y": 5214.0,
+    "width": 234.0,
+    "height": 17.0
+   },
+   "x": 76.0,
+   "y": 5214.0,
+   "width": 234.0,
+   "height": 17.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": "выбери свой тариф",
+    "fontFamily": "Playfair Display",
+    "fontStyle": "Regular",
+    "fontSize": 21.0,
+    "lineHeight": "17",
+    "letterSpacing": "0%",
+    "textAlign": "center",
+    "textAutoResize": "height",
+    "figmaLines": [
+     {
+      "x": 19.05,
+      "baselineY": 17.23,
+      "width": 195.89,
+      "lineY": 0.0,
+      "lineHeight": 27.99,
+      "from": 0,
+      "to": 17
+     }
+    ]
+   }
+  },
+  {
+   "id": 156,
+   "figmaId": "382:298",
+   "parent": 19,
+   "depth": 1,
+   "name": "итак... что тебя ждет на этом курсе?",
+   "type": "TEXT",
+   "block": "07-roadmap",
+   "bounds": {
+    "x": 82.0,
+    "y": 4777.0,
+    "width": 226.0,
+    "height": 11.0
+   },
+   "x": 82.0,
+   "y": 4777.0,
+   "width": 226.0,
+   "height": 11.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": "итак... что тебя ждет на этом курсе?",
+    "fontFamily": "Inter",
+    "fontStyle": "Regular",
+    "fontSize": 10.0,
+    "lineHeight": "10",
+    "letterSpacing": "0%",
+    "textAlign": "center",
+    "figmaLines": [
+     {
+      "x": 23.28,
+      "baselineY": 8.64,
+      "width": 179.44,
+      "lineY": 0.0,
+      "lineHeight": 12.1,
+      "from": 0,
+      "to": 36
+     }
+    ]
+   }
+  },
+  {
+   "id": 157,
+   "figmaId": "352:187",
+   "parent": 19,
+   "depth": 1,
+   "name": "экономлю 20-40 тысяч рублей ежемесячно благодаря Китаю",
+   "type": "TEXT",
+   "block": "02-about",
+   "bounds": {
+    "x": 131.16,
+    "y": 1393.36,
+    "width": 198.04,
+    "height": 41.22
+   },
+   "x": 132.59,
+   "y": 1393.36,
+   "width": 196.8,
+   "height": 32.67,
+   "rotation": -2.5,
+   "fills": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": "экономлю 20-40 тысяч рублей ежемесячно благодаря Китаю",
+    "fontFamily": "Inter",
+    "fontStyle": "Regular",
+    "fontSize": 17.0,
+    "lineHeight": "15",
+    "letterSpacing": "0%",
+    "textAlign": "left",
+    "figmaLines": [
+     {
+      "x": 0,
+      "baselineY": 13.68,
+      "width": 199.97,
+      "lineY": -0.0,
+      "lineHeight": 20.57,
+      "from": 0,
+      "to": 21
+     },
+     {
+      "x": 0,
+      "baselineY": 28.68,
+      "width": 173.85,
+      "lineY": 15,
+      "lineHeight": 20.57,
+      "from": 21,
+      "to": 39
+     },
+     {
+      "x": 0,
+      "baselineY": 43.68,
+      "width": 144.37,
+      "lineY": 30.0,
+      "lineHeight": 20.57,
+      "from": 39,
+      "to": 54
+     }
+    ]
+   }
+  },
+  {
+   "id": 158,
+   "figmaId": "352:188",
+   "parent": 19,
+   "depth": 1,
+   "name": "собираю стильный гардероб как у инфлюенсеров, но до 10 раз дешевле",
+   "type": "TEXT",
+   "block": "02-about",
+   "bounds": {
+    "x": 72.01,
+    "y": 1462.08,
+    "width": 245.01,
+    "height": 52.52
+   },
+   "x": 72.01,
+   "y": 1472.7,
+   "width": 243.41,
+   "height": 41.95,
+   "rotation": 2.5,
+   "fills": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": "собираю стильный гардероб как у инфлюенсеров,\nно до 10 раз дешевле",
+    "fontFamily": "Inter",
+    "fontStyle": "Regular",
+    "fontSize": 17.0,
+    "lineHeight": "15",
+    "letterSpacing": "0%",
+    "textAlign": "left",
+    "figmaLines": [
+     {
+      "x": 0,
+      "baselineY": 13.68,
+      "width": 246.95,
+      "lineY": -0.0,
+      "lineHeight": 20.57,
+      "from": 0,
+      "to": 26
+     },
+     {
+      "x": 0,
+      "baselineY": 28.68,
+      "width": 176.31,
+      "lineY": 15,
+      "lineHeight": 20.57,
+      "from": 26,
+      "to": 46
+     },
+     {
+      "x": 0,
+      "baselineY": 43.68,
+      "width": 180.53,
+      "lineY": 30.0,
+      "lineHeight": 20.57,
+      "from": 46,
+      "to": 66
+     }
+    ]
+   }
+  },
+  {
+   "id": 159,
+   "figmaId": "352:189",
+   "parent": 19,
+   "depth": 1,
+   "name": "делюсь честными обзорами и распаковками в блоге",
+   "type": "TEXT",
+   "block": "02-about",
+   "bounds": {
+    "x": 129.21,
+    "y": 1542.72,
+    "width": 241.17,
+    "height": 51.1
+   },
+   "x": 130.98,
+   "y": 1542.72,
+   "width": 239.62,
+   "height": 40.68,
+   "rotation": -2.5,
+   "fills": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": "делюсь честными обзорами\nи распаковками в блоге\n",
+    "fontFamily": "Inter",
+    "fontStyle": "Regular",
+    "fontSize": 17.0,
+    "lineHeight": "15",
+    "letterSpacing": "0%",
+    "textAlign": "left",
+    "figmaLines": [
+     {
+      "x": 0,
+      "baselineY": 13.68,
+      "width": 237.93,
+      "lineY": -0.0,
+      "lineHeight": 20.57,
+      "from": 0,
+      "to": 25
+     },
+     {
+      "x": 0,
+      "baselineY": 28.68,
+      "width": 200.4,
+      "lineY": 15,
+      "lineHeight": 20.57,
+      "from": 25,
+      "to": 48
+     }
+    ]
+   }
+  },
+  {
+   "id": 160,
+   "figmaId": "352:190",
+   "parent": 19,
+   "depth": 1,
+   "name": "обучаю других выгодному шопингу на Таобао и 1688",
+   "type": "TEXT",
+   "block": "02-about",
+   "bounds": {
+    "x": 75.89,
+    "y": 1591.68,
+    "width": 223.41,
+    "height": 36.06
+   },
+   "x": 75.89,
+   "y": 1601.38,
+   "width": 222.47,
+   "height": 26.38,
+   "rotation": 2.5,
+   "fills": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": "обучаю других выгодному шопингу на Таобао и 1688",
+    "fontFamily": "Inter",
+    "fontStyle": "Regular",
+    "fontSize": 17.0,
+    "lineHeight": "15",
+    "letterSpacing": "0%",
+    "textAlign": "left",
+    "figmaLines": [
+     {
+      "x": 0,
+      "baselineY": 13.68,
+      "width": 226.36,
+      "lineY": -0.0,
+      "lineHeight": 20.57,
+      "from": 0,
+      "to": 24
+     },
+     {
+      "x": 0,
+      "baselineY": 28.68,
+      "width": 218.54,
+      "lineY": 15,
+      "lineHeight": 20.57,
+      "from": 24,
+      "to": 48
+     }
+    ]
+   }
+  },
+  {
+   "id": 161,
+   "figmaId": "388:304",
+   "parent": 19,
+   "depth": 1,
+   "name": "star 1",
+   "type": "RECTANGLE",
+   "block": "02-about",
+   "bounds": {
+    "x": 93.23,
+    "y": 1398.74,
+    "width": 37.54,
+    "height": 37.54
+   },
+   "x": 94.8,
+   "y": 1398.74,
+   "width": 36.0,
+   "height": 36.0,
+   "rotation": -2.5,
+   "fills": [
+    {
+     "blend": "normal",
+     "crop": null,
+     "filters": {
+      "contrast": 0.0,
+      "exposure": 0.0,
+      "highlights": 0.0,
+      "saturation": 0.0,
+      "shadows": 0.0,
+      "temperature": 0.0,
+      "tint": 0.0
+     },
+     "image": "8a2cc3d4d3c7b41566cbec6f8321417fcf74b41d0e9ee0bfcbe02f3c1a0bf5df",
+     "opacity": 1.0,
+     "rotation": 0,
+     "scale": 0.5,
+     "scale_mode": "fill",
+     "type": "image",
+     "visible": true
+    }
+   ]
+  },
+  {
+   "id": 162,
+   "figmaId": "388:306",
+   "parent": 19,
+   "depth": 1,
+   "name": "star 2",
+   "type": "RECTANGLE",
+   "block": "02-about",
+   "bounds": {
+    "x": 35.01,
+    "y": 1479.01,
+    "width": 37.54,
+    "height": 37.54
+   },
+   "x": 35.01,
+   "y": 1480.58,
+   "width": 36.0,
+   "height": 36.0,
+   "rotation": 2.5,
+   "fills": [
+    {
+     "blend": "normal",
+     "crop": null,
+     "filters": {
+      "contrast": 0.0,
+      "exposure": 0.0,
+      "highlights": 0.0,
+      "saturation": 0.0,
+      "shadows": 0.0,
+      "temperature": 0.0,
+      "tint": 0.0
+     },
+     "image": "8a2cc3d4d3c7b41566cbec6f8321417fcf74b41d0e9ee0bfcbe02f3c1a0bf5df",
+     "opacity": 1.0,
+     "rotation": 0,
+     "scale": 0.5,
+     "scale_mode": "fill",
+     "type": "image",
+     "visible": true
+    }
+   ]
+  },
+  {
+   "id": 163,
+   "figmaId": "388:307",
+   "parent": 19,
+   "depth": 1,
+   "name": "star 3",
+   "type": "RECTANGLE",
+   "block": "02-about",
+   "bounds": {
+    "x": 91.25,
+    "y": 1539.25,
+    "width": 37.54,
+    "height": 37.54
+   },
+   "x": 92.82,
+   "y": 1539.25,
+   "width": 36.0,
+   "height": 36.0,
+   "rotation": -2.5,
+   "fills": [
+    {
+     "blend": "normal",
+     "crop": null,
+     "filters": {
+      "contrast": 0.0,
+      "exposure": 0.0,
+      "highlights": 0.0,
+      "saturation": 0.0,
+      "shadows": 0.0,
+      "temperature": 0.0,
+      "tint": 0.0
+     },
+     "image": "8a2cc3d4d3c7b41566cbec6f8321417fcf74b41d0e9ee0bfcbe02f3c1a0bf5df",
+     "opacity": 1.0,
+     "rotation": 0,
+     "scale": 0.5,
+     "scale_mode": "fill",
+     "type": "image",
+     "visible": true
+    }
+   ]
+  },
+  {
+   "id": 164,
+   "figmaId": "388:308",
+   "parent": 19,
+   "depth": 1,
+   "name": "star 4",
+   "type": "RECTANGLE",
+   "block": "02-about",
+   "bounds": {
+    "x": 38.79,
+    "y": 1598.79,
+    "width": 37.54,
+    "height": 37.54
+   },
+   "x": 38.79,
+   "y": 1600.36,
+   "width": 36.0,
+   "height": 36.0,
+   "rotation": 2.5,
+   "fills": [
+    {
+     "blend": "normal",
+     "crop": null,
+     "filters": {
+      "contrast": 0.0,
+      "exposure": 0.0,
+      "highlights": 0.0,
+      "saturation": 0.0,
+      "shadows": 0.0,
+      "temperature": 0.0,
+      "tint": 0.0
+     },
+     "image": "8a2cc3d4d3c7b41566cbec6f8321417fcf74b41d0e9ee0bfcbe02f3c1a0bf5df",
+     "opacity": 1.0,
+     "rotation": 0,
+     "scale": 0.5,
+     "scale_mode": "fill",
+     "type": "image",
+     "visible": true
+    }
+   ]
+  },
+  {
+   "id": 165,
+   "figmaId": "391:326",
+   "parent": 19,
+   "depth": 1,
+   "name": "image 60",
+   "type": "RECTANGLE",
+   "block": "04-showcase",
+   "bounds": {
+    "x": 45.0,
+    "y": 2699.0,
+    "width": 139.0,
+    "height": 172.0
+   },
+   "x": 45.0,
+   "y": 2699.0,
+   "width": 139.0,
+   "height": 172.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "blend": "normal",
+     "crop": null,
+     "filters": {
+      "contrast": 0.0,
+      "exposure": 0.0,
+      "highlights": 0.0,
+      "saturation": 0.0,
+      "shadows": 0.0,
+      "temperature": 0.0,
+      "tint": 0.0
+     },
+     "image": "0e0ac402c8e640c4da9475bc001856daa5a4e8de702144e71ee5a64dc19442a5",
+     "opacity": 1.0,
+     "rotation": 0,
+     "scale": 0.5,
+     "scale_mode": "fill",
+     "type": "image",
+     "visible": true
+    }
+   ]
+  },
+  {
+   "id": 166,
+   "figmaId": "662:16",
+   "parent": 19,
+   "depth": 1,
+   "name": "image 66",
+   "type": "RECTANGLE",
+   "block": "04-showcase",
+   "bounds": {
+    "x": 207.0,
+    "y": 2699.0,
+    "width": 139.0,
+    "height": 172.0
+   },
+   "x": 207.0,
+   "y": 2699.0,
+   "width": 139.0,
+   "height": 172.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "blend": "normal",
+     "crop": null,
+     "filters": {
+      "contrast": 0.0,
+      "exposure": 0.0,
+      "highlights": 0.0,
+      "saturation": 0.0,
+      "shadows": 0.0,
+      "temperature": 0.0,
+      "tint": 0.0
+     },
+     "image": "0e0ac402c8e640c4da9475bc001856daa5a4e8de702144e71ee5a64dc19442a5",
+     "opacity": 1.0,
+     "rotation": 0,
+     "scale": 0.5,
+     "scale_mode": "fill",
+     "type": "image",
+     "visible": true
+    }
+   ]
+  },
+  {
+   "id": 167,
+   "figmaId": "397:356",
+   "parent": 19,
+   "depth": 1,
+   "name": "image 62",
+   "type": "RECTANGLE",
+   "block": "04-showcase",
+   "bounds": {
+    "x": 68.0,
+    "y": 3201.0,
+    "width": 106.0,
+    "height": 131.0
+   },
+   "x": 68.0,
+   "y": 3201.0,
+   "width": 106.0,
+   "height": 131.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "blend": "normal",
+     "crop": null,
+     "filters": {
+      "contrast": 0.0,
+      "exposure": 0.0,
+      "highlights": 0.0,
+      "saturation": 0.0,
+      "shadows": 0.0,
+      "temperature": 0.0,
+      "tint": 0.0
+     },
+     "image": "0e0ac402c8e640c4da9475bc001856daa5a4e8de702144e71ee5a64dc19442a5",
+     "opacity": 1.0,
+     "rotation": 0,
+     "scale": 0.5,
+     "scale_mode": "fill",
+     "type": "image",
+     "visible": true
+    }
+   ]
+  },
+  {
+   "id": 168,
+   "figmaId": "397:364",
+   "parent": 19,
+   "depth": 1,
+   "name": "image 64",
+   "type": "RECTANGLE",
+   "block": "04-showcase",
+   "bounds": {
+    "x": 69.0,
+    "y": 3658.0,
+    "width": 106.0,
+    "height": 131.0
+   },
+   "x": 69.0,
+   "y": 3658.0,
+   "width": 106.0,
+   "height": 131.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "blend": "normal",
+     "crop": null,
+     "filters": {
+      "contrast": 0.0,
+      "exposure": 0.0,
+      "highlights": 0.0,
+      "saturation": 0.0,
+      "shadows": 0.0,
+      "temperature": 0.0,
+      "tint": 0.0
+     },
+     "image": "0e0ac402c8e640c4da9475bc001856daa5a4e8de702144e71ee5a64dc19442a5",
+     "opacity": 1.0,
+     "rotation": 0,
+     "scale": 0.5,
+     "scale_mode": "fill",
+     "type": "image",
+     "visible": true
+    }
+   ]
+  },
+  {
+   "id": 169,
+   "figmaId": "397:357",
+   "parent": 19,
+   "depth": 1,
+   "name": "image 63",
+   "type": "RECTANGLE",
+   "block": "04-showcase",
+   "bounds": {
+    "x": 214.0,
+    "y": 3201.0,
+    "width": 106.0,
+    "height": 131.0
+   },
+   "x": 214.0,
+   "y": 3201.0,
+   "width": 106.0,
+   "height": 131.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "blend": "normal",
+     "crop": null,
+     "filters": {
+      "contrast": 0.0,
+      "exposure": 0.0,
+      "highlights": 0.0,
+      "saturation": 0.0,
+      "shadows": 0.0,
+      "temperature": 0.0,
+      "tint": 0.0
+     },
+     "image": "0e0ac402c8e640c4da9475bc001856daa5a4e8de702144e71ee5a64dc19442a5",
+     "opacity": 1.0,
+     "rotation": 0,
+     "scale": 0.5,
+     "scale_mode": "fill",
+     "type": "image",
+     "visible": true
+    }
+   ]
+  },
+  {
+   "id": 170,
+   "figmaId": "397:365",
+   "parent": 19,
+   "depth": 1,
+   "name": "image 65",
+   "type": "RECTANGLE",
+   "block": "04-showcase",
+   "bounds": {
+    "x": 215.0,
+    "y": 3658.0,
+    "width": 106.0,
+    "height": 131.0
+   },
+   "x": 215.0,
+   "y": 3658.0,
+   "width": 106.0,
+   "height": 131.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "blend": "normal",
+     "crop": null,
+     "filters": {
+      "contrast": 0.0,
+      "exposure": 0.0,
+      "highlights": 0.0,
+      "saturation": 0.0,
+      "shadows": 0.0,
+      "temperature": 0.0,
+      "tint": 0.0
+     },
+     "image": "0e0ac402c8e640c4da9475bc001856daa5a4e8de702144e71ee5a64dc19442a5",
+     "opacity": 1.0,
+     "rotation": 0,
+     "scale": 0.5,
+     "scale_mode": "fill",
+     "type": "image",
+     "visible": true
+    }
+   ]
+  },
+  {
+   "id": 171,
+   "figmaId": "396:339",
+   "parent": 19,
+   "depth": 1,
+   "name": "Line 3",
+   "type": "LINE",
+   "block": "07-roadmap",
+   "bounds": {
+    "x": 51.0,
+    "y": 4820.51,
+    "width": 287.0,
+    "height": 0.0
+   },
+   "x": 51.0,
+   "y": 4820.51,
+   "width": 287.0,
+   "height": 0.0,
+   "rotation": 0,
+   "strokeWeight": 0.4,
+   "strokeAlign": "center",
+   "strokes": [
+    {
+     "color": "#000000",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 172,
+   "figmaId": "397:366",
+   "parent": 19,
+   "depth": 1,
+   "name": "Line 6",
+   "type": "LINE",
+   "block": "04-showcase",
+   "bounds": {
+    "x": 358.0,
+    "y": 3260.0,
+    "width": 10.0,
+    "height": 12.0
+   },
+   "x": 358.0,
+   "y": 3260.0,
+   "width": 15.62,
+   "height": 0.0,
+   "rotation": -50.19,
+   "strokeWeight": 0.7,
+   "strokeAlign": "center",
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 173,
+   "figmaId": "397:368",
+   "parent": 19,
+   "depth": 1,
+   "name": "Line 8",
+   "type": "LINE",
+   "block": "04-showcase",
+   "bounds": {
+    "x": 358.0,
+    "y": 3717.0,
+    "width": 10.0,
+    "height": 12.0
+   },
+   "x": 358.0,
+   "y": 3717.0,
+   "width": 15.62,
+   "height": 0.0,
+   "rotation": -50.19,
+   "strokeWeight": 0.7,
+   "strokeAlign": "center",
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 174,
+   "figmaId": "662:7",
+   "parent": 19,
+   "depth": 1,
+   "name": "Group 35",
+   "type": "GROUP",
+   "block": "03-wood-steps",
+   "bounds": {
+    "x": 362.98,
+    "y": 2290.02,
+    "width": 11.8,
+    "height": 23.24
+   },
+   "x": 362.98,
+   "y": 2290.02,
+   "width": 11.8,
+   "height": 23.24,
+   "rotation": 0
+  },
+  {
+   "id": 175,
+   "figmaId": "662:8",
+   "parent": 174,
+   "depth": 2,
+   "name": "Line 4",
+   "type": "LINE",
+   "block": "03-wood-steps",
+   "bounds": {
+    "x": 362.98,
+    "y": 2290.02,
+    "width": 10.28,
+    "height": 12.26
+   },
+   "x": 362.98,
+   "y": 2290.02,
+   "width": 16.0,
+   "height": 0.0,
+   "rotation": -50.0,
+   "strokeWeight": 2.0,
+   "strokeAlign": "center",
+   "strokes": [
+    {
+     "color": "#FEFBEF",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 176,
+   "figmaId": "662:9",
+   "parent": 174,
+   "depth": 2,
+   "name": "Line 5",
+   "type": "LINE",
+   "block": "03-wood-steps",
+   "bounds": {
+    "x": 364.5,
+    "y": 2301.0,
+    "width": 10.28,
+    "height": 12.25
+   },
+   "x": 364.5,
+   "y": 2313.25,
+   "width": 16.0,
+   "height": 0.0,
+   "rotation": 50.0,
+   "strokeWeight": 2.0,
+   "strokeAlign": "center",
+   "strokes": [
+    {
+     "color": "#FEFBEF",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 177,
+   "figmaId": "662:17",
+   "parent": 19,
+   "depth": 1,
+   "name": "Group 38",
+   "type": "GROUP",
+   "block": "04-showcase",
+   "bounds": {
+    "x": 366.0,
+    "y": 2783.0,
+    "width": 11.8,
+    "height": 23.24
+   },
+   "x": 366.0,
+   "y": 2783.0,
+   "width": 11.8,
+   "height": 23.24,
+   "rotation": 0
+  },
+  {
+   "id": 178,
+   "figmaId": "662:18",
+   "parent": 177,
+   "depth": 2,
+   "name": "Line 4",
+   "type": "LINE",
+   "block": "04-showcase",
+   "bounds": {
+    "x": 366.0,
+    "y": 2783.0,
+    "width": 10.28,
+    "height": 12.26
+   },
+   "x": 366.0,
+   "y": 2783.0,
+   "width": 16.0,
+   "height": 0.0,
+   "rotation": -50.0,
+   "strokeWeight": 2.0,
+   "strokeAlign": "center",
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 179,
+   "figmaId": "662:19",
+   "parent": 177,
+   "depth": 2,
+   "name": "Line 5",
+   "type": "LINE",
+   "block": "04-showcase",
+   "bounds": {
+    "x": 367.52,
+    "y": 2793.98,
+    "width": 10.28,
+    "height": 12.25
+   },
+   "x": 367.52,
+   "y": 2806.24,
+   "width": 16.0,
+   "height": 0.0,
+   "rotation": 50.0,
+   "strokeWeight": 2.0,
+   "strokeAlign": "center",
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 180,
+   "figmaId": "662:10",
+   "parent": 19,
+   "depth": 1,
+   "name": "Group 36",
+   "type": "GROUP",
+   "block": "03-wood-steps",
+   "bounds": {
+    "x": 15.0,
+    "y": 2289.0,
+    "width": 11.8,
+    "height": 23.24
+   },
+   "x": 26.8,
+   "y": 2289.0,
+   "width": 11.8,
+   "height": 23.24,
+   "rotation": 180.0,
+   "flipped": true
+  },
+  {
+   "id": 181,
+   "figmaId": "662:11",
+   "parent": 180,
+   "depth": 2,
+   "name": "Line 4",
+   "type": "LINE",
+   "block": "03-wood-steps",
+   "bounds": {
+    "x": 16.52,
+    "y": 2289.0,
+    "width": 10.28,
+    "height": 12.26
+   },
+   "x": 26.8,
+   "y": 2289.0,
+   "width": 16.0,
+   "height": 0.0,
+   "rotation": -50.0,
+   "strokeWeight": 2.0,
+   "strokeAlign": "center",
+   "strokes": [
+    {
+     "color": "#FEFBEF",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 182,
+   "figmaId": "662:12",
+   "parent": 180,
+   "depth": 2,
+   "name": "Line 5",
+   "type": "LINE",
+   "block": "03-wood-steps",
+   "bounds": {
+    "x": 15.0,
+    "y": 2299.98,
+    "width": 10.28,
+    "height": 12.25
+   },
+   "x": 25.28,
+   "y": 2312.24,
+   "width": 16.0,
+   "height": 0.0,
+   "rotation": 50.0,
+   "strokeWeight": 2.0,
+   "strokeAlign": "center",
+   "strokes": [
+    {
+     "color": "#FEFBEF",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 183,
+   "figmaId": "397:367",
+   "parent": 19,
+   "depth": 1,
+   "name": "Line 7",
+   "type": "LINE",
+   "block": "04-showcase",
+   "bounds": {
+    "x": 358.0,
+    "y": 3272.0,
+    "width": 10.58,
+    "height": 12.0
+   },
+   "x": 358.0,
+   "y": 3284.0,
+   "width": 16.0,
+   "height": 0.0,
+   "rotation": 48.61,
+   "strokeWeight": 0.7,
+   "strokeAlign": "center",
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 184,
+   "figmaId": "397:369",
+   "parent": 19,
+   "depth": 1,
+   "name": "Line 9",
+   "type": "LINE",
+   "block": "04-showcase",
+   "bounds": {
+    "x": 358.0,
+    "y": 3729.0,
+    "width": 10.58,
+    "height": 12.0
+   },
+   "x": 358.0,
+   "y": 3741.0,
+   "width": 16.0,
+   "height": 0.0,
+   "rotation": 48.61,
+   "strokeWeight": 0.7,
+   "strokeAlign": "center",
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 185,
+   "figmaId": "382:277",
+   "parent": 19,
+   "depth": 1,
+   "name": "после обучения ты",
+   "type": "TEXT",
+   "block": "06-wood-benefits",
+   "bounds": {
+    "x": 115.0,
+    "y": 4264.0,
+    "width": 161.0,
+    "height": 36.0
+   },
+   "x": 115.0,
+   "y": 4264.0,
+   "width": 161.0,
+   "height": 36.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ],
+   "text": {
+    "characters": "после обучения ты",
+    "fontFamily": "Playfair Display",
+    "fontStyle": "Regular",
+    "fontSize": 21.0,
+    "lineHeight": "17",
+    "letterSpacing": "0%",
+    "textAlign": "center",
+    "figmaLines": [
+     {
+      "x": 3.08,
+      "baselineY": 17.23,
+      "width": 160.06,
+      "lineY": 0.0,
+      "lineHeight": 27.99,
+      "from": 0,
+      "to": 15
+     },
+     {
+      "x": 66.73,
+      "baselineY": 34.23,
+      "width": 27.54,
+      "lineY": 17.0,
+      "lineHeight": 27.99,
+      "from": 15,
+      "to": 17
+     }
+    ]
+   }
+  },
+  {
+   "id": 186,
+   "figmaId": "397:382",
+   "parent": 19,
+   "depth": 1,
+   "name": "MagicEraser_260423_165846 1",
+   "type": "RECTANGLE",
+   "block": "04-showcase",
+   "bounds": {
+    "x": 23.0,
+    "y": 2962.0,
+    "width": 88.0,
+    "height": 87.0
+   },
+   "x": 23.0,
+   "y": 2962.0,
+   "width": 88.0,
+   "height": 87.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "blend": "normal",
+     "crop": null,
+     "filters": {
+      "contrast": 0.0,
+      "exposure": 0.0,
+      "highlights": 0.0,
+      "saturation": 0.0,
+      "shadows": 0.0,
+      "temperature": 0.0,
+      "tint": 0.0
+     },
+     "image": "75e609eb5d90f773e35934412ec9df3f1d4adcf514ced60faee0b78ddeace037",
+     "opacity": 1.0,
+     "rotation": 0,
+     "scale": 0.5,
+     "scale_mode": "fill",
+     "type": "image",
+     "visible": true
+    }
+   ]
+  },
+  {
+   "id": 187,
+   "figmaId": "397:386",
+   "parent": 19,
+   "depth": 1,
+   "name": "MagicEraser_260423_165846 2",
+   "type": "RECTANGLE",
+   "block": "04-showcase",
+   "bounds": {
+    "x": 98.78,
+    "y": 2961.78,
+    "width": 88.44,
+    "height": 87.44
+   },
+   "x": 99.22,
+   "y": 2961.78,
+   "width": 88.0,
+   "height": 87.0,
+   "rotation": -0.29,
+   "fills": [
+    {
+     "blend": "normal",
+     "crop": null,
+     "filters": {
+      "contrast": 0.0,
+      "exposure": 0.0,
+      "highlights": 0.0,
+      "saturation": 0.0,
+      "shadows": 0.0,
+      "temperature": 0.0,
+      "tint": 0.0
+     },
+     "image": "75e609eb5d90f773e35934412ec9df3f1d4adcf514ced60faee0b78ddeace037",
+     "opacity": 1.0,
+     "rotation": 0,
+     "scale": 0.5,
+     "scale_mode": "fill",
+     "type": "image",
+     "visible": true
+    }
+   ]
+  },
+  {
+   "id": 188,
+   "figmaId": "397:387",
+   "parent": 19,
+   "depth": 1,
+   "name": "MagicEraser_260423_165846 3",
+   "type": "RECTANGLE",
+   "block": "04-showcase",
+   "bounds": {
+    "x": 174.0,
+    "y": 2962.0,
+    "width": 88.44,
+    "height": 87.44
+   },
+   "x": 174.44,
+   "y": 2962.0,
+   "width": 88.0,
+   "height": 87.0,
+   "rotation": -0.29,
+   "fills": [
+    {
+     "blend": "normal",
+     "crop": null,
+     "filters": {
+      "contrast": 0.0,
+      "exposure": 0.0,
+      "highlights": 0.0,
+      "saturation": 0.0,
+      "shadows": 0.0,
+      "temperature": 0.0,
+      "tint": 0.0
+     },
+     "image": "75e609eb5d90f773e35934412ec9df3f1d4adcf514ced60faee0b78ddeace037",
+     "opacity": 1.0,
+     "rotation": 0,
+     "scale": 0.5,
+     "scale_mode": "fill",
+     "type": "image",
+     "visible": true
+    }
+   ]
+  },
+  {
+   "id": 189,
+   "figmaId": "397:388",
+   "parent": 19,
+   "depth": 1,
+   "name": "MagicEraser_260423_165846 4",
+   "type": "RECTANGLE",
+   "block": "04-showcase",
+   "bounds": {
+    "x": 250.0,
+    "y": 2962.0,
+    "width": 88.44,
+    "height": 87.44
+   },
+   "x": 250.44,
+   "y": 2962.0,
+   "width": 88.0,
+   "height": 87.0,
+   "rotation": -0.29,
+   "fills": [
+    {
+     "blend": "normal",
+     "crop": null,
+     "filters": {
+      "contrast": 0.0,
+      "exposure": 0.0,
+      "highlights": 0.0,
+      "saturation": 0.0,
+      "shadows": 0.0,
+      "temperature": 0.0,
+      "tint": 0.0
+     },
+     "image": "75e609eb5d90f773e35934412ec9df3f1d4adcf514ced60faee0b78ddeace037",
+     "opacity": 1.0,
+     "rotation": 0,
+     "scale": 0.5,
+     "scale_mode": "fill",
+     "type": "image",
+     "visible": true
+    }
+   ]
+  },
+  {
+   "id": 190,
+   "figmaId": "397:389",
+   "parent": 19,
+   "depth": 1,
+   "name": "MagicEraser_260423_165846 5",
+   "type": "RECTANGLE",
+   "block": "04-showcase",
+   "bounds": {
+    "x": 326.0,
+    "y": 2962.0,
+    "width": 88.44,
+    "height": 87.44
+   },
+   "x": 326.44,
+   "y": 2962.0,
+   "width": 88.0,
+   "height": 87.0,
+   "rotation": -0.29,
+   "fills": [
+    {
+     "blend": "normal",
+     "crop": null,
+     "filters": {
+      "contrast": 0.0,
+      "exposure": 0.0,
+      "highlights": 0.0,
+      "saturation": 0.0,
+      "shadows": 0.0,
+      "temperature": 0.0,
+      "tint": 0.0
+     },
+     "image": "75e609eb5d90f773e35934412ec9df3f1d4adcf514ced60faee0b78ddeace037",
+     "opacity": 1.0,
+     "rotation": 0,
+     "scale": 0.5,
+     "scale_mode": "fill",
+     "type": "image",
+     "visible": true
+    }
+   ]
+  },
+  {
+   "id": 191,
+   "figmaId": "397:390",
+   "parent": 19,
+   "depth": 1,
+   "name": "MagicEraser_260423_165846 6",
+   "type": "RECTANGLE",
+   "block": "04-showcase",
+   "bounds": {
+    "x": 414.0,
+    "y": 2901.0,
+    "width": 88.44,
+    "height": 87.44
+   },
+   "x": 502.0,
+   "y": 2901.0,
+   "width": 88.0,
+   "height": 87.0,
+   "rotation": -179.71,
+   "flipped": true,
+   "fills": [
+    {
+     "blend": "normal",
+     "crop": null,
+     "filters": {
+      "contrast": 0.0,
+      "exposure": 0.0,
+      "highlights": 0.0,
+      "saturation": 0.0,
+      "shadows": 0.0,
+      "temperature": 0.0,
+      "tint": 0.0
+     },
+     "image": "75e609eb5d90f773e35934412ec9df3f1d4adcf514ced60faee0b78ddeace037",
+     "opacity": 1.0,
+     "rotation": 0,
+     "scale": 0.5,
+     "scale_mode": "fill",
+     "type": "image",
+     "visible": true
+    }
+   ]
+  },
+  {
+   "id": 192,
+   "figmaId": "397:391",
+   "parent": 19,
+   "depth": 1,
+   "name": "MagicEraser_260423_165846 7",
+   "type": "RECTANGLE",
+   "block": "04-showcase",
+   "bounds": {
+    "x": -50.82,
+    "y": 2962.18,
+    "width": 88.08,
+    "height": 87.08
+   },
+   "x": -50.74,
+   "y": 2962.18,
+   "width": 88.0,
+   "height": 87.0,
+   "rotation": -0.05,
+   "fills": [
+    {
+     "blend": "normal",
+     "crop": null,
+     "filters": {
+      "contrast": 0.0,
+      "exposure": 0.0,
+      "highlights": 0.0,
+      "saturation": 0.0,
+      "shadows": 0.0,
+      "temperature": 0.0,
+      "tint": 0.0
+     },
+     "image": "75e609eb5d90f773e35934412ec9df3f1d4adcf514ced60faee0b78ddeace037",
+     "opacity": 1.0,
+     "rotation": 0,
+     "scale": 0.5,
+     "scale_mode": "fill",
+     "type": "image",
+     "visible": true
+    }
+   ]
+  },
+  {
+   "id": 193,
+   "figmaId": "397:404",
+   "parent": 19,
+   "depth": 1,
+   "name": "MagicEraser_260423_165846 13",
+   "type": "RECTANGLE",
+   "block": "04-showcase",
+   "bounds": {
+    "x": 376.83,
+    "y": 3315.22,
+    "width": 88.44,
+    "height": 87.44
+   },
+   "x": 464.82,
+   "y": 3315.22,
+   "width": 88.0,
+   "height": 87.0,
+   "rotation": -179.71,
+   "flipped": true,
+   "fills": [
+    {
+     "blend": "normal",
+     "crop": null,
+     "filters": {
+      "contrast": 0.0,
+      "exposure": 0.0,
+      "highlights": 0.0,
+      "saturation": 0.0,
+      "shadows": 0.0,
+      "temperature": 0.0,
+      "tint": 0.0
+     },
+     "image": "75e609eb5d90f773e35934412ec9df3f1d4adcf514ced60faee0b78ddeace037",
+     "opacity": 1.0,
+     "rotation": 0,
+     "scale": 0.5,
+     "scale_mode": "fill",
+     "type": "image",
+     "visible": true
+    }
+   ]
+  },
+  {
+   "id": 194,
+   "figmaId": "489:5",
+   "parent": 19,
+   "depth": 1,
+   "name": "Group 31",
+   "type": "GROUP",
+   "block": "04-showcase",
+   "bounds": {
+    "x": -58.0,
+    "y": 3419.0,
+    "width": 465.06,
+    "height": 87.66
+   },
+   "x": -58.0,
+   "y": 3419.0,
+   "width": 465.06,
+   "height": 87.66,
+   "rotation": 0
+  },
+  {
+   "id": 195,
+   "figmaId": "397:403",
+   "parent": 194,
+   "depth": 2,
+   "name": "MagicEraser_260423_165846 12",
+   "type": "RECTANGLE",
+   "block": "04-showcase",
+   "bounds": {
+    "x": 318.62,
+    "y": 3419.22,
+    "width": 88.44,
+    "height": 87.44
+   },
+   "x": 319.06,
+   "y": 3419.22,
+   "width": 88.0,
+   "height": 87.0,
+   "rotation": -0.29,
+   "fills": [
+    {
+     "blend": "normal",
+     "crop": null,
+     "filters": {
+      "contrast": 0.0,
+      "exposure": 0.0,
+      "highlights": 0.0,
+      "saturation": 0.0,
+      "shadows": 0.0,
+      "temperature": 0.0,
+      "tint": 0.0
+     },
+     "image": "75e609eb5d90f773e35934412ec9df3f1d4adcf514ced60faee0b78ddeace037",
+     "opacity": 1.0,
+     "rotation": 0,
+     "scale": 0.5,
+     "scale_mode": "fill",
+     "type": "image",
+     "visible": true
+    }
+   ]
+  },
+  {
+   "id": 196,
+   "figmaId": "397:405",
+   "parent": 194,
+   "depth": 2,
+   "name": "MagicEraser_260423_165846 14",
+   "type": "RECTANGLE",
+   "block": "04-showcase",
+   "bounds": {
+    "x": -58.0,
+    "y": 3419.4,
+    "width": 88.08,
+    "height": 87.08
+   },
+   "x": -57.92,
+   "y": 3419.4,
+   "width": 88.0,
+   "height": 87.0,
+   "rotation": -0.05,
+   "fills": [
+    {
+     "blend": "normal",
+     "crop": null,
+     "filters": {
+      "contrast": 0.0,
+      "exposure": 0.0,
+      "highlights": 0.0,
+      "saturation": 0.0,
+      "shadows": 0.0,
+      "temperature": 0.0,
+      "tint": 0.0
+     },
+     "image": "75e609eb5d90f773e35934412ec9df3f1d4adcf514ced60faee0b78ddeace037",
+     "opacity": 1.0,
+     "rotation": 0,
+     "scale": 0.5,
+     "scale_mode": "fill",
+     "type": "image",
+     "visible": true
+    }
+   ]
+  },
+  {
+   "id": 197,
+   "figmaId": "397:399",
+   "parent": 194,
+   "depth": 2,
+   "name": "MagicEraser_260423_165846 8",
+   "type": "RECTANGLE",
+   "block": "04-showcase",
+   "bounds": {
+    "x": 15.82,
+    "y": 3419.22,
+    "width": 88.0,
+    "height": 87.0
+   },
+   "x": 15.82,
+   "y": 3419.22,
+   "width": 88.0,
+   "height": 87.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "blend": "normal",
+     "crop": null,
+     "filters": {
+      "contrast": 0.0,
+      "exposure": 0.0,
+      "highlights": 0.0,
+      "saturation": 0.0,
+      "shadows": 0.0,
+      "temperature": 0.0,
+      "tint": 0.0
+     },
+     "image": "75e609eb5d90f773e35934412ec9df3f1d4adcf514ced60faee0b78ddeace037",
+     "opacity": 1.0,
+     "rotation": 0,
+     "scale": 0.5,
+     "scale_mode": "fill",
+     "type": "image",
+     "visible": true
+    }
+   ]
+  },
+  {
+   "id": 198,
+   "figmaId": "397:400",
+   "parent": 194,
+   "depth": 2,
+   "name": "MagicEraser_260423_165846 9",
+   "type": "RECTANGLE",
+   "block": "04-showcase",
+   "bounds": {
+    "x": 91.4,
+    "y": 3419.0,
+    "width": 88.44,
+    "height": 87.44
+   },
+   "x": 91.84,
+   "y": 3419.0,
+   "width": 88.0,
+   "height": 87.0,
+   "rotation": -0.29,
+   "fills": [
+    {
+     "blend": "normal",
+     "crop": null,
+     "filters": {
+      "contrast": 0.0,
+      "exposure": 0.0,
+      "highlights": 0.0,
+      "saturation": 0.0,
+      "shadows": 0.0,
+      "temperature": 0.0,
+      "tint": 0.0
+     },
+     "image": "75e609eb5d90f773e35934412ec9df3f1d4adcf514ced60faee0b78ddeace037",
+     "opacity": 1.0,
+     "rotation": 0,
+     "scale": 0.5,
+     "scale_mode": "fill",
+     "type": "image",
+     "visible": true
+    }
+   ]
+  },
+  {
+   "id": 199,
+   "figmaId": "397:401",
+   "parent": 194,
+   "depth": 2,
+   "name": "MagicEraser_260423_165846 10",
+   "type": "RECTANGLE",
+   "block": "04-showcase",
+   "bounds": {
+    "x": 166.62,
+    "y": 3419.22,
+    "width": 88.44,
+    "height": 87.44
+   },
+   "x": 167.06,
+   "y": 3419.22,
+   "width": 88.0,
+   "height": 87.0,
+   "rotation": -0.29,
+   "fills": [
+    {
+     "blend": "normal",
+     "crop": null,
+     "filters": {
+      "contrast": 0.0,
+      "exposure": 0.0,
+      "highlights": 0.0,
+      "saturation": 0.0,
+      "shadows": 0.0,
+      "temperature": 0.0,
+      "tint": 0.0
+     },
+     "image": "75e609eb5d90f773e35934412ec9df3f1d4adcf514ced60faee0b78ddeace037",
+     "opacity": 1.0,
+     "rotation": 0,
+     "scale": 0.5,
+     "scale_mode": "fill",
+     "type": "image",
+     "visible": true
+    }
+   ]
+  },
+  {
+   "id": 200,
+   "figmaId": "397:402",
+   "parent": 194,
+   "depth": 2,
+   "name": "MagicEraser_260423_165846 11",
+   "type": "RECTANGLE",
+   "block": "04-showcase",
+   "bounds": {
+    "x": 242.62,
+    "y": 3419.22,
+    "width": 88.44,
+    "height": 87.44
+   },
+   "x": 243.06,
+   "y": 3419.22,
+   "width": 88.0,
+   "height": 87.0,
+   "rotation": -0.29,
+   "fills": [
+    {
+     "blend": "normal",
+     "crop": null,
+     "filters": {
+      "contrast": 0.0,
+      "exposure": 0.0,
+      "highlights": 0.0,
+      "saturation": 0.0,
+      "shadows": 0.0,
+      "temperature": 0.0,
+      "tint": 0.0
+     },
+     "image": "75e609eb5d90f773e35934412ec9df3f1d4adcf514ced60faee0b78ddeace037",
+     "opacity": 1.0,
+     "rotation": 0,
+     "scale": 0.5,
+     "scale_mode": "fill",
+     "type": "image",
+     "visible": true
+    }
+   ]
+  },
+  {
+   "id": 201,
+   "figmaId": "400:420",
+   "parent": 19,
+   "depth": 1,
+   "name": "Rectangle 28",
+   "type": "RECTANGLE",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 162.0,
+    "y": 6808.0,
+    "width": 67.0,
+    "height": 17.0
+   },
+   "x": 162.0,
+   "y": 6808.0,
+   "width": 67.0,
+   "height": 17.0,
+   "rotation": 0,
+   "cornerRadius": 5.0,
+   "fills": [
+    {
+     "color": "#F6F5F1",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 202,
+   "figmaId": "401:452",
+   "parent": 19,
+   "depth": 1,
+   "name": "Line 10",
+   "type": "LINE",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 49.0,
+    "y": 6080.0,
+    "width": 32.0,
+    "height": 0.0
+   },
+   "x": 49.0,
+   "y": 6080.0,
+   "width": 32.0,
+   "height": 0.0,
+   "rotation": 0,
+   "strokeWeight": 1.0,
+   "strokeAlign": "center",
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 203,
+   "figmaId": "401:525",
+   "parent": 19,
+   "depth": 1,
+   "name": "Line 44",
+   "type": "LINE",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 48.0,
+    "y": 5328.0,
+    "width": 32.0,
+    "height": 0.0
+   },
+   "x": 48.0,
+   "y": 5328.0,
+   "width": 32.0,
+   "height": 0.0,
+   "rotation": 0,
+   "strokeWeight": 1.0,
+   "strokeAlign": "center",
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 204,
+   "figmaId": "401:454",
+   "parent": 19,
+   "depth": 1,
+   "name": "Line 12",
+   "type": "LINE",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 67.0,
+    "y": 6210.0,
+    "width": 5.0,
+    "height": 0.0
+   },
+   "x": 67.0,
+   "y": 6210.0,
+   "width": 5.0,
+   "height": 0.0,
+   "rotation": 0,
+   "strokeWeight": 1.7,
+   "strokeAlign": "center",
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 205,
+   "figmaId": "401:526",
+   "parent": 19,
+   "depth": 1,
+   "name": "Line 45",
+   "type": "LINE",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 66.0,
+    "y": 5458.0,
+    "width": 5.0,
+    "height": 0.0
+   },
+   "x": 66.0,
+   "y": 5458.0,
+   "width": 5.0,
+   "height": 0.0,
+   "rotation": 0,
+   "strokeWeight": 1.7,
+   "strokeAlign": "center",
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 206,
+   "figmaId": "401:473",
+   "parent": 19,
+   "depth": 1,
+   "name": "Line 28",
+   "type": "LINE",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 211.0,
+    "y": 6210.0,
+    "width": 5.0,
+    "height": 0.0
+   },
+   "x": 211.0,
+   "y": 6210.0,
+   "width": 5.0,
+   "height": 0.0,
+   "rotation": 0,
+   "strokeWeight": 1.7,
+   "strokeAlign": "center",
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 207,
+   "figmaId": "401:527",
+   "parent": 19,
+   "depth": 1,
+   "name": "Line 46",
+   "type": "LINE",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 210.0,
+    "y": 5458.0,
+    "width": 5.0,
+    "height": 0.0
+   },
+   "x": 210.0,
+   "y": 5458.0,
+   "width": 5.0,
+   "height": 0.0,
+   "rotation": 0,
+   "strokeWeight": 1.7,
+   "strokeAlign": "center",
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 208,
+   "figmaId": "401:465",
+   "parent": 19,
+   "depth": 1,
+   "name": "Line 20",
+   "type": "LINE",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 139.0,
+    "y": 6210.0,
+    "width": 5.0,
+    "height": 0.0
+   },
+   "x": 139.0,
+   "y": 6210.0,
+   "width": 5.0,
+   "height": 0.0,
+   "rotation": 0,
+   "strokeWeight": 1.7,
+   "strokeAlign": "center",
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 209,
+   "figmaId": "401:528",
+   "parent": 19,
+   "depth": 1,
+   "name": "Line 47",
+   "type": "LINE",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 138.0,
+    "y": 5458.0,
+    "width": 5.0,
+    "height": 0.0
+   },
+   "x": 138.0,
+   "y": 5458.0,
+   "width": 5.0,
+   "height": 0.0,
+   "rotation": 0,
+   "strokeWeight": 1.7,
+   "strokeAlign": "center",
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 210,
+   "figmaId": "401:474",
+   "parent": 19,
+   "depth": 1,
+   "name": "Line 29",
+   "type": "LINE",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 283.0,
+    "y": 6210.0,
+    "width": 5.0,
+    "height": 0.0
+   },
+   "x": 283.0,
+   "y": 6210.0,
+   "width": 5.0,
+   "height": 0.0,
+   "rotation": 0,
+   "strokeWeight": 1.7,
+   "strokeAlign": "center",
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 211,
+   "figmaId": "401:529",
+   "parent": 19,
+   "depth": 1,
+   "name": "Line 48",
+   "type": "LINE",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 282.0,
+    "y": 5458.0,
+    "width": 5.0,
+    "height": 0.0
+   },
+   "x": 282.0,
+   "y": 5458.0,
+   "width": 5.0,
+   "height": 0.0,
+   "rotation": 0,
+   "strokeWeight": 1.7,
+   "strokeAlign": "center",
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 212,
+   "figmaId": "401:461",
+   "parent": 19,
+   "depth": 1,
+   "name": "Line 16",
+   "type": "LINE",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 103.0,
+    "y": 6210.0,
+    "width": 5.0,
+    "height": 0.0
+   },
+   "x": 103.0,
+   "y": 6210.0,
+   "width": 5.0,
+   "height": 0.0,
+   "rotation": 0,
+   "strokeWeight": 1.7,
+   "strokeAlign": "center",
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 213,
+   "figmaId": "401:530",
+   "parent": 19,
+   "depth": 1,
+   "name": "Line 49",
+   "type": "LINE",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 102.0,
+    "y": 5458.0,
+    "width": 5.0,
+    "height": 0.0
+   },
+   "x": 102.0,
+   "y": 5458.0,
+   "width": 5.0,
+   "height": 0.0,
+   "rotation": 0,
+   "strokeWeight": 1.7,
+   "strokeAlign": "center",
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 214,
+   "figmaId": "401:475",
+   "parent": 19,
+   "depth": 1,
+   "name": "Line 30",
+   "type": "LINE",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 247.0,
+    "y": 6210.0,
+    "width": 5.0,
+    "height": 0.0
+   },
+   "x": 247.0,
+   "y": 6210.0,
+   "width": 5.0,
+   "height": 0.0,
+   "rotation": 0,
+   "strokeWeight": 1.7,
+   "strokeAlign": "center",
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 215,
+   "figmaId": "401:531",
+   "parent": 19,
+   "depth": 1,
+   "name": "Line 50",
+   "type": "LINE",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 246.0,
+    "y": 5458.0,
+    "width": 5.0,
+    "height": 0.0
+   },
+   "x": 246.0,
+   "y": 5458.0,
+   "width": 5.0,
+   "height": 0.0,
+   "rotation": 0,
+   "strokeWeight": 1.7,
+   "strokeAlign": "center",
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 216,
+   "figmaId": "401:466",
+   "parent": 19,
+   "depth": 1,
+   "name": "Line 21",
+   "type": "LINE",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 175.0,
+    "y": 6210.0,
+    "width": 5.0,
+    "height": 0.0
+   },
+   "x": 175.0,
+   "y": 6210.0,
+   "width": 5.0,
+   "height": 0.0,
+   "rotation": 0,
+   "strokeWeight": 1.7,
+   "strokeAlign": "center",
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 217,
+   "figmaId": "401:532",
+   "parent": 19,
+   "depth": 1,
+   "name": "Line 51",
+   "type": "LINE",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 174.0,
+    "y": 5458.0,
+    "width": 5.0,
+    "height": 0.0
+   },
+   "x": 174.0,
+   "y": 5458.0,
+   "width": 5.0,
+   "height": 0.0,
+   "rotation": 0,
+   "strokeWeight": 1.7,
+   "strokeAlign": "center",
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 218,
+   "figmaId": "401:476",
+   "parent": 19,
+   "depth": 1,
+   "name": "Line 31",
+   "type": "LINE",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 319.0,
+    "y": 6210.0,
+    "width": 5.0,
+    "height": 0.0
+   },
+   "x": 319.0,
+   "y": 6210.0,
+   "width": 5.0,
+   "height": 0.0,
+   "rotation": 0,
+   "strokeWeight": 1.7,
+   "strokeAlign": "center",
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 219,
+   "figmaId": "401:459",
+   "parent": 19,
+   "depth": 1,
+   "name": "Line 14",
+   "type": "LINE",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 85.0,
+    "y": 6210.0,
+    "width": 5.0,
+    "height": 0.0
+   },
+   "x": 85.0,
+   "y": 6210.0,
+   "width": 5.0,
+   "height": 0.0,
+   "rotation": 0,
+   "strokeWeight": 1.7,
+   "strokeAlign": "center",
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 220,
+   "figmaId": "401:534",
+   "parent": 19,
+   "depth": 1,
+   "name": "Line 53",
+   "type": "LINE",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 84.0,
+    "y": 5458.0,
+    "width": 5.0,
+    "height": 0.0
+   },
+   "x": 84.0,
+   "y": 5458.0,
+   "width": 5.0,
+   "height": 0.0,
+   "rotation": 0,
+   "strokeWeight": 1.7,
+   "strokeAlign": "center",
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 221,
+   "figmaId": "401:477",
+   "parent": 19,
+   "depth": 1,
+   "name": "Line 32",
+   "type": "LINE",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 229.0,
+    "y": 6210.0,
+    "width": 5.0,
+    "height": 0.0
+   },
+   "x": 229.0,
+   "y": 6210.0,
+   "width": 5.0,
+   "height": 0.0,
+   "rotation": 0,
+   "strokeWeight": 1.7,
+   "strokeAlign": "center",
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 222,
+   "figmaId": "401:535",
+   "parent": 19,
+   "depth": 1,
+   "name": "Line 54",
+   "type": "LINE",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 228.0,
+    "y": 5458.0,
+    "width": 5.0,
+    "height": 0.0
+   },
+   "x": 228.0,
+   "y": 5458.0,
+   "width": 5.0,
+   "height": 0.0,
+   "rotation": 0,
+   "strokeWeight": 1.7,
+   "strokeAlign": "center",
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 223,
+   "figmaId": "401:467",
+   "parent": 19,
+   "depth": 1,
+   "name": "Line 22",
+   "type": "LINE",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 157.0,
+    "y": 6210.0,
+    "width": 5.0,
+    "height": 0.0
+   },
+   "x": 157.0,
+   "y": 6210.0,
+   "width": 5.0,
+   "height": 0.0,
+   "rotation": 0,
+   "strokeWeight": 1.7,
+   "strokeAlign": "center",
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 224,
+   "figmaId": "401:536",
+   "parent": 19,
+   "depth": 1,
+   "name": "Line 55",
+   "type": "LINE",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 156.0,
+    "y": 5458.0,
+    "width": 5.0,
+    "height": 0.0
+   },
+   "x": 156.0,
+   "y": 5458.0,
+   "width": 5.0,
+   "height": 0.0,
+   "rotation": 0,
+   "strokeWeight": 1.7,
+   "strokeAlign": "center",
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 225,
+   "figmaId": "401:478",
+   "parent": 19,
+   "depth": 1,
+   "name": "Line 33",
+   "type": "LINE",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 301.0,
+    "y": 6210.0,
+    "width": 5.0,
+    "height": 0.0
+   },
+   "x": 301.0,
+   "y": 6210.0,
+   "width": 5.0,
+   "height": 0.0,
+   "rotation": 0,
+   "strokeWeight": 1.7,
+   "strokeAlign": "center",
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 226,
+   "figmaId": "401:537",
+   "parent": 19,
+   "depth": 1,
+   "name": "Line 56",
+   "type": "LINE",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 300.0,
+    "y": 5458.0,
+    "width": 5.0,
+    "height": 0.0
+   },
+   "x": 300.0,
+   "y": 5458.0,
+   "width": 5.0,
+   "height": 0.0,
+   "rotation": 0,
+   "strokeWeight": 1.7,
+   "strokeAlign": "center",
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 227,
+   "figmaId": "401:462",
+   "parent": 19,
+   "depth": 1,
+   "name": "Line 17",
+   "type": "LINE",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 121.0,
+    "y": 6210.0,
+    "width": 5.0,
+    "height": 0.0
+   },
+   "x": 121.0,
+   "y": 6210.0,
+   "width": 5.0,
+   "height": 0.0,
+   "rotation": 0,
+   "strokeWeight": 1.7,
+   "strokeAlign": "center",
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 228,
+   "figmaId": "401:538",
+   "parent": 19,
+   "depth": 1,
+   "name": "Line 57",
+   "type": "LINE",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 120.0,
+    "y": 5458.0,
+    "width": 5.0,
+    "height": 0.0
+   },
+   "x": 120.0,
+   "y": 5458.0,
+   "width": 5.0,
+   "height": 0.0,
+   "rotation": 0,
+   "strokeWeight": 1.7,
+   "strokeAlign": "center",
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 229,
+   "figmaId": "401:479",
+   "parent": 19,
+   "depth": 1,
+   "name": "Line 34",
+   "type": "LINE",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 265.0,
+    "y": 6210.0,
+    "width": 5.0,
+    "height": 0.0
+   },
+   "x": 265.0,
+   "y": 6210.0,
+   "width": 5.0,
+   "height": 0.0,
+   "rotation": 0,
+   "strokeWeight": 1.7,
+   "strokeAlign": "center",
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 230,
+   "figmaId": "401:539",
+   "parent": 19,
+   "depth": 1,
+   "name": "Line 58",
+   "type": "LINE",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 264.0,
+    "y": 5458.0,
+    "width": 5.0,
+    "height": 0.0
+   },
+   "x": 264.0,
+   "y": 5458.0,
+   "width": 5.0,
+   "height": 0.0,
+   "rotation": 0,
+   "strokeWeight": 1.7,
+   "strokeAlign": "center",
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 231,
+   "figmaId": "401:468",
+   "parent": 19,
+   "depth": 1,
+   "name": "Line 23",
+   "type": "LINE",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 193.0,
+    "y": 6210.0,
+    "width": 5.0,
+    "height": 0.0
+   },
+   "x": 193.0,
+   "y": 6210.0,
+   "width": 5.0,
+   "height": 0.0,
+   "rotation": 0,
+   "strokeWeight": 1.7,
+   "strokeAlign": "center",
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 232,
+   "figmaId": "401:540",
+   "parent": 19,
+   "depth": 1,
+   "name": "Line 59",
+   "type": "LINE",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 192.0,
+    "y": 5458.0,
+    "width": 5.0,
+    "height": 0.0
+   },
+   "x": 192.0,
+   "y": 5458.0,
+   "width": 5.0,
+   "height": 0.0,
+   "rotation": 0,
+   "strokeWeight": 1.7,
+   "strokeAlign": "center",
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 233,
+   "figmaId": "401:455",
+   "parent": 19,
+   "depth": 1,
+   "name": "Line 13",
+   "type": "LINE",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 76.0,
+    "y": 6210.0,
+    "width": 5.0,
+    "height": 0.0
+   },
+   "x": 76.0,
+   "y": 6210.0,
+   "width": 5.0,
+   "height": 0.0,
+   "rotation": 0,
+   "strokeWeight": 1.7,
+   "strokeAlign": "center",
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 234,
+   "figmaId": "401:541",
+   "parent": 19,
+   "depth": 1,
+   "name": "Line 60",
+   "type": "LINE",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 75.0,
+    "y": 5458.0,
+    "width": 5.0,
+    "height": 0.0
+   },
+   "x": 75.0,
+   "y": 5458.0,
+   "width": 5.0,
+   "height": 0.0,
+   "rotation": 0,
+   "strokeWeight": 1.7,
+   "strokeAlign": "center",
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 235,
+   "figmaId": "401:481",
+   "parent": 19,
+   "depth": 1,
+   "name": "Line 36",
+   "type": "LINE",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 220.0,
+    "y": 6210.0,
+    "width": 5.0,
+    "height": 0.0
+   },
+   "x": 220.0,
+   "y": 6210.0,
+   "width": 5.0,
+   "height": 0.0,
+   "rotation": 0,
+   "strokeWeight": 1.7,
+   "strokeAlign": "center",
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 236,
+   "figmaId": "401:542",
+   "parent": 19,
+   "depth": 1,
+   "name": "Line 61",
+   "type": "LINE",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 219.0,
+    "y": 5458.0,
+    "width": 5.0,
+    "height": 0.0
+   },
+   "x": 219.0,
+   "y": 5458.0,
+   "width": 5.0,
+   "height": 0.0,
+   "rotation": 0,
+   "strokeWeight": 1.7,
+   "strokeAlign": "center",
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 237,
+   "figmaId": "401:469",
+   "parent": 19,
+   "depth": 1,
+   "name": "Line 24",
+   "type": "LINE",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 148.0,
+    "y": 6210.0,
+    "width": 5.0,
+    "height": 0.0
+   },
+   "x": 148.0,
+   "y": 6210.0,
+   "width": 5.0,
+   "height": 0.0,
+   "rotation": 0,
+   "strokeWeight": 1.7,
+   "strokeAlign": "center",
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 238,
+   "figmaId": "401:543",
+   "parent": 19,
+   "depth": 1,
+   "name": "Line 62",
+   "type": "LINE",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 147.0,
+    "y": 5458.0,
+    "width": 5.0,
+    "height": 0.0
+   },
+   "x": 147.0,
+   "y": 5458.0,
+   "width": 5.0,
+   "height": 0.0,
+   "rotation": 0,
+   "strokeWeight": 1.7,
+   "strokeAlign": "center",
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 239,
+   "figmaId": "401:482",
+   "parent": 19,
+   "depth": 1,
+   "name": "Line 37",
+   "type": "LINE",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 292.0,
+    "y": 6210.0,
+    "width": 5.0,
+    "height": 0.0
+   },
+   "x": 292.0,
+   "y": 6210.0,
+   "width": 5.0,
+   "height": 0.0,
+   "rotation": 0,
+   "strokeWeight": 1.7,
+   "strokeAlign": "center",
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 240,
+   "figmaId": "401:544",
+   "parent": 19,
+   "depth": 1,
+   "name": "Line 63",
+   "type": "LINE",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 291.0,
+    "y": 5458.0,
+    "width": 5.0,
+    "height": 0.0
+   },
+   "x": 291.0,
+   "y": 5458.0,
+   "width": 5.0,
+   "height": 0.0,
+   "rotation": 0,
+   "strokeWeight": 1.7,
+   "strokeAlign": "center",
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 241,
+   "figmaId": "401:463",
+   "parent": 19,
+   "depth": 1,
+   "name": "Line 18",
+   "type": "LINE",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 112.0,
+    "y": 6210.0,
+    "width": 5.0,
+    "height": 0.0
+   },
+   "x": 112.0,
+   "y": 6210.0,
+   "width": 5.0,
+   "height": 0.0,
+   "rotation": 0,
+   "strokeWeight": 1.7,
+   "strokeAlign": "center",
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 242,
+   "figmaId": "401:545",
+   "parent": 19,
+   "depth": 1,
+   "name": "Line 64",
+   "type": "LINE",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 111.0,
+    "y": 5458.0,
+    "width": 5.0,
+    "height": 0.0
+   },
+   "x": 111.0,
+   "y": 5458.0,
+   "width": 5.0,
+   "height": 0.0,
+   "rotation": 0,
+   "strokeWeight": 1.7,
+   "strokeAlign": "center",
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 243,
+   "figmaId": "401:483",
+   "parent": 19,
+   "depth": 1,
+   "name": "Line 38",
+   "type": "LINE",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 256.0,
+    "y": 6210.0,
+    "width": 5.0,
+    "height": 0.0
+   },
+   "x": 256.0,
+   "y": 6210.0,
+   "width": 5.0,
+   "height": 0.0,
+   "rotation": 0,
+   "strokeWeight": 1.7,
+   "strokeAlign": "center",
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 244,
+   "figmaId": "401:546",
+   "parent": 19,
+   "depth": 1,
+   "name": "Line 65",
+   "type": "LINE",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 255.0,
+    "y": 5458.0,
+    "width": 5.0,
+    "height": 0.0
+   },
+   "x": 255.0,
+   "y": 5458.0,
+   "width": 5.0,
+   "height": 0.0,
+   "rotation": 0,
+   "strokeWeight": 1.7,
+   "strokeAlign": "center",
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 245,
+   "figmaId": "401:470",
+   "parent": 19,
+   "depth": 1,
+   "name": "Line 25",
+   "type": "LINE",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 184.0,
+    "y": 6210.0,
+    "width": 5.0,
+    "height": 0.0
+   },
+   "x": 184.0,
+   "y": 6210.0,
+   "width": 5.0,
+   "height": 0.0,
+   "rotation": 0,
+   "strokeWeight": 1.7,
+   "strokeAlign": "center",
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 246,
+   "figmaId": "401:547",
+   "parent": 19,
+   "depth": 1,
+   "name": "Line 66",
+   "type": "LINE",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 183.0,
+    "y": 5458.0,
+    "width": 5.0,
+    "height": 0.0
+   },
+   "x": 183.0,
+   "y": 5458.0,
+   "width": 5.0,
+   "height": 0.0,
+   "rotation": 0,
+   "strokeWeight": 1.7,
+   "strokeAlign": "center",
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 247,
+   "figmaId": "401:460",
+   "parent": 19,
+   "depth": 1,
+   "name": "Line 15",
+   "type": "LINE",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 94.0,
+    "y": 6210.0,
+    "width": 5.0,
+    "height": 0.0
+   },
+   "x": 94.0,
+   "y": 6210.0,
+   "width": 5.0,
+   "height": 0.0,
+   "rotation": 0,
+   "strokeWeight": 1.7,
+   "strokeAlign": "center",
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 248,
+   "figmaId": "401:548",
+   "parent": 19,
+   "depth": 1,
+   "name": "Line 67",
+   "type": "LINE",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 93.0,
+    "y": 5458.0,
+    "width": 5.0,
+    "height": 0.0
+   },
+   "x": 93.0,
+   "y": 5458.0,
+   "width": 5.0,
+   "height": 0.0,
+   "rotation": 0,
+   "strokeWeight": 1.7,
+   "strokeAlign": "center",
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 249,
+   "figmaId": "401:485",
+   "parent": 19,
+   "depth": 1,
+   "name": "Line 40",
+   "type": "LINE",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 238.0,
+    "y": 6210.0,
+    "width": 5.0,
+    "height": 0.0
+   },
+   "x": 238.0,
+   "y": 6210.0,
+   "width": 5.0,
+   "height": 0.0,
+   "rotation": 0,
+   "strokeWeight": 1.7,
+   "strokeAlign": "center",
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 250,
+   "figmaId": "401:549",
+   "parent": 19,
+   "depth": 1,
+   "name": "Line 68",
+   "type": "LINE",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 237.0,
+    "y": 5458.0,
+    "width": 5.0,
+    "height": 0.0
+   },
+   "x": 237.0,
+   "y": 5458.0,
+   "width": 5.0,
+   "height": 0.0,
+   "rotation": 0,
+   "strokeWeight": 1.7,
+   "strokeAlign": "center",
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 251,
+   "figmaId": "401:471",
+   "parent": 19,
+   "depth": 1,
+   "name": "Line 26",
+   "type": "LINE",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 166.0,
+    "y": 6210.0,
+    "width": 5.0,
+    "height": 0.0
+   },
+   "x": 166.0,
+   "y": 6210.0,
+   "width": 5.0,
+   "height": 0.0,
+   "rotation": 0,
+   "strokeWeight": 1.7,
+   "strokeAlign": "center",
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 252,
+   "figmaId": "401:550",
+   "parent": 19,
+   "depth": 1,
+   "name": "Line 69",
+   "type": "LINE",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 165.0,
+    "y": 5458.0,
+    "width": 5.0,
+    "height": 0.0
+   },
+   "x": 165.0,
+   "y": 5458.0,
+   "width": 5.0,
+   "height": 0.0,
+   "rotation": 0,
+   "strokeWeight": 1.7,
+   "strokeAlign": "center",
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 253,
+   "figmaId": "401:486",
+   "parent": 19,
+   "depth": 1,
+   "name": "Line 41",
+   "type": "LINE",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 310.0,
+    "y": 6210.0,
+    "width": 5.0,
+    "height": 0.0
+   },
+   "x": 310.0,
+   "y": 6210.0,
+   "width": 5.0,
+   "height": 0.0,
+   "rotation": 0,
+   "strokeWeight": 1.7,
+   "strokeAlign": "center",
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 254,
+   "figmaId": "401:551",
+   "parent": 19,
+   "depth": 1,
+   "name": "Line 70",
+   "type": "LINE",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 309.0,
+    "y": 5458.0,
+    "width": 5.0,
+    "height": 0.0
+   },
+   "x": 309.0,
+   "y": 5458.0,
+   "width": 5.0,
+   "height": 0.0,
+   "rotation": 0,
+   "strokeWeight": 1.7,
+   "strokeAlign": "center",
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 255,
+   "figmaId": "401:464",
+   "parent": 19,
+   "depth": 1,
+   "name": "Line 19",
+   "type": "LINE",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 130.0,
+    "y": 6210.0,
+    "width": 5.0,
+    "height": 0.0
+   },
+   "x": 130.0,
+   "y": 6210.0,
+   "width": 5.0,
+   "height": 0.0,
+   "rotation": 0,
+   "strokeWeight": 1.7,
+   "strokeAlign": "center",
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 256,
+   "figmaId": "401:552",
+   "parent": 19,
+   "depth": 1,
+   "name": "Line 71",
+   "type": "LINE",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 129.0,
+    "y": 5458.0,
+    "width": 5.0,
+    "height": 0.0
+   },
+   "x": 129.0,
+   "y": 5458.0,
+   "width": 5.0,
+   "height": 0.0,
+   "rotation": 0,
+   "strokeWeight": 1.7,
+   "strokeAlign": "center",
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 257,
+   "figmaId": "401:487",
+   "parent": 19,
+   "depth": 1,
+   "name": "Line 42",
+   "type": "LINE",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 274.0,
+    "y": 6210.0,
+    "width": 5.0,
+    "height": 0.0
+   },
+   "x": 274.0,
+   "y": 6210.0,
+   "width": 5.0,
+   "height": 0.0,
+   "rotation": 0,
+   "strokeWeight": 1.7,
+   "strokeAlign": "center",
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 258,
+   "figmaId": "401:553",
+   "parent": 19,
+   "depth": 1,
+   "name": "Line 72",
+   "type": "LINE",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 273.0,
+    "y": 5458.0,
+    "width": 5.0,
+    "height": 0.0
+   },
+   "x": 273.0,
+   "y": 5458.0,
+   "width": 5.0,
+   "height": 0.0,
+   "rotation": 0,
+   "strokeWeight": 1.7,
+   "strokeAlign": "center",
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 259,
+   "figmaId": "401:472",
+   "parent": 19,
+   "depth": 1,
+   "name": "Line 27",
+   "type": "LINE",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 202.0,
+    "y": 6210.0,
+    "width": 5.0,
+    "height": 0.0
+   },
+   "x": 202.0,
+   "y": 6210.0,
+   "width": 5.0,
+   "height": 0.0,
+   "rotation": 0,
+   "strokeWeight": 1.7,
+   "strokeAlign": "center",
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 260,
+   "figmaId": "401:554",
+   "parent": 19,
+   "depth": 1,
+   "name": "Line 73",
+   "type": "LINE",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 201.0,
+    "y": 5458.0,
+    "width": 5.0,
+    "height": 0.0
+   },
+   "x": 201.0,
+   "y": 5458.0,
+   "width": 5.0,
+   "height": 0.0,
+   "rotation": 0,
+   "strokeWeight": 1.7,
+   "strokeAlign": "center",
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 261,
+   "figmaId": "401:453",
+   "parent": 19,
+   "depth": 1,
+   "name": "Line 11",
+   "type": "LINE",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 118.0,
+    "y": 6080.0,
+    "width": 224.0,
+    "height": 0.0
+   },
+   "x": 118.0,
+   "y": 6080.0,
+   "width": 224.0,
+   "height": 0.0,
+   "rotation": 0,
+   "strokeWeight": 1.0,
+   "strokeAlign": "center",
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 262,
+   "figmaId": "401:555",
+   "parent": 19,
+   "depth": 1,
+   "name": "Line 74",
+   "type": "LINE",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 117.0,
+    "y": 5328.0,
+    "width": 224.0,
+    "height": 0.0
+   },
+   "x": 117.0,
+   "y": 5328.0,
+   "width": 224.0,
+   "height": 0.0,
+   "rotation": 0,
+   "strokeWeight": 1.0,
+   "strokeAlign": "center",
+   "strokes": [
+    {
+     "color": "#49301C",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 263,
+   "figmaId": "400:418",
+   "parent": 19,
+   "depth": 1,
+   "name": "Ellipse 14",
+   "type": "ELLIPSE",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 322.0,
+    "y": 6189.0,
+    "width": 40.0,
+    "height": 40.0
+   },
+   "x": 322.0,
+   "y": 6189.0,
+   "width": 40.0,
+   "height": 40.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "color": "#F6F5F1",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 264,
+   "figmaId": "400:419",
+   "parent": 19,
+   "depth": 1,
+   "name": "Ellipse 15",
+   "type": "ELLIPSE",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 29.0,
+    "y": 6190.0,
+    "width": 40.0,
+    "height": 40.0
+   },
+   "x": 29.0,
+   "y": 6190.0,
+   "width": 40.0,
+   "height": 40.0,
+   "rotation": 0,
+   "fills": [
+    {
+     "color": "#F6F5F1",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 265,
+   "figmaId": "401:507",
+   "parent": 19,
+   "depth": 1,
+   "name": "Line 43",
+   "type": "LINE",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 158.0,
+    "y": 6715.0,
+    "width": 73.68,
+    "height": 0.0
+   },
+   "x": 158.0,
+   "y": 6715.0,
+   "width": 73.68,
+   "height": 0.0,
+   "rotation": 0,
+   "strokeWeight": 3.0,
+   "strokeAlign": "center",
+   "strokes": [
+    {
+     "color": "#969696",
+     "type": "solid"
+    }
+   ]
+  },
+  {
+   "id": 266,
+   "figmaId": "401:558",
+   "parent": 19,
+   "depth": 1,
+   "name": "Line 75",
+   "type": "LINE",
+   "block": "08-pricing",
+   "bounds": {
+    "x": 158.0,
+    "y": 5879.0,
+    "width": 73.68,
+    "height": 0.0
+   },
+   "x": 158.0,
+   "y": 5879.0,
+   "width": 73.68,
+   "height": 0.0,
+   "rotation": 0,
+   "strokeWeight": 3.0,
+   "strokeAlign": "center",
+   "strokes": [
+    {
+     "color": "#969696",
+     "type": "solid"
+    }
+   ]
+  }
+ ]
+}

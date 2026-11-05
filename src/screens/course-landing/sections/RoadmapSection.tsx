@@ -1,50 +1,125 @@
-import { imgLineDecor } from "../lib/landingAssets";
+import { roadmapArt } from "../lib/blockArt";
+import { Block, T, boxStyle } from "../ui/canvas";
 
+const INK = "#49301C";
+
+/** Подложки карточек — слои 396:338 и 396:335 макета; листы с зажимом и печатью запечены в арт. */
+const INTRO_CARD = { x: 25, y: 143, w: 211, h: 273 };
+const SEARCH_CARD = { x: 174, y: 178, w: 196, h: 206 };
+
+/**
+ * Строки текстового слоя, как в макете. Пробел перед <br /> на раскладку не влияет (в конце строки
+ * он схлопывается), но не даёт словам соседних строк склеиться в textContent.
+ */
+function lines(...items: string[]) {
+  return items.flatMap((line, index) =>
+    index < items.length - 1 ? [`${line} `, <br key={index} />] : [line],
+  );
+}
+
+/** Дорожная карта курса: заголовок и две карточки тем. */
 export function RoadmapSection() {
   return (
-    <section className="px-4 py-12">
-      <p className="mb-2 text-center text-[10px] font-light leading-[16px] text-[#49301c]">
+    <Block name="07-roadmap" height={456} art={roadmapArt}>
+      <T
+        fig="382:298"
+        x={82}
+        y={107}
+        w={226}
+        h={10}
+        size={10}
+        leading={10}
+        align="center"
+        color={INK}
+      >
         итак... что тебя ждет на этом курсе?
-      </p>
-      <h2 className="mb-6 text-center [font-family:var(--font-course-playfair)] text-[30px] leading-[36px] font-normal text-[#49301c]">
+      </T>
+      <T
+        as="h2"
+        fig="382:296"
+        x={60}
+        y={122}
+        w={271}
+        h={17}
+        size={21}
+        leading={17}
+        font="playfair"
+        align="center"
+        color={INK}
+      >
         дорожная карта курса
-      </h2>
-      <img
-        src={imgLineDecor}
-        alt=""
-        className="mx-auto mb-8 h-px w-full max-w-[287px]"
-        aria-hidden
-      />
+      </T>
 
-      <div className="flex flex-col gap-6">
-        <article className="mx-auto w-full max-w-[280px] rounded-sm bg-[#dcd7d1] p-4">
-          <h3 className="text-center [font-family:var(--font-course-playfair)] text-[30px] leading-[36px] font-normal text-[#49301c]">
-            <span className="block">знакомство</span>
-            <span className="block">с маркетплейсами</span>
-          </h3>
-          <p className="mt-2 text-center text-[10px] font-light leading-[16px] text-[#49301c]">
-            регистрация без риска блокировки
-          </p>
-        </article>
+      <article style={boxStyle(INTRO_CARD)}>
+        <T
+          as="h3"
+          fig="382:281"
+          origin={INTRO_CARD}
+          x={25}
+          y={246}
+          w={149}
+          h={26}
+          size={13}
+          leading={13}
+          font="playfair"
+          align="center"
+          color={INK}
+        >
+          {lines("знакомство", "с маркетплейсами")}
+        </T>
+        <T
+          fig="382:286"
+          origin={INTRO_CARD}
+          x={42}
+          y={277}
+          w={115}
+          h={26}
+          size={10}
+          leading={13}
+          align="center"
+          color={INK}
+        >
+          {lines("регистрация без риска", "блокировки")}
+        </T>
+      </article>
 
-        <article className="mx-auto w-full max-w-[280px] rounded-sm bg-[#efeade] p-4">
-          <h3 className="text-center [font-family:var(--font-course-playfair)] text-[30px] leading-[36px] font-normal text-[#49301c]">
-            поиск товаров
-          </h3>
-          <p className="mt-2 text-center text-[10px] font-light leading-[16px] text-[#49301c]">
-            как находить любые товары, бренды в разы дешевле, чем у нас? все про экспортные товары
-          </p>
-        </article>
-
-        <article className="mx-auto w-full max-w-[280px] rounded-sm bg-[#dcd7d1] p-4">
-          <h3 className="text-center [font-family:var(--font-course-playfair)] text-[30px] leading-[36px] font-normal text-[#49301c]">
-            рейтинг продавцов
-          </h3>
-          <p className="mt-2 text-center text-[10px] font-light leading-[16px] text-[#49301c]">
-            как выбрать хороший товар?
-          </p>
-        </article>
-      </div>
-    </section>
+      <article style={boxStyle(SEARCH_CARD)}>
+        <T
+          as="h3"
+          fig="382:283"
+          origin={SEARCH_CARD}
+          x={202}
+          y={259}
+          w={149}
+          h={13}
+          size={13}
+          leading={13}
+          font="playfair"
+          align="center"
+          color={INK}
+        >
+          поиск товаров
+        </T>
+        <T
+          fig="382:291"
+          origin={SEARCH_CARD}
+          x={204}
+          y={277}
+          w={145}
+          h={52}
+          size={10}
+          leading={13}
+          align="center"
+          color={INK}
+        >
+          {lines(
+            "как находить любые товары,",
+            "бренды в разы дешевле, чем",
+            "у нас? все про экспортные",
+            "товары",
+          )}
+        </T>
+      </article>
+    </Block>
   );
 }

@@ -1,0 +1,610 @@
+{
+ "frame": {
+  "name": "единая верстка",
+  "figmaNodeId": "352:165",
+  "width": 390
+ },
+ "units": "px макета; координаты относительно верха блока",
+ "block": "03-wood-steps",
+ "y": 2001,
+ "height": 477,
+ "texts": [
+  {
+   "fig": "382:201",
+   "id": 84,
+   "z": 65,
+   "name": "смотри, как накручивают цены на наши хотелки",
+   "characters": "смотри,\nкак накручивают цены на наши хотелки\n",
+   "box": {
+    "x": 60,
+    "y": 109,
+    "w": 271,
+    "h": 51
+   },
+   "rotate": 0,
+   "bounds": {
+    "x": 60,
+    "y": 109,
+    "width": 271,
+    "height": 51
+   },
+   "font": {
+    "family": "Playfair Display",
+    "weight": 400,
+    "italic": false
+   },
+   "size": 21,
+   "leading": 17,
+   "align": "center",
+   "color": "#F6F5F1",
+   "lines": [
+    {
+     "text": "смотри,",
+     "x": 95.96,
+     "baselineY": 17.23,
+     "width": 79.08
+    },
+    {
+     "text": "как накручивают",
+     "x": 49.18,
+     "baselineY": 34.23,
+     "width": 172.63
+    },
+    {
+     "text": "цены на наши хотелки",
+     "x": 22.4,
+     "baselineY": 51.23,
+     "width": 226.2
+    }
+   ],
+   "mockupSize": 25,
+   "sizeSource": "заголовки ×1.2 → 21",
+   "shadow": "0.0px 0.0px 10.0px rgba(0,0,0,0.5)"
+  },
+  {
+   "fig": "382:206",
+   "id": 97,
+   "z": 78,
+   "name": "2//",
+   "characters": "2//",
+   "box": {
+    "x": 101,
+    "y": 49,
+    "w": 20,
+    "h": 15
+   },
+   "rotate": 0,
+   "bounds": {
+    "x": 101,
+    "y": 49,
+    "width": 20,
+    "height": 15
+   },
+   "font": {
+    "family": "Inter",
+    "weight": 600,
+    "italic": false
+   },
+   "size": 13,
+   "leading": 15,
+   "align": "left",
+   "color": "#49301C",
+   "lines": [
+    {
+     "text": "2//",
+     "x": 0,
+     "baselineY": 12.23,
+     "width": 17.93
+    }
+   ],
+   "ghost": true,
+   "ghostReason": "текст сливается с подложкой (яркость текста 53, фона 47) — служебный слой макета (содержимое других состояний/остаток черновика): не выводить как видимый текст"
+  },
+  {
+   "fig": "382:207",
+   "id": 98,
+   "z": 79,
+   "name": "3//",
+   "characters": "3//",
+   "box": {
+    "x": 328,
+    "y": 28,
+    "w": 192,
+    "h": 15
+   },
+   "rotate": 0,
+   "bounds": {
+    "x": 328,
+    "y": 28,
+    "width": 192,
+    "height": 15
+   },
+   "font": {
+    "family": "Inter",
+    "weight": 600,
+    "italic": false
+   },
+   "size": 13,
+   "leading": 15,
+   "align": "left",
+   "color": "#49301C",
+   "lines": [
+    {
+     "text": "3//",
+     "x": 0,
+     "baselineY": 12.23,
+     "width": 18.32
+    }
+   ],
+   "ghost": true,
+   "ghostReason": "слой большей частью за пределами фрейма — служебный слой макета (содержимое других состояний/остаток черновика): не выводить как видимый текст"
+  },
+  {
+   "fig": "382:208",
+   "id": 99,
+   "z": 80,
+   "name": "сначала товар производится на китайской фабрике",
+   "characters": "сначала товар производится на китайской фабрике",
+   "box": {
+    "x": 111,
+    "y": 176,
+    "w": 235,
+    "h": 40
+   },
+   "rotate": 0,
+   "bounds": {
+    "x": 111,
+    "y": 176,
+    "width": 235,
+    "height": 40
+   },
+   "font": {
+    "family": "Inter",
+    "weight": 400,
+    "italic": false
+   },
+   "size": 10,
+   "leading": 20,
+   "align": "left",
+   "color": "#49301C",
+   "lines": [
+    {
+     "text": "сначала товар производится",
+     "x": 0,
+     "baselineY": 13.64,
+     "width": 137.21
+    },
+    {
+     "text": "на китайской фабрике",
+     "x": 0,
+     "baselineY": 33.64,
+     "width": 104.88
+    }
+   ],
+   "mockupSize": 17,
+   "sizeSource": "ранний фрейм",
+   "tracking": -0.02,
+   "ghost": true,
+   "ghostReason": "текст сливается с подложкой (яркость текста 53, фона 48) — служебный слой макета (содержимое других состояний/остаток черновика): не выводить как видимый текст"
+  },
+  {
+   "fig": "382:209",
+   "id": 100,
+   "z": 81,
+   "name": "потом товар выставляют на китайских маркетплейсах (таобао и ",
+   "characters": "потом товар выставляют\nна китайских маркетплейсах (таобао и 1688)",
+   "box": {
+    "x": 105,
+    "y": 168,
+    "w": 245,
+    "h": 60
+   },
+   "rotate": 0,
+   "bounds": {
+    "x": 105,
+    "y": 168,
+    "width": 245,
+    "height": 60
+   },
+   "font": {
+    "family": "Inter",
+    "weight": 400,
+    "italic": false
+   },
+   "size": 10,
+   "leading": 20,
+   "align": "left",
+   "color": "#49301C",
+   "lines": [
+    {
+     "text": "потом товар выставляют",
+     "x": 0,
+     "baselineY": 13.64,
+     "width": 119.18
+    },
+    {
+     "text": "на китайских маркетплейсах",
+     "x": 0,
+     "baselineY": 33.64,
+     "width": 137.3
+    },
+    {
+     "text": "(таобао и 1688)",
+     "x": 0,
+     "baselineY": 53.64,
+     "width": 73.41
+    }
+   ],
+   "mockupSize": 17,
+   "sizeSource": "ранний фрейм",
+   "tracking": -0.02,
+   "ghost": true,
+   "ghostReason": "текст сливается с подложкой (яркость текста 53, фона 48) — служебный слой макета (содержимое других состояний/остаток черновика): не выводить как видимый текст"
+  },
+  {
+   "fig": "382:210",
+   "id": 101,
+   "z": 82,
+   "name": "можно собирать целые образы по цене одной вещи",
+   "characters": "можно собирать целые образы по цене одной вещи",
+   "box": {
+    "x": 108,
+    "y": 398,
+    "w": 166,
+    "h": 20
+   },
+   "rotate": 0,
+   "bounds": {
+    "x": 108,
+    "y": 398,
+    "width": 166,
+    "height": 20
+   },
+   "font": {
+    "family": "Inter",
+    "weight": 400,
+    "italic": false
+   },
+   "size": 10,
+   "leading": 10,
+   "align": "center",
+   "color": "#49301C",
+   "lines": [
+    {
+     "text": "можно собирать целые образы",
+     "x": 5.65,
+     "baselineY": 8.64,
+     "width": 154.7
+    },
+    {
+     "text": "по цене одной вещи",
+     "x": 33,
+     "baselineY": 18.64,
+     "width": 100
+    }
+   ],
+   "ghost": true,
+   "ghostReason": "текст сливается с подложкой (яркость текста 53, фона 50) — служебный слой макета (содержимое других состояний/остаток черновика): не выводить как видимый текст"
+  },
+  {
+   "fig": "382:214",
+   "id": 109,
+   "z": 90,
+   "name": "затем его выкупают российские селлеры и продают на наших мар",
+   "characters": "затем его выкупают российские селлеры\nи продают на наших маркетплейсах (вб, озон),\nв шоурумах и брендах\n",
+   "box": {
+    "x": 124,
+    "y": 251,
+    "w": 210,
+    "h": 100
+   },
+   "rotate": 0,
+   "bounds": {
+    "x": 124,
+    "y": 251,
+    "width": 210,
+    "height": 100
+   },
+   "font": {
+    "family": "Inter",
+    "weight": 400,
+    "italic": false
+   },
+   "size": 10,
+   "leading": 20,
+   "align": "left",
+   "color": "#49301C",
+   "lines": [
+    {
+     "text": "затем его выкупают",
+     "x": 0,
+     "baselineY": 13.64,
+     "width": 95.28
+    },
+    {
+     "text": "российские селлеры",
+     "x": 0,
+     "baselineY": 33.64,
+     "width": 99.94
+    },
+    {
+     "text": "и продают на наших",
+     "x": 0,
+     "baselineY": 53.64,
+     "width": 96.12
+    },
+    {
+     "text": "маркетплейсах (вб, озон),",
+     "x": 0,
+     "baselineY": 73.64,
+     "width": 123.35
+    },
+    {
+     "text": "в шоурумах и брендах",
+     "x": 0,
+     "baselineY": 93.64,
+     "width": 106.63
+    }
+   ],
+   "mockupSize": 17,
+   "sizeSource": "ранний фрейм",
+   "tracking": -0.02
+  },
+  {
+   "fig": "665:20",
+   "id": 110,
+   "z": 91,
+   "name": "3",
+   "characters": "3",
+   "box": {
+    "x": 58,
+    "y": 282,
+    "w": 26,
+    "h": 20
+   },
+   "rotate": 0,
+   "bounds": {
+    "x": 58,
+    "y": 282,
+    "width": 26,
+    "height": 20
+   },
+   "font": {
+    "family": "Playfair",
+    "weight": 400,
+    "italic": false
+   },
+   "size": 64,
+   "leading": 20,
+   "align": "left",
+   "color": "#49301C",
+   "lines": [
+    {
+     "text": "3",
+     "x": 0,
+     "baselineY": 28.27,
+     "width": 28.12
+    }
+   ],
+   "tracking": -0.02,
+   "opticalSize": "detached (не привязан к кеглю)"
+  }
+ ],
+ "layers": [
+  {
+   "fig": "396:337",
+   "id": 32,
+   "z": 13,
+   "name": "IMG_4410 1",
+   "type": "RECTANGLE",
+   "parent": null,
+   "bounds": {
+    "x": 0,
+    "y": -122,
+    "width": 391,
+    "height": 696
+   },
+   "fill": "image"
+  },
+  {
+   "fig": "397:341",
+   "id": 33,
+   "z": 14,
+   "name": "IMG_4410 2",
+   "type": "RECTANGLE",
+   "parent": null,
+   "bounds": {
+    "x": -3,
+    "y": -129,
+    "width": 222,
+    "height": 696
+   },
+   "fill": "image"
+  },
+  {
+   "fig": "389:318",
+   "id": 44,
+   "z": 25,
+   "name": "IMG_4377 1",
+   "type": "RECTANGLE",
+   "parent": null,
+   "bounds": {
+    "x": -1,
+    "y": 0,
+    "width": 392,
+    "height": 477
+   },
+   "fill": "image"
+  },
+  {
+   "fig": "662:14",
+   "id": 81,
+   "z": 62,
+   "name": "Group 37",
+   "type": "GROUP",
+   "parent": null,
+   "bounds": {
+    "x": -34.05,
+    "y": 66.94,
+    "width": 457.03,
+    "height": 474.09
+   },
+   "fill": null
+  },
+  {
+   "fig": "389:314",
+   "id": 82,
+   "z": 63,
+   "name": "MagicEraser_260422_212739 1",
+   "type": "RECTANGLE",
+   "parent": 81,
+   "bounds": {
+    "x": -34.05,
+    "y": 66.94,
+    "width": 457.03,
+    "height": 457.03
+   },
+   "fill": "image"
+  },
+  {
+   "fig": "662:13",
+   "id": 83,
+   "z": 64,
+   "name": "MagicEraser_260422_212739 2",
+   "type": "RECTANGLE",
+   "parent": 81,
+   "bounds": {
+    "x": -33.99,
+    "y": 265.54,
+    "width": 438.15,
+    "height": 275.49
+   },
+   "fill": "image"
+  },
+  {
+   "fig": "662:7",
+   "id": 174,
+   "z": 155,
+   "name": "Group 35",
+   "type": "GROUP",
+   "parent": null,
+   "bounds": {
+    "x": 362.98,
+    "y": 289.02,
+    "width": 11.8,
+    "height": 23.24
+   },
+   "fill": null
+  },
+  {
+   "fig": "662:8",
+   "id": 175,
+   "z": 156,
+   "name": "Line 4",
+   "type": "LINE",
+   "parent": 174,
+   "bounds": {
+    "x": 362.98,
+    "y": 289.02,
+    "width": 10.28,
+    "height": 12.26
+   },
+   "fill": null,
+   "strokes": [
+    {
+     "color": "#FEFBEF",
+     "type": "solid"
+    }
+   ],
+   "strokeWeight": 2
+  },
+  {
+   "fig": "662:9",
+   "id": 176,
+   "z": 157,
+   "name": "Line 5",
+   "type": "LINE",
+   "parent": 174,
+   "bounds": {
+    "x": 364.5,
+    "y": 300,
+    "width": 10.28,
+    "height": 12.25
+   },
+   "fill": null,
+   "strokes": [
+    {
+     "color": "#FEFBEF",
+     "type": "solid"
+    }
+   ],
+   "strokeWeight": 2
+  },
+  {
+   "fig": "662:10",
+   "id": 180,
+   "z": 161,
+   "name": "Group 36",
+   "type": "GROUP",
+   "parent": null,
+   "bounds": {
+    "x": 15,
+    "y": 288,
+    "width": 11.8,
+    "height": 23.24
+   },
+   "fill": null
+  },
+  {
+   "fig": "662:11",
+   "id": 181,
+   "z": 162,
+   "name": "Line 4",
+   "type": "LINE",
+   "parent": 180,
+   "bounds": {
+    "x": 16.52,
+    "y": 288,
+    "width": 10.28,
+    "height": 12.26
+   },
+   "fill": null,
+   "strokes": [
+    {
+     "color": "#FEFBEF",
+     "type": "solid"
+    }
+   ],
+   "strokeWeight": 2
+  },
+  {
+   "fig": "662:12",
+   "id": 182,
+   "z": 163,
+   "name": "Line 5",
+   "type": "LINE",
+   "parent": 180,
+   "bounds": {
+    "x": 15,
+    "y": 298.98,
+    "width": 10.28,
+    "height": 12.25
+   },
+   "fill": null,
+   "strokes": [
+    {
+     "color": "#FEFBEF",
+     "type": "solid"
+    }
+   ],
+   "strokeWeight": 2
+  }
+ ],
+ "setup": {
+  "click": [
+   "[data-step-next]",
+   "[data-step-next]"
+  ],
+  "note": "на странице слайдер открывается на шаге 1, в макете нарисован шаг 3: перед сверкой дважды нажимаем «следующий шаг»"
+ }
+}

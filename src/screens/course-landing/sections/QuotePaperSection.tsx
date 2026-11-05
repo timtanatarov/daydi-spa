@@ -1,23 +1,30 @@
-import { imgBgPaperQuote } from "../lib/landingAssets";
+import { quoteArt } from "../lib/blockArt";
+import { Block, T } from "../ui/canvas";
 
+/** Цитата на тетрадном листе: «разные цены за одну и ту же вещь…». */
 export function QuotePaperSection() {
   return (
-    <section className="relative overflow-hidden px-6 py-14">
-      <img
-        src={imgBgPaperQuote}
-        alt=""
-        aria-hidden
-        className="pointer-events-none absolute inset-0 size-full object-cover"
-      />
-      <div className="relative z-10 text-center">
-        <p className="text-center [font-family:var(--font-course-playfair)] text-[17px] leading-[1.75] font-normal tracking-wide text-[#49301c]">
-          <span className="block">разные цены за одну и ту же вещь.</span>
-          <span className="block">логичный вопрос: зачем переплачивать?</span>
-        </p>
-        <p className="mt-6 text-[10px] font-light leading-[16px] text-[#49301c]">
-          с выгодой до 70%
-        </p>
-      </div>
-    </section>
+    <Block name="05-quote" height={243} art={quoteArt}>
+      <T
+        fig="382:266"
+        x={52}
+        y={105}
+        w={287}
+        h={90}
+        size={17}
+        leading={30}
+        font="playfair"
+        italic
+        align="center"
+        color="#49301C"
+        tracking={0.02}
+      >
+        разные цены за одну и ту же вещь.
+        <br />
+        логичный вопрос: зачем
+        <br />
+        переплачивать?
+      </T>
+    </Block>
   );
 }

@@ -1,0 +1,79 @@
+{
+  "source": "design/daydi-site.figcraft + экспорт Figma",
+  "frame": {
+    "name": "единая верстка",
+    "figcraftId": 19,
+    "figmaNodeId": "352:165",
+    "width": 390,
+    "height": 8000,
+    "contentHeight": 7100
+  },
+  "scale": 2,
+  "note": "y и height — в px макета. figma/ — срезы экспорта Figma (как в макете, с увеличенными шрифтами); art/ — арт без текста (эталон для попиксельной сверки); spec/ — тексты с целевыми кеглями",
+  "blocks": [
+    {
+      "name": "01-hero",
+      "y": 0,
+      "height": 780,
+      "figma": "figma/01-hero@2x.png",
+      "art": "art/01-hero@2x.png",
+      "spec": "spec/01-hero.json"
+    },
+    {
+      "name": "02-about",
+      "y": 780,
+      "height": 1221,
+      "figma": "figma/02-about@2x.png",
+      "art": "art/02-about@2x.png",
+      "spec": "spec/02-about.json"
+    },
+    {
+      "name": "03-wood-steps",
+      "y": 2001,
+      "height": 477,
+      "figma": "figma/03-wood-steps@2x.png",
+      "art": "art/03-wood-steps@2x.png",
+      "spec": "spec/03-wood-steps.json"
+    },
+    {
+      "name": "04-showcase",
+      "y": 2478,
+      "height": 1342,
+      "figma": "figma/04-showcase@2x.png",
+      "art": "art/04-showcase@2x.png",
+      "spec": "spec/04-showcase.json"
+    },
+    {
+      "name": "05-quote",
+      "y": 3820,
+      "height": 243,
+      "figma": "figma/05-quote@2x.png",
+      "art": "art/05-quote@2x.png",
+      "spec": "spec/05-quote.json"
+    },
+    {
+      "name": "06-wood-benefits",
+      "y": 4063,
+      "height": 607,
+      "figma": "figma/06-wood-benefits@2x.png",
+      "art": "art/06-wood-benefits@2x.png",
+      "spec": "spec/06-wood-benefits.json"
+    },
+    {
+      "name": "07-roadmap",
+      "y": 4670,
+      "height": 456,
+      "figma": "figma/07-roadmap@2x.png",
+      "art": "art/07-roadmap@2x.png",
+      "spec": "spec/07-roadmap.json"
+    },
+    {
+      "name": "08-pricing",
+      "y": 5126,
+      "height": 1974,
+      "figma": "figma/08-pricing@2x.png",
+      "art": "art/08-pricing@2x.png",
+      "spec": "spec/08-pricing.json"
+    }
+  ]
+}
