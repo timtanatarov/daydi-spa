@@ -195,38 +195,46 @@ function measurePage(rootSelector) {
     }
   };
 
-  /** Строки текста: прямоугольники по Range + базовые линии по зондам нулевого размера. */
+  const ctx = document.createElement("canvas").getContext("2d");
+  const ascentCache = new Map();
+  /** Высота шрифта над базовой линией так, как её берёт раскладка (Chrome округляет до целых px). */
+  const fontAscent = (node) => {
+    const cs = getComputedStyle(node);
+    const font = `${cs.fontStyle} ${cs.fontWeight} ${cs.fontSize} ${cs.fontFamily}`;
+    if (!ascentCache.has(font)) {
+      ctx.font = font;
+      ascentCache.set(font, Math.round(ctx.measureText("Hxg").fontBoundingBoxAscent));
+    }
+    return ascentCache.get(font);
+  };
+
+  /**
+   * Строки текста по прямоугольникам Range. Базовая линия = верх текстового фрагмента + высота
+   * шрифта над ней. Раскладку при этом не трогаем: зонд на базовой линии при тесном интервале
+   * (кегль заметно больше line-height) раздвигает строки и искажает замер.
+   */
   const textLines = (element) => {
     const box = element.getBoundingClientRect();
     const rects = [];
-    const probes = [];
     const walker = document.createTreeWalker(element, NodeFilter.SHOW_TEXT);
-    const textNodes = [];
     for (let node = walker.nextNode(); node; node = walker.nextNode()) {
       if (!node.nodeValue || !node.nodeValue.trim()) continue;
-      if (node.parentElement && node.parentElement.closest("[data-bullet]")) continue;
-      textNodes.push(node);
-    }
-    for (const node of textNodes) {
+      if (!node.parentElement || node.parentElement.closest("[data-bullet]")) continue;
+      const ascent = fontAscent(node.parentElement);
       const range = document.createRange();
       range.selectNodeContents(node);
       for (const rect of range.getClientRects()) {
-        if (rect.width > 0 && rect.height > 0) rects.push(rect);
+        if (rect.width > 0 && rect.height > 0) {
+          rects.push({
+            top: rect.top,
+            height: rect.height,
+            left: rect.left,
+            right: rect.right,
+            ascent,
+          });
+        }
       }
-      const probe = document.createElement("span");
-      probe.style.cssText =
-        "display:inline-block;width:0;height:0;margin:0;padding:0;border:0;vertical-align:baseline";
-      node.parentNode.insertBefore(probe, node);
-      probes.push(probe);
     }
-    const baselines = [];
-    for (const probe of probes) {
-      const bottom = probe.getBoundingClientRect().bottom - box.top;
-      if (!baselines.some((value) => Math.abs(value - bottom) < 0.6)) baselines.push(bottom);
-    }
-    for (const probe of probes) probe.remove();
-    baselines.sort((a, b) => a - b);
-
     rects.sort((a, b) => a.top - b.top || a.left - b.left);
     const lines = [];
     for (const rect of rects) {
@@ -236,7 +244,12 @@ function measurePage(rootSelector) {
         line.left = Math.min(line.left, rect.left);
         line.right = Math.max(line.right, rect.right);
       } else {
-        lines.push({ center, left: rect.left, right: rect.right });
+        lines.push({
+          center,
+          left: rect.left,
+          right: rect.right,
+          baseline: rect.top + rect.ascent,
+        });
       }
     }
     return {
@@ -246,12 +259,9 @@ function measurePage(rootSelector) {
         width: round(box.width),
         height: round(box.height),
       },
-      lines: lines.map((line, index) => ({
+      lines: lines.map((line) => ({
         x: round(line.left - box.left),
-        baselineY:
-          baselines.length === lines.length && baselines[index] !== undefined
-            ? round(baselines[index])
-            : null,
+        baselineY: round(line.baseline - box.top),
         width: round(line.right - line.left),
       })),
     };

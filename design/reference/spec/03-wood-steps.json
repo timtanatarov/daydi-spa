@@ -33,32 +33,30 @@
     "weight": 400,
     "italic": false
    },
-   "size": 21,
+   "size": 25,
    "leading": 17,
    "align": "center",
    "color": "#F6F5F1",
    "lines": [
     {
      "text": "смотри,",
-     "x": 95.96,
-     "baselineY": 17.23,
-     "width": 79.08
+     "x": 88.43,
+     "baselineY": 18.89,
+     "width": 94.14
     },
     {
      "text": "как накручивают",
-     "x": 49.18,
-     "baselineY": 34.23,
-     "width": 172.63
+     "x": 32.75,
+     "baselineY": 35.89,
+     "width": 205.51
     },
     {
      "text": "цены на наши хотелки",
-     "x": 22.4,
-     "baselineY": 51.23,
-     "width": 226.2
+     "x": 0.85,
+     "baselineY": 52.89,
+     "width": 269.29
     }
    ],
-   "mockupSize": 25,
-   "sizeSource": "заголовки ×1.2 → 21",
    "shadow": "0.0px 0.0px 10.0px rgba(0,0,0,0.5)"
   },
   {

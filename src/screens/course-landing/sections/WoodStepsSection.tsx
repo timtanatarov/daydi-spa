@@ -13,7 +13,7 @@ export function WoodStepsSection() {
         y={109}
         w={271}
         h={51}
-        size={21}
+        size={25}
         leading={17}
         font="playfair"
         align="center"

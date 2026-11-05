@@ -80,7 +80,7 @@ export function AboutIndiraSection() {
           w={196.8}
           h={45}
           rotate={2.5}
-          size={10}
+          size={9}
           leading={15}
           color="#49301C"
         >
@@ -99,7 +99,7 @@ export function AboutIndiraSection() {
           w={243.41}
           h={45}
           rotate={-2.5}
-          size={10}
+          size={9}
           leading={15}
           color="#49301C"
         >
@@ -118,7 +118,7 @@ export function AboutIndiraSection() {
           w={239.62}
           h={30}
           rotate={2.5}
-          size={10}
+          size={9}
           leading={15}
           color="#49301C"
         >
@@ -134,7 +134,7 @@ export function AboutIndiraSection() {
           w={222.47}
           h={30}
           rotate={-2.5}
-          size={10}
+          size={9}
           leading={15}
           color="#49301C"
         >

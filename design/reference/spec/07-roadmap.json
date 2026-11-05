@@ -295,20 +295,18 @@
     "weight": 400,
     "italic": false
    },
-   "size": 21,
+   "size": 25,
    "leading": 17,
    "align": "center",
    "color": "#49301C",
    "lines": [
     {
      "text": "дорожная карта курса",
-     "x": 25.29,
-     "baselineY": 17.23,
-     "width": 220.42
+     "x": 4.3,
+     "baselineY": 18.89,
+     "width": 262.4
     }
-   ],
-   "mockupSize": 25,
-   "sizeSource": "заголовки ×1.2 → 21"
+   ]
   },
   {
    "fig": "382:298",

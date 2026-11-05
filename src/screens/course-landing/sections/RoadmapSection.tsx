@@ -41,7 +41,7 @@ export function RoadmapSection() {
         y={122}
         w={271}
         h={17}
-        size={21}
+        size={25}
         leading={17}
         font="playfair"
         align="center"

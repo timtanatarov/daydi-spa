@@ -207,7 +207,7 @@
     "weight": 400,
     "italic": false
    },
-   "size": 10,
+   "size": 9,
    "leading": 15,
    "align": "left",
    "color": "#49301C",
@@ -215,24 +215,24 @@
     {
      "text": "экономлю 20-40 тысяч",
      "x": 0,
-     "baselineY": 11.14,
-     "width": 114.81
+     "baselineY": 10.78,
+     "width": 103.33
     },
     {
      "text": "рублей ежемесячно",
      "x": 0,
-     "baselineY": 26.14,
-     "width": 99.45
+     "baselineY": 25.78,
+     "width": 89.51
     },
     {
      "text": "благодаря Китаю",
      "x": 0,
-     "baselineY": 41.14,
-     "width": 84.92
+     "baselineY": 40.78,
+     "width": 76.43
     }
    ],
    "mockupSize": 17,
-   "sizeSource": "сайт"
+   "sizeSource": "сайт (origin/master)"
   },
   {
    "fig": "352:188",
@@ -258,7 +258,7 @@
     "weight": 400,
     "italic": false
    },
-   "size": 10,
+   "size": 9,
    "leading": 15,
    "align": "left",
    "color": "#49301C",
@@ -266,24 +266,24 @@
     {
      "text": "собираю стильный гардероб",
      "x": 0,
-     "baselineY": 11.14,
-     "width": 142.45
+     "baselineY": 10.78,
+     "width": 128.2
     },
     {
      "text": "как у инфлюенсеров,",
      "x": 0,
-     "baselineY": 26.14,
-     "width": 103.71
+     "baselineY": 25.78,
+     "width": 93.34
     },
     {
      "text": "но до 10 раз дешевле",
      "x": 0,
-     "baselineY": 41.14,
-     "width": 106.19
+     "baselineY": 40.78,
+     "width": 95.57
     }
    ],
    "mockupSize": 17,
-   "sizeSource": "сайт"
+   "sizeSource": "сайт (origin/master)"
   },
   {
    "fig": "352:189",
@@ -309,7 +309,7 @@
     "weight": 400,
     "italic": false
    },
-   "size": 10,
+   "size": 9,
    "leading": 15,
    "align": "left",
    "color": "#49301C",
@@ -317,18 +317,18 @@
     {
      "text": "делюсь честными обзорами",
      "x": 0,
-     "baselineY": 11.14,
-     "width": 139.96
+     "baselineY": 10.78,
+     "width": 125.96
     },
     {
      "text": "и распаковками в блоге",
      "x": 0,
-     "baselineY": 26.14,
-     "width": 117.88
+     "baselineY": 25.78,
+     "width": 106.09
     }
    ],
    "mockupSize": 17,
-   "sizeSource": "сайт"
+   "sizeSource": "сайт (origin/master)"
   },
   {
    "fig": "352:190",
@@ -354,7 +354,7 @@
     "weight": 400,
     "italic": false
    },
-   "size": 10,
+   "size": 9,
    "leading": 15,
    "align": "left",
    "color": "#49301C",
@@ -362,18 +362,18 @@
     {
      "text": "обучаю других выгодному",
      "x": 0,
-     "baselineY": 11.14,
-     "width": 130.34
+     "baselineY": 10.78,
+     "width": 117.31
     },
     {
      "text": "шопингу на Таобао и 1688",
      "x": 0,
-     "baselineY": 26.14,
-     "width": 128.55
+     "baselineY": 25.78,
+     "width": 115.7
     }
    ],
    "mockupSize": 17,
-   "sizeSource": "сайт"
+   "sizeSource": "сайт (origin/master)"
   }
  ],
  "layers": [
