@@ -16,8 +16,11 @@ const SEAL_CARD = { x: 174, y: 178, w: 196, h: 206 };
  */
 const THIRD_SHIFT = 365;
 
-/** Ширина ленты: правый край третьей карточки плюс такое же поле, как слева от первой. */
-const RAIL_WIDTH = CLIP_CARD.x + THIRD_SHIFT + CLIP_CARD.w + CLIP_CARD.x;
+/** Сам лист в картинке карточки с зажимом уже её рамки: справа прозрачный запас. */
+const CLIP_PAPER = { left: 1.5, right: 143 };
+
+/** Ширина ленты: правый край листа третьей карточки плюс такое же поле, как слева от первой. */
+const RAIL_WIDTH = CLIP_CARD.x + THIRD_SHIFT + CLIP_PAPER.right + (CLIP_CARD.x + CLIP_PAPER.left);
 
 type CardText = { fig?: string; x: number; y: number; w: number; lines: string[] };
 
@@ -120,14 +123,14 @@ export function RoadmapSection() {
           outlineOffset: u(-4),
         }}
       >
-        <div className="relative h-full" style={{ width: u(RAIL_WIDTH) }}>
+        <div className="relative h-full overflow-hidden" style={{ width: u(RAIL_WIDTH) }}>
           {CARDS.map((card) => (
             <article
               key={card.title.lines.join(" ")}
               className={card.onTop ? "z-10" : undefined}
               style={boxStyle({ ...card.box, origin: RAIL })}
             >
-              <Pic art={card.art} {...card.box} origin={card.box} />
+              <Pic art={card.art} {...card.box} origin={card.box} eager />
               <T
                 as="h3"
                 fig={card.title.fig}

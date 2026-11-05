@@ -49,7 +49,7 @@ const FONT_FAMILY = {
 
 export type FontName = keyof typeof FONT_FAMILY;
 
-/** Запечённый арт блока в двух плотностях: 780px (экраны 2x) и 1170px (экраны 3x). */
+/** Картинка макета в двух плотностях — для экранов 2x и 3x (арт блока: 780 и 1170px). */
 export type BlockArt = { x2: StaticImageData; x3: StaticImageData };
 
 type BlockProps = {
@@ -120,6 +120,8 @@ type PicProps = Box & {
   /** картинка в двух плотностях, как арт блока */
   art: BlockArt;
   alt?: string;
+  /** грузить сразу: для картинок, скрытых за краем прокручиваемого ряда (lazy их не подгрузит заранее) */
+  eager?: boolean;
   className?: string;
 };
 
@@ -127,18 +129,20 @@ type PicProps = Box & {
  * Отдельная картинка макета, поставленная по своему слою: то, что должно двигаться
  * отдельно от арта блока (карточки в прокручиваемом ряду, слайды карусели).
  */
-export function Pic({ art, alt = "", className, ...box }: PicProps) {
+export function Pic({ art, alt = "", eager = false, className, ...box }: PicProps) {
+  // округление вниз: иначе на экране 2x плотность файла выходит чуть меньше 2 и Safari берёт файл 3x
+  const share = Math.floor((box.w / 390) * 10000) / 100;
   return (
     // eslint-disable-next-line @next/next/no-img-element -- готовые файлы 2x/3x, без оптимизатора
     <img
       src={art.x3.src}
       srcSet={`${art.x2.src} ${art.x2.width}w, ${art.x3.src} ${art.x3.width}w`}
-      sizes={`(max-width: 480px) ${((box.w / 390) * 100).toFixed(2)}vw, ${Math.round((box.w * 480) / 390)}px`}
+      sizes={`(max-width: 480px) ${share}vw, ${Math.floor((box.w * 480) / 390)}px`}
       width={art.x3.width}
       height={art.x3.height}
       alt={alt}
       aria-hidden={alt === "" ? true : undefined}
-      loading="lazy"
+      loading={eager ? "eager" : "lazy"}
       decoding="async"
       draggable={false}
       className={["pointer-events-none max-w-none select-none", className]
