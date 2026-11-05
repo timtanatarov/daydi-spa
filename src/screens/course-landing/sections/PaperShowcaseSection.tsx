@@ -1,5 +1,6 @@
-import { showcaseArt } from "../lib/blockArt";
+import { showcaseArt, showcaseItemArt } from "../lib/blockArt";
 import { Block, T } from "../ui/canvas";
+import { CompareCarousel, type ComparePair } from "./showcase/CompareCarousel";
 
 const INK = "#49301C";
 
@@ -34,12 +35,54 @@ const MIRROR = [-1, 0, 0, 1] as const;
 /** Поясняющая строка под заголовком. */
 const noteProps = { size: 10, leading: 10, align: "center", color: INK } as const;
 
-/** Подпись под карточкой. */
-const captionProps = { h: 15, size: 10, leading: 15, align: "center", color: INK } as const;
+/**
+ * Пары для сравнения. В макете нарисовано по одной паре на группу, и это пока заглушки:
+ * как и раньше на сайте, пара повторена дважды, чтобы карусель листалась.
+ * Настоящие пары добавляются сюда же: картинки карточек и подписи.
+ */
+const CLOTHES_PAIR: ComparePair = {
+  left: {
+    art: showcaseItemArt["1a"],
+    box: { x: 36, y: 221, w: 157, h: 172 },
+    caption: { fig: "382:212", text: "zara", x: 20, y: 397, w: 190 },
+  },
+  right: {
+    art: showcaseItemArt["1b"],
+    box: { x: 198, y: 221, w: 157, h: 172 },
+    caption: { fig: "382:213", text: "таобао", x: 181, y: 397, w: 190 },
+  },
+};
+
+const HOME_PAIR: ComparePair = {
+  left: {
+    art: showcaseItemArt["2a"],
+    box: { x: 57, y: 723, w: 131, h: 131 },
+    caption: { fig: "397:354", text: "zara", x: 33, y: 859, w: 175 },
+  },
+  right: {
+    art: showcaseItemArt["2b"],
+    box: { x: 203, y: 723, w: 131, h: 131 },
+    caption: { fig: "397:355", text: "таобао", x: 180, y: 859, w: 175 },
+  },
+};
+
+const BRANDS_PAIR: ComparePair = {
+  left: {
+    art: showcaseItemArt["3a"],
+    box: { x: 58, y: 1180, w: 131, h: 131 },
+    caption: { fig: "397:362", text: "zara", x: 34, y: 1316, w: 175 },
+  },
+  right: {
+    art: showcaseItemArt["3b"],
+    box: { x: 204, y: 1180, w: 131, h: 131 },
+    caption: { fig: "397:363", text: "таобао", x: 181, y: 1316, w: 175 },
+  },
+};
 
 /**
- * Сравнение цен на бумажном фоне: три группы «заголовок в скобках + пара карточек zara / таобао».
- * Карточки с ценниками, кольца-разделители и стрелки «›» запечены в арт блока.
+ * Сравнение цен на бумажном фоне: три группы «заголовок в скобках + карусель пар zara / таобао».
+ * Подложки групп, кольца-разделители и стрелки «›» запечены в арт блока; карточки товаров —
+ * отдельные картинки, потому что листаются.
  */
 export function PaperShowcaseSection() {
   return (
@@ -58,12 +101,12 @@ export function PaperShowcaseSection() {
       <T {...parenProps} fig="397:374" x={350} y={116.5} size={53} matrix={MIRROR}>
         (
       </T>
-      <T {...captionProps} fig="382:212" x={20} y={397} w={190}>
-        zara
-      </T>
-      <T {...captionProps} fig="382:213" x={181} y={397} w={190}>
-        таобао
-      </T>
+      <CompareCarousel
+        label="Наценки на одежду, обувь и аксессуары"
+        viewport={{ x: 29, y: 207, w: 333, h: 220 }}
+        arrow={{ x: 366, y: 305, w: 11.8, h: 23.2 }}
+        pairs={[CLOTHES_PAIR, CLOTHES_PAIR]}
+      />
 
       {/* Товары для дома */}
       <T {...parenProps} fig="397:376" x={64} y={621.5} size={35}>
@@ -81,12 +124,12 @@ export function PaperShowcaseSection() {
         <br />
         но в 3-5 раз дешевле, чем у нас!
       </T>
-      <T {...captionProps} fig="397:354" x={33} y={859} w={175}>
-        zara
-      </T>
-      <T {...captionProps} fig="397:355" x={180} y={859} w={175}>
-        таобао
-      </T>
+      <CompareCarousel
+        label="Разница в товарах для дома"
+        viewport={{ x: 41, y: 704, w: 308, h: 180 }}
+        arrow={{ x: 358, y: 782, w: 10.6, h: 24 }}
+        pairs={[HOME_PAIR, HOME_PAIR]}
+      />
 
       {/* Бренды, по которым соскучились */}
       <T {...parenProps} fig="397:379" x={40} y={1080.5} size={53}>
@@ -105,12 +148,12 @@ export function PaperShowcaseSection() {
       <T {...noteProps} fig="382:267" x={82} y={1127} w={226} h={10}>
         с выгодой до 70%
       </T>
-      <T {...captionProps} fig="397:362" x={34} y={1316} w={175}>
-        zara
-      </T>
-      <T {...captionProps} fig="397:363" x={181} y={1316} w={175}>
-        таобао
-      </T>
+      <CompareCarousel
+        label="Бренды, по которым мы соскучились"
+        viewport={{ x: 42, y: 1161, w: 308, h: 180 }}
+        arrow={{ x: 358, y: 1239, w: 10.6, h: 24 }}
+        pairs={[BRANDS_PAIR, BRANDS_PAIR]}
+      />
     </Block>
   );
 }

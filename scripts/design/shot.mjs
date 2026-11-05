@@ -4,13 +4,14 @@
  *
  *   node scripts/design/shot.mjs --url http://localhost:3000/ --out /tmp/page.png
  *     [--width 390] [--dpr 2] [--selector "main"] [--clip "x,y,w,h"]
- *     [--measure /tmp/measure.json] [--hide "header"] [--height 844] [--click "sel1,sel2"]
+ *     [--measure /tmp/measure.json] [--hide "header"] [--height 844] [--click "sel1,sel2"] [--run "js"]
  *
  * --selector  снимать только этот элемент (иначе всю страницу)
  * --clip      прямоугольник в CSS-пикселях страницы (после --selector — относительно него)
  * --measure   сохранить геометрию и типографику всех элементов с атрибутом data-fig
  * --hide      CSS-селекторы, которые нужно скрыть на время снимка
  * --click     CSS-селекторы через запятую: кликнуть по очереди перед снимком
+ * --run       JavaScript, который выполнить в странице перед снимком (прокрутка и т. п.)
  */
 import { spawn } from "node:child_process";
 import fs from "node:fs";
@@ -375,6 +376,14 @@ async function main() {
         }, selector);
         if (!clicked) throw new Error(`--click: не найден элемент ${selector}`);
       }
+    }
+
+    // --run "js": выполнить код в странице перед снимком (например, прокрутить ряд карточек)
+    if (typeof args.run === "string") {
+      await evaluate(async (code) => {
+        new Function(code)();
+        await new Promise((resolve) => setTimeout(resolve, 700));
+      }, args.run);
     }
 
     let clip = { x: 0, y: 0, width: page.width, height: page.height };

@@ -116,6 +116,39 @@ export function Block({
   );
 }
 
+type PicProps = Box & {
+  /** картинка в двух плотностях, как арт блока */
+  art: BlockArt;
+  alt?: string;
+  className?: string;
+};
+
+/**
+ * Отдельная картинка макета, поставленная по своему слою: то, что должно двигаться
+ * отдельно от арта блока (карточки в прокручиваемом ряду, слайды карусели).
+ */
+export function Pic({ art, alt = "", className, ...box }: PicProps) {
+  return (
+    // eslint-disable-next-line @next/next/no-img-element -- готовые файлы 2x/3x, без оптимизатора
+    <img
+      src={art.x3.src}
+      srcSet={`${art.x2.src} ${art.x2.width}w, ${art.x3.src} ${art.x3.width}w`}
+      sizes={`(max-width: 480px) ${((box.w / 390) * 100).toFixed(2)}vw, ${Math.round((box.w * 480) / 390)}px`}
+      width={art.x3.width}
+      height={art.x3.height}
+      alt={alt}
+      aria-hidden={alt === "" ? true : undefined}
+      loading="lazy"
+      decoding="async"
+      draggable={false}
+      className={["pointer-events-none max-w-none select-none", className]
+        .filter(Boolean)
+        .join(" ")}
+      style={boxStyle(box)}
+    />
+  );
+}
+
 type TextProps = Box & {
   as?: ElementType;
   /** id слоя в Figma (например "352:171") — по нему блок сверяется с макетом */
