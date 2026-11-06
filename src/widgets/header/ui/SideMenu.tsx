@@ -17,7 +17,10 @@ const LINKS = [
 /**
  * Кнопка-бургер и боковое меню. Меню — модальный <dialog>: браузер сам держит фокус внутри,
  * закрывает по Esc и возвращает фокус на кнопку. Панель выезжает справа; в ней только разделы
- * страницы — пункт прокручивает к разделу и закрывает меню.
+ * страницы — пункт прокручивает к разделу и закрывает меню. Панель коричневая со светлым текстом:
+ * на iPhone зоны под строкой состояния и под панелью браузера заливаются одним цветом на всю
+ * ширину, и коричневый там сливается и с панелью, и с затемнённой страницей (светлая панель давала
+ * светлую полосу над затемнением).
  */
 export function SideMenu() {
   const menuId = useId();
@@ -77,14 +80,14 @@ export function SideMenu() {
         onClick={(event) => {
           if (event.target === event.currentTarget) close();
         }}
-        className={`${inter.variable} ${playfairDisplay.variable} fixed inset-y-0 right-0 left-auto m-0 h-dvh max-h-none w-[min(20rem,86vw)] max-w-none overflow-y-auto overscroll-contain bg-[#F6F5F1] p-0 text-[#49301C] shadow-[-8px_0_32px_rgba(42,31,24,0.25)] transition-[translate] duration-300 ease-out backdrop:bg-black/60 motion-reduce:transition-none starting:open:translate-x-full`}
+        className={`${inter.variable} ${playfairDisplay.variable} fixed inset-y-0 right-0 left-auto m-0 h-dvh max-h-none w-[min(20rem,86vw)] max-w-none overflow-y-auto overscroll-contain bg-[#49301C] p-0 text-[#F6F5F1] shadow-[-8px_0_32px_rgba(0,0,0,0.35)] transition-[translate] duration-300 ease-out backdrop:bg-black/60 motion-reduce:transition-none starting:open:translate-x-full`}
       >
         <div className="px-7 pt-4 pb-8">
           <button
             type="button"
             aria-label="Закрыть меню"
             onClick={close}
-            className="-mr-3 ml-auto flex h-11 w-11 cursor-pointer items-center justify-center rounded-full outline-none hover:bg-[#49301C]/10 focus-visible:outline-2 focus-visible:outline-[#49301C]"
+            className="-mr-3 ml-auto flex h-11 w-11 cursor-pointer items-center justify-center rounded-full outline-none hover:bg-[#F6F5F1]/10 focus-visible:outline-2 focus-visible:outline-[#F6F5F1]"
           >
             <svg
               aria-hidden

@@ -1,8 +1,6 @@
 import { heroArt, heroTapeArt } from "../lib/blockArt";
 import { Block, Pic, T, boxStyle, u } from "../ui/canvas";
-
-/** Подложка кнопки «купить» — слой «Rectangle 16» (352:169). */
-const BUY = { x: 90, y: 619, w: 210, h: 53 };
+import { BuyLink } from "./hero/BuyLink";
 
 /**
  * Скотч под надписью «курс по Китаю» — слой 352:176, увеличенный в 1.3 раза от своей середины:
@@ -138,38 +136,7 @@ export function HeroSection() {
         1688
       </T>
 
-      {/* Якорь на блок тарифов; фон и скругление повторяют запечённую подложку */}
-      <a
-        href="#buy"
-        className="outline-none focus-visible:outline-solid"
-        style={{
-          ...boxStyle(BUY),
-          background: "#F6F5F1",
-          borderRadius: u(25),
-          outlineWidth: u(2),
-          outlineOffset: u(3),
-          outlineColor: "#F6F5F1",
-        }}
-      >
-        <T
-          as="span"
-          fig="352:172"
-          origin={BUY}
-          x={85}
-          y={631}
-          w={219}
-          h={30}
-          size={24}
-          leading={30}
-          weight={800}
-          align="center"
-          color="#531608"
-        >
-          {/* Распорка до базовой линии макета (21.91): без неё браузер округляет метрики шрифта и ставит текст на 1px выше */}
-          <span className="inline-block" style={{ height: u(21.91) }} />
-          купить
-        </T>
-      </a>
+      <BuyLink />
     </Block>
   );
 }

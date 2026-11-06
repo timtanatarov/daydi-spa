@@ -26,7 +26,78 @@ body {
 /* Открыто боковое меню: фон страницы — цвет его панели. На iPhone этим цветом Safari заливает зоны
    под строкой состояния и под своей панелью, поэтому панель меню выглядит во всю высоту экрана. */
 html[data-menu-open] body {
-  background-color: #f6f5f1 !important;
+  background-color: #49301c !important;
+}
+
+/* Кнопка «купить» на первом экране (sections/hero/BuyLink.tsx). Цикл 5 секунд: кнопка проседает,
+   как под пальцем, и отпускается (0.45 с); над её правым углом вспыхивают звёздочки — видны около
+   секунды и медленно гаснут. */
+.hero-buy__pill,
+.hero-buy__spark {
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-delay: 1.2s;
+  animation-fill-mode: both;
+}
+
+.hero-buy__pill {
+  animation-name: hero-buy-press;
+  animation-timing-function: ease-in-out;
+}
+
+.hero-buy__spark {
+  opacity: 0;
+  transform-box: fill-box;
+  transform-origin: center;
+  animation-name: hero-buy-spark;
+  animation-timing-function: ease-out;
+}
+
+/* под пальцем кнопка нажата всё время, пока её держат */
+.hero-buy:active .hero-buy__pill {
+  animation: none;
+  transform: translateY(calc(var(--u) * 2)) scale(0.95);
+}
+
+@keyframes hero-buy-press {
+  0%,
+  9%,
+  100% {
+    transform: translateY(0) scale(1);
+  }
+  2.6%,
+  5% {
+    transform: translateY(calc(var(--u) * 2)) scale(0.95);
+  }
+}
+
+@keyframes hero-buy-spark {
+  0%,
+  3% {
+    opacity: 0;
+    transform: scale(0.4) rotate(-14deg);
+  }
+  8% {
+    opacity: 1;
+    transform: scale(1.12) rotate(0deg);
+  }
+  11%,
+  30% {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+  64%,
+  100% {
+    opacity: 0;
+    transform: scale(0.85) rotate(0deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-buy__pill,
+  .hero-buy__spark {
+    animation: none;
+  }
 }
 
 @utility font-playfair {
