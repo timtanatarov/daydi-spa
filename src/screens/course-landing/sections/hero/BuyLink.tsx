@@ -4,19 +4,22 @@ import { T, boxStyle, u } from "../../ui/canvas";
 const BUY = { x: 90, y: 619, w: 210, h: 53 };
 
 /**
- * Звёздочки над правым верхним углом кнопки. Стоят на тёмном фоне фотографии и кнопку почти
- * не задевают: на светлой плашке бледно-жёлтые звёзды не видны.
+ * Звёздочки на правом верхнем углу кнопки: заказчик попросил ближе к кнопке, можно внахлёст.
+ * Чтобы на светлой плашке их было видно, у звёзд золотой контур и плотное жёлтое свечение.
  */
-const SPARKS = { x: 268, y: 566, w: 86, h: 80.6 };
+const SPARKS = { x: 246, y: 579, w: 86, h: 80.6 };
 /** Сетка, в которой заданы звёзды: рамка SPARKS растягивает её в 1.34 раза. */
 const SPARKS_GRID = { w: 64, h: 60 };
 
-/** Звёзды в сетке SPARKS_GRID: центр, длина луча и задержка появления, мс — вспыхивают не разом. */
+/**
+ * Звёзды в сетке SPARKS_GRID: центр, длина луча и задержка, мс. Вспыхивают вместе с нажатием —
+ * задержки крошечные, только чтобы вспышка не выглядела одним пятном.
+ */
 const STARS = [
   { x: 20, y: 26, r: 17, delay: 0 },
-  { x: 45, y: 40, r: 15, delay: 70 },
-  { x: 41, y: 11, r: 10, delay: 140 },
-  { x: 58, y: 24, r: 4, delay: 200 },
+  { x: 45, y: 40, r: 15, delay: 30 },
+  { x: 41, y: 11, r: 10, delay: 60 },
+  { x: 58, y: 24, r: 4, delay: 90 },
 ];
 
 /** Пауза перед первым нажатием после загрузки страницы, мс (та же — в globals.css). */
@@ -37,9 +40,9 @@ function starPath(cx: number, cy: number, r: number) {
 
 /**
  * Кнопка первого экрана: ведёт к тарифам. Выглядит как в макете; по просьбе заказчика раз в пять
- * секунд она «нажимается» сама, над её правым углом на секунду вспыхивают звёздочки и медленно
- * гаснут; под пальцем кнопка тоже проседает. Движение — в globals.css (классы hero-buy…);
- * при системной настройке «уменьшить движение» кнопка неподвижна, звёздочек нет.
+ * секунд она «нажимается» сама, и в тот же миг на её правом углу вспыхивают звёздочки — видны около
+ * секунды и медленно гаснут; под пальцем кнопка тоже проседает. Движение — в globals.css
+ * (классы hero-buy…); при системной настройке «уменьшить движение» кнопка неподвижна, звёздочек нет.
  * Плашка рисуется здесь, а не в арте блока: запечённая не могла бы двигаться.
  */
 export function BuyLink() {
@@ -86,8 +89,8 @@ export function BuyLink() {
       >
         <defs>
           <radialGradient id="hero-buy-glow">
-            <stop offset="0" stopColor="#FFE45C" stopOpacity="0.9" />
-            <stop offset="1" stopColor="#FFE45C" stopOpacity="0" />
+            <stop offset="0" stopColor="#FFD84A" stopOpacity="0.95" />
+            <stop offset="1" stopColor="#FFD84A" stopOpacity="0" />
           </radialGradient>
           <radialGradient id="hero-buy-core">
             <stop offset="0.3" stopColor="#FFFFFF" />
@@ -100,8 +103,14 @@ export function BuyLink() {
             className="hero-buy__spark"
             style={{ animationDelay: `${START_DELAY + delay}ms` }}
           >
-            <circle cx={x} cy={y} r={r * 0.62} fill="url(#hero-buy-glow)" />
-            <path d={starPath(x, y, r)} fill="#FFF6B8" />
+            <circle cx={x} cy={y} r={r * 0.7} fill="url(#hero-buy-glow)" />
+            <path
+              d={starPath(x, y, r)}
+              fill="#FFE680"
+              stroke="#E8A400"
+              strokeWidth={0.45}
+              strokeLinejoin="round"
+            />
             <circle cx={x} cy={y} r={r * 0.26} fill="url(#hero-buy-core)" />
           </g>
         ))}

@@ -30,8 +30,8 @@ html[data-menu-open] body {
 }
 
 /* Кнопка «купить» на первом экране (sections/hero/BuyLink.tsx). Цикл 5 секунд: кнопка проседает,
-   как под пальцем, и отпускается (0.45 с); над её правым углом вспыхивают звёздочки — видны около
-   секунды и медленно гаснут. */
+   как под пальцем (0.15 с), и в тот же миг на её правом углу вспыхивают звёздочки; кнопка
+   отпускается, звёздочки видны около секунды и медленно гаснут. */
 .hero-buy__pill,
 .hero-buy__spark {
   animation-duration: 5s;
@@ -59,34 +59,35 @@ html[data-menu-open] body {
   transform: translateY(calc(var(--u) * 2)) scale(0.95);
 }
 
+/* нажатие: вниз за 0.15 с, пауза, отпускание к 0.55 с */
 @keyframes hero-buy-press {
   0%,
-  9%,
+  11%,
   100% {
     transform: translateY(0) scale(1);
   }
-  2.6%,
-  5% {
+  3%,
+  6% {
     transform: translateY(calc(var(--u) * 2)) scale(0.95);
   }
 }
 
+/* звёздочки: вспыхивают за те же 0.15 с, что кнопка идёт вниз */
 @keyframes hero-buy-spark {
-  0%,
-  3% {
+  0% {
     opacity: 0;
-    transform: scale(0.4) rotate(-14deg);
+    transform: scale(0.3) rotate(-14deg);
   }
-  8% {
+  3% {
     opacity: 1;
-    transform: scale(1.12) rotate(0deg);
+    transform: scale(1.15) rotate(0deg);
   }
-  11%,
-  30% {
+  6%,
+  28% {
     opacity: 1;
     transform: scale(1) rotate(0deg);
   }
-  64%,
+  62%,
   100% {
     opacity: 0;
     transform: scale(0.85) rotate(0deg);
