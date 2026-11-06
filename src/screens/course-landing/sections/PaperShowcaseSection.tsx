@@ -1,6 +1,6 @@
 import { showcaseArt, showcaseItemArt } from "../lib/blockArt";
 import { Block, T, type ArtInsert } from "../ui/canvas";
-import { CompareCarousel, type ComparePair } from "./showcase/CompareCarousel";
+import { CompareCarousel, type CompareItem, type ComparePair } from "./showcase/CompareCarousel";
 
 const INK = "#49301C";
 
@@ -15,15 +15,15 @@ const INSERTS: ArtInsert[] = [
   { at: 640, height: 30 },
   // над подложкой третьей группы
   { at: 1150, height: 70 },
-  // под подложкой третьей группы: бумага для точек (полоса взята над этой подложкой)
-  { at: 1342, height: 40, from: 1150 },
+  // под подложкой третьей группы: бумага под выросшую подложку и точки (полоса взята над ней)
+  { at: 1342, height: 70, from: 1150 },
 ];
 
 /** На сколько съехало всё, что в макете лежит ниже первой и ниже второй вставки. */
 const HOME_SHIFT = 30;
 const BRANDS_SHIFT = 100;
 
-const HEIGHT = 1342 + 30 + 70 + 40;
+const HEIGHT = 1342 + 30 + 70 + 70;
 
 // Общие параметры однотипных слоёв; координаты и строки у каждого слоя свои.
 
@@ -63,6 +63,31 @@ const MIRROR = [-1, 0, 0, 1] as const;
 
 /** Поясняющие строки под заголовком: 17 при шаге строк 22; от заголовка — 16. */
 const noteProps = { size: 17, leading: 22, align: "center", color: INK } as const;
+
+type Rect = { x: number; y: number; w: number; h: number };
+
+/** Поля страницы: заказчик попросил 16 вместо широких полей макета. */
+const GUTTER = 16;
+
+/**
+ * Подложка группы и её пара карточек, растянутые до полей страницы: всё растёт от левого верхнего
+ * угла подложки в одно и то же число раз. Подпись остаётся кеглем 17 — меняется только её место.
+ */
+function widen(viewport: Rect, pair: ComparePair): { viewport: Rect; pair: ComparePair } {
+  const k = (390 - 2 * GUTTER) / viewport.w;
+  const px = (x: number) => GUTTER + (x - viewport.x) * k;
+  const py = (y: number) => viewport.y + (y - viewport.y) * k;
+  const item = ({ box, caption, ...rest }: CompareItem): CompareItem => ({
+    ...rest,
+    box: { x: px(box.x), y: py(box.y), w: box.w * k, h: box.h * k },
+    // строка подписи высотой 15: растёт её место, а не кегль — держим середину строки
+    caption: { ...caption, x: px(caption.x), y: py(caption.y + 7.5) - 7.5, w: caption.w * k },
+  });
+  return {
+    viewport: { x: GUTTER, y: viewport.y, w: viewport.w * k, h: viewport.h * k },
+    pair: { left: item(pair.left), right: item(pair.right) },
+  };
+}
 
 /**
  * Пары для сравнения. В макете нарисовано по одной паре на группу, и это пока заглушки:
@@ -110,9 +135,14 @@ const BRANDS_PAIR: ComparePair = {
 
 /**
  * Сравнение цен на бумажном фоне: три группы «заголовок в скобках + карусель пар zara / таобао».
- * Подложки групп и кольца-разделители запечены в арт блока; карточки товаров — отдельные
- * картинки, потому что листаются. Под каждой подложкой — точки карусели.
+ * Кольца-разделители запечены в арт блока; подложки рисует сама карусель — они шире, чем в макете
+ * (до полей страницы), и закрывают собой запечённые. Карточки товаров — отдельные картинки,
+ * потому что листаются. Под каждой подложкой — точки карусели.
  */
+const CLOTHES = widen({ x: 29, y: 207, w: 333, h: 220 }, CLOTHES_PAIR);
+const HOME = widen({ x: 41, y: 704 + HOME_SHIFT, w: 308, h: 180 }, HOME_PAIR);
+const BRANDS = widen({ x: 42, y: 1161 + BRANDS_SHIFT, w: 308, h: 180 }, BRANDS_PAIR);
+
 export function PaperShowcaseSection() {
   return (
     <Block
@@ -120,6 +150,7 @@ export function PaperShowcaseSection() {
       id="prices"
       height={HEIGHT}
       art={showcaseArt}
+      background="#D4CEC4"
       artHeight={1342}
       artInserts={INSERTS}
     >
@@ -139,8 +170,8 @@ export function PaperShowcaseSection() {
       </T>
       <CompareCarousel
         label="Наценки на одежду, обувь и аксессуары"
-        viewport={{ x: 29, y: 207, w: 333, h: 220 }}
-        pairs={[CLOTHES_PAIR, CLOTHES_PAIR]}
+        viewport={CLOTHES.viewport}
+        pairs={[CLOTHES.pair, CLOTHES.pair]}
       />
 
       {/* Товары для дома */}
@@ -163,8 +194,8 @@ export function PaperShowcaseSection() {
       </T>
       <CompareCarousel
         label="Разница в товарах для дома"
-        viewport={{ x: 41, y: 704 + HOME_SHIFT, w: 308, h: 180 }}
-        pairs={[HOME_PAIR, HOME_PAIR]}
+        viewport={HOME.viewport}
+        pairs={[HOME.pair, HOME.pair]}
       />
 
       {/* Бренды, по которым соскучились */}
@@ -186,8 +217,8 @@ export function PaperShowcaseSection() {
       </T>
       <CompareCarousel
         label="Бренды, по которым мы соскучились"
-        viewport={{ x: 42, y: 1161 + BRANDS_SHIFT, w: 308, h: 180 }}
-        pairs={[BRANDS_PAIR, BRANDS_PAIR]}
+        viewport={BRANDS.viewport}
+        pairs={[BRANDS.pair, BRANDS.pair]}
       />
     </Block>
   );

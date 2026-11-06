@@ -15,6 +15,7 @@ export function PricingSection() {
       name="08-pricing"
       height={PRICING.height}
       art={pricingPaperArt}
+      background="#CCC9C6"
       artHeight={BLOCK.artHeight}
       id="buy"
     >

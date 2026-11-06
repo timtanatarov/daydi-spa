@@ -10,6 +10,11 @@ import about3x from "@/assets/course-landing/art/02-about@3x.webp";
 import aboutPhoto2x from "@/assets/course-landing/art/02-about-photo@2x.webp";
 import aboutPhoto3x from "@/assets/course-landing/art/02-about-photo@3x.webp";
 import aboutPhoto4x from "@/assets/course-landing/art/02-about-photo@4x.webp";
+import aboutPhoto6x from "@/assets/course-landing/art/02-about-photo@6x.webp";
+import aboutClip2x from "@/assets/course-landing/art/02-about-clip@2x.webp";
+import aboutClip3x from "@/assets/course-landing/art/02-about-clip@3x.webp";
+import aboutClip4x from "@/assets/course-landing/art/02-about-clip@4x.webp";
+import aboutClip6x from "@/assets/course-landing/art/02-about-clip@6x.webp";
 import aboutTapeTop2x from "@/assets/course-landing/art/02-about-tape-top@2x.webp";
 import aboutTapeTop3x from "@/assets/course-landing/art/02-about-tape-top@3x.webp";
 import aboutTapeTop4x from "@/assets/course-landing/art/02-about-tape-top@4x.webp";
@@ -22,6 +27,8 @@ import aboutStarB2x from "@/assets/course-landing/art/02-about-star-2@2x.webp";
 import aboutStarB3x from "@/assets/course-landing/art/02-about-star-2@3x.webp";
 import woodSteps2x from "@/assets/course-landing/art/03-wood-steps@2x.webp";
 import woodSteps3x from "@/assets/course-landing/art/03-wood-steps@3x.webp";
+import woodStepsTicket2x from "@/assets/course-landing/art/03-wood-steps-ticket@2x.webp";
+import woodStepsTicket3x from "@/assets/course-landing/art/03-wood-steps-ticket@3x.webp";
 import showcase2x from "@/assets/course-landing/art/04-showcase@2x.webp";
 import showcase3x from "@/assets/course-landing/art/04-showcase@3x.webp";
 import quote2x from "@/assets/course-landing/art/05-quote@2x.webp";
@@ -30,6 +37,8 @@ import woodBenefitsWood2x from "@/assets/course-landing/art/06-wood-benefits-woo
 import woodBenefitsWood3x from "@/assets/course-landing/art/06-wood-benefits-wood@3x.webp";
 import woodBenefitsTicket2x from "@/assets/course-landing/art/06-wood-benefits-ticket@2x.webp";
 import woodBenefitsTicket3x from "@/assets/course-landing/art/06-wood-benefits-ticket@3x.webp";
+import woodBenefitsTicket4x from "@/assets/course-landing/art/06-wood-benefits-ticket@4x.webp";
+import woodBenefitsTicket6x from "@/assets/course-landing/art/06-wood-benefits-ticket@6x.webp";
 import roadmap2x from "@/assets/course-landing/art/07-roadmap@2x.webp";
 import roadmap3x from "@/assets/course-landing/art/07-roadmap@3x.webp";
 import pricingPaper2x from "@/assets/course-landing/art/08-pricing-paper@2x.webp";
@@ -75,6 +84,8 @@ export const woodBenefitsWoodArt: BlockArt = { x2: woodBenefitsWood2x, x3: woodB
 export const woodBenefitsTicketArt: BlockArt = {
   x2: woodBenefitsTicket2x,
   x3: woodBenefitsTicket3x,
+  x4: woodBenefitsTicket4x,
+  x6: woodBenefitsTicket6x,
 };
 /** Тарифы: бумага без билетов и линий, 390×1974. */
 export const pricingPaperArt: BlockArt = { x2: pricingPaper2x, x3: pricingPaper3x };
@@ -84,8 +95,22 @@ export const pricingPaperArt: BlockArt = { x2: pricingPaper2x, x3: pricingPaper3
  * (правки заказчика): скотч под надписью «курс по Китаю», фото в блоке «Привет» с двумя кусочками
  * скотча и звёздочки у пунктов списка (в макете их две разные, они чередуются).
  */
+/** Билет доски с шагами (слой «Group 37», 327×153): он листается целиком, вместе с цифрой и текстом. */
+export const woodStepsTicketArt: BlockArt = { x2: woodStepsTicket2x, x3: woodStepsTicket3x };
 export const heroTapeArt: BlockArt = { x2: heroTape2x, x3: heroTape3x, x4: heroTape4x };
-export const aboutPhotoArt: BlockArt = { x2: aboutPhoto2x, x3: aboutPhoto3x, x4: aboutPhoto4x };
+export const aboutPhotoArt: BlockArt = {
+  x2: aboutPhoto2x,
+  x3: aboutPhoto3x,
+  x4: aboutPhoto4x,
+  x6: aboutPhoto6x,
+};
+/** Скрепка на жёлтой заметке блока «Привет» (60×60 в макете): на сайте она крупнее. */
+export const aboutClipArt: BlockArt = {
+  x2: aboutClip2x,
+  x3: aboutClip3x,
+  x4: aboutClip4x,
+  x6: aboutClip6x,
+};
 export const aboutTapeTopArt: BlockArt = {
   x2: aboutTapeTop2x,
   x3: aboutTapeTop3x,

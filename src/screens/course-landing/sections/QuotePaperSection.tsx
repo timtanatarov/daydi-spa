@@ -4,7 +4,7 @@ import { Block, T } from "../ui/canvas";
 /** Цитата на тетрадном листе: «разные цены за одну и ту же вещь…». */
 export function QuotePaperSection() {
   return (
-    <Block name="05-quote" height={243} art={quoteArt}>
+    <Block name="05-quote" height={243} art={quoteArt} background="#E4DECF">
       <T
         fig="382:266"
         x={10.5}

@@ -3,19 +3,18 @@ import { TICKET } from "./layout";
 type Props = {
   /** высота билета, px макета */
   h: number;
-  /** линейка под номером и линия отрыва — от верха билета */
-  ruleY: number;
+  /** линия отрыва — от верха билета */
   tearY: number;
 };
 
 /**
  * Бумага билета во весь его размер: кремовый лист с двумя полукруглыми вырезами по бокам
- * у линии отрыва и вырезом посередине нижнего края, поверх — линейка и штриховая линия отрыва.
+ * у линии отрыва и вырезом посередине нижнего края, поверх — штриховая линия отрыва.
  * Вырезы настоящие (один контур с дугами), поэтому сквозь них видна фактура фона.
  * viewBox — в px макета: svg растягивается вместе с билетом, как все слои холста.
  */
-export function TicketPaper({ h, ruleY, tearY }: Props) {
-  const { w, notch, tab, rule, tear } = TICKET;
+export function TicketPaper({ h, tearY }: Props) {
+  const { w, notch, tab, tear } = TICKET;
   const tabLeft = (w - tab.w) / 2;
   const tabRight = tabLeft + tab.w;
   const tabTop = h - tab.h;
@@ -40,12 +39,6 @@ export function TicketPaper({ h, ruleY, tearY }: Props) {
       className="pointer-events-none absolute inset-0 size-full"
     >
       <path d={outline} fill={TICKET.fill} />
-      <path
-        d={`M0 ${ruleY}H${rule.gapFrom}M${rule.gapTo} ${ruleY}H${w}`}
-        fill="none"
-        stroke={rule.color}
-        strokeWidth={rule.weight}
-      />
       <path
         d={`M${notch} ${tearY}H${w - notch}`}
         fill="none"

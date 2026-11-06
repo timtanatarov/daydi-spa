@@ -200,7 +200,14 @@ function lines(items: string[]) {
  */
 export function RoadmapSection() {
   return (
-    <Block name="07-roadmap" id="roadmap" height={HEIGHT} art={roadmapArt} artHeight={456}>
+    <Block
+      name="07-roadmap"
+      id="roadmap"
+      height={HEIGHT}
+      art={roadmapArt}
+      artHeight={456}
+      background="#EFEDEB"
+    >
       <T
         fig="382:298"
         x={42.5}

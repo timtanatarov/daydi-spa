@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import { courseFontVariables } from "@/shared/fonts/course";
+import { TopTint } from "./TopTint";
 
 type Props = {
   children: ReactNode;
@@ -17,6 +18,8 @@ export function LandingFrame({ children }: Props) {
     <main
       className={`${courseFontVariables} w-full min-w-0 overflow-x-hidden bg-[#2a1f18] [--u:calc(min(100vw,480px)/390)] supports-[overflow:clip]:overflow-x-clip`}
     >
+      {/* цвет верха экрана над первым блоком — тот же, что у первого экрана (HeroSection) */}
+      <TopTint initial="#49433E" />
       <div className="relative mx-auto w-full max-w-[480px]">{children}</div>
     </main>
   );

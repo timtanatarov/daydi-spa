@@ -1,9 +1,10 @@
 "use client";
 
 import { Fragment, useId } from "react";
+import { woodStepsTicketArt } from "../../lib/blockArt";
 import { useSlideRail } from "../../lib/useSlideRail";
 import { SlideDots } from "../../ui/SlideDots";
-import { T, boxStyle, u } from "../../ui/canvas";
+import { Pic, T, boxStyle, u } from "../../ui/canvas";
 
 /**
  * Строки шагов. Шаг 3 — видимый слой макета 382:214. Шаги 1 и 2 в макете лежат скрытыми слоями
@@ -25,11 +26,14 @@ const STEPS: readonly (readonly string[])[] = [
 /** В макете нарисован третий шаг: только он сверяется со слоями по data-fig. */
 const MOCKUP_STEP = 2;
 
-/** Полоса слайдера во всю ширину блока: билет и точки под ним. */
-const ZONE = { x: 0, y: 231, w: 390, h: 186 };
+/** Полоса слайдера во всю ширину блока: лента билетов и точки под ней. */
+const ZONE = { x: 0, y: 227, w: 390, h: 190 };
 
-/** Билет в арте — окно, в котором листаются шаги: слайд уходит за его край. */
-const TICKET = { x: 35, y: 231, w: 320, h: 146 };
+/** Лента: окно во всю ширину блока. Слайд — билет целиком, по бокам от него видна доска. */
+const RAIL = { x: 0, y: 227, w: 390, h: 153 };
+
+/** Картинка билета (слой макета «Group 37» с запасом по краям) — у каждого шага своя копия. */
+const TICKET = { x: 31, y: 227, w: 327, h: 153 };
 
 /** Текст шага 382:214: пять строк с интервалом 20; шаги короче центрируются в той же высоте. */
 const TEXT = { x: 124, y: 251, w: 210, leading: 20, maxLines: 5 };
@@ -48,9 +52,10 @@ const DOTS = { x: 195, y: 393 };
 const CREAM = "#FEFBEF";
 
 /**
- * Билет-слайдер: цифра и текст шага. Шаги листаются пальцем со сдвигом, как остальные ленты
- * страницы, точками под билетом и сами — раз в несколько секунд, по кругу. Стрелок нет:
- * заказчик попросил попробовать без них (в макете они были по бокам билета).
+ * Билеты-слайды: на каждом цифра и текст шага. Билет уезжает целиком, вместе с содержимым, —
+ * так попросил заказчик (текст, ползущий по неподвижному билету, выглядел плохо), поэтому билет
+ * вынут из арта блока. Листается пальцем, точками под билетом и сам — раз в несколько секунд,
+ * по кругу. Стрелок нет: заказчик попросил попробовать без них (в макете они были по бокам).
  */
 export function WoodStepsSlider() {
   const railId = useId();
@@ -70,23 +75,25 @@ export function WoodStepsSlider() {
         tabIndex={0}
         className="scrollbar-hide flex snap-x snap-mandatory overflow-x-auto overflow-y-hidden overscroll-x-contain outline-none focus-visible:outline-solid"
         style={{
-          ...boxStyle({ ...TICKET, origin: ZONE }),
+          ...boxStyle({ ...RAIL, origin: ZONE }),
           outlineColor: CREAM,
           outlineWidth: u(2),
-          outlineOffset: u(3),
+          outlineOffset: u(-2),
         }}
       >
         {STEPS.map((lines, index) => {
           const inMockup = index === MOCKUP_STEP;
           return (
             <li key={index} className="relative h-full w-full shrink-0 snap-start">
+              {/* eager: билеты второго и третьего шага стоят за краем экрана, lazy их заранее не подгрузит */}
+              <Pic art={woodStepsTicketArt} {...TICKET} origin={RAIL} eager />
               <span className="sr-only">
                 Шаг {index + 1} из {STEPS.length}:
               </span>
               <T
                 aria-hidden
                 fig={inMockup ? "665:20" : undefined}
-                origin={TICKET}
+                origin={RAIL}
                 x={DIGIT.x}
                 y={DIGIT.y}
                 w={inMockup ? DIGIT.w : DIGIT.lineWidth}
@@ -104,7 +111,7 @@ export function WoodStepsSlider() {
               </T>
               <T
                 fig={inMockup ? "382:214" : undefined}
-                origin={TICKET}
+                origin={RAIL}
                 x={TEXT.x}
                 y={TEXT.y + ((TEXT.maxLines - lines.length) * TEXT.leading) / 2}
                 w={TEXT.w}

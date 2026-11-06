@@ -1,5 +1,6 @@
 import {
   aboutArt,
+  aboutClipArt,
   aboutPhotoArt,
   aboutStarArt,
   aboutTapeBottomArt,
@@ -12,36 +13,58 @@ type Rect = { x: number; y: number; w: number; h: number };
 /** Заголовок на скотче: объединяющий прямоугольник слоёв 352:183 и 352:184. */
 const TITLE = { x: 92, y: 86, w: 207, h: 60 };
 
-/**
- * Фото с двумя кусочками скотча увеличено в 1.25 раза по просьбе заказчика. Растёт от середины
- * своего верхнего края — вниз и в стороны, чтобы не подойти к жёлтой заметке над ним.
- */
-const PHOTO_SCALE = 1.25;
-const PHOTO_ANCHOR = { x: 195, y: 337.5 };
-const enlarged = ({ x, y, w, h }: Rect): Rect => ({
-  x: PHOTO_ANCHOR.x + (x - PHOTO_ANCHOR.x) * PHOTO_SCALE,
-  y: PHOTO_ANCHOR.y + (y - PHOTO_ANCHOR.y) * PHOTO_SCALE,
-  w: w * PHOTO_SCALE,
-  h: h * PHOTO_SCALE,
-});
-/** Слои макета «IMG_2441 1» и два куска скотча на его углах. */
-const PHOTO = enlarged({ x: 101, y: 337.5, w: 188, h: 235 });
-const TAPE_TOP = enlarged({ x: 242, y: 317, w: 76, h: 67 });
-const TAPE_BOTTOM = enlarged({ x: 37, y: 486, w: 152, h: 152 });
+/** Поля страницы слева и справа: заказчик попросил 16 вместо широких полей макета. */
+const GUTTER = 16;
 
 /**
- * Фото стало ниже на 59 — всё, что под ним, съехало на 60: в арт под фото вставлена полоса бумаги,
- * нижние фотографии в арте съезжают вместе с ней.
+ * Фото (слой «IMG_2441 1», в макете 188×235 от x = 101) растянуто почти на всю ширину между полями:
+ * заказчик дважды просил сделать его больше. Верхний край остался на месте — фото растёт вниз
+ * и в стороны. Кусочки скотча увеличены в 1.25 раза и держатся за те же углы фото, что в макете.
  */
-const SHIFT = 60;
-const INSERTS: ArtInsert[] = [{ at: 610, height: SHIFT }];
+const PHOTO_MOCKUP = { x: 101, y: 337.5, w: 188, h: 235 };
+const PHOTO: Rect = { x: 32, y: PHOTO_MOCKUP.y, w: 326, h: 407.5 };
+const TAPE_SCALE = 1.25;
+/** Скотч у правого верхнего угла (в макете 76×67 от 242, 317) и у левого нижнего (152×152 от 37, 486). */
+const TAPE_TOP: Rect = {
+  x: PHOTO.x + PHOTO.w + (242 - (PHOTO_MOCKUP.x + PHOTO_MOCKUP.w)) * TAPE_SCALE,
+  y: PHOTO.y + (317 - PHOTO_MOCKUP.y) * TAPE_SCALE,
+  w: 76 * TAPE_SCALE,
+  h: 67 * TAPE_SCALE,
+};
+const TAPE_BOTTOM: Rect = {
+  x: PHOTO.x + (37 - PHOTO_MOCKUP.x) * TAPE_SCALE,
+  y: PHOTO.y + PHOTO.h + (486 - (PHOTO_MOCKUP.y + PHOTO_MOCKUP.h)) * TAPE_SCALE,
+  w: 152 * TAPE_SCALE,
+  h: 152 * TAPE_SCALE,
+};
+
+/**
+ * Скрепка на углу жёлтой заметки (в макете 60×60 от 299, 177) увеличена в 1.6 раза от своей
+ * середины: заказчик попросил — была слишком тонкой и незаметной.
+ */
+const CLIP: Rect = { x: 281, y: 159, w: 96, h: 96 };
+
+/**
+ * Фото стало ниже на 172.5 — всё, что под ним, съехало на 174: в арт под фото вставлены полосы
+ * бумаги (три подряд, каждая из чистой полосы 580…610 над вставкой — выше неё стык листов бумаги),
+ * нижние фотографии в арте съезжают вместе с ними.
+ */
+const SHIFT = 174;
+const INSERTS: ArtInsert[] = [
+  { at: 610, height: 60 },
+  { at: 610, height: 60 },
+  { at: 610, height: 54 },
+];
 
 /**
  * Пункты списка стоят «лесенкой» заметнее, чем в макете: нечётные правее, чётные левее —
- * заказчик попросил развести, в макете всё стояло слишком по центру.
+ * заказчик попросил развести (в макете всё стояло слишком по центру) и прижать к полям страницы.
+ * Чётные пункты начинаются от левого поля (у него стоит их звёздочка), нечётные — кончаются
+ * у правого: самая длинная строка каждого доходит до поля (width — её ширина при кегле 17;
+ * 2 — запас на поворот строки).
  */
-const SHIFT_ODD = 8;
-const SHIFT_EVEN = -22;
+const TEXT_X_EVEN = GUTTER + 33;
+const textXOdd = (width: number) => 390 - GUTTER - 2 - width;
 
 /**
  * Шаг строк пунктов: в макете 15 при кегле 17 — строки наезжали друг на друга; разведены,
@@ -54,6 +77,7 @@ const FACT_LEADING_MOCKUP = 15;
 const FACT_ITEMS = [
   {
     fig: "352:187",
+    width: 195.8,
     box: { x: 132.59, y: 613.36, w: 196.8, h: 45 },
     rotate: 2.5,
     star: { x: 93, y: 618.5 },
@@ -61,6 +85,7 @@ const FACT_ITEMS = [
   },
   {
     fig: "352:188",
+    width: 242,
     box: { x: 72.01, y: 692.7, w: 243.41, h: 45 },
     rotate: -2.5,
     star: { x: 35, y: 699 },
@@ -68,6 +93,7 @@ const FACT_ITEMS = [
   },
   {
     fig: "352:189",
+    width: 238.4,
     box: { x: 130.98, y: 762.72, w: 239.62, h: 30 },
     rotate: 2.5,
     star: { x: 91, y: 759 },
@@ -75,13 +101,14 @@ const FACT_ITEMS = [
   },
   {
     fig: "352:190",
+    width: 222.6,
     box: { x: 75.89, y: 821.38, w: 222.47, h: 30 },
     rotate: -2.5,
     star: { x: 38.5, y: 818.5 },
     lines: ["обучаю других выгодному", "шопингу на Таобао и 1688"],
   },
 ].map((item, index) => {
-  const dx = index % 2 === 0 ? SHIFT_ODD : SHIFT_EVEN;
+  const dx = (index % 2 === 0 ? textXOdd(item.width) : TEXT_X_EVEN) - item.box.x;
   const height = item.lines.length * FACT_LEADING;
   const grown = height - item.lines.length * FACT_LEADING_MOCKUP;
   return {
@@ -92,8 +119,14 @@ const FACT_ITEMS = [
   };
 });
 
+/**
+ * Высота блока: арт (1221) со вставкой, без нижних 76 — в макете под нижними фотографиями
+ * оставалось 127 пустой бумаги, заказчик попросил меньше; лишнее просто не показывается.
+ */
+const HEIGHT = 1221 + SHIFT - 76;
+
 /** Контейнер списка: объединяющий прямоугольник пунктов. */
-const FACTS = { x: 54, y: 613.36 + SHIFT, w: 330, h: 250 };
+const FACTS = { x: GUTTER, y: 613.36 + SHIFT, w: 390 - 2 * GUTTER, h: 250 };
 
 /**
  * Об авторе: «Привет, я Индира», жёлтая заметка, фото и четыре факта. Бумага, заметка и нижние
@@ -104,8 +137,9 @@ export function AboutIndiraSection() {
     <Block
       name="02-about"
       id="about"
-      height={1221 + SHIFT}
+      height={HEIGHT}
       art={aboutArt}
+      background="#DBD3C8"
       artHeight={1221}
       artInserts={INSERTS}
     >
@@ -168,6 +202,7 @@ export function AboutIndiraSection() {
         маркетплейсов таобао и 1688 <span aria-hidden>🇨🇳</span>
       </T>
 
+      <Pic art={aboutClipArt} {...CLIP} />
       <Pic art={aboutPhotoArt} alt="Индира в бежевой куртке у деревянной стены" {...PHOTO} />
       <Pic art={aboutTapeTopArt} {...TAPE_TOP} />
       <Pic art={aboutTapeBottomArt} {...TAPE_BOTTOM} />

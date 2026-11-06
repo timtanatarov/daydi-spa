@@ -51,13 +51,19 @@ export type FontName = keyof typeof FONT_FAMILY;
 
 /**
  * Картинка макета в двух плотностях — для экранов 2x и 3x (арт блока: 780 и 1170px).
- * x4 — для картинок, которые на сайте показаны крупнее, чем в макете: иначе на экранах 3x им не хватит точек.
+ * x4 и x6 — для картинок, которые на сайте показаны крупнее, чем в макете: иначе на экранах 3x
+ * им не хватит точек.
  */
-export type BlockArt = { x2: StaticImageData; x3: StaticImageData; x4?: StaticImageData };
+export type BlockArt = {
+  x2: StaticImageData;
+  x3: StaticImageData;
+  x4?: StaticImageData;
+  x6?: StaticImageData;
+};
 
 /** Набор файлов картинки для srcset: браузер берёт самый маленький, которого хватает экрану. */
 const srcSet = (art: BlockArt): string =>
-  [art.x2, art.x3, art.x4]
+  [art.x2, art.x3, art.x4, art.x6]
     .filter((file) => file !== undefined)
     .map((file) => `${file.src} ${file.width}w`)
     .join(", ");
@@ -114,8 +120,9 @@ type BlockProps = {
   /** первый экран: грузить арт без lazy */
   priority?: boolean;
   /**
-   * Цвет секции, пока арт не загрузился (или не загрузился вовсе). По умолчанию — бумага макета;
-   * блокам со светлым текстом на тёмном арте нужен тёмный, иначе текст до картинки не виден.
+   * Цвет секции, пока арт не загрузился (или не загрузился вовсе), — средний цвет её арта.
+   * По умолчанию — бумага макета; блокам со светлым текстом на тёмном арте нужен тёмный, иначе
+   * текст до картинки не виден. Этим же цветом красится верх экрана на телефоне, пока блок под ним.
    */
   background?: string;
   id?: string;
@@ -159,6 +166,8 @@ export function Block({
     <Tag
       id={id}
       data-block={name}
+      // цвет блока для верхнего края экрана на телефоне, см. TopTint
+      data-tint={background}
       className={["relative w-full", className].filter(Boolean).join(" ")}
       style={{ height: u(height), backgroundColor: background }}
     >

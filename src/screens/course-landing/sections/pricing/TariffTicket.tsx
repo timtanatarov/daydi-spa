@@ -6,7 +6,6 @@ import {
   COLOR,
   COLUMN,
   GAP,
-  PRICES,
   TICKET,
   TYPE,
   type PlacedRow,
@@ -38,35 +37,26 @@ function Row({ row, titleId }: RowProps) {
     case "tear":
       // линию отрыва рисует TicketPaper
       return null;
-    case "number":
+    case "divider": {
+      const { weight, dash, space, color } = TICKET.rule;
       return (
-        <T
-          fig={row.fig}
-          {...column}
-          x={TICKET.rule.gapFrom}
-          w={TICKET.rule.gapTo - TICKET.rule.gapFrom}
-          {...TYPE.number}
-          weight={600}
-          italic
-          align="center"
-          color={COLOR.ink}
+        <svg
+          aria-hidden
+          viewBox={`0 0 ${COLUMN.w} 2`}
+          preserveAspectRatio="none"
+          className="pointer-events-none"
+          style={boxStyle({ x: COLUMN.x, y: row.y - 1, w: COLUMN.w, h: 2 })}
         >
-          {row.text}
-        </T>
+          <path
+            d={`M0 1H${COLUMN.w}`}
+            fill="none"
+            stroke={color}
+            strokeWidth={weight}
+            strokeDasharray={row.line === "dashed" ? `${dash} ${space}` : undefined}
+          />
+        </svg>
       );
-    case "text":
-      return (
-        <T
-          fig={row.fig}
-          {...column}
-          {...TYPE.text}
-          weight={row.weight}
-          align="center"
-          color={row.color}
-        >
-          {withBreaks(row.lines)}
-        </T>
-      );
+    }
     case "title":
       return (
         <T
@@ -82,6 +72,19 @@ function Row({ row, titleId }: RowProps) {
           {row.text}
         </T>
       );
+    case "text":
+      return (
+        <T
+          fig={row.fig}
+          {...column}
+          {...TYPE.text}
+          weight={row.weight}
+          align={row.align ?? "center"}
+          color={row.color}
+        >
+          {withBreaks(row.lines)}
+        </T>
+      );
     case "list":
       return (
         <T
@@ -91,7 +94,7 @@ function Row({ row, titleId }: RowProps) {
           {...column}
           {...TYPE.text}
           weight={300}
-          align="center"
+          align="left"
           color={COLOR.ink}
         >
           {row.items.map((lines, index) => (
@@ -99,53 +102,35 @@ function Row({ row, titleId }: RowProps) {
           ))}
         </T>
       );
-    case "prices": {
-      const line = TYPE.price.leading;
-      const oldY = row.y + line + PRICES.gap;
+    case "pair": {
+      const total = row.role === "total";
       return (
         <>
-          {/* скринридеру цена читается одной фразой; видимые слои ниже для него скрыты */}
-          <p className="sr-only">{row.label}</p>
+          {/* скринридеру цена читается одной фразой; видимые подпись и сумма для него скрыты */}
+          {row.spoken ? <p className="sr-only">{row.spoken}</p> : null}
           <T
             aria-hidden
-            fig={row.price.fig}
             {...column}
-            h={line}
-            {...TYPE.price}
-            weight={900}
-            align="center"
-            color={COLOR.red}
+            size={TYPE.text.size}
+            leading={row.h}
+            weight={total ? 700 : 400}
+            align="left"
+            color={COLOR.ink}
           >
-            {row.price.text}
+            {row.label}
           </T>
           <T
-            as="del"
+            as={total ? "p" : "del"}
             aria-hidden
-            className="no-underline"
-            fig={row.old.fig}
+            fig={row.fig}
             {...column}
-            y={oldY}
-            h={line}
-            {...TYPE.price}
-            weight={700}
-            align="center"
-            color={COLOR.gray}
+            {...(total ? TYPE.total : TYPE.text)}
+            weight={total ? 900 : 400}
+            align="right"
+            color={total ? COLOR.red : COLOR.gray}
           >
-            {row.old.text}
+            {row.value}
           </T>
-          {/* старую цену зачёркивает плашка, как в макете: она чуть шире цифр */}
-          <span
-            aria-hidden
-            style={{
-              ...boxStyle({
-                x: (TICKET.w - PRICES.strike.w) / 2,
-                y: oldY + PRICES.strikeY,
-                w: PRICES.strike.w,
-                h: PRICES.strike.h,
-              }),
-              backgroundColor: PRICES.strike.color,
-            }}
-          />
         </>
       );
     }
@@ -164,8 +149,8 @@ function Row({ row, titleId }: RowProps) {
             x={0}
             y={BUTTON.textY}
             w={BUTTON.w}
-            h={TYPE.price.leading}
-            {...TYPE.price}
+            h={TYPE.total.leading}
+            {...TYPE.total}
             weight={900}
             align="center"
             color={COLOR.paper}
@@ -185,7 +170,7 @@ export function TariffTicket({ ticket }: { ticket: PlacedTicket }) {
       aria-labelledby={titleId}
       style={boxStyle({ x: TICKET.x, y: ticket.y, w: TICKET.w, h: ticket.h })}
     >
-      <TicketPaper h={ticket.h} ruleY={ticket.ruleY} tearY={ticket.tearY} />
+      <TicketPaper h={ticket.h} tearY={ticket.tearY} />
       {ticket.rows.map((row, index) => (
         <Row key={index} row={row} titleId={titleId} />
       ))}

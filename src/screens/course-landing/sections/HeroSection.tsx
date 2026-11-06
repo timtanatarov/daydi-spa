@@ -20,10 +20,26 @@ const PILLS = [
   { x: 210.08, y: 443.66, w: 76, h: 30, rotate: -3.49 },
 ];
 
+/**
+ * Цвет верха экрана телефона над первым экраном (см. TopTint) и высота перехода к нему.
+ * Safari на iPhone заливает зону под строкой состояния одним цветом — картинку туда вывести нельзя,
+ * поэтому верх фотографии плавно уходит в этот цвет: резкой границы «фото обрезано» нет.
+ */
+const TOP_TINT = "#49433E";
+const TOP_FADE = 72;
+
 /** Первый экран: лист с названием курса и кнопка «купить». */
 export function HeroSection() {
   return (
-    <Block name="01-hero" height={780} art={heroArt} priority>
+    <Block name="01-hero" height={780} art={heroArt} priority background={TOP_TINT}>
+      <div
+        aria-hidden
+        className="pointer-events-none"
+        style={{
+          ...boxStyle({ x: 0, y: 0, w: 390, h: TOP_FADE }),
+          background: `linear-gradient(to bottom, ${TOP_TINT}, ${TOP_TINT}00)`,
+        }}
+      />
       <Pic art={heroTapeArt} {...TAPE} eager />
       {/* В макете строка начинается с неразрывного пробела: он участвует в центрировании */}
       <T

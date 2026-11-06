@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Footer } from "@/widgets/footer";
@@ -17,6 +17,13 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Курс по заказам на Таобао и 1688",
   description: "Пошаговое обучение выгодному шопингу с китайских маркетплейсов",
+};
+
+/** viewport-fit=cover: страница занимает экран телефона целиком, без полей под вырез. */
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
 };
 
 export default function RootLayout({
