@@ -1,7 +1,8 @@
 "use client";
 
-import { Fragment, useId, useRef } from "react";
-import { ArrowButton } from "../../ui/ArrowButton";
+import { Fragment, useId } from "react";
+import { useSlideRail } from "../../lib/useSlideRail";
+import { SlideDots } from "../../ui/SlideDots";
 import { Pic, T, boxStyle, u, type BlockArt } from "../../ui/canvas";
 
 type Rect = { x: number; y: number; w: number; h: number };
@@ -21,38 +22,24 @@ export type ComparePair = { left: CompareItem; right: CompareItem };
 type Props = {
   /** бежевая подложка группы: окно, внутри которого листаются пары */
   viewport: Rect;
-  /** левый верхний угол стрелки «›» справа от подложки */
-  arrow: { x: number; y: number };
   pairs: ComparePair[];
   /** название группы для скринридера */
   label: string;
 };
 
-/**
- * Карусель пар «дороже / дешевле». Листается пальцем (scroll-snap) и стрелкой «›» —
- * по кругу. Положение берётся из самой прокрутки, поэтому стрелка и свайп не расходятся.
- */
-export function CompareCarousel({ viewport, arrow, pairs, label }: Props) {
-  const railId = useId();
-  const railRef = useRef<HTMLDivElement>(null);
-  /** куда лента едет сейчас: пока идёт плавная прокрутка, её положение ещё «в пути» */
-  const pending = useRef<{ index: number; until: number } | null>(null);
+const INK = "#49301C";
 
-  const showNext = () => {
-    const rail = railRef.current;
-    if (!rail) return;
-    // ширина слайда бывает дробной, поэтому берём её из ленты, а не из округлённого clientWidth
-    const slideWidth = rail.scrollWidth / pairs.length;
-    const now = performance.now();
-    const current =
-      pending.current && now < pending.current.until
-        ? pending.current.index
-        : Math.round(rail.scrollLeft / slideWidth);
-    const next = (current + 1) % pairs.length;
-    pending.current = { index: next, until: now + 600 };
-    const calm = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    rail.scrollTo({ left: next * slideWidth, behavior: calm ? "auto" : "smooth" });
-  };
+/** От нижнего края подложки до точек. */
+const DOTS_GAP = 14;
+
+/**
+ * Карусель пар «дороже / дешевле». Листается пальцем (scroll-snap), точками под подложкой
+ * и сама — раз в несколько секунд, по кругу. Стрелки «›» из макета заказчик попросил заменить
+ * точками.
+ */
+export function CompareCarousel({ viewport, pairs, label }: Props) {
+  const railId = useId();
+  const { railRef, active, show } = useSlideRail({ count: pairs.length });
 
   return (
     <>
@@ -92,7 +79,7 @@ export function CompareCarousel({ viewport, arrow, pairs, label }: Props) {
                   size={17}
                   leading={15}
                   align="center"
-                  color="#49301C"
+                  color={INK}
                 >
                   {item.caption.text}
                 </T>
@@ -103,14 +90,15 @@ export function CompareCarousel({ viewport, arrow, pairs, label }: Props) {
       </div>
 
       {pairs.length > 1 ? (
-        <ArrowButton
-          direction="next"
-          {...arrow}
-          color="#49301C"
-          data-compare-next
-          aria-label={`Следующее сравнение: ${label}`}
-          aria-controls={railId}
-          onClick={showNext}
+        <SlideDots
+          count={pairs.length}
+          active={active}
+          x={viewport.x + viewport.w / 2}
+          y={viewport.y + viewport.h + DOTS_GAP}
+          color={INK}
+          label={(index) => `${label}: сравнение ${index + 1} из ${pairs.length}`}
+          controls={railId}
+          onSelect={show}
         />
       ) : null}
     </>

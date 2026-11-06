@@ -62,6 +62,35 @@ const srcSet = (art: BlockArt): string =>
     .map((file) => `${file.src} ${file.width}w`)
     .join(", ");
 
+/**
+ * Вставка фона в арт блока. Собирается из полосы арта высотой height / 2 над строкой `from`
+ * (по умолчанию — над самой точкой вставки): сначала её зеркальная копия, затем она сама. Поэтому
+ * шва нет ни сверху, ни снизу — если полоса взята прямо над вставкой. Полоса должна быть чистым
+ * фоном, без нарисованных элементов.
+ */
+export type ArtInsert = { at: number; height: number; from?: number };
+
+/** Куски арта сверху вниз: какие строки арта показать и на какой высоте блока. */
+function artSlices(artHeight: number, inserts: readonly ArtInsert[]) {
+  const slices: { top: number; from: number; to: number; mirror: boolean }[] = [];
+  let top = 0;
+  let row = 0;
+  for (const insert of [...inserts].sort((a, b) => a.at - b.at)) {
+    if (insert.at > row) {
+      slices.push({ top, from: row, to: insert.at, mirror: false });
+      top += insert.at - row;
+      row = insert.at;
+    }
+    const half = insert.height / 2;
+    const source = insert.from ?? insert.at;
+    slices.push({ top, from: source - half, to: source, mirror: true });
+    slices.push({ top: top + half, from: source - half, to: source, mirror: false });
+    top += insert.height;
+  }
+  if (row < artHeight) slices.push({ top, from: row, to: artHeight, mirror: false });
+  return slices;
+}
+
 type BlockProps = {
   as?: ElementType;
   /** имя блока из design/reference/blocks.json, например "01-hero" */
@@ -76,6 +105,12 @@ type BlockProps = {
    * его копии, каждая вторая отражена по вертикали — стыки получаются без шва.
    */
   artHeight?: number;
+  /**
+   * Вставки фона: на высоте `at` (px макета по арту) добавить `height` px той же фактуры — всё,
+   * что нарисовано в арте ниже, съезжает вниз. Так блок раздвигается, когда текст стал крупнее,
+   * а подложки и разделители остаются частью арта.
+   */
+  artInserts?: readonly ArtInsert[];
   /** первый экран: грузить арт без lazy */
   priority?: boolean;
   /**
@@ -100,13 +135,15 @@ export function Block({
   height,
   art,
   artHeight,
+  artInserts,
   priority = false,
   background = "#F6F5F1",
   id,
   className,
   children,
 }: BlockProps) {
-  const tiles = artHeight && artHeight < height ? Math.ceil(height / artHeight) : 1;
+  const slices = artInserts?.length ? artSlices(artHeight ?? height, artInserts) : null;
+  const tiles = !slices && artHeight && artHeight < height ? Math.ceil(height / artHeight) : 1;
   const image = {
     src: art.x3.src,
     srcSet: srcSet(art),
@@ -125,7 +162,35 @@ export function Block({
       className={["relative w-full", className].filter(Boolean).join(" ")}
       style={{ height: u(height), backgroundColor: background }}
     >
-      {tiles === 1 ? (
+      {slices ? (
+        <div aria-hidden className="pointer-events-none absolute inset-0 overflow-hidden">
+          {slices.map((slice, index) => (
+            // кусок на пиксель выше своей высоты: на дробных масштабах между кусками не бывает щели
+            <div
+              key={index}
+              className="absolute left-0 w-full overflow-hidden"
+              style={{
+                top: u(slice.top),
+                height: `calc(var(--u) * ${slice.to - slice.from} + 1px)`,
+              }}
+            >
+              {/* eslint-disable-next-line @next/next/no-img-element -- готовые файлы 2x/3x, без оптимизатора */}
+              <img
+                {...image}
+                alt=""
+                className={["absolute left-0 w-full select-none", slice.mirror && "-scale-y-100"]
+                  .filter(Boolean)
+                  .join(" ")}
+                // отражённая картинка показывает строку r арта на высоте (высота арта − r)
+                style={{
+                  top: u(slice.mirror ? slice.to - (artHeight ?? height) : -slice.from),
+                  height: u(artHeight ?? height),
+                }}
+              />
+            </div>
+          ))}
+        </div>
+      ) : tiles === 1 ? (
         // eslint-disable-next-line @next/next/no-img-element -- готовые файлы 2x/3x, без оптимизатора
         <img
           {...image}

@@ -2,8 +2,24 @@ import type { BlockArt } from "../ui/canvas";
 
 import hero2x from "@/assets/course-landing/art/01-hero@2x.webp";
 import hero3x from "@/assets/course-landing/art/01-hero@3x.webp";
+import heroTape2x from "@/assets/course-landing/art/01-hero-tape@2x.webp";
+import heroTape3x from "@/assets/course-landing/art/01-hero-tape@3x.webp";
+import heroTape4x from "@/assets/course-landing/art/01-hero-tape@4x.webp";
 import about2x from "@/assets/course-landing/art/02-about@2x.webp";
 import about3x from "@/assets/course-landing/art/02-about@3x.webp";
+import aboutPhoto2x from "@/assets/course-landing/art/02-about-photo@2x.webp";
+import aboutPhoto3x from "@/assets/course-landing/art/02-about-photo@3x.webp";
+import aboutPhoto4x from "@/assets/course-landing/art/02-about-photo@4x.webp";
+import aboutTapeTop2x from "@/assets/course-landing/art/02-about-tape-top@2x.webp";
+import aboutTapeTop3x from "@/assets/course-landing/art/02-about-tape-top@3x.webp";
+import aboutTapeTop4x from "@/assets/course-landing/art/02-about-tape-top@4x.webp";
+import aboutTapeBottom2x from "@/assets/course-landing/art/02-about-tape-bottom@2x.webp";
+import aboutTapeBottom3x from "@/assets/course-landing/art/02-about-tape-bottom@3x.webp";
+import aboutTapeBottom4x from "@/assets/course-landing/art/02-about-tape-bottom@4x.webp";
+import aboutStarA2x from "@/assets/course-landing/art/02-about-star-1@2x.webp";
+import aboutStarA3x from "@/assets/course-landing/art/02-about-star-1@3x.webp";
+import aboutStarB2x from "@/assets/course-landing/art/02-about-star-2@2x.webp";
+import aboutStarB3x from "@/assets/course-landing/art/02-about-star-2@3x.webp";
 import woodSteps2x from "@/assets/course-landing/art/03-wood-steps@2x.webp";
 import woodSteps3x from "@/assets/course-landing/art/03-wood-steps@3x.webp";
 import showcase2x from "@/assets/course-landing/art/04-showcase@2x.webp";
@@ -62,6 +78,28 @@ export const woodBenefitsTicketArt: BlockArt = {
 };
 /** Тарифы: бумага без билетов и линий, 390×1974. */
 export const pricingPaperArt: BlockArt = { x2: pricingPaper2x, x3: pricingPaper3x };
+
+/**
+ * Слои, вынутые из арта, потому что на сайте они крупнее или стоят иначе, чем в макете
+ * (правки заказчика): скотч под надписью «курс по Китаю», фото в блоке «Привет» с двумя кусочками
+ * скотча и звёздочки у пунктов списка (в макете их две разные, они чередуются).
+ */
+export const heroTapeArt: BlockArt = { x2: heroTape2x, x3: heroTape3x, x4: heroTape4x };
+export const aboutPhotoArt: BlockArt = { x2: aboutPhoto2x, x3: aboutPhoto3x, x4: aboutPhoto4x };
+export const aboutTapeTopArt: BlockArt = {
+  x2: aboutTapeTop2x,
+  x3: aboutTapeTop3x,
+  x4: aboutTapeTop4x,
+};
+export const aboutTapeBottomArt: BlockArt = {
+  x2: aboutTapeBottom2x,
+  x3: aboutTapeBottom3x,
+  x4: aboutTapeBottom4x,
+};
+export const aboutStarArt: readonly [BlockArt, BlockArt] = [
+  { x2: aboutStarA2x, x3: aboutStarA3x },
+  { x2: aboutStarB2x, x3: aboutStarB3x },
+];
 
 /** Карточки дорожной карты: стоят в прокручиваемом ряду, поэтому не входят в арт блока. */
 export const roadmapCardClipArt: BlockArt = { x2: cardClip2x, x3: cardClip3x, x4: cardClip4x };

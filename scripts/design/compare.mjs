@@ -341,6 +341,7 @@ async function main() {
       "--hide",
       "header",
       ...(setupClicks.length ? ["--click", setupClicks.join(",")] : []),
+      ...(typeof spec.setup?.run === "string" ? ["--run", spec.setup.run] : []),
     ],
     { encoding: "utf8" },
   );

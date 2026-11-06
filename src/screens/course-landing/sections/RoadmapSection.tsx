@@ -174,12 +174,15 @@ const STOPS = CARDS.map(({ paper, snap }) =>
   ),
 );
 
+/** Те же остановки в долях ширины окна — в таком виде их берёт лента. */
+const STOP_SHARES = STOPS.map((stop) => stop / RAIL.w);
+
 /**
- * Стрелка «›» (в макете её нет) — одна, по центру блока под карточками:
- * 20 от нижнего листа до стрелки, 24 — сама стрелка, 28 — от неё до края блока.
+ * Точки под карточками (в макете их нет): 24 от нижнего листа до точек, 8 — сами точки,
+ * 30 — от них до края блока.
  */
-const ARROW = { x: 189.71, y: CARDS_BOTTOM + 20 };
-const HEIGHT = Math.ceil(ARROW.y + 24 + 28);
+const DOTS = { x: 195, y: CARDS_BOTTOM + 24 };
+const HEIGHT = Math.ceil(DOTS.y + 8 + 30);
 
 /**
  * Строки текстового слоя. Пробел перед <br /> на раскладку не влияет (в конце строки
@@ -197,7 +200,7 @@ function lines(items: string[]) {
  */
 export function RoadmapSection() {
   return (
-    <Block name="07-roadmap" height={HEIGHT} art={roadmapArt} artHeight={456}>
+    <Block name="07-roadmap" id="roadmap" height={HEIGHT} art={roadmapArt} artHeight={456}>
       <T
         fig="382:298"
         x={42.5}
@@ -231,10 +234,10 @@ export function RoadmapSection() {
         viewport={RAIL}
         width={RAIL_WIDTH}
         inset={EDGE}
-        stops={STOPS}
+        stops={STOP_SHARES}
         label="Темы курса"
         color={INK}
-        arrow={ARROW}
+        dots={DOTS}
       >
         {CARDS.map((card) => (
           // рамка карточки — сам лист: по нему лента и останавливается; картинка выходит за него

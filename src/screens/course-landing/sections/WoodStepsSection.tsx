@@ -5,16 +5,17 @@ import { WoodStepsSlider } from "./wood-steps/WoodStepsSlider";
 /** Доска с билетом-слайдером: три шага, как накручивают цены. */
 export function WoodStepsSection() {
   return (
-    <Block name="03-wood-steps" height={477} art={woodStepsArt} background="#492B1B">
+    <Block name="03-wood-steps" id="steps" height={477} art={woodStepsArt} background="#492B1B">
       <T
         as="h2"
         fig="382:201"
         x={60}
-        y={109}
+        y={92}
         w={271}
-        h={51}
+        h={84}
         size={25}
-        leading={17}
+        // в макете шаг строк 17 — строки наезжали друг на друга; разведены, как в сравнениях
+        leading={28}
         font="playfair"
         align="center"
         color="#F6F5F1"

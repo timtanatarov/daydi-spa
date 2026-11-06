@@ -7,11 +7,11 @@ export function QuotePaperSection() {
     <Block name="05-quote" height={243} art={quoteArt}>
       <T
         fig="382:266"
-        x={52}
+        x={10.5}
         y={105}
-        w={287}
+        w={370}
         h={90}
-        size={17}
+        size={21}
         leading={30}
         font="playfair"
         italic

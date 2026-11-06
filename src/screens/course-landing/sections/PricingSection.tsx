@@ -1,6 +1,6 @@
 import { pricingPaperArt } from "../lib/blockArt";
 import { Block, T } from "../ui/canvas";
-import { BLOCK, COLOR, TICKET, TYPE } from "./pricing/layout";
+import { BLOCK, COLOR, TYPE } from "./pricing/layout";
 import { TariffTicket } from "./pricing/TariffTicket";
 import { PRICING } from "./pricing/tariffs";
 
@@ -21,11 +21,13 @@ export function PricingSection() {
       <T
         as="h2"
         fig="382:297"
-        x={TICKET.x}
+        x={20}
         y={BLOCK.headingY}
-        w={TICKET.w}
+        w={350}
         h={TYPE.title.leading}
         {...TYPE.title}
+        // крупнее заголовков билетов: один на весь блок, на пустой бумаге кегль 25 терялся
+        size={32}
         font="playfair"
         align="center"
         color={COLOR.brown}

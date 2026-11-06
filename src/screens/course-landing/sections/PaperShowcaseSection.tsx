@@ -1,22 +1,51 @@
 import { showcaseArt, showcaseItemArt } from "../lib/blockArt";
-import { Block, T } from "../ui/canvas";
+import { Block, T, type ArtInsert } from "../ui/canvas";
 import { CompareCarousel, type ComparePair } from "./showcase/CompareCarousel";
 
 const INK = "#49301C";
 
+/**
+ * Блок раздвинут по просьбе заказчика: между строками заголовков и пояснений и между самими
+ * текстами нужно больше воздуха, а под подложками — место для точек. Арт остался прежним, в него
+ * добавлены полосы той же бумаги: всё, что нарисовано ниже вставки (подложки, кольца, смена бумаги),
+ * съезжает вниз вместе с ней.
+ */
+const INSERTS: ArtInsert[] = [
+  // над подложкой второй группы
+  { at: 640, height: 30 },
+  // над подложкой третьей группы
+  { at: 1150, height: 70 },
+  // под подложкой третьей группы: бумага для точек (полоса взята над этой подложкой)
+  { at: 1342, height: 40, from: 1150 },
+];
+
+/** На сколько съехало всё, что в макете лежит ниже первой и ниже второй вставки. */
+const HOME_SHIFT = 30;
+const BRANDS_SHIFT = 100;
+
+const HEIGHT = 1342 + 30 + 70 + 40;
+
 // Общие параметры однотипных слоёв; координаты и строки у каждого слоя свои.
 
-/** Заголовок группы: кегль 25 при шаге строк 17 — как в первой группе макета. */
+/**
+ * Заголовок группы: кегль 25, шаг строк 28. В макете шаг 17 — строки наезжали друг на друга,
+ * заказчик попросил развести.
+ */
+const TITLE_LEADING = 28;
 const titleProps = {
   as: "h2",
   size: 25,
-  leading: 17,
+  leading: TITLE_LEADING,
   font: "playfair",
   align: "center",
   color: INK,
 } as const;
 
-/** Скобка вокруг заголовка — декоративный слой «(». */
+/**
+ * Скобка вокруг заголовка — декоративный слой «(». Высотой она во весь заголовок, поэтому выросла
+ * вместе с шагом его строк: 87 у трёх строк, 58 у двух (в макете 53 и 35); от текста отодвинута
+ * на прежние 6.
+ */
 const parenProps = {
   as: "span",
   "aria-hidden": true,
@@ -32,11 +61,8 @@ const parenProps = {
 /** Правая скобка в макете — та же «(», отражённая по горизонтали. */
 const MIRROR = [-1, 0, 0, 1] as const;
 
-/**
- * Поясняющие строки под заголовком. В макете они ещё мелкие (10): набраны, как крупный текст
- * первого экрана, — 17 при шаге строк 15.
- */
-const noteProps = { size: 17, leading: 15, align: "center", color: INK } as const;
+/** Поясняющие строки под заголовком: 17 при шаге строк 22; от заголовка — 16. */
+const noteProps = { size: 17, leading: 22, align: "center", color: INK } as const;
 
 /**
  * Пары для сравнения. В макете нарисовано по одной паре на группу, и это пока заглушки:
@@ -59,76 +85,76 @@ const CLOTHES_PAIR: ComparePair = {
 const HOME_PAIR: ComparePair = {
   left: {
     art: showcaseItemArt["2a"],
-    box: { x: 57, y: 723, w: 131, h: 131 },
-    caption: { fig: "397:354", text: "zara", x: 33, y: 859, w: 175 },
+    box: { x: 57, y: 723 + HOME_SHIFT, w: 131, h: 131 },
+    caption: { fig: "397:354", text: "zara", x: 33, y: 859 + HOME_SHIFT, w: 175 },
   },
   right: {
     art: showcaseItemArt["2b"],
-    box: { x: 203, y: 723, w: 131, h: 131 },
-    caption: { fig: "397:355", text: "таобао", x: 180, y: 859, w: 175 },
+    box: { x: 203, y: 723 + HOME_SHIFT, w: 131, h: 131 },
+    caption: { fig: "397:355", text: "таобао", x: 180, y: 859 + HOME_SHIFT, w: 175 },
   },
 };
 
 const BRANDS_PAIR: ComparePair = {
   left: {
     art: showcaseItemArt["3a"],
-    box: { x: 58, y: 1180, w: 131, h: 131 },
-    caption: { fig: "397:362", text: "zara", x: 34, y: 1316, w: 175 },
+    box: { x: 58, y: 1180 + BRANDS_SHIFT, w: 131, h: 131 },
+    caption: { fig: "397:362", text: "zara", x: 34, y: 1316 + BRANDS_SHIFT, w: 175 },
   },
   right: {
     art: showcaseItemArt["3b"],
-    box: { x: 204, y: 1180, w: 131, h: 131 },
-    caption: { fig: "397:363", text: "таобао", x: 181, y: 1316, w: 175 },
+    box: { x: 204, y: 1180 + BRANDS_SHIFT, w: 131, h: 131 },
+    caption: { fig: "397:363", text: "таобао", x: 181, y: 1316 + BRANDS_SHIFT, w: 175 },
   },
 };
 
 /**
- * Крупный шрифт в макете есть только у первой группы. Вторая и третья набраны так же: заголовки 25,
- * подписи 17; скобки отодвинуты от ставших шире заголовков на прежний просвет, а заголовок второй
- * группы поднят на 10, чтобы под ним поместились три строки пояснения.
- *
  * Сравнение цен на бумажном фоне: три группы «заголовок в скобках + карусель пар zara / таобао».
  * Подложки групп и кольца-разделители запечены в арт блока; карточки товаров — отдельные
- * картинки, потому что листаются. Стрелки «›» — кнопки поверх арта, во всех группах одинаковые:
- * тонкие, как во второй и третьей группе макета.
+ * картинки, потому что листаются. Под каждой подложкой — точки карусели.
  */
 export function PaperShowcaseSection() {
   return (
-    <Block name="04-showcase" height={1342} art={showcaseArt}>
+    <Block
+      name="04-showcase"
+      id="prices"
+      height={HEIGHT}
+      art={showcaseArt}
+      artHeight={1342}
+      artInserts={INSERTS}
+    >
       {/* Одежда, обувь и аксессуары */}
-      <T {...parenProps} fig="397:373" x={40} y={116.5} size={53}>
+      <T {...parenProps} fig="397:373" x={32} y={118} size={87}>
         (
       </T>
-      <T {...titleProps} fig="382:202" x={74} y={101} w={242} h={51}>
+      <T {...titleProps} fig="382:202" x={74} y={86} w={242} h={3 * TITLE_LEADING}>
         вот такие наценки
         <br />
         на обычной одежде,
         <br />
         обуви и аксессуарах
       </T>
-      <T {...parenProps} fig="397:374" x={350} y={116.5} size={53} matrix={MIRROR}>
+      <T {...parenProps} fig="397:374" x={358} y={118} size={87} matrix={MIRROR}>
         (
       </T>
       <CompareCarousel
         label="Наценки на одежду, обувь и аксессуары"
         viewport={{ x: 29, y: 207, w: 333, h: 220 }}
-        // в макете здесь стрелка потолще (группа 662:17): тонкая стоит по её центру
-        arrow={{ x: 366.61, y: 304.62 }}
         pairs={[CLOTHES_PAIR, CLOTHES_PAIR]}
       />
 
       {/* Товары для дома */}
-      <T {...parenProps} fig="397:376" x={46} y={611.5} size={35}>
+      <T {...parenProps} fig="397:376" x={42.7} y={588} size={58}>
         (
       </T>
-      <T {...titleProps} fig="382:203" x={75} y={604} w={240} h={34}>
+      <T {...titleProps} fig="382:203" x={75} y={570} w={240} h={2 * TITLE_LEADING}>
         а такая разница
         <br />в товарах для дома
       </T>
-      <T {...parenProps} fig="397:375" x={345} y={611.5} size={35} matrix={MIRROR}>
+      <T {...parenProps} fig="397:375" x={347.3} y={588} size={58} matrix={MIRROR}>
         (
       </T>
-      <T {...noteProps} fig="382:211" x={20} y={646} w={350} h={45}>
+      <T {...noteProps} fig="382:211" x={20} y={642} w={350} h={66}>
         можно обустроить квартиру
         <br />
         как из pinterest, но в 3-5 раз
@@ -137,32 +163,30 @@ export function PaperShowcaseSection() {
       </T>
       <CompareCarousel
         label="Разница в товарах для дома"
-        viewport={{ x: 41, y: 704, w: 308, h: 180 }}
-        arrow={{ x: 358, y: 782 }}
+        viewport={{ x: 41, y: 704 + HOME_SHIFT, w: 308, h: 180 }}
         pairs={[HOME_PAIR, HOME_PAIR]}
       />
 
       {/* Бренды, по которым соскучились */}
-      <T {...parenProps} fig="397:379" x={18} y={1080.5} size={53}>
+      <T {...parenProps} fig="397:379" x={13.7} y={1145} size={87}>
         (
       </T>
-      <T {...titleProps} fig="382:265" x={45} y={1066} w={300} h={51}>
+      <T {...titleProps} fig="382:265" x={45} y={1113} w={300} h={3 * TITLE_LEADING}>
         еще можно заказывать
         <br />
         бренды, по которым
         <br />
         мы соскучились
       </T>
-      <T {...parenProps} fig="397:378" x={372} y={1080.5} size={53} matrix={MIRROR}>
+      <T {...parenProps} fig="397:378" x={376.3} y={1145} size={87} matrix={MIRROR}>
         (
       </T>
-      <T {...noteProps} fig="382:267" x={82} y={1125} w={226} h={15}>
+      <T {...noteProps} fig="382:267" x={82} y={1213} w={226} h={22}>
         с выгодой до 70%
       </T>
       <CompareCarousel
         label="Бренды, по которым мы соскучились"
-        viewport={{ x: 42, y: 1161, w: 308, h: 180 }}
-        arrow={{ x: 358, y: 1239 }}
+        viewport={{ x: 42, y: 1161 + BRANDS_SHIFT, w: 308, h: 180 }}
         pairs={[BRANDS_PAIR, BRANDS_PAIR]}
       />
     </Block>

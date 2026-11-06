@@ -1,7 +1,8 @@
 "use client";
 
-import { useId, useRef, type ReactNode } from "react";
-import { ArrowButton } from "../../ui/ArrowButton";
+import { useId, type ReactNode } from "react";
+import { useSlideRail } from "../../lib/useSlideRail";
+import { SlideDots } from "../../ui/SlideDots";
 import { boxStyle, u } from "../../ui/canvas";
 
 type Props = {
@@ -11,22 +12,25 @@ type Props = {
   width: number;
   /** поле слева и справа в окне, px макета: с ним первая карточка встаёт слева, последняя — справа */
   inset: number;
-  /** сдвиги ленты, в которых она останавливается: по одному на карточку, px макета, по возрастанию */
-  stops: number[];
+  /**
+   * Сдвиги ленты, в которых она останавливается, в долях ширины окна: по одному на карточку,
+   * по возрастанию (те же, что даёт scroll-snap). Массив — константа модуля.
+   */
+  stops: readonly number[];
   /** название ряда для скринридера */
   label: string;
-  /** цвет стрелки и рамки фокуса */
+  /** цвет точек и рамки фокуса */
   color: string;
-  /** левый верхний угол стрелки «›» */
-  arrow: { x: number; y: number };
+  /** середина ряда точек по горизонтали и их верхний край */
+  dots: { x: number; y: number };
   children: ReactNode;
 };
 
 /**
- * Лента карточек с горизонтальной прокруткой: листается пальцем, колесом, с клавиатуры и стрелкой «›».
- * Останавливается только на карточках (scroll-snap) — на полпути свайп её не бросает.
- * Стрелка одна и видна всегда: нажатие показывает следующую карточку, а с конца ленты возвращает
- * в начало. Положение берётся из самой прокрутки, поэтому стрелка и свайп не расходятся.
+ * Лента карточек с горизонтальной прокруткой: листается пальцем, колесом, с клавиатуры, точками
+ * под карточками и сама — раз в несколько секунд, по кругу. Останавливается только на карточках
+ * (scroll-snap) — на полпути свайп её не бросает. Положение берётся из самой прокрутки, поэтому
+ * точки и свайп не расходятся.
  */
 export function RoadmapRail({
   viewport,
@@ -35,37 +39,11 @@ export function RoadmapRail({
   stops,
   label,
   color,
-  arrow,
+  dots,
   children,
 }: Props) {
   const railId = useId();
-  const railRef = useRef<HTMLDivElement>(null);
-  /** куда лента едет сейчас: пока идёт плавная прокрутка, её положение ещё «в пути» */
-  const pending = useRef<{ index: number; until: number } | null>(null);
-
-  const showNext = () => {
-    const rail = railRef.current;
-    if (!rail || stops.length === 0) return;
-    // px экрана в одном px макета; ширина окна бывает дробной, поэтому берём рамку, а не clientWidth
-    const unit = rail.getBoundingClientRect().width / viewport.w;
-    const now = performance.now();
-    let current: number;
-    if (pending.current && now < pending.current.until) {
-      current = pending.current.index;
-    } else {
-      // ближайшая остановка: после свайпа лента стоит на одной из них
-      const position = rail.scrollLeft / unit;
-      current = stops.reduce(
-        (nearest, stop, index) =>
-          Math.abs(stop - position) < Math.abs(stops[nearest] - position) ? index : nearest,
-        0,
-      );
-    }
-    const next = (current + 1) % stops.length;
-    pending.current = { index: next, until: now + 600 };
-    const calm = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    rail.scrollTo({ left: stops[next] * unit, behavior: calm ? "auto" : "smooth" });
-  };
+  const { railRef, active, show } = useSlideRail({ count: stops.length, stops });
 
   return (
     <>
@@ -97,14 +75,14 @@ export function RoadmapRail({
           {children}
         </div>
       </div>
-      <ArrowButton
-        direction="next"
-        {...arrow}
+      <SlideDots
+        count={stops.length}
+        active={active}
+        {...dots}
         color={color}
-        data-roadmap-next
-        aria-label="Следующие темы курса"
-        aria-controls={railId}
-        onClick={showNext}
+        label={(index) => `${label}: карточка ${index + 1} из ${stops.length}`}
+        controls={railId}
+        onSelect={show}
       />
     </>
   );

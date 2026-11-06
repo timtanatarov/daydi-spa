@@ -64,6 +64,7 @@ export function WoodBenefitsSection() {
   return (
     <Block
       name="06-wood-benefits"
+      id="results"
       height={853}
       art={woodBenefitsWoodArt}
       artHeight={607}
