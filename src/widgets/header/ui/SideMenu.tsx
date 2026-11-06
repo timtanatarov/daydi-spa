@@ -6,18 +6,18 @@ import { BurgerMenuButton } from "@/shared/ui/burger-button";
 
 /** Разделы лендинга: id блоков страницы и подписи в меню. */
 const LINKS = [
-  { id: "about", label: "обо мне" },
-  { id: "steps", label: "как накручивают цены" },
-  { id: "prices", label: "сравнение цен" },
-  { id: "results", label: "что даст курс" },
-  { id: "roadmap", label: "дорожная карта курса" },
-  { id: "buy", label: "тарифы" },
+  { id: "about", label: "Обо мне" },
+  { id: "steps", label: "Как накручивают цены" },
+  { id: "prices", label: "Сравнение цен" },
+  { id: "results", label: "Что даст курс" },
+  { id: "roadmap", label: "Дорожная карта курса" },
+  { id: "buy", label: "Тарифы" },
 ] as const;
 
 /**
  * Кнопка-бургер и боковое меню. Меню — модальный <dialog>: браузер сам держит фокус внутри,
- * закрывает по Esc и возвращает фокус на кнопку. Панель выезжает справа; пункты прокручивают
- * страницу к разделу.
+ * закрывает по Esc и возвращает фокус на кнопку. Панель выезжает справа; в ней только разделы
+ * страницы — пункт прокручивает к разделу и закрывает меню.
  */
 export function SideMenu() {
   const menuId = useId();
@@ -31,14 +31,18 @@ export function SideMenu() {
   // состояние обновит событие close: оно приходит и при Esc
   const close = () => dialogRef.current?.close();
 
-  // пока меню открыто, страница под ним не прокручивается
+  // пока меню открыто, страница под ним не прокручивается, а края экрана телефона (зоны под
+  // строкой состояния и под панелью браузера, их красит фон страницы) — цвета панели меню:
+  // см. правило html[data-menu-open] в globals.css
   useEffect(() => {
     if (!open) return;
     const root = document.documentElement;
     const previous = root.style.overflow;
     root.style.overflow = "hidden";
+    root.setAttribute("data-menu-open", "");
     return () => {
       root.style.overflow = previous;
+      root.removeAttribute("data-menu-open");
     };
   }, [open]);
 
@@ -73,9 +77,9 @@ export function SideMenu() {
         onClick={(event) => {
           if (event.target === event.currentTarget) close();
         }}
-        className={`${inter.variable} ${playfairDisplay.variable} fixed inset-y-0 right-0 left-auto m-0 h-dvh max-h-none w-[min(20rem,86vw)] max-w-none overflow-y-auto overscroll-contain bg-[#F6F5F1] p-0 text-[#49301C] shadow-[-8px_0_32px_rgba(42,31,24,0.25)] transition-[translate] duration-300 ease-out backdrop:bg-[#2a1f18]/55 motion-reduce:transition-none starting:open:translate-x-full`}
+        className={`${inter.variable} ${playfairDisplay.variable} fixed inset-y-0 right-0 left-auto m-0 h-dvh max-h-none w-[min(20rem,86vw)] max-w-none overflow-y-auto overscroll-contain bg-[#F6F5F1] p-0 text-[#49301C] shadow-[-8px_0_32px_rgba(42,31,24,0.25)] transition-[translate] duration-300 ease-out backdrop:bg-black/60 motion-reduce:transition-none starting:open:translate-x-full`}
       >
-        <div className="flex min-h-full flex-col px-7 pt-4 pb-8">
+        <div className="px-7 pt-4 pb-8">
           <button
             type="button"
             aria-label="Закрыть меню"
@@ -95,14 +99,7 @@ export function SideMenu() {
             </svg>
           </button>
 
-          <p className="font-inter-course mt-3 text-[15px] font-medium">курс по Китаю</p>
-          <p className="font-playfair mt-1 text-[26px] leading-[1.12]">
-            Как заказывать
-            <br />
-            на Таобао и 1688
-          </p>
-
-          <nav aria-label="Разделы страницы" className="mt-7 border-t border-[#49301C]/25 pt-6">
+          <nav aria-label="Разделы страницы" className="mt-4">
             <ul role="list" className="flex flex-col gap-4">
               {LINKS.map(({ id, label }) => (
                 <li key={id}>
@@ -117,14 +114,6 @@ export function SideMenu() {
               ))}
             </ul>
           </nav>
-
-          <a
-            href="#buy"
-            onClick={(event) => go(event, "buy")}
-            className="font-inter-course mt-auto flex h-[52px] items-center justify-center rounded-full bg-[#531608] text-[20px] font-extrabold text-[#EFEADE] outline-offset-4 outline-[#531608] focus-visible:outline-2"
-          >
-            купить
-          </a>
         </div>
       </dialog>
     </>

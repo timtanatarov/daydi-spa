@@ -23,6 +23,12 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Открыто боковое меню: фон страницы — цвет его панели. На iPhone этим цветом Safari заливает зоны
+   под строкой состояния и под своей панелью, поэтому панель меню выглядит во всю высоту экрана. */
+html[data-menu-open] body {
+  background-color: #f6f5f1 !important;
+}
+
 @utility font-playfair {
   font-family: var(--font-course-playfair);
 }
