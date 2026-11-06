@@ -20,7 +20,7 @@ export function AboutIndiraSection() {
           y={86}
           w={139}
           h={30}
-          size={30}
+          size={36}
           leading={30}
           font="playfair"
           italic
@@ -37,7 +37,7 @@ export function AboutIndiraSection() {
           y={116}
           w={154}
           h={30}
-          size={30}
+          size={36}
           leading={30}
           font="playfair"
           italic
@@ -54,7 +54,7 @@ export function AboutIndiraSection() {
         y={219}
         w={287}
         h={56}
-        size={9.5}
+        size={17}
         leading={14}
         weight={500}
         align="center"
@@ -80,7 +80,7 @@ export function AboutIndiraSection() {
           w={196.8}
           h={45}
           rotate={2.5}
-          size={9}
+          size={17}
           leading={15}
           color="#49301C"
         >
@@ -99,7 +99,7 @@ export function AboutIndiraSection() {
           w={243.41}
           h={45}
           rotate={-2.5}
-          size={9}
+          size={17}
           leading={15}
           color="#49301C"
         >
@@ -118,7 +118,7 @@ export function AboutIndiraSection() {
           w={239.62}
           h={30}
           rotate={2.5}
-          size={9}
+          size={17}
           leading={15}
           color="#49301C"
         >
@@ -134,7 +134,7 @@ export function AboutIndiraSection() {
           w={222.47}
           h={30}
           rotate={-2.5}
-          size={9}
+          size={17}
           leading={15}
           color="#49301C"
         >

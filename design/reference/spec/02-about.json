@@ -16,37 +16,35 @@
    "name": "Привет,",
    "characters": "Привет,",
    "box": {
-    "x": 92,
-    "y": 86,
-    "w": 139,
-    "h": 30
+    "x": 92.0,
+    "y": 86.0,
+    "w": 139.0,
+    "h": 30.0
    },
    "rotate": 0,
    "bounds": {
-    "x": 92,
-    "y": 86,
-    "width": 139,
-    "height": 30
+    "x": 92.0,
+    "y": 86.0,
+    "width": 139.0,
+    "height": 30.0
    },
    "font": {
     "family": "Playfair Display",
     "weight": 400,
     "italic": true
    },
-   "size": 30,
-   "leading": 30,
+   "size": 36,
+   "leading": 30.0,
    "align": "center",
    "color": "#49301C",
    "lines": [
     {
      "text": "Привет,",
-     "x": 12.08,
-     "baselineY": 27.46,
-     "width": 114.84
+     "x": 0.59,
+     "baselineY": 29.96,
+     "width": 137.81
     }
-   ],
-   "mockupSize": 36,
-   "sizeSource": "сайт"
+   ]
   },
   {
    "fig": "352:184",
@@ -55,37 +53,35 @@
    "name": "я Индира",
    "characters": "я Индира",
    "box": {
-    "x": 145,
-    "y": 116,
-    "w": 154,
-    "h": 30
+    "x": 145.0,
+    "y": 116.0,
+    "w": 154.0,
+    "h": 30.0
    },
    "rotate": 0,
    "bounds": {
-    "x": 145,
-    "y": 116,
-    "width": 154,
-    "height": 30
+    "x": 145.0,
+    "y": 116.0,
+    "width": 154.0,
+    "height": 30.0
    },
    "font": {
     "family": "Playfair Display",
     "weight": 400,
     "italic": true
    },
-   "size": 30,
-   "leading": 30,
+   "size": 36,
+   "leading": 30.0,
    "align": "center",
    "color": "#49301C",
    "lines": [
     {
      "text": "я Индира",
-     "x": 12.9,
-     "baselineY": 27.46,
-     "width": 128.2
+     "x": 0.08,
+     "baselineY": 29.96,
+     "width": 153.84
     }
-   ],
-   "mockupSize": 36,
-   "sizeSource": "сайт"
+   ]
   },
   {
    "fig": "352:186",
@@ -94,55 +90,53 @@
    "name": "уже больше 4 лет я заказываю себе одежду, аксессуары и декор",
    "characters": "уже больше 4 лет я заказываю себе одежду, аксессуары\nи декор для дома с китайских маркетплейсов таобао и 1688 🇨🇳",
    "box": {
-    "x": 52,
-    "y": 219,
-    "w": 287,
-    "h": 56
+    "x": 52.0,
+    "y": 219.0,
+    "w": 287.0,
+    "h": 56.0
    },
    "rotate": 0,
    "bounds": {
-    "x": 52,
-    "y": 219,
-    "width": 287,
-    "height": 56
+    "x": 52.0,
+    "y": 219.0,
+    "width": 287.0,
+    "height": 56.0
    },
    "font": {
     "family": "Inter",
     "weight": 500,
     "italic": false
    },
-   "size": 9.5,
-   "leading": 14,
+   "size": 17,
+   "leading": 14.0,
    "align": "center",
    "color": "#49301C",
    "lines": [
     {
      "text": "уже больше 4 лет я заказываю",
-     "x": 70.2,
-     "baselineY": 10.45,
-     "width": 146.61
+     "x": 12.32,
+     "baselineY": 13.18,
+     "width": 262.35
     },
     {
      "text": "себе одежду, аксессуары",
-     "x": 82.34,
-     "baselineY": 24.45,
-     "width": 122.32
+     "x": 34.05,
+     "baselineY": 27.18,
+     "width": 218.89
     },
     {
      "text": "и декор для дома с китайских",
-     "x": 72.64,
-     "baselineY": 38.45,
-     "width": 141.71
+     "x": 16.71,
+     "baselineY": 41.18,
+     "width": 253.59
     },
     {
      "text": "маркетплейсов таобао и 1688 🇨🇳",
-     "x": 66.64,
-     "baselineY": 52.45,
-     "width": 153.73
+     "x": 5.96,
+     "baselineY": 55.18,
+     "width": 275.09
     }
-   ],
-   "mockupSize": 17,
-   "sizeSource": "сайт"
+   ]
   },
   {
    "fig": "382:205",
@@ -193,7 +187,7 @@
     "x": 132.59,
     "y": 613.36,
     "w": 196.8,
-    "h": 45
+    "h": 45.0
    },
    "rotate": 2.5,
    "bounds": {
@@ -207,32 +201,30 @@
     "weight": 400,
     "italic": false
    },
-   "size": 9,
-   "leading": 15,
+   "size": 17,
+   "leading": 15.0,
    "align": "left",
    "color": "#49301C",
    "lines": [
     {
      "text": "экономлю 20-40 тысяч",
-     "x": 0,
-     "baselineY": 10.78,
-     "width": 103.33
+     "x": 0.0,
+     "baselineY": 13.68,
+     "width": 195.19
     },
     {
      "text": "рублей ежемесячно",
-     "x": 0,
-     "baselineY": 25.78,
-     "width": 89.51
+     "x": 0.0,
+     "baselineY": 28.68,
+     "width": 169.07
     },
     {
      "text": "благодаря Китаю",
-     "x": 0,
-     "baselineY": 40.78,
-     "width": 76.43
+     "x": 0.0,
+     "baselineY": 43.68,
+     "width": 144.37
     }
-   ],
-   "mockupSize": 17,
-   "sizeSource": "сайт (origin/master)"
+   ]
   },
   {
    "fig": "352:188",
@@ -244,7 +236,7 @@
     "x": 72.01,
     "y": 692.7,
     "w": 243.41,
-    "h": 45
+    "h": 45.0
    },
    "rotate": -2.5,
    "bounds": {
@@ -258,32 +250,30 @@
     "weight": 400,
     "italic": false
    },
-   "size": 9,
-   "leading": 15,
+   "size": 17,
+   "leading": 15.0,
    "align": "left",
    "color": "#49301C",
    "lines": [
     {
      "text": "собираю стильный гардероб",
-     "x": 0,
-     "baselineY": 10.78,
-     "width": 128.2
+     "x": 0.0,
+     "baselineY": 13.68,
+     "width": 242.17
     },
     {
      "text": "как у инфлюенсеров,",
-     "x": 0,
-     "baselineY": 25.78,
-     "width": 93.34
+     "x": 0.0,
+     "baselineY": 28.68,
+     "width": 176.31
     },
     {
      "text": "но до 10 раз дешевле",
-     "x": 0,
-     "baselineY": 40.78,
-     "width": 95.57
+     "x": 0.0,
+     "baselineY": 43.68,
+     "width": 180.53
     }
-   ],
-   "mockupSize": 17,
-   "sizeSource": "сайт (origin/master)"
+   ]
   },
   {
    "fig": "352:189",
@@ -295,7 +285,7 @@
     "x": 130.98,
     "y": 762.72,
     "w": 239.62,
-    "h": 30
+    "h": 30.0
    },
    "rotate": 2.5,
    "bounds": {
@@ -309,26 +299,24 @@
     "weight": 400,
     "italic": false
    },
-   "size": 9,
-   "leading": 15,
+   "size": 17,
+   "leading": 15.0,
    "align": "left",
    "color": "#49301C",
    "lines": [
     {
      "text": "делюсь честными обзорами",
-     "x": 0,
-     "baselineY": 10.78,
-     "width": 125.96
+     "x": 0.0,
+     "baselineY": 13.68,
+     "width": 237.93
     },
     {
      "text": "и распаковками в блоге",
-     "x": 0,
-     "baselineY": 25.78,
-     "width": 106.09
+     "x": 0.0,
+     "baselineY": 28.68,
+     "width": 200.4
     }
-   ],
-   "mockupSize": 17,
-   "sizeSource": "сайт (origin/master)"
+   ]
   },
   {
    "fig": "352:190",
@@ -340,7 +328,7 @@
     "x": 75.89,
     "y": 821.38,
     "w": 222.47,
-    "h": 30
+    "h": 30.0
    },
    "rotate": -2.5,
    "bounds": {
@@ -354,26 +342,24 @@
     "weight": 400,
     "italic": false
    },
-   "size": 9,
-   "leading": 15,
+   "size": 17,
+   "leading": 15.0,
    "align": "left",
    "color": "#49301C",
    "lines": [
     {
      "text": "обучаю других выгодному",
-     "x": 0,
-     "baselineY": 10.78,
-     "width": 117.31
+     "x": 0.0,
+     "baselineY": 13.68,
+     "width": 221.58
     },
     {
      "text": "шопингу на Таобао и 1688",
-     "x": 0,
-     "baselineY": 25.78,
-     "width": 115.7
+     "x": 0.0,
+     "baselineY": 28.68,
+     "width": 218.54
     }
-   ],
-   "mockupSize": 17,
-   "sizeSource": "сайт (origin/master)"
+   ]
   }
  ],
  "layers": [

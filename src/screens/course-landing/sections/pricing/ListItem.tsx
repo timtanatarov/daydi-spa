@@ -1,17 +1,19 @@
-import { Bullet } from "../../ui/canvas";
+import { Bullet, u } from "../../ui/canvas";
 
 type Props = {
-  /** строки пункта — ровно как в макете */
+  /** строки пункта: переносы заданы явно */
   lines: readonly string[];
+  /** отступ от предыдущего пункта, px макета */
+  gapBefore?: number;
 };
 
 /**
- * Пункт списка тарифа. Каждая строка макета — отдельный блок:
+ * Пункт списка тарифа. Каждая строка — отдельный блок:
  * маркер стоит у первой, у строк-продолжений — пустой отступ той же ширины.
  */
-export function ListItem({ lines }: Props) {
+export function ListItem({ lines, gapBefore = 0 }: Props) {
   return (
-    <li>
+    <li style={gapBefore ? { marginTop: u(gapBefore) } : undefined}>
       {lines.map((line, index) => (
         <span key={line} className="block">
           <Bullet empty={index > 0} />

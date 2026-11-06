@@ -1,16 +1,21 @@
 "use client";
 
-import { Fragment, useId, useState } from "react";
-import { T, boxStyle, type Box } from "../../ui/canvas";
+import { Fragment, useId, useRef, useState, type PointerEvent } from "react";
+import { ArrowButton } from "../../ui/ArrowButton";
+import { T, boxStyle } from "../../ui/canvas";
 
 type WoodStep = 1 | 2 | 3;
 
 const STEP_COUNT = 3;
 
-/** Строки шагов — как в макете: шаги 1 и 2 — слои 382:208 и 382:209, шаг 3 — видимый слой 382:214. */
+/**
+ * Строки шагов. Шаг 3 — видимый слой макета 382:214. Шаги 1 и 2 в макете лежат скрытыми слоями
+ * (382:208 и 382:209) с переносами под мелкий шрифт: крупным (17) они вылезают за край билета,
+ * поэтому разбиты короче.
+ */
 const STEP_LINES: Record<WoodStep, readonly string[]> = {
-  1: ["сначала товар производится", "на китайской фабрике"],
-  2: ["потом товар выставляют", "на китайских маркетплейсах", "(таобао и 1688)"],
+  1: ["сначала товар", "производится", "на китайской фабрике"],
+  2: ["потом товар выставляют", "на китайских", "маркетплейсах", "(таобао и 1688)"],
   3: [
     "затем его выкупают",
     "российские селлеры",
@@ -35,56 +40,29 @@ const DIGIT = { x: 58, y: 282, w: 26, h: 20, lineWidth: 28.12 };
  */
 const DIGIT_OPSZ = '"opsz" 12';
 
-/** Стрелки в арте: группы линий 662:10 (слева) и 662:7 (справа). */
-const ARROW_PREV = { x: 15, y: 288, w: 11.8, h: 23.24 };
-const ARROW_NEXT = { x: 362.98, y: 289.02, w: 11.8, h: 23.24 };
+/**
+ * Стрелки — тонкие, как в сравнениях (в макете здесь нарисованы потолще: группы 662:10 и 662:7);
+ * стоят по центрам стрелок макета.
+ */
+const ARROW_PREV = { x: 15.61, y: 287.62 };
+const ARROW_NEXT = { x: 363.59, y: 288.64 };
+const ARROW_COLOR = "#FEFBEF";
 
-/** Сторона области нажатия: квадрат с центром в центре стрелки. */
-const HIT = 44;
+/** Полоса билета во всю ширину блока: по ней шаги листаются пальцем. */
+const SWIPE_ZONE = { x: 0, y: 231, w: 390, h: 146 };
 
-const hitBox = (arrow: Box): Box => ({
-  x: arrow.x + arrow.w / 2 - HIT / 2,
-  y: arrow.y + arrow.h / 2 - HIT / 2,
-  w: HIT,
-  h: HIT,
-});
+/** Свайп — сдвиг пальца от 30px по горизонтали, заметно больший, чем по вертикали. */
+const SWIPE_MIN = 30;
+const SWIPE_RATIO = 1.5;
 
 /** Появление нового шага: не дольше 200 мс, при prefers-reduced-motion — без анимации. */
 const FADE =
   "transition-opacity duration-150 ease-out starting:opacity-0 motion-reduce:transition-none";
 
-type ArrowProps = {
-  arrow: Box;
-  label: string;
-  controls: string;
-  onClick: () => void;
-  /** атрибут, по которому кнопку находит проверка клика */
-  marker: "data-step-prev" | "data-step-next";
-};
-
-/** Прозрачная кнопка поверх стрелки из арта; рамка фокуса обводит саму стрелку. */
-function ArrowButton({ arrow, label, controls, onClick, marker }: ArrowProps) {
-  const hit = hitBox(arrow);
-  return (
-    <button
-      type="button"
-      {...{ [marker]: "" }}
-      aria-label={label}
-      aria-controls={controls}
-      onClick={onClick}
-      className="group cursor-pointer touch-manipulation outline-none [-webkit-tap-highlight-color:transparent]"
-      style={boxStyle(hit)}
-    >
-      <span
-        aria-hidden
-        className="rounded-[calc(var(--u)*4)] outline-offset-[calc(var(--u)*4)] outline-[#FEFBEF] group-focus-visible:outline-[length:calc(var(--u)*2)]"
-        style={boxStyle({ ...arrow, origin: hit })}
-      />
-    </button>
-  );
-}
-
-/** Билет-слайдер: цифра и текст шага, стрелки листают по кругу 1 → 2 → 3 → 1. */
+/**
+ * Билет-слайдер: цифра и текст шага. Листается стрелками и пальцем (влево — дальше, вправо — назад),
+ * по кругу 1 → 2 → 3 → 1.
+ */
 export function WoodStepsSlider() {
   const contentId = useId();
   const [step, setStep] = useState<WoodStep>(1);
@@ -96,21 +74,67 @@ export function WoodStepsSlider() {
     setSwitched(true);
   };
 
+  /** где палец коснулся полосы билета */
+  const swipeStart = useRef<{ id: number; x: number; y: number } | null>(null);
+
+  const onPointerDown = (event: PointerEvent<HTMLDivElement>) => {
+    // свайп — жест одним пальцем. Мышью и пером шаги листают стрелки (протягивание выделяет текст),
+    // а второй палец — это уже масштабирование страницы
+    if (event.pointerType !== "touch" || !event.isPrimary) {
+      swipeStart.current = null;
+      return;
+    }
+    swipeStart.current = { id: event.pointerId, x: event.clientX, y: event.clientY };
+  };
+
+  const onPointerUp = (event: PointerEvent<HTMLDivElement>) => {
+    const start = swipeStart.current;
+    if (!start || start.id !== event.pointerId) return;
+    swipeStart.current = null;
+    const dx = event.clientX - start.x;
+    const dy = event.clientY - start.y;
+    if (Math.abs(dx) < SWIPE_MIN || Math.abs(dx) < Math.abs(dy) * SWIPE_RATIO) return;
+    // палец не листал, а выделял текст
+    if (document.getSelection()?.isCollapsed === false) return;
+    go(dx < 0 ? 1 : -1);
+  };
+
+  // жест забрал браузер (страница поехала по вертикали) — это не свайп
+  const onPointerCancel = () => {
+    swipeStart.current = null;
+  };
+
   const lines = STEP_LINES[step];
   // в макете нарисован третий шаг: только он сверяется со слоями по data-fig
   const isMockupStep = step === 3;
   const fade = switched ? FADE : undefined;
 
   return (
-    <>
+    // вертикальная прокрутка и масштабирование щипком остаются за браузером, горизонтальный жест — наш
+    <div
+      data-step-swipe
+      className="touch-pan-y touch-pinch-zoom"
+      style={boxStyle(SWIPE_ZONE)}
+      onPointerDown={onPointerDown}
+      onPointerUp={onPointerUp}
+      onPointerCancel={onPointerCancel}
+    >
       <ArrowButton
-        arrow={ARROW_PREV}
-        label="Предыдущий шаг"
-        controls={contentId}
+        direction="prev"
+        {...ARROW_PREV}
+        origin={SWIPE_ZONE}
+        color={ARROW_COLOR}
+        data-step-prev
+        aria-label="Предыдущий шаг"
+        aria-controls={contentId}
         onClick={() => go(-1)}
-        marker="data-step-prev"
       />
-      <div id={contentId} aria-live="polite" aria-atomic="true" style={boxStyle(CONTENT)}>
+      <div
+        id={contentId}
+        aria-live="polite"
+        aria-atomic="true"
+        style={boxStyle({ ...CONTENT, origin: SWIPE_ZONE })}
+      >
         <span className="sr-only">
           Шаг {step} из {STEP_COUNT}:
         </span>
@@ -143,7 +167,7 @@ export function WoodStepsSlider() {
           y={TEXT.y + ((TEXT.maxLines - lines.length) * TEXT.leading) / 2}
           w={TEXT.w}
           h={lines.length * TEXT.leading}
-          size={10}
+          size={17}
           leading={TEXT.leading}
           color="#49301C"
           tracking={-0.02}
@@ -158,12 +182,15 @@ export function WoodStepsSlider() {
         </T>
       </div>
       <ArrowButton
-        arrow={ARROW_NEXT}
-        label="Следующий шаг"
-        controls={contentId}
+        direction="next"
+        {...ARROW_NEXT}
+        origin={SWIPE_ZONE}
+        color={ARROW_COLOR}
+        data-step-next
+        aria-label="Следующий шаг"
+        aria-controls={contentId}
         onClick={() => go(1)}
-        marker="data-step-next"
       />
-    </>
+    </div>
   );
 }

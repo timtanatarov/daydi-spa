@@ -1,74 +1,188 @@
 import { roadmapArt, roadmapCardClipArt, roadmapCardSealArt } from "../lib/blockArt";
-import { Block, Pic, T, boxStyle, u, type BlockArt } from "../ui/canvas";
+import { Block, Pic, T, boxStyle, type BlockArt } from "../ui/canvas";
+import { RoadmapRail } from "./roadmap/RoadmapRail";
 
 const INK = "#49301C";
 
-/** Окно горизонтальной прокрутки: на всю ширину блока, по высоте — карточки целиком. */
-const RAIL = { x: 0, y: 143, w: 390, h: 273 };
-
-/** Лист с зажимом (слой 396:338) и лист с печатью (слой 396:335) — как стоят в макете. */
-const CLIP_CARD = { x: 25, y: 143, w: 211, h: 273 };
-const SEAL_CARD = { x: 174, y: 178, w: 196, h: 206 };
+type Rect = { x: number; y: number; w: number; h: number };
 
 /**
- * Третья карточка в макете не нарисована: за правым краем фрейма лежат только её тексты.
- * По ним она стоит на 365 правее первой; лист — такой же, как у первой.
+ * Макета блока под крупный шрифт нет — он собран здесь из тех же картинок. Карточки увеличены так,
+ * чтобы текст кеглем 17 лежал на листе с полями не меньше 10; обе картинки — в одно и то же число раз.
+ * Всё, что ниже, считается от этого числа: рамки карточек, лента, стрелка и высота блока.
  */
-const THIRD_SHIFT = 365;
+const SCALE = 1.45;
 
-/** Сам лист в картинке карточки с зажимом уже её рамки: справа прозрачный запас. */
-const CLIP_PAPER = { left: 1.5, right: 143 };
-
-/** Ширина ленты: правый край листа третьей карточки плюс такое же поле, как слева от первой. */
-const RAIL_WIDTH = CLIP_CARD.x + THIRD_SHIFT + CLIP_PAPER.right + (CLIP_CARD.x + CLIP_PAPER.left);
-
-type CardText = { fig?: string; x: number; y: number; w: number; lines: string[] };
-
-type Card = {
+/** Картинка карточки в размерах макета, до увеличения. */
+type Sheet = {
   art: BlockArt;
-  box: { x: number; y: number; w: number; h: number };
+  /** рамка картинки */
+  w: number;
+  h: number;
+  /** сам лист внутри рамки: вокруг него прозрачный запас */
+  paper: Rect;
+  /** верх зажима или печати */
+  top: number;
+  /** их нижний край: ниже него лист свободен под текст */
+  clear: number;
+};
+
+/** Лист с зажимом (слой 396:338) и лист с печатью (слой 396:335). */
+const CLIP_SHEET: Sheet = {
+  art: roadmapCardClipArt,
+  w: 211,
+  h: 273,
+  paper: { x: 1.5, y: 72, w: 141.5, h: 140 },
+  top: 32,
+  clear: 78,
+};
+const SEAL_SHEET: Sheet = {
+  art: roadmapCardSealArt,
+  w: 196,
+  h: 206,
+  paper: { x: 13, y: 44.5, w: 180.5, h: 127.5 },
+  top: 32.5,
+  clear: 72.5,
+};
+
+/** Поле слева от листа первой карточки и справа от листа последней — как в макете. */
+const EDGE = 26.5;
+/** Просветы между листами в макете (первый — второй, второй — третий): растут вместе с карточками. */
+const GAPS = [19, 24];
+/** Линия, на которой стоят середины всех листов. */
+const PAPER_CENTER_Y = 336.5;
+
+/** Заголовок карточки (Playfair), её текст (Inter) и просвет между ними. */
+const TITLE = { size: 17, leading: 18 };
+const TEXT = { size: 17, leading: 20 };
+const TITLE_GAP = 7;
+
+type CardText = { fig?: string; lines: string[] };
+
+type CardContent = {
+  sheet: Sheet;
   title: CardText;
   text: CardText;
   /** первая карточка в макете лежит поверх второй */
   onTop?: boolean;
 };
 
-const CARDS: Card[] = [
+/** Слова — как в макете; на строки текст разбит заново, под ширину листа. */
+const CONTENT: CardContent[] = [
   {
-    art: roadmapCardClipArt,
-    box: CLIP_CARD,
-    title: { fig: "382:281", x: 25, y: 246, w: 149, lines: ["знакомство", "с маркетплейсами"] },
-    text: { fig: "382:286", x: 42, y: 277, w: 115, lines: ["регистрация без риска", "блокировки"] },
+    sheet: CLIP_SHEET,
+    title: { fig: "382:281", lines: ["знакомство", "с маркетплейсами"] },
+    text: { fig: "382:286", lines: ["регистрация", "без риска", "блокировки"] },
     onTop: true,
   },
   {
-    art: roadmapCardSealArt,
-    box: SEAL_CARD,
-    title: { fig: "382:283", x: 202, y: 259, w: 149, lines: ["поиск товаров"] },
+    sheet: SEAL_SHEET,
+    title: { fig: "382:283", lines: ["поиск товаров"] },
     text: {
       fig: "382:291",
-      x: 204,
-      y: 277,
-      w: 145,
       lines: [
-        "как находить любые товары,",
-        "бренды в разы дешевле, чем",
-        "у нас? все про экспортные",
-        "товары",
+        "как находить любые",
+        "товары, бренды в разы",
+        "дешевле, чем у нас?",
+        "все про экспортные товары",
       ],
     },
   },
   {
-    art: roadmapCardClipArt,
-    box: { ...CLIP_CARD, x: CLIP_CARD.x + THIRD_SHIFT },
-    // тексты — слои 382:285 и 382:293 макета; по вертикали стоят по центру, как у первой карточки
-    title: { x: 390, y: 252, w: 149, lines: ["рейтинг продавцов"] },
-    text: { x: 397, y: 271, w: 136, lines: ["как выбрать хороший", "товар?"] },
+    // третья карточка в макете не нарисована: за правым краем фрейма лежат только её тексты
+    // (слои 382:285 и 382:293); лист — такой же, как у первой
+    sheet: CLIP_SHEET,
+    title: { lines: ["рейтинг продавцов"] },
+    text: { lines: ["как выбрать", "хороший товар?"] },
   },
 ];
 
+/** Где лента останавливается на карточке: первая встаёт у левого поля, последняя — у правого. */
+type Snap = "start" | "center" | "end";
+
+const SNAP_CLASS: Record<Snap, string> = {
+  start: "snap-start",
+  center: "snap-center",
+  end: "snap-end",
+};
+
+const round = (value: number) => Math.round(value * 100) / 100;
+
+/** Левый край листа карточки: поле, затем листы и просветы между ними. */
+const paperX = (index: number): number =>
+  index === 0
+    ? EDGE
+    : paperX(index - 1) + (CONTENT[index - 1].sheet.paper.w + GAPS[index - 1]) * SCALE;
+
+const CARDS = CONTENT.map((card, index) => {
+  const { sheet } = card;
+  const paper: Rect = {
+    x: round(paperX(index)),
+    y: round(PAPER_CENTER_Y - (sheet.paper.h * SCALE) / 2),
+    w: round(sheet.paper.w * SCALE),
+    h: round(sheet.paper.h * SCALE),
+  };
+  // рамка всей картинки: лист стоит в ней так же, как в макете
+  const box: Rect = {
+    x: round(paper.x - sheet.paper.x * SCALE),
+    y: round(paper.y - sheet.paper.y * SCALE),
+    w: round(sheet.w * SCALE),
+    h: round(sheet.h * SCALE),
+  };
+  const titleH = card.title.lines.length * TITLE.leading;
+  const textH = card.text.lines.length * TEXT.leading;
+  // текст — по центру свободной части листа: от зажима или печати до нижнего края
+  const free = { top: box.y + sheet.clear * SCALE, bottom: paper.y + paper.h };
+  const titleY = round((free.top + free.bottom - (titleH + TITLE_GAP + textH)) / 2);
+  const snap: Snap = index === 0 ? "start" : index === CONTENT.length - 1 ? "end" : "center";
+  return {
+    ...card,
+    paper,
+    box,
+    titleY,
+    titleH,
+    textY: titleY + titleH + TITLE_GAP,
+    textH,
+    snap,
+  };
+});
+
+/** Верх самого высокого зажима и низ самого низкого листа. */
+const CARDS_TOP = Math.min(...CARDS.map(({ box, sheet }) => box.y + sheet.top * SCALE));
+const CARDS_BOTTOM = Math.max(...CARDS.map(({ paper }) => paper.y + paper.h));
+
+/** Окно горизонтальной прокрутки: на всю ширину блока, по высоте — карточки с запасом в 10. */
+const RAIL: Rect = {
+  x: 0,
+  y: round(CARDS_TOP - 10),
+  w: 390,
+  h: round(CARDS_BOTTOM - CARDS_TOP + 20),
+};
+
+/** Ширина ленты: правый край листа последней карточки плюс такое же поле, как слева от первой. */
+const LAST_PAPER = CARDS[CARDS.length - 1].paper;
+const RAIL_WIDTH = round(LAST_PAPER.x + LAST_PAPER.w + EDGE);
+
+/** Сдвиги ленты, в которых она останавливается, — по одному на карточку (те же, что даёт scroll-snap). */
+const STOPS = CARDS.map(({ paper, snap }) =>
+  round(
+    snap === "start"
+      ? paper.x - EDGE
+      : snap === "end"
+        ? paper.x + paper.w + EDGE - RAIL.w
+        : paper.x + paper.w / 2 - RAIL.w / 2,
+  ),
+);
+
 /**
- * Строки текстового слоя, как в макете. Пробел перед <br /> на раскладку не влияет (в конце строки
+ * Стрелка «›» (в макете её нет) — одна, по центру блока под карточками:
+ * 20 от нижнего листа до стрелки, 24 — сама стрелка, 28 — от неё до края блока.
+ */
+const ARROW = { x: 189.71, y: CARDS_BOTTOM + 20 };
+const HEIGHT = Math.ceil(ARROW.y + 24 + 28);
+
+/**
+ * Строки текстового слоя. Пробел перед <br /> на раскладку не влияет (в конце строки
  * он схлопывается), но не даёт словам соседних строк склеиться в textContent.
  */
 function lines(items: string[]) {
@@ -77,18 +191,21 @@ function lines(items: string[]) {
   );
 }
 
-/** Дорожная карта курса: заголовок и ряд карточек тем, который листается по горизонтали. */
+/**
+ * Дорожная карта курса: заголовок, ряд карточек тем, который листается пальцем,
+ * и стрелка «›» под ним. Ниже высоты арта (456) фон продолжает та же бумага.
+ */
 export function RoadmapSection() {
   return (
-    <Block name="07-roadmap" height={456} art={roadmapArt}>
+    <Block name="07-roadmap" height={HEIGHT} art={roadmapArt} artHeight={456}>
       <T
         fig="382:298"
-        x={82}
-        y={107}
-        w={226}
-        h={10}
-        size={10}
-        leading={10}
+        x={42.5}
+        y={96}
+        w={305}
+        h={20}
+        size={17}
+        leading={20}
         align="center"
         color={INK}
       >
@@ -110,61 +227,56 @@ export function RoadmapSection() {
         дорожная карта курса
       </T>
 
-      {/* tabIndex: прокручиваемую область должно быть можно листать с клавиатуры */}
-      <div
-        role="group"
-        aria-label="Темы курса"
-        tabIndex={0}
-        className="scrollbar-hide overflow-x-auto overflow-y-hidden overscroll-x-contain outline-none focus-visible:outline-solid"
-        style={{
-          ...boxStyle(RAIL),
-          outlineColor: INK,
-          outlineWidth: u(2),
-          outlineOffset: u(-4),
-        }}
+      <RoadmapRail
+        viewport={RAIL}
+        width={RAIL_WIDTH}
+        inset={EDGE}
+        stops={STOPS}
+        label="Темы курса"
+        color={INK}
+        arrow={ARROW}
       >
-        <div className="relative h-full overflow-hidden" style={{ width: u(RAIL_WIDTH) }}>
-          {CARDS.map((card) => (
-            <article
-              key={card.title.lines.join(" ")}
-              className={card.onTop ? "z-10" : undefined}
-              style={boxStyle({ ...card.box, origin: RAIL })}
+        {CARDS.map((card) => (
+          // рамка карточки — сам лист: по нему лента и останавливается; картинка выходит за него
+          <article
+            key={card.title.lines.join(" ")}
+            className={[SNAP_CLASS[card.snap], card.onTop && "z-10"].filter(Boolean).join(" ")}
+            style={boxStyle({ ...card.paper, origin: RAIL })}
+          >
+            <Pic art={card.sheet.art} {...card.box} origin={card.paper} eager />
+            <T
+              as="h3"
+              fig={card.title.fig}
+              origin={card.paper}
+              x={card.paper.x}
+              y={card.titleY}
+              w={card.paper.w}
+              h={card.titleH}
+              size={TITLE.size}
+              leading={TITLE.leading}
+              font="playfair"
+              align="center"
+              color={INK}
             >
-              <Pic art={card.art} {...card.box} origin={card.box} eager />
-              <T
-                as="h3"
-                fig={card.title.fig}
-                origin={card.box}
-                x={card.title.x}
-                y={card.title.y}
-                w={card.title.w}
-                h={card.title.lines.length * 13}
-                size={13}
-                leading={13}
-                font="playfair"
-                align="center"
-                color={INK}
-              >
-                {lines(card.title.lines)}
-              </T>
-              <T
-                fig={card.text.fig}
-                origin={card.box}
-                x={card.text.x}
-                y={card.text.y}
-                w={card.text.w}
-                h={card.text.lines.length * 13}
-                size={10}
-                leading={13}
-                align="center"
-                color={INK}
-              >
-                {lines(card.text.lines)}
-              </T>
-            </article>
-          ))}
-        </div>
-      </div>
+              {lines(card.title.lines)}
+            </T>
+            <T
+              fig={card.text.fig}
+              origin={card.paper}
+              x={card.paper.x}
+              y={card.textY}
+              w={card.paper.w}
+              h={card.textH}
+              size={TEXT.size}
+              leading={TEXT.leading}
+              align="center"
+              color={INK}
+            >
+              {lines(card.text.lines)}
+            </T>
+          </article>
+        ))}
+      </RoadmapRail>
     </Block>
   );
 }

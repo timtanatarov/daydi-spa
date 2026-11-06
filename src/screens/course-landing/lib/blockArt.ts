@@ -10,12 +10,14 @@ import showcase2x from "@/assets/course-landing/art/04-showcase@2x.webp";
 import showcase3x from "@/assets/course-landing/art/04-showcase@3x.webp";
 import quote2x from "@/assets/course-landing/art/05-quote@2x.webp";
 import quote3x from "@/assets/course-landing/art/05-quote@3x.webp";
-import woodBenefits2x from "@/assets/course-landing/art/06-wood-benefits@2x.webp";
-import woodBenefits3x from "@/assets/course-landing/art/06-wood-benefits@3x.webp";
+import woodBenefitsWood2x from "@/assets/course-landing/art/06-wood-benefits-wood@2x.webp";
+import woodBenefitsWood3x from "@/assets/course-landing/art/06-wood-benefits-wood@3x.webp";
+import woodBenefitsTicket2x from "@/assets/course-landing/art/06-wood-benefits-ticket@2x.webp";
+import woodBenefitsTicket3x from "@/assets/course-landing/art/06-wood-benefits-ticket@3x.webp";
 import roadmap2x from "@/assets/course-landing/art/07-roadmap@2x.webp";
 import roadmap3x from "@/assets/course-landing/art/07-roadmap@3x.webp";
-import pricing2x from "@/assets/course-landing/art/08-pricing@2x.webp";
-import pricing3x from "@/assets/course-landing/art/08-pricing@3x.webp";
+import pricingPaper2x from "@/assets/course-landing/art/08-pricing-paper@2x.webp";
+import pricingPaper3x from "@/assets/course-landing/art/08-pricing-paper@3x.webp";
 import item1a2x from "@/assets/course-landing/art/04-showcase-item-1a@2x.webp";
 import item1a3x from "@/assets/course-landing/art/04-showcase-item-1a@3x.webp";
 import item1b2x from "@/assets/course-landing/art/04-showcase-item-1b@2x.webp";
@@ -30,8 +32,10 @@ import item3b2x from "@/assets/course-landing/art/04-showcase-item-3b@2x.webp";
 import item3b3x from "@/assets/course-landing/art/04-showcase-item-3b@3x.webp";
 import cardClip2x from "@/assets/course-landing/art/07-roadmap-card-clip@2x.webp";
 import cardClip3x from "@/assets/course-landing/art/07-roadmap-card-clip@3x.webp";
+import cardClip4x from "@/assets/course-landing/art/07-roadmap-card-clip@4x.webp";
 import cardSeal2x from "@/assets/course-landing/art/07-roadmap-card-seal@2x.webp";
 import cardSeal3x from "@/assets/course-landing/art/07-roadmap-card-seal@3x.webp";
+import cardSeal4x from "@/assets/course-landing/art/07-roadmap-card-seal@4x.webp";
 
 /**
  * Арт блоков лендинга: все нетекстовые слои макета (фото, бумага, текстуры, плашки, линии),
@@ -43,13 +47,25 @@ export const aboutArt: BlockArt = { x2: about2x, x3: about3x };
 export const woodStepsArt: BlockArt = { x2: woodSteps2x, x3: woodSteps3x };
 export const showcaseArt: BlockArt = { x2: showcase2x, x3: showcase3x };
 export const quoteArt: BlockArt = { x2: quote2x, x3: quote3x };
-export const woodBenefitsArt: BlockArt = { x2: woodBenefits2x, x3: woodBenefits3x };
 export const roadmapArt: BlockArt = { x2: roadmap2x, x3: roadmap3x };
-export const pricingArt: BlockArt = { x2: pricing2x, x3: pricing3x };
+
+/**
+ * Блоки, перекомпонованные под крупный шрифт: арт — только фактура фона (выше блока её продолжают
+ * зеркальные копии, см. artHeight у Block), остальное рисуется кодом или отдельными картинками.
+ */
+/** «После обучения ты»: дерево без плашки и билета, 390×607. */
+export const woodBenefitsWoodArt: BlockArt = { x2: woodBenefitsWood2x, x3: woodBenefitsWood3x };
+/** Бумажный билет блока «после обучения ты» с прозрачным фоном, 400×119 (слой макета «Group 33»). */
+export const woodBenefitsTicketArt: BlockArt = {
+  x2: woodBenefitsTicket2x,
+  x3: woodBenefitsTicket3x,
+};
+/** Тарифы: бумага без билетов и линий, 390×1974. */
+export const pricingPaperArt: BlockArt = { x2: pricingPaper2x, x3: pricingPaper3x };
 
 /** Карточки дорожной карты: стоят в прокручиваемом ряду, поэтому не входят в арт блока. */
-export const roadmapCardClipArt: BlockArt = { x2: cardClip2x, x3: cardClip3x };
-export const roadmapCardSealArt: BlockArt = { x2: cardSeal2x, x3: cardSeal3x };
+export const roadmapCardClipArt: BlockArt = { x2: cardClip2x, x3: cardClip3x, x4: cardClip4x };
+export const roadmapCardSealArt: BlockArt = { x2: cardSeal2x, x3: cardSeal3x, x4: cardSeal4x };
 
 /** Карточки товаров витрины: слайды карусели, по две на каждую из трёх групп. */
 export const showcaseItemArt = {

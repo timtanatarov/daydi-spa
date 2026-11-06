@@ -49,8 +49,18 @@ const FONT_FAMILY = {
 
 export type FontName = keyof typeof FONT_FAMILY;
 
-/** Картинка макета в двух плотностях — для экранов 2x и 3x (арт блока: 780 и 1170px). */
-export type BlockArt = { x2: StaticImageData; x3: StaticImageData };
+/**
+ * Картинка макета в двух плотностях — для экранов 2x и 3x (арт блока: 780 и 1170px).
+ * x4 — для картинок, которые на сайте показаны крупнее, чем в макете: иначе на экранах 3x им не хватит точек.
+ */
+export type BlockArt = { x2: StaticImageData; x3: StaticImageData; x4?: StaticImageData };
+
+/** Набор файлов картинки для srcset: браузер берёт самый маленький, которого хватает экрану. */
+const srcSet = (art: BlockArt): string =>
+  [art.x2, art.x3, art.x4]
+    .filter((file) => file !== undefined)
+    .map((file) => `${file.src} ${file.width}w`)
+    .join(", ");
 
 type BlockProps = {
   as?: ElementType;
@@ -60,6 +70,12 @@ type BlockProps = {
   height: number;
   /** запечённый арт блока (всё, кроме текста), см. lib/blockArt.ts */
   art: BlockArt;
+  /**
+   * Высота арта в px макета, если блок выше него: так бывает у блоков, перекомпонованных под
+   * крупный шрифт, где арт — только фактура фона (дерево, бумага). Ниже арта фон продолжают
+   * его копии, каждая вторая отражена по вертикали — стыки получаются без шва.
+   */
+  artHeight?: number;
   /** первый экран: грузить арт без lazy */
   priority?: boolean;
   /**
@@ -83,12 +99,25 @@ export function Block({
   name,
   height,
   art,
+  artHeight,
   priority = false,
   background = "#F6F5F1",
   id,
   className,
   children,
 }: BlockProps) {
+  const tiles = artHeight && artHeight < height ? Math.ceil(height / artHeight) : 1;
+  const image = {
+    src: art.x3.src,
+    srcSet: srcSet(art),
+    sizes: "(max-width: 480px) 100vw, 480px",
+    width: art.x3.width,
+    height: art.x3.height,
+    loading: priority ? "eager" : "lazy",
+    fetchPriority: priority ? "high" : "auto",
+    decoding: priority ? "sync" : "async",
+    draggable: false,
+  } as const;
   return (
     <Tag
       id={id}
@@ -96,21 +125,34 @@ export function Block({
       className={["relative w-full", className].filter(Boolean).join(" ")}
       style={{ height: u(height), backgroundColor: background }}
     >
-      {/* eslint-disable-next-line @next/next/no-img-element -- готовые файлы 2x/3x, без оптимизатора */}
-      <img
-        src={art.x3.src}
-        srcSet={`${art.x2.src} ${art.x2.width}w, ${art.x3.src} ${art.x3.width}w`}
-        sizes="(max-width: 480px) 100vw, 480px"
-        width={art.x3.width}
-        height={art.x3.height}
-        alt=""
-        aria-hidden
-        loading={priority ? "eager" : "lazy"}
-        fetchPriority={priority ? "high" : "auto"}
-        decoding={priority ? "sync" : "async"}
-        draggable={false}
-        className="pointer-events-none absolute inset-0 size-full select-none"
-      />
+      {tiles === 1 ? (
+        // eslint-disable-next-line @next/next/no-img-element -- готовые файлы 2x/3x, без оптимизатора
+        <img
+          {...image}
+          alt=""
+          aria-hidden
+          className="pointer-events-none absolute inset-0 size-full select-none"
+        />
+      ) : (
+        <div aria-hidden className="pointer-events-none absolute inset-0 overflow-hidden">
+          {Array.from({ length: tiles }, (_, index) => (
+            // eslint-disable-next-line @next/next/no-img-element -- готовые файлы 2x/3x, без оптимизатора
+            <img
+              key={index}
+              {...image}
+              alt=""
+              className={["absolute left-0 w-full select-none", index % 2 && "-scale-y-100"]
+                .filter(Boolean)
+                .join(" ")}
+              // копии заходят друг на друга на пиксель: на дробных масштабах между ними не бывает щели
+              style={{
+                top: `calc(var(--u) * ${index * (artHeight ?? height)} - ${index}px)`,
+                height: u(artHeight ?? height),
+              }}
+            />
+          ))}
+        </div>
+      )}
       {children}
     </Tag>
   );
@@ -136,7 +178,7 @@ export function Pic({ art, alt = "", eager = false, className, ...box }: PicProp
     // eslint-disable-next-line @next/next/no-img-element -- готовые файлы 2x/3x, без оптимизатора
     <img
       src={art.x3.src}
-      srcSet={`${art.x2.src} ${art.x2.width}w, ${art.x3.src} ${art.x3.width}w`}
+      srcSet={srcSet(art)}
       sizes={`(max-width: 480px) ${share}vw, ${Math.floor((box.w * 480) / 390)}px`}
       width={art.x3.width}
       height={art.x3.height}

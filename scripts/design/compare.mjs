@@ -309,6 +309,12 @@ async function main() {
   const specFile = path.join(REF, "spec", `${block}.json`);
   if (!fs.existsSync(specFile)) throw new Error(`Нет спецификации ${specFile}`);
   const spec = JSON.parse(fs.readFileSync(specFile, "utf8"));
+  // блок перекомпонован на сайте (например, под крупный шрифт): макет ему больше не образец
+  if (spec.redesigned) {
+    console.log(`== ${block}: ПЕРЕКОМПОНОВАН НА САЙТЕ, с макетом не сверяется ==`);
+    console.log(spec.redesigned);
+    return;
+  }
   const base = typeof args.base === "string" ? args.base : "http://localhost:3000";
   const url = typeof args.url === "string" ? args.url : `${base}/`;
   // состояние, нарисованное в макете (например, третий шаг слайдера): клики перед снимком

@@ -1,6 +1,7 @@
 "use client";
 
 import { Fragment, useId, useRef } from "react";
+import { ArrowButton } from "../../ui/ArrowButton";
 import { Pic, T, boxStyle, u, type BlockArt } from "../../ui/canvas";
 
 type Rect = { x: number; y: number; w: number; h: number };
@@ -20,18 +21,15 @@ export type ComparePair = { left: CompareItem; right: CompareItem };
 type Props = {
   /** бежевая подложка группы: окно, внутри которого листаются пары */
   viewport: Rect;
-  /** стрелка «›» справа от подложки (нарисована в арте блока) */
-  arrow: Rect;
+  /** левый верхний угол стрелки «›» справа от подложки */
+  arrow: { x: number; y: number };
   pairs: ComparePair[];
   /** название группы для скринридера */
   label: string;
 };
 
-/** Сторона области нажатия стрелки: квадрат с центром в центре стрелки. */
-const HIT = 44;
-
 /**
- * Карусель пар «дороже / дешевле». Листается пальцем (scroll-snap) и стрелкой из макета —
+ * Карусель пар «дороже / дешевле». Листается пальцем (scroll-snap) и стрелкой «›» —
  * по кругу. Положение берётся из самой прокрутки, поэтому стрелка и свайп не расходятся.
  */
 export function CompareCarousel({ viewport, arrow, pairs, label }: Props) {
@@ -54,13 +52,6 @@ export function CompareCarousel({ viewport, arrow, pairs, label }: Props) {
     pending.current = { index: next, until: now + 600 };
     const calm = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     rail.scrollTo({ left: next * slideWidth, behavior: calm ? "auto" : "smooth" });
-  };
-
-  const hit = {
-    x: arrow.x + arrow.w / 2 - HIT / 2,
-    y: arrow.y + arrow.h / 2 - HIT / 2,
-    w: HIT,
-    h: HIT,
   };
 
   return (
@@ -98,7 +89,7 @@ export function CompareCarousel({ viewport, arrow, pairs, label }: Props) {
                   y={item.caption.y}
                   w={item.caption.w}
                   h={15}
-                  size={10}
+                  size={17}
                   leading={15}
                   align="center"
                   color="#49301C"
@@ -112,21 +103,15 @@ export function CompareCarousel({ viewport, arrow, pairs, label }: Props) {
       </div>
 
       {pairs.length > 1 ? (
-        <button
-          type="button"
+        <ArrowButton
+          direction="next"
+          {...arrow}
+          color="#49301C"
           data-compare-next
           aria-label={`Следующее сравнение: ${label}`}
           aria-controls={railId}
           onClick={showNext}
-          className="group cursor-pointer touch-manipulation outline-none [-webkit-tap-highlight-color:transparent]"
-          style={boxStyle(hit)}
-        >
-          <span
-            aria-hidden
-            className="rounded-[calc(var(--u)*4)] outline-offset-[calc(var(--u)*4)] outline-[#49301C] group-focus-visible:outline-[length:calc(var(--u)*2)]"
-            style={boxStyle({ ...arrow, origin: hit })}
-          />
-        </button>
+        />
       ) : null}
     </>
   );

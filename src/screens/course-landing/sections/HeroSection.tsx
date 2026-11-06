@@ -16,7 +16,7 @@ export function HeroSection() {
         w={219}
         h={30}
         rotate={-3.49}
-        size={11}
+        size={15}
         leading={30}
         weight={500}
         align="center"
@@ -33,7 +33,7 @@ export function HeroSection() {
         w={278.71}
         h={56}
         rotate={-3.49}
-        size={30}
+        size={36}
         leading={28}
         font="playfair"
         align="center"
@@ -50,7 +50,7 @@ export function HeroSection() {
         w={297.7}
         h={60}
         rotate={-3.49}
-        size={12}
+        size={17}
         leading={15}
         weight={300}
         align="center"
@@ -72,7 +72,7 @@ export function HeroSection() {
         w={219}
         h={30}
         rotate={-3.49}
-        size={9}
+        size={15}
         leading={30}
         weight={500}
         align="center"
@@ -89,7 +89,7 @@ export function HeroSection() {
         w={219}
         h={30}
         rotate={-3.49}
-        size={9}
+        size={15}
         leading={30}
         weight={500}
         align="center"
@@ -119,7 +119,7 @@ export function HeroSection() {
           y={631}
           w={219}
           h={30}
-          size={19}
+          size={24}
           leading={30}
           weight={800}
           align="center"
