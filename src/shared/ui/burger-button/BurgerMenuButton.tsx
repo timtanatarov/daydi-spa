@@ -1,20 +1,21 @@
+import type { ButtonHTMLAttributes } from "react";
+
 /** Круглая кнопка «бургер» — телесный фон, коричневые полоски */
 
-type Props = { className?: string };
+type Props = Omit<ButtonHTMLAttributes<HTMLButtonElement>, "type" | "children">;
 
-export function BurgerMenuButton({ className }: Props) {
+export function BurgerMenuButton({ className, ...rest }: Props) {
   return (
     <button
       aria-label="Меню"
       type="button"
-      className={
-        [
-          "flex h-11 w-11 flex-col items-center justify-center gap-[5px] rounded-full bg-[#e3dfda] text-[#49301c] shadow-[0_2px_8px_rgba(73,48,28,0.12)] transition-colors hover:bg-[#d9d4cf] active:scale-95",
-          className,
-        ]
-          .filter(Boolean)
-          .join(" ")
-      }
+      className={[
+        "flex h-11 w-11 flex-col items-center justify-center gap-[5px] rounded-full bg-[#e3dfda] text-[#49301c] shadow-[0_2px_8px_rgba(73,48,28,0.12)] transition-colors hover:bg-[#d9d4cf] active:scale-95",
+        className,
+      ]
+        .filter(Boolean)
+        .join(" ")}
+      {...rest}
     >
       <span aria-hidden className="block h-0.5 w-5 rounded-full bg-current" />
       <span aria-hidden className="block h-0.5 w-5 rounded-full bg-current" />
